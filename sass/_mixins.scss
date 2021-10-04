@@ -1,0 +1,15 @@
+
+
+@mixin titrepolice {
+    font-family: Shrikhand;
+}
+
+@mixin texte {
+    font-family: Roboto;
+}
+
+@mixin flexmid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
