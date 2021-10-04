@@ -50,6 +50,8 @@
   .backgroundimage img {
     width: 25rem;
     height: 14rem;
+    -o-object-fit: cover;
+       object-fit: cover;
     z-index: -200;
   }
   section h2 {
