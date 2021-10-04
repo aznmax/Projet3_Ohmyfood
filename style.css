@@ -174,8 +174,8 @@ body {
     border: none;
   }
   .exploration button:hover {
-    box-shadow: 0 0 6px 4px #b35cdc;
-    filter: brightness(3);
+    box-shadow: 0 0 7px 6px #b35cdc;
+    filter: brightness(1.2);
   }
 
   .titrefonction {
