@@ -273,6 +273,7 @@
 
         &:hover {
             background: #f5edff;
+           
         }
 
         .soustitre {
@@ -289,7 +290,7 @@
             margin-top: 0rem;
 
             &:hover {
-                color: #9356dc
+                color: #9356dc;
             }
 
 
@@ -1490,7 +1491,7 @@
 
 
 
-    // Background & Icone 637px // 
+    // Background & Icone 625px // 
 
     .backgroundicone {
 
@@ -1506,8 +1507,7 @@
 
 
 
-
-    // Exploration 643 px // 
+    // Exploration 625 px // 
 
 
     .exploration {
@@ -1522,6 +1522,24 @@
         }
 
     }
+
+    
+.fonctionnement{
+
+width:70%;
+margin-left: -25rem;
+
+    
+    .circle{
+        margin-left: -27rem;
+      
+        
+    }
+
+
+}
+
+
 
 
 
@@ -2339,7 +2357,7 @@
             background: #9356DC;
             border-radius: 3rem;
             color: #ffff;
-            margin-right: 1.6rem;
+            margin-left: -20rem;
             margin-top: 0rem;
             font-size: 1.3rem;
         }
@@ -6697,6 +6715,13 @@
 
     }
 
+.fonctionnement{
+    
+    .circle{
+        margin-left: -23rem;
+    }
+}
+
 
 
 }
@@ -6750,6 +6775,11 @@
             }
 
 
+    
+                .circle{
+                    margin-left: -23rem;
+                }
+            
 
     }
 
@@ -8743,7 +8773,13 @@
 
 
 
+        .circle{
+            margin-left: -23rem;
+        }
+
+
     }
+
 
 
 
