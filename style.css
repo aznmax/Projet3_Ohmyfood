@@ -948,6 +948,14 @@ body {
   .exploration button {
     margin-left: 12rem;
   }
+
+  .fonctionnement {
+    width: 70%;
+    margin-left: -25rem;
+  }
+  .fonctionnement .circle {
+    margin-left: -27rem;
+  }
 }
 @media screen and (min-width: 637px) {
   .backgroundicone .icone1 {
@@ -1350,7 +1358,7 @@ body {
     background: #9356DC;
     border-radius: 3rem;
     color: #ffff;
-    margin-right: 1.6rem;
+    margin-left: -20rem;
     margin-top: 0rem;
     font-size: 1.3rem;
   }
@@ -3689,6 +3697,10 @@ body {
   .grandcontainer .titrerestaurant {
     margin-left: 34rem;
   }
+
+  .fonctionnement .circle {
+    margin-left: -23rem;
+  }
 }
 @media screen and (min-width: 1457px) {
   .backgroundicone .icone1 {
@@ -3714,6 +3726,9 @@ body {
   }
   .fonctionnement:nth-child(4) {
     margin-left: 48rem;
+  }
+  .fonctionnement .circle {
+    margin-left: -23rem;
   }
 }
 @media screen and (min-width: 1461px) {
@@ -4769,6 +4784,9 @@ body {
   }
   .fonctionnement:nth-child(3) {
     margin-left: 27rem;
+  }
+  .fonctionnement .circle {
+    margin-left: -23rem;
   }
 
   .grandcontainer {
