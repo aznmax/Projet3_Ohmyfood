@@ -866,6 +866,15 @@ body {
   .exploration button {
     margin-left: 8rem;
   }
+
+  .fonctionnement {
+    width: 85%;
+    position: relative;
+    left: -3rem;
+  }
+  .fonctionnement .circle {
+    margin-left: -26rem;
+  }
 }
 @media screen and (min-width: 500px) {
   .backgroundicone .icone1 {
@@ -4760,7 +4769,7 @@ body {
 @media screen and (min-width: 1920px) {
   .backgroundicone .icone1 {
     position: relative;
-    left: 28.5rem;
+    left: 28.2rem;
   }
   .backgroundicone .texteicone1 {
     margin-left: 25rem;
