@@ -1186,7 +1186,7 @@ button {
         }
 
         button {
-            margin-left: 8rem;
+            margin-left: 2rem;
         }
     }
 }
@@ -4656,15 +4656,15 @@ button {
     .fonctionnement{
 
         &:nth-child(2){
-            margin-left:2rem;
+            margin-left:5rem;
         }
     
         &:nth-child(3){
-            margin-left:25rem;
+            margin-left:29rem;
         }
     
         &:nth-child(4){
-            margin-left:48rem;
+            margin-left:52rem;
         }
 
         .circle{
@@ -4673,6 +4673,61 @@ button {
     }
 }
 
+@media screen and (min-width:1145px){
+ 
+
+    .fonctionnement {
+        &:nth-child(2) {
+            margin-left: 6rem;
+        }
+
+        &:nth-child(3) {
+            margin-left: 29rem;
+        }
+
+        &:nth-child(4) {
+            margin-left: 53rem;
+        }
+    }
+
+}
+
+@media screen and (min-width:1149px){
+ 
+
+        .fonctionnement {
+            &:nth-child(2) {
+                margin-left: 6rem;
+            }
+    
+            &:nth-child(3) {
+                margin-left: 29rem;
+            }
+    
+            &:nth-child(4) {
+                margin-left: 53rem;
+            }
+        }
+    
+}
+
+
+@media screen and (min-width:1157px){
+
+    .fonctionnement {
+        &:nth-child(2) {
+            margin-left: 6rem;
+        }
+
+        &:nth-child(3) {
+            margin-left: 28rem;
+        }
+
+        &:nth-child(4) {
+            margin-left: 50rem;
+        }
+    }
+}
 
 
 @media screen and (min-width: 1159px) {
@@ -4776,6 +4831,20 @@ button {
         }
     }
 
+    .fonctionnement {
+        &:nth-child(2) {
+            margin-left: 7rem;
+        }
+
+        &:nth-child(3) {
+            margin-left: 30rem;
+        }
+
+        &:nth-child(4) {
+            margin-left: 53rem;
+        }
+    }
+
     .grandcontainer {
         .titrerestaurant {
             margin-left: 26rem;
@@ -4791,6 +4860,28 @@ button {
 
         .texteicone1 {
             margin-left: 20rem;
+        }
+    }
+}
+
+@media screen and (min-width:1171px){
+
+    .fonctionnement{
+
+        &:nth-child(2){
+            margin-left:5rem;
+        }
+    
+        &:nth-child(3){
+            margin-left:30rem;
+        }
+    
+        &:nth-child(4){
+            margin-left:54rem;
+        }
+
+        .circle{
+            margin-right: 16.7rem;
         }
     }
 }
@@ -5701,17 +5792,22 @@ button {
         margin-left: 30rem;
     }
 
-    .fonctionnement {
-        &:nth-child(2) {
-            margin-left: -4rem;
+    .fonctionnement{
+
+        &:nth-child(2){
+            margin-left:8rem;
+        }
+    
+        &:nth-child(3){
+            margin-left:36.5rem;
+        }
+    
+        &:nth-child(4){
+            margin-left:63rem;
         }
 
-        &:nth-child(3) {
-            margin-left: 21rem;
-        }
-
-        &:nth-child(4) {
-            margin-left: 46rem;
+        .circle{
+            margin-right: 16.5rem;
         }
     }
 
@@ -6702,7 +6798,7 @@ button {
 @media screen and (min-width: 1448px) {
     .backgroundicone {
         .icone1 {
-            margin-left: 19.2rem;
+            margin-left: 37.5rem;
         }
     }
 
@@ -6721,13 +6817,22 @@ button {
         margin-left: 23rem;
     }
 
-    .fonctionnement {
-        &:nth-child(3) {
-            margin-left: 20rem;
+    .fonctionnement{
+
+        &:nth-child(2){
+            margin-left:6rem;
+        }
+    
+        &:nth-child(3){
+            margin-left:33rem;
+        }
+    
+        &:nth-child(4){
+            margin-left:60rem;
         }
 
-        &:nth-child(4) {
-            margin-left: 48rem;
+        .circle{
+            margin-right: 16.5rem;
         }
     }
 
@@ -7192,6 +7297,27 @@ button {
         }
     }
 
+}
+
+@media screen and (min-width:1494px){
+    .fonctionnement{
+
+        &:nth-child(2){
+            margin-left:8rem;
+        }
+    
+        &:nth-child(3){
+            margin-left:36.5rem;
+        }
+    
+        &:nth-child(4){
+            margin-left:64rem;
+        }
+
+        .circle{
+            margin-right: 0rem;
+        }
+    }
 }
 
 @media screen and (min-width:1495px){
