@@ -1104,7 +1104,13 @@ button {
         }
 
         button {
-            margin-left: 5rem;
+            margin-left: 2rem;
+        }
+    }
+
+    .fonctionnement{
+        .circle{
+            margin-right: 5.5rem;
         }
     }
 }
@@ -1210,7 +1216,7 @@ button {
 
     .exploration {
         button {
-            margin-left: 8rem;
+            margin-left: 2rem;
         }
     }
 
@@ -1223,6 +1229,84 @@ button {
             margin-left: -28rem;
         }
     }
+
+    .fonctionnement {
+        &:nth-child(2) {
+            margin-left: 6rem;
+        }
+
+        &:nth-child(3) {
+            margin-left: 6rem;
+        }
+
+        &:nth-child(4) {
+            margin-left: 6rem;
+        }
+
+        .circle {
+            margin-right: -2rem;
+            font-size: 1rem;
+            width: 1.8rem;
+            height: 1.8rem;
+        }
+    }
+}
+
+@media screen and (min-width:493px){
+
+    .exploration{
+        button{
+            margin-left: 2rem;
+        }
+    }
+    .fonctionnement {
+        &:nth-child(2) {
+            margin-left: 6rem;
+        }
+
+        &:nth-child(3) {
+            margin-left: 6rem;
+        }
+
+        &:nth-child(4) {
+            margin-left: 6rem;
+        }
+
+        .circle {
+            margin-right: -2rem;
+            font-size: 1rem;
+            width: 1.8rem;
+            height: 1.8rem;
+        }
+    }
+}
+
+@media screen and (min-width:497px){
+
+    .exploration{
+        button{
+            margin-left: 2rem;
+        }
+    }
+
+    .fonctionnement {
+        &:nth-child(2) {
+            margin-left: 6rem;
+        }
+
+        &:nth-child(3) {
+            margin-left: 6rem;
+        }
+
+        &:nth-child(4) {
+            margin-left: 6rem;
+        }
+
+        .circle {
+            margin-right: -1.8rem;
+        }
+    }
+
 }
 
 //Responsive 500PX //
@@ -1380,6 +1464,18 @@ button {
             margin-right: 1.5rem;
         }
     }
+}
+
+@media screen and (min-width:527px){
+
+
+.fonctionnement{
+    .circle{
+        margin-right: 0rem;
+    }
+}
+
+
 }
 
 @media screen and (min-width: 547px) {
@@ -1770,7 +1866,7 @@ button {
         }
 
         button {
-            margin-left: 12rem;
+            margin-left: 2rem;
         }
     }
 
@@ -1779,7 +1875,7 @@ button {
         margin-left: -25rem;
 
         .circle {
-            margin-left: -27rem;
+            margin-right:-0.5rem;
         }
     }
 }
@@ -1898,7 +1994,27 @@ button {
         }
 
         button {
-            margin-left: 13rem;
+            margin-left: 4rem;
+        }
+    }
+
+    .fonctionnement{
+        .circle{
+            margin-right: 9rem;
+        }
+    }
+}
+
+@media screen and (min-width:663px){
+    .exploration {
+        button {
+            margin-left: 5rem;
+        }
+    }
+
+    .fonctionnement{
+        .circle{
+            margin-right: 9rem;
         }
     }
 }
@@ -1920,19 +2036,23 @@ button {
 
     .exploration {
         h3 {
-            margin-left: 15rem;
+            margin-left: 10rem;
         }
 
         .p2 {
-            margin-left: 17rem;
+            margin-left: 12.5rem;
         }
 
         button {
-            margin-left: 13rem;
+            margin-left: 2rem;
         }
     }
 
     // Fonctionnement 665px //
+
+    .titrefonction{
+        margin-left: 15rem;
+    }
     .fonctionnement {
         width: 90%;
 
@@ -2164,11 +2284,11 @@ button {
 
     .backgroundicone {
         .icone1 {
-            margin-left: 15.6rem;
+            margin-left: 14.9rem;
         }
 
         .texteicone1 {
-            margin-left: 17rem;
+            margin-left: 17.5rem;
         }
     }
 
@@ -2184,9 +2304,31 @@ button {
         }
 
         button {
-            margin-left: 13rem;
+            margin-left: 4rem;
         }
     }
+}
+
+@media screen and (min-width:691px){
+
+.backgroundicone{
+    .icone1{
+        margin-left: 15rem;
+    }
+    .texteicone1{
+        margin-left: 18rem;
+    }
+}
+
+.exploration{
+    button{
+        margin-left:5rem
+    }
+
+
+
+}
+
 }
 
 @media screen and (min-width:697px){
@@ -2292,7 +2434,7 @@ button {
 
     .exploration {
         button {
-            margin-left: 14rem;
+            margin-left: 2rem;
         }
     }
 
@@ -2303,19 +2445,26 @@ button {
         margin-left: 14.5rem;
     }
 
-    .fonctionnement {
-        &:nth-child(2) {
-            margin-left: 13rem;
-        }
+    .fonctionnement{
 
-        &:nth-child(3) {
-            margin-left: 13rem;
+        &:nth-child(2){
+            margin-left: 5rem;
         }
-
-        &:nth-child(4) {
-            margin-left: 13rem;
+        
+        &:nth-child(3){
+            margin-left: 5rem;
         }
-    }
+        
+        &:nth-child(4){
+            margin-left: 5rem;
+        }
+        
+        .circle{
+            margin-right: 12rem;
+        }
+        
+        
+        }
 
     .grandcontainer {
         .titrerestaurant {
@@ -2324,19 +2473,19 @@ button {
         }
 
         .bloc {
-            margin-left: 10rem;
+            margin-left: 2rem;
         }
 
         .bloc2 {
-            margin-left: 10rem;
+            margin-left: 2rem;
         }
 
         .bloc3 {
-            margin-left: 10rem;
+            margin-left: 2rem;
         }
 
         .bloc4 {
-            margin-left: 10rem;
+            margin-left: 2rem;
         }
     }
 }
@@ -2578,6 +2727,17 @@ button {
     }
 }
 
+@media screen and (min-width:733px){
+
+    .exploration {
+        button {
+            margin-left: 5rem;
+        }
+    }
+
+
+}
+
 @media screen and (min-width: 739px) {
     // exploration 739px //
 
@@ -2629,7 +2789,7 @@ button {
         }
 
         button {
-            margin-left: 15rem;
+            margin-left: 2rem;
         }
     }
 }
@@ -2655,14 +2815,20 @@ button {
 
     .backgroundicone {
         .icone1 {
-            margin-left: 17.5rem;
+            margin-left: 16.8rem;
         }
 
         .texteicone1 {
             margin-left: 20rem;
         }
-    }
 
+    }
+    
+    .exploration{
+        button{
+            margin-left: 2.5rem;
+        }
+    }
     // Exploration 643 px //
 }
 
@@ -4169,6 +4335,21 @@ button {
         }
     }
 
+    .fonctionnement{
+
+        &:nth-child(2){
+            margin-left:4rem;
+        }
+    
+        &:nth-child(3){
+            margin-left:25.3rem;
+        }
+    
+        &:nth-child(4){
+            margin-left:46.5rem;
+        }
+    }
+
     .grandcontainer {
         .titrerestaurant {
             margin-left: 22rem;
@@ -4320,17 +4501,22 @@ button {
         margin-left: 28rem;
     }
 
-    .fonctionnement {
-        &:nth-child(2) {
-            margin-left: 2rem;
+    .fonctionnement{
+
+        &:nth-child(2){
+            margin-left:6rem;
+        }
+    
+        &:nth-child(3){
+            margin-left:29rem;
+        }
+    
+        &:nth-child(4){
+            margin-left:51.5rem;
         }
 
-        &:nth-child(3) {
-            margin-left: 25rem;
-        }
-
-        &:nth-child(4) {
-            margin-left: 48rem;
+        .circle{
+            margin-right: 16.7rem;
         }
     }
 }
@@ -4421,17 +4607,22 @@ button {
         margin-left: 28rem;
     }
 
-    .fonctionnement {
-        &:nth-child(2) {
-            margin-left: 2rem;
+    .fonctionnement{
+
+        &:nth-child(2){
+            margin-left:6rem;
+        }
+    
+        &:nth-child(3){
+            margin-left:29rem;
+        }
+    
+        &:nth-child(4){
+            margin-left:51.5rem;
         }
 
-        &:nth-child(3) {
-            margin-left: 25rem;
-        }
-
-        &:nth-child(4) {
-            margin-left: 48rem;
+        .circle{
+            margin-right: 16.7rem;
         }
     }
 }
@@ -5467,18 +5658,62 @@ button {
             margin-left: 20rem;
         }
     }
+
+    .fonctionnement{
+
+        &:nth-child(2){
+            margin-left:6rem;
+        }
+    
+        &:nth-child(3){
+            margin-left:33rem;
+        }
+    
+        &:nth-child(4){
+            margin-left:60rem;
+        }
+
+        .circle{
+            margin-right: 16.5rem;
+        }
+    }
 }
 
 @media screen and (min-width: 1369px) {
+
+    .fonctionnement{
+
+        &:nth-child(2){
+            margin-left:6rem;
+        }
+    
+        &:nth-child(3){
+            margin-left:33.2rem;
+        }
+    
+        &:nth-child(4){
+            margin-left:60rem;
+        }
+
+        .circle{
+            margin-right: 16.5rem;
+        }
+    }
     .grandcontainer {
         .bloc {
             width: 35rem;
             height: 19rem;
+            .texteimage1{
+                margin-left: 15rem;
+            }
         }
 
         .bloc2 {
             width: 35rem;
             height: 19rem;
+            .texteimage2{
+                margin-left: 15rem;
+            }
         }
 
         .bloc3 {
@@ -5575,16 +5810,22 @@ button {
         }
     }
 
-    .fonctionnement {
-        &:nth-child(2) {
-            margin-left: -3rem;
+    .fonctionnement{
+
+        &:nth-child(2){
+            margin-left:6rem;
         }
-        &:nth-child(3) {
-            margin-left: 21rem;
+    
+        &:nth-child(3){
+            margin-left:33rem;
+        }
+    
+        &:nth-child(4){
+            margin-left:60rem;
         }
 
-        &:nth-child(4) {
-            margin-left: 45rem;
+        .circle{
+            margin-right: 16.5rem;
         }
     }
 
@@ -6231,6 +6472,25 @@ button {
         }
     }
 
+    .fonctionnement{
+
+        &:nth-child(2){
+            margin-left:6rem;
+        }
+    
+        &:nth-child(3){
+            margin-left:34rem;
+        }
+    
+        &:nth-child(4){
+            margin-left:63rem;
+        }
+
+        .circle{
+            margin-right: 19.5rem;
+        }
+    }
+
     // Section fonctionnement 1441px //
 
     .titrefonction {
@@ -6296,16 +6556,22 @@ button {
         margin-left: 30rem;
     }
 
-    .fonctionnement {
-        &:nth-child(2) {
-            margin-left: -5rem;
+    .fonctionnement{
+
+        &:nth-child(2){
+            margin-left:6rem;
         }
-        &:nth-child(3) {
-            margin-left: 23rem;
+    
+        &:nth-child(3){
+            margin-left:34rem;
+        }
+    
+        &:nth-child(4){
+            margin-left:63rem;
         }
 
-        &:nth-child(4) {
-            margin-left: 51rem;
+        .circle{
+            margin-right: 20rem;
         }
     }
 
@@ -6475,16 +6741,22 @@ button {
         margin-left: 30rem;
     }
 
-    .fonctionnement {
-        &:nth-child(2) {
-            margin-left: -5rem;
+    .fonctionnement{
+
+        &:nth-child(2){
+            margin-left:6rem;
         }
-        &:nth-child(3) {
-            margin-left: 23rem;
+    
+        &:nth-child(3){
+            margin-left:34rem;
+        }
+    
+        &:nth-child(4){
+            margin-left:63rem;
         }
 
-        &:nth-child(4) {
-            margin-left: 51rem;
+        .circle{
+            margin-right: 19.5rem;
         }
     }
 }
@@ -6505,6 +6777,27 @@ button {
     .fonctionnement {
         .circle {
             margin-left: -23rem;
+        }
+    }
+}
+
+@media screen and (min-width:1455px){
+    .fonctionnement{
+
+        &:nth-child(2){
+            margin-left:6rem;
+        }
+    
+        &:nth-child(3){
+            margin-left:34rem;
+        }
+    
+        &:nth-child(4){
+            margin-left:63rem;
+        }
+
+        .circle{
+            margin-right: 0rem;
         }
     }
 }
@@ -6532,20 +6825,22 @@ button {
         margin-left: 29rem;
     }
 
-    .fonctionnement {
-        &:nth-child(2) {
-            margin-left: -6rem;
+    .fonctionnement{
+
+        &:nth-child(2){
+            margin-left:6rem;
         }
-        &:nth-child(3) {
-            margin-left: 21rem;
+    
+        &:nth-child(3){
+            margin-left:34rem;
+        }
+    
+        &:nth-child(4){
+            margin-left:63rem;
         }
 
-        &:nth-child(4) {
-            margin-left: 48rem;
-        }
-
-        .circle {
-            margin-left: -23rem;
+        .circle{
+            margin-right: 0rem;
         }
     }
 }
@@ -6574,6 +6869,42 @@ button {
 
         .texteicone1 {
             margin-left: 25rem;
+        }
+    }
+}
+
+@media screen and (min-width:1469px){
+
+    .fonctionnement{
+
+        &:nth-child(2){
+            margin-left:6rem;
+        }
+    
+        &:nth-child(3){
+            margin-left:34rem;
+        }
+    
+        &:nth-child(4){
+            margin-left:63rem;
+        }
+
+        .circle{
+            margin-right: 0rem;
+        }
+    }
+
+    .grandcontainer{
+        .bloc{
+            .texteimage1{
+                margin-left: 20rem;
+            }
+        }
+
+        .bloc2{
+            .texteimage2{
+                margin-left: 20rem;
+            }
         }
     }
 }
@@ -6708,7 +7039,7 @@ button {
 
     .exploration {
         button {
-            margin-left: 37rem;
+            margin-left: 38rem;
         }
     }
 
@@ -6716,13 +7047,67 @@ button {
 
     .fonctionnement{
 
-     position: relative;
-     left: 14rem;
-     .circle{
-         margin-left: -6.2rem;
-     }
+        &:nth-child(2){
+            margin-left:6rem;
+        }
+    
+        &:nth-child(3){
+            margin-left:34rem;
+        }
+    
+        &:nth-child(4){
+            margin-left:63rem;
+        }
+
+        .circle{
+            margin-right: 0rem;
+        }
     }
 
+}
+
+@media screen and (min-width:1493px){
+
+    .fonctionnement{
+
+        &:nth-child(2){
+            margin-left:-8rem;
+        }
+    
+        &:nth-child(3){
+            margin-left:20rem;
+        }
+    
+        &:nth-child(4){
+            margin-left:48.5rem;
+        }
+
+        .circle{
+            margin-right: 16.5rem;
+        }
+    }
+
+}
+
+@media screen and (min-width:1495px){
+    .fonctionnement{
+
+        &:nth-child(2){
+            margin-left:6rem;
+        }
+    
+        &:nth-child(3){
+            margin-left:34rem;
+        }
+    
+        &:nth-child(4){
+            margin-left:63rem;
+        }
+
+        .circle{
+            margin-right: 0rem;
+        }
+    }
 }
 
 @media screen and (min-width:1503px){
@@ -6734,24 +7119,46 @@ button {
     }
 
 
-    .fonctionnement:nth-child(2) {
-        margin-left: -8rem;
-    }
-
-    .fonctionnement:nth-child(3) {
-        margin-left: 21rem;
-    }
-    .fonctionnement:nth-child(4) {
-        margin-left: 49rem;
-    }
-
     .fonctionnement{
 
+        &:nth-child(2){
+            margin-left:6rem;
+        }
+    
+        &:nth-child(3){
+            margin-left:34rem;
+        }
+    
+        &:nth-child(4){
+            margin-left:63rem;
+        }
+
         .circle{
-            margin-right: 16.5rem;
+            margin-right: 0rem;
         }
     }
 
+}
+
+@media screen and (min-width:1505px){
+    .fonctionnement{
+
+        &:nth-child(2){
+            margin-left:6rem;
+        }
+    
+        &:nth-child(3){
+            margin-left:34rem;
+        }
+    
+        &:nth-child(4){
+            margin-left:63rem;
+        }
+
+        .circle{
+            margin-right: 0rem;
+        }
+    }
 }
 
 @media screen and (min-width: 1507px) {
@@ -6844,6 +7251,26 @@ button {
             margin-left: 39.6rem;
         }
     }
+    .fonctionnement{
+
+        &:nth-child(2){
+            margin-left:6rem;
+        }
+    
+        &:nth-child(3){
+            margin-left:34rem;
+        }
+    
+        &:nth-child(4){
+            margin-left:63rem;
+        }
+
+        .circle{
+            margin-right: 0rem;
+        }
+    }
+
+    
 }
 
 @media screen and (min-width: 1521px) {
@@ -6865,21 +7292,22 @@ button {
         }
     }
 
-    .fonctionnement:nth-child(2) {
-        margin-left: -5rem;
-    }
-
-    .fonctionnement:nth-child(3) {
-        margin-left: 23.5rem;
-    }
-    .fonctionnement:nth-child(4) {
-        margin-left: 53rem;
-    }
-
     .fonctionnement{
 
+        &:nth-child(2){
+            margin-left:6rem;
+        }
+    
+        &:nth-child(3){
+            margin-left:34rem;
+        }
+    
+        &:nth-child(4){
+            margin-left:63rem;
+        }
+
         .circle{
-            margin-right: 16.5rem;
+            margin-right: 0rem;
         }
     }
 
@@ -6945,6 +7373,27 @@ button {
     }
 }
 
+@media screen and (min-width:1527px){
+    .fonctionnement{
+
+        &:nth-child(2){
+            margin-left:6rem;
+        }
+    
+        &:nth-child(3){
+            margin-left:34rem;
+        }
+    
+        &:nth-child(4){
+            margin-left:63rem;
+        }
+
+        .circle{
+            margin-right: 0rem;
+        }
+    }
+}
+
 @media screen and (min-width: 1529px) {
     // Background & Icone : 1529px //
 
@@ -6971,6 +7420,27 @@ button {
     }
 }
 
+@media screen and (min-width:1535px){
+    .fonctionnement{
+
+        &:nth-child(2){
+            margin-left:6rem;
+        }
+    
+        &:nth-child(3){
+            margin-left:34rem;
+        }
+    
+        &:nth-child(4){
+            margin-left:63rem;
+        }
+
+        .circle{
+            margin-right: 0rem;
+        }
+    }
+}
+
 @media screen and (min-width: 1536px) {
     // Background & Icone : 1536px //
 
@@ -6981,6 +7451,27 @@ button {
 
         .texteicone1 {
             margin-left: 25rem;
+        }
+    }
+}
+
+@media screen and (min-width:1539px){
+     .fonctionnement{
+
+        &:nth-child(2){
+            margin-left:6rem;
+        }
+    
+        &:nth-child(3){
+            margin-left:34rem;
+        }
+    
+        &:nth-child(4){
+            margin-left:63rem;
+        }
+
+        .circle{
+            margin-right: 0rem;
         }
     }
 }
@@ -7063,17 +7554,22 @@ button {
         @include titrepolice;
     }
 
-    .fonctionnement {
-        &:nth-child(2) {
-            margin-left: -6rem;
+    .fonctionnement{
+
+        &:nth-child(2){
+            margin-left:6rem;
+        }
+    
+        &:nth-child(3){
+            margin-left:34rem;
+        }
+    
+        &:nth-child(4){
+            margin-left:63rem;
         }
 
-        &:nth-child(3) {
-            margin-left: 23rem;
-        }
-
-        &:nth-child(4) {
-            margin-left: 52rem;
+        .circle{
+            margin-right: 0rem;
         }
     }
 
@@ -7134,6 +7630,25 @@ button {
             margin-left: 41rem;
         }
     }
+
+    .fonctionnement{
+
+        &:nth-child(2){
+            margin-left:6rem;
+        }
+    
+        &:nth-child(3){
+            margin-left:34rem;
+        }
+    
+        &:nth-child(4){
+            margin-left:63rem;
+        }
+
+        .circle{
+            margin-right: 0rem;
+        }
+    }
 }
 
 @media screen and (min-width: 1570px) {
@@ -7156,6 +7671,27 @@ button {
     .exploration {
         button {
             margin-left: 42rem;
+        }
+    }
+}
+
+@media screen and (min-width:1581px){
+    .fonctionnement{
+
+        &:nth-child(2){
+            margin-left:6rem;
+        }
+    
+        &:nth-child(3){
+            margin-left:34rem;
+        }
+    
+        &:nth-child(4){
+            margin-left:63rem;
+        }
+
+        .circle{
+            margin-right: 0rem;
         }
     }
 }
@@ -7195,9 +7731,23 @@ button {
         margin-left: 31rem;
     }
 
-    .fonctionnement {
-        position: relative;
-        left: 16rem;
+    .fonctionnement{
+
+        &:nth-child(2){
+            margin-left:6rem;
+        }
+    
+        &:nth-child(3){
+            margin-left:34rem;
+        }
+    
+        &:nth-child(4){
+            margin-left:63rem;
+        }
+
+        .circle{
+            margin-right: 0rem;
+        }
     }
 
     .exploration {
@@ -7247,17 +7797,22 @@ button {
         margin-left: 23rem;
     }
 
-    .fonctionnement {
-        &:nth-child(2) {
-            margin-left: -4rem;
+    .fonctionnement{
+
+        &:nth-child(2){
+            margin-left:6rem;
+        }
+    
+        &:nth-child(3){
+            margin-left:34rem;
+        }
+    
+        &:nth-child(4){
+            margin-left:63rem;
         }
 
-        &:nth-child(3) {
-            margin-left: 24rem;
-        }
-
-        &:nth-child(4) {
-            margin-left: 52rem;
+        .circle{
+            margin-right: 0rem;
         }
     }
 
@@ -7294,6 +7849,25 @@ button {
         }
     }
 
+    .fonctionnement{
+
+        &:nth-child(2){
+            margin-left:6rem;
+        }
+    
+        &:nth-child(3){
+            margin-left:34rem;
+        }
+    
+        &:nth-child(4){
+            margin-left:63rem;
+        }
+
+        .circle{
+            margin-right: 0rem;
+        }
+    }
+
     .grandcontainer {
         .titrerestaurant {
             margin-left: 38rem;
@@ -7305,6 +7879,24 @@ button {
     .grandcontainer {
         .titrerestaurant {
             margin-left: 38rem;
+        }
+    }
+    .fonctionnement{
+
+        &:nth-child(2){
+            margin-left:6rem;
+        }
+    
+        &:nth-child(3){
+            margin-left:34rem;
+        }
+    
+        &:nth-child(4){
+            margin-left:63rem;
+        }
+
+        .circle{
+            margin-right: 0rem;
         }
     }
 }
@@ -7561,11 +8153,23 @@ button {
     }
 
     .fonctionnement{
+
+        &:nth-child(2){
+            margin-left:-7rem;
+        }
+    
+        &:nth-child(3){
+            margin-left:22rem;
+        }
+    
+        &:nth-child(4){
+            margin-left:51rem;
+        }
+
         .circle{
-            margin-right: 17rem;
+            margin-right: 0rem;
         }
     }
-
     .exploration {
         button {
             margin-left: 45rem;
@@ -7616,6 +8220,31 @@ button {
                 margin-left: 30rem;
             }
         }
+    }
+}
+
+@media screen and (min-width:1619px){
+
+    .fonctionnement{
+
+     
+
+        &:nth-child(2){
+            margin-left:-5rem;
+        }
+    
+        &:nth-child(3){
+            margin-left:23rem;
+        }
+    
+        &:nth-child(4){
+            margin-left:53rem;
+        }
+        
+        .circle{
+            margin-right:0rem;
+        }
+      
     }
 }
 
@@ -7737,13 +8366,22 @@ button {
         @include titrepolice;
     }
 
-    .fonctionnement {
-        &:nth-child(2) {
-            margin-left: -5rem;
+    .fonctionnement{
+
+        &:nth-child(2){
+            margin-left:-7rem;
+        }
+    
+        &:nth-child(3){
+            margin-left:23rem;
+        }
+    
+        &:nth-child(4){
+            margin-left:53rem;
         }
 
-        &:nth-child(3) {
-            margin-left: 22.5rem;
+        .circle{
+            margin-right: 0rem;
         }
     }
 
@@ -8211,7 +8849,7 @@ button {
         }
 
         .circle {
-            margin-left: -6.5rem;
+            margin-right: 0rem;
         }
     }
 
