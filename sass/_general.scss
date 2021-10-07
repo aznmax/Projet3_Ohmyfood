@@ -1416,6 +1416,15 @@ button {
     }
 }
 
+@media screen and (min-width:507px){
+
+    .fonctionnement{
+        .circle{
+            margin-right: -1.2rem;
+        }
+    }
+}
+
 @media screen and (min-width: 509px) {
     .grandcontainer {
         .bloc {

@@ -1,4 +1,4 @@
-@media screen and (min-width: 375px) {
+
 	// SASS Settings//
 
 	$couleur-txt-base: #9356dc;
@@ -1624,7 +1624,7 @@
 			font-size: 1.3rem;
 		}
 	}
-}
+
 
 @media screen and (min-width:411px){
 
@@ -1650,6 +1650,58 @@
 			width: 100%;
 			object-fit: cover;
 		}
+	}
+
+	.containerparent{
+
+		.container{
+
+			.menu_lane{
+
+				width: 95%;
+			}
+		}
+
+		.container2{
+
+			.menu_lane2{
+
+				width: 95%;
+			}
+
+			.menu_lane3{
+
+				width: 95%;
+			}
+
+			.menu_lane4{
+
+				width: 95%;
+			}
+		}
+
+		.container3{
+
+			.menu_lane5{
+
+				width: 95%;
+			}
+
+			.menu_lane6{
+
+				width: 95%;
+			}
+
+			.menu_lane7{
+
+				width: 95%;
+			}
+		}
+	}
+
+	button{
+		width: 60%;
+		height: 3rem;
 	}
 }
 
@@ -1863,6 +1915,148 @@
 	}
 }
 
+ @media screen and (min-width:473px){
+
+	
+	.containerparent{
+
+		.infotitre{
+
+			.titrerestaurants1{
+				margin-left: 2.4rem;
+			}
+		}
+
+
+		
+		
+		.titreentree{
+			margin-left: 0.8rem;
+		}
+
+		.titreplat{
+			margin-left: 0rem;
+		}
+
+		.titredesserts{
+			margin-left: 0rem;
+		}
+		.container{
+			.menu_lane{
+				
+				margin-left: 0rem;
+				width: 95%;
+			}
+		}
+
+		.container2{
+
+			.menu_lane2{
+				margin-left: 0rem;
+				width: 100%;
+			}
+
+			.menu_lane3{
+				margin-left: 0rem;
+				width: 100%;
+			}
+
+			.menu_lane4{
+				margin-left: 0rem;
+				width: 100%;
+			}
+		}
+
+		.container3{
+
+			.menu_lane5{
+				margin-left: 0rem;
+				width: 100%;
+			}
+
+			.menu_lane6{
+				margin-left: 0rem;
+				width: 100%;
+			}
+
+			.menu_lane7{
+				margin-left: 0rem;
+				width: 100%;
+			}
+		}
+	}
+
+	button{
+		width: 60%;
+		height: 3rem;
+	}
+	 
+ }
+
+ @media screen and (min-width:475px){
+	.containerparent{
+
+		.infotitre{
+			.titrerestaurants1{
+				margin-left: 1.6rem;
+			}
+		}
+	
+		.titreentree{
+			margin-left: 0rem;
+		}
+	
+		.container{
+			margin-left: 1rem;
+			.menu_lane{
+	
+				width: 109%;
+	
+			}
+	
+			.menu_lane2{
+	
+				width: 109%;
+	
+			}
+	
+			.menu_lane3{
+	
+				width: 109%;
+	
+			}
+	
+			.menu_lane4{
+	
+				width: 109%;
+	
+			}
+	
+			.menu_lane5{
+	
+				width: 109%;
+
+			}
+	
+			.menu_lane6{
+	
+				width: 109%;
+	
+			}
+	
+			.menu_lane7{
+	
+				width: 109%;
+	
+			}
+		}
+	
+		.boutoncommande{
+			margin-left: 5rem;
+		}
+	}
+ }
+
 @media screen and (min-width: 480px) {
 	.titreentree {
 		margin-left: 1.2rem;
@@ -1931,6 +2125,71 @@
 
 	button {
 		margin-left: 5.5rem;
+	}
+}
+
+@media screen and (min-width:489px){
+
+	.containerparent{
+
+		.infotitre{
+			.titrerestaurants1{
+				margin-left: 1.6rem;
+			}
+		}
+	
+		.titreentree{
+			margin-left: 0rem;
+		}
+	
+		.container{
+			margin-left: 1rem;
+			.menu_lane{
+	
+				width: 110%;
+	
+			}
+	
+			.menu_lane2{
+	
+				width: 110%;
+	
+			}
+	
+			.menu_lane3{
+	
+				width: 110%;
+	
+			}
+	
+			.menu_lane4{
+	
+				width: 110%;
+	
+			}
+	
+			.menu_lane5{
+	
+				width: 110%;
+	
+			}
+	
+			.menu_lane6{
+	
+				width: 110%;
+	
+			}
+	
+			.menu_lane7{
+	
+				width: 110%;
+	
+			}
+		}
+	
+		.boutoncommande{
+			margin-left: 1rem;
+		}
 	}
 }
 
@@ -2192,6 +2451,138 @@
 	}
 }
 
+@media screen and (min-width:539px){
+	.containerparent{
+
+		.infotitre{
+			.titrerestaurants1{
+				margin-left: 1.6rem;
+			}
+		}
+	
+		.titreentree{
+			margin-left: 0rem;
+		}
+	
+		.container{
+			margin-left: 1rem;
+			.menu_lane{
+	
+				width: 125%;
+	
+			}
+	
+			.menu_lane2{
+	
+				width: 125%;
+	
+			}
+	
+			.menu_lane3{
+	
+				width: 125%;
+	
+			}
+	
+			.menu_lane4{
+	
+				width: 125%;
+	
+			}
+	
+			.menu_lane5{
+	
+				width: 125%;
+	
+			}
+	
+			.menu_lane6{
+	
+				width: 125%;
+	
+			}
+	
+			.menu_lane7{
+	
+				width: 125%;
+	
+			}
+		}
+	
+		.boutoncommande{
+			margin-left: 5rem;
+		}
+	}
+}
+
+@media screen and (min-width:563px){
+
+
+.containerparent{
+
+	.infotitre{
+		.titrerestaurants1{
+			margin-left: 1.6rem;
+		}
+	}
+
+	.titreentree{
+		margin-left: 0rem;
+	}
+
+	.container{
+		margin-left: 1rem;
+		.menu_lane{
+
+			width: 130%;
+
+		}
+
+		.menu_lane2{
+
+			width: 130%;
+
+		}
+
+		.menu_lane3{
+
+			width: 130%;
+
+		}
+
+		.menu_lane4{
+
+			width: 130%;
+
+		}
+
+		.menu_lane5{
+
+			width: 130%;
+
+		}
+
+		.menu_lane6{
+
+			width: 130%;
+
+		}
+
+		.menu_lane7{
+
+			width: 130%;
+
+		}
+	}
+
+	.boutoncommande{
+		margin-left: 5rem;
+	}
+}
+
+
+}
+
 
 
 @media screen and (min-width: 574px) {
@@ -2263,6 +2654,52 @@
 	button {
 		margin-left: 5.5rem;
 	}
+}
+
+@media screen and (min-width:591px){
+
+.containerparent{
+	.infotitre{
+		.titrerestaurants1{
+			margin-left: 2.5rem;
+		}
+	}
+
+	.container {
+		margin-left: 2rem;
+	
+		.menu_lane {
+			width: 125%;
+		}
+	
+		.menu_lane2 {
+			width: 125%;
+		}
+	
+		.menu_lane3 {
+			width: 125%;
+		}
+	
+		.menu_lane4 {
+			width: 125%;
+		}
+	
+		.menu_lane5 {
+			width: 125%;
+		}
+	
+		.menu_lane6 {
+			width: 125%;
+		}
+	
+		.menu_lane7 {
+			width: 125%;
+		}
+	}
+	
+}
+
+
 }
 
 @media screen and (min-width: 600px) {
@@ -2548,6 +2985,56 @@
 	}
 }
 
+@media screen and (min-width:689px){
+
+	.containerparent{
+
+		.infotitre{
+			.titrerestaurants1{
+				margin-left: 1.5rem;
+			}
+		}
+
+		.titreentree{
+			margin-left: 0rem;
+		}
+		.container {
+			margin-left: 1rem;
+
+			.menu_lane {
+				width: 160%;
+			}
+
+			.menu_lane2 {
+				width: 160%;
+			}
+
+			.menu_lane3 {
+				width: 160%;
+			}
+
+			.menu_lane4 {
+				width: 160%;
+			}
+
+			.menu_lane5 {
+				width: 160%;
+			}
+
+			.menu_lane6 {
+				width: 160%;
+			}
+
+			.menu_lane7 {
+				width: 160%;
+			}
+		}
+	}
+
+
+
+}
+
 @media screen and (min-width: 697px) {
 	.containerparent {
 		.infotitre {
@@ -2559,6 +3046,57 @@
 			}
 		}
 	}
+}
+
+@media screen and (min-width:699px){
+
+	.containerparent{
+
+		.infotitre{
+
+			.titrerestaurants1{
+				margin-left: 2.3rem;
+			}
+		}
+
+
+		.container {
+			margin-left: 2rem;
+		
+			.menu_lane {
+				width: 150%;
+			}
+		
+			.menu_lane2 {
+				width: 150%;
+			}
+		
+			.menu_lane3 {
+				width: 150%;
+			}
+		
+			.menu_lane4 {
+				width: 150%;
+			}
+		
+			.menu_lane5 {
+				width: 150%;
+			}
+		
+			.menu_lane6 {
+				width: 150%;
+			}
+		
+			.menu_lane7 {
+				width: 150%;
+			}
+		}
+
+	}
+
+	
+
+
 }
 
 @media screen and (min-width: 705px) {
@@ -4183,6 +4721,66 @@
 	}
 }
 
+
+@media screen and (min-width:785px){
+
+	.containerparent{
+
+		.infotitre{
+			.titrerestaurants1{
+				margin-left: 1.8rem;
+			}
+		}
+
+		.titreentree {
+			margin-left: -13.5rem;
+		}
+
+		.titreplat {
+			margin-left: -1.8rem;
+		}
+
+		.titredesserts {
+			margin-left: -1.8rem;
+		}
+		.container {
+
+
+
+			margin-left: 1rem;
+	
+			.menu_lane {
+				width: 180%;
+			}
+	
+			.menu_lane2 {
+				width: 180%;
+			}
+	
+			.menu_lane3 {
+				width: 180%;
+			}
+	
+			.menu_lane4 {
+				width: 180%;
+			}
+	
+			.menu_lane5 {
+				width: 180%;
+			}
+	
+			.menu_lane6 {
+				width: 180%;
+			}
+	
+			.menu_lane7 {
+				width: 180%;
+			}
+		}
+	}
+
+}
+
 @media screen and (min-width: 794px) {
 	.titreentree {
 		margin-left:4.7rem;
@@ -4453,8 +5051,15 @@
 		
 		
 		.titreentree {
-			position: relative;
-			left:3rem;
+			margin-left: -12.5rem;
+		}
+
+		.titreplat {
+			margin-left: -1.8rem;
+		}
+
+		.titredesserts {
+			margin-left: -1.8rem;
 		}
 		
 		
@@ -4462,8 +5067,7 @@
 		.infotitre {
 			.titrerestaurants1 {
 				font-size: 2.5rem;
-				position: relative;
-				left: 3.4rem;
+				margin-left: -0.8rem;
 			}
 		}
 
@@ -4479,31 +5083,31 @@
 			margin-left: 2rem;
 
 			.menu_lane {
-				width: 150%;
+				width: 190%;
 			}
 
 			.menu_lane2 {
-				width: 150%;
+				width: 190%;
 			}
 
 			.menu_lane3 {
-				width: 150%;
+				width: 190%;
 			}
 
 			.menu_lane4 {
-				width: 150%;
+				width: 190%;
 			}
 
 			.menu_lane5 {
-				width: 150%;
+				width: 190%;
 			}
 
 			.menu_lane6 {
-				width: 150%;
+				width: 190%;
 			}
 
 			.menu_lane7 {
-				width: 150%;
+				width: 190%;
 			}
 		}
 
@@ -4588,17 +5192,43 @@
 	}
 }
 
-@media screen and (min-width:883px){
-.containerparent{
-	.titreentree{
-		margin-left: -11.5rem;
+@media screen and (min-width:879px){
+	.containerparent{
+
+		.infotitre{
+			.titrerestaurants1{
+				margin-left: 1.8rem;
+			}
+		}
+
+		.titreentree {
+			margin-left: -13.5rem;
+		}
+
 	}
 }
 
+@media screen and (min-width:883px){
+
+.containerparent{
+
+	.infotitre{
+		.titrerestaurants1{
+			margin-left: -0.8rem;
+		}
+	}
+
+	.titreentree{
+		margin-left: -12.5rem;
+	}
+
 
 }
 
-@media screen and (min-width: 900px) {
+
+}
+
+@media screen and (min-width: px) {
 	.titreentree {
 		position: relative;
 		left: 1.2rem;
@@ -4670,6 +5300,55 @@
 		margin-left: 5.5rem;
 	}
 }
+
+@media screen and (min-width:901px){
+
+	.containerparent{
+
+		.container {
+			margin-left: 1.5rem;
+	
+			.menu_lane {
+				width: 210%;
+			}
+	
+			.menu_lane2 {
+				width: 210%;
+			}
+	
+			.menu_lane3 {
+				width: 210%;
+			}
+	
+			.menu_lane4 {
+				width: 210%;
+			}
+	
+			.menu_lane5 {
+				width: 210%;
+			}
+	
+			.menu_lane6 {
+				width: 210%;
+			}
+	
+			.menu_lane7 {
+				width: 210%;
+			}
+		}
+	}
+
+
+	.boutoncommande{
+
+		button{
+			height: 4rem;
+			margin-left: 11rem;
+			margin-top: 8rem;
+		}
+	}
+}
+
 
 @media screen and (min-width: 910px) {
 	.titreentree {
@@ -4772,6 +5451,64 @@
 		}
 	}
 
+}
+
+@media screen and (min-width:1005px){
+	.containerparent{
+
+		.infotitre{
+
+			.titrerestaurants1{
+				margin-left: 0rem;
+			}
+		}
+
+		.titreentree{
+			margin-left: -10.5rem;
+		}
+
+		.container {
+			margin-left: 2rem;
+	
+			.menu_lane {
+				width: 230%;
+			}
+	
+			.menu_lane2 {
+				width: 230%;
+			}
+	
+			.menu_lane3 {
+				width: 230%;
+			}
+	
+			.menu_lane4 {
+				width: 230%;
+			}
+	
+			.menu_lane5 {
+				width: 230%;
+			}
+	
+			.menu_lane6 {
+				width: 230%;
+			}
+	
+			.menu_lane7 {
+				width: 230%;
+			}
+		}
+	}
+
+
+	.boutoncommande{
+
+		button{
+			height: 5rem;
+			margin-left: 13rem;
+			margin-top: 8rem;
+		}
+	}
 }
 
 @media screen and (min-width:1007px){
@@ -5051,6 +5788,61 @@
 	}
 }
 
+@media screen and (min-width:1039px){
+	.containerparent{
+
+		.infotitre{
+			.titrerestaurants1{
+				margin-left: -0.8rem;
+			}
+		}
+.titreentree{
+	margin-left: -13rem;
+}
+		.container {
+			margin-left: 1.5rem;
+	
+			.menu_lane {
+				width: 240%;
+			}
+	
+			.menu_lane2 {
+				width: 240%;
+			}
+	
+			.menu_lane3 {
+				width: 240%;
+			}
+	
+			.menu_lane4 {
+				width: 240%;
+			}
+	
+			.menu_lane5 {
+				width: 240%;
+			}
+	
+			.menu_lane6 {
+				width: 240%;
+			}
+	
+			.menu_lane7 {
+				width: 240%;
+			}
+		}
+	}
+
+
+	.boutoncommande{
+
+		button{
+			height: 4rem;
+			margin-left: 11rem;
+			margin-top: 8rem;
+		}
+	}
+}
+
 @media screen and (min-width: 1045px) {
 	.titreentree {
 		position: relative;
@@ -5098,6 +5890,94 @@
 	}
 }
 
+@media screen and (min-width:1061px){
+	
+		
+	
+	
+	
+	
+	.infotitre {
+		.titrerestaurants1 {
+			font-size: 2.5rem;
+			margin-left: -0.8rem;
+		}
+	}
+
+	.coeur1 {
+		margin-left: 8rem;
+
+		.emptyHeart {
+			font-size: 2.5rem;
+		}
+	}
+
+	.containerparent{
+
+		.infotitre{
+			.titrerestaurants1{
+				margin-left: -0.2rem;
+			}
+		}
+
+		.titreentree {
+			margin-left: -10.5rem;
+		}
+	
+		.titreplat {
+			margin-left: -1.8rem;
+		}
+	
+		.titredesserts {
+			margin-left: -1.8rem;
+		}
+
+
+		.container {
+			margin-left: 2rem;
+	
+			.menu_lane {
+				width: 240%;
+			}
+	
+			.menu_lane2 {
+				width: 240%;
+			}
+	
+			.menu_lane3 {
+				width: 240%;
+			}
+	
+			.menu_lane4 {
+				width: 240%;
+			}
+	
+			.menu_lane5 {
+				width: 240%;
+			}
+	
+			.menu_lane6 {
+				width: 240%;
+			}
+	
+			.menu_lane7 {
+				width: 240%;
+			}
+		}
+	}
+
+.boutoncommande{
+
+	button{
+		height: 4rem;
+		margin-left: 13rem;
+		margin-top: 9rem;
+	}
+}
+
+	
+
+}
 
 
 @media screen and (min-width: 1079px) {
@@ -7410,6 +8290,18 @@
 	}
 }
 
+@media screen and (min-width:1353px){
+	.containerparent{
+
+		.titreentree{
+			margin-left: 11rem;
+		}
+		.titredesserts{
+			margin-left:51.5rem;
+		}
+	}
+}
+
 
 @media screen and (min-width: 1355px){
 
@@ -7421,6 +8313,31 @@
 }
 
 
+}
+
+@media screen and (min-width:1359px){
+	.containerparent{
+
+		.titreentree{
+			margin-left: 11rem;
+		}
+		.titredesserts{
+			margin-left:51.5rem;
+		}
+	}
+}
+
+@media screen and (min-width:1363px){
+	.containerparent{
+
+	.titreentree{
+		margin-left: 10.5rem;
+	}
+
+	.titredesserts{
+		margin-left: 51.5rem;
+	}
+	}
 }
 
 
@@ -7572,8 +8489,7 @@
 
 @media screen and (min-width: 1389px) {
 	.titreentree {
-		position: relative;
-		left: -2rem;
+		margin-left: 11rem;
 	}
 
 	.containerparent {
@@ -7626,12 +8542,26 @@
 	}
 }
 
+@media screen and (min-width:1397px){
+	.containerparent{
+
+		.titreentree{
+			margin-left: 11rem;
+		}
+	
+	}
+}
+
 
 @media screen and (min-width:1399px){
 
 .containerparent{
+
+	.titreentree{
+		margin-left: 11rem;
+	}
 	.titredesserts{
-		margin-left:48rem;
+		margin-left:51.5rem;
 	}
 }
 
@@ -7732,6 +8662,18 @@
 	}
 }
 
+@media screen and (min-width:1443px){
+
+.containerparent{
+	.titreentree{
+		margin-left: 11rem;
+	}
+}
+
+
+
+}
+
 @media screen and (min-width:1468px){
 
 		.containerparent{
@@ -7775,6 +8717,42 @@
 	}
 }
 
+@media screen and (min-width:1517px){
+
+	.containerparent{
+
+		.titreentree{
+			margin-left: 11.5rem;
+		}
+
+		.titreplat{
+			margin-left: 24.5rem;
+		}
+	
+
+		.titredesserts{
+			margin-left: 53.2rem;
+		}
+		}
+
+	}
+
+
+@media screen and (min-width:1531px){
+
+.containerparent{
+
+	.titreplat{
+		margin-left: 24rem;
+	}
+	.titredesserts{
+		margin-left: 53.5rem;
+	}
+}
+
+
+}
+
 @media screen and (min-width: 1600px) {
 	//Logo & Header //
 
@@ -7816,6 +8794,44 @@
 	.backgroundfooter {
 		padding-top: 10px;
 	}
+}
+
+@media screen and (min-width:1603px){
+
+	.containerparent{
+
+		.titreentree{
+			margin-left: 11rem;
+		}
+		.titredesserts{
+			margin-left:51.5rem;
+		}
+	}
+}
+
+@media screen and (min-width:1611px){
+	.containerparent{
+
+		.titreentree{
+			margin-left: 11rem;
+		}
+		.titredesserts{
+			margin-left:51.5rem;
+		}
+	}
+}
+
+@media screen and (min-width:1623px){
+
+
+.containerparent{
+
+	.titreentree{
+		margin-left: 11.2rem;
+	}
+}
+
+
 }
 
 @media screen and (min-width: 1628px) {
@@ -8821,7 +9837,7 @@
 		}
 
 		.titreentree {
-			margin-left: 6.5rem;
+			margin-left: 11.5rem;
 		}
 
 		
@@ -8899,6 +9915,20 @@
 		}
 	
 	}
+}
+
+@media screen and (min-width:1683px){
+
+	.containerparent{
+
+		.titreentree {
+			margin-left: 13.5rem;
+		}
+	}
+
+
+
+
 }
 
 @media screen and (min-width: 1870px) {
@@ -9060,7 +10090,7 @@
 		// Section TItre //
 
 		.titreentree {
-			margin-left: 16rem;
+			margin-left: 21.5rem;
 			margin-bottom: 3.5rem;
 			
 		
