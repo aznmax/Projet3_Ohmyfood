@@ -4537,8 +4537,22 @@ button {
 
 
 .fonctionnement{
-   position: relative;
-   left: 1rem;
+
+    &:nth-child(2){
+        margin-left:6rem;
+    }
+
+    &:nth-child(3){
+        margin-left:29rem;
+    }
+
+    &:nth-child(4){
+        margin-left:51.5rem;
+    }
+
+    .circle{
+        margin-right: 16.7rem;
+    }
 }
 
 // Container BLoc Restaurants 1135px // 
@@ -4564,6 +4578,7 @@ button {
 
 }
 
+
 @media screen and (min-width: 1222px) {
     .backgroundicone {
         .icone1 {
@@ -4587,8 +4602,7 @@ button {
         }
     }
 
-    .grandcontainer {
-    }
+   
 }
 
 @media screen and (min-width: 1127px) {
@@ -4635,6 +4649,31 @@ button {
         }
     }
 }
+
+
+@media screen and (min-width:1143px){
+
+    .fonctionnement{
+
+        &:nth-child(2){
+            margin-left:2rem;
+        }
+    
+        &:nth-child(3){
+            margin-left:25rem;
+        }
+    
+        &:nth-child(4){
+            margin-left:48rem;
+        }
+
+        .circle{
+            margin-right: 16.7rem;
+        }
+    }
+}
+
+
 
 @media screen and (min-width: 1159px) {
     .backgroundicone {
@@ -4808,6 +4847,35 @@ button {
             margin-left: 20rem;
         }
     }
+}
+
+@media screen and (min-width:1187px){
+
+    
+@media screen and (min-width:1187px){
+
+    
+    .fonctionnement{
+
+        &:nth-child(2){
+            margin-left:6rem;
+        }
+    
+        &:nth-child(3){
+            margin-left:29rem;
+        }
+    
+        &:nth-child(4){
+            margin-left:51.5rem;
+        }
+
+        .circle{
+            margin-right: 16.7rem;
+        }
+    }
+
+    
+}
 }
 
 @media screen and (min-width: 1217px) {
@@ -5407,6 +5475,34 @@ button {
 }
 
 
+}
+
+@media screen and (min-width:1329px){
+    
+@media screen and (min-width:1187px){
+
+    
+    .fonctionnement{
+
+        &:nth-child(2){
+            margin-left:8rem;
+        }
+    
+        &:nth-child(3){
+            margin-left:33rem;
+        }
+    
+        &:nth-child(4){
+            margin-left:58rem;
+        }
+
+        .circle{
+            margin-right: 16.7rem;
+        }
+    }
+
+    
+}
 }
 
 @media screen and (min-width: 1331px) {
@@ -7358,12 +7454,17 @@ button {
 
     .fonctionnement {
         &:nth-child(2) {
-            margin-left: -6rem;
+            margin-left: 7rem;
         }
 
         &:nth-child(3) {
-            margin-left: 22rem;
+            margin-left: 36rem;
         }
+
+        &:nth-child(4) {
+            margin-left: 65rem;
+        }
+
     }
 
     .grandcontainer {
