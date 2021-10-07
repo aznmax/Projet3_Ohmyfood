@@ -1961,7 +1961,7 @@ button {
   }
 
   .exploration button {
-    margin-left: 15rem;
+    margin-left: 2rem;
   }
 }
 @media screen and (min-width: 733px) {
@@ -2177,9 +2177,9 @@ body {
     background: #f6f6f6;
   }
   .grandcontainer .titrerestaurant h3 {
+    margin-left: 8rem;
     margin-top: 3rem;
     font-size: 2.5rem;
-    margin-left: 2rem;
   }
   .grandcontainer .bloc1 .page1 {
     text-decoration: none;
