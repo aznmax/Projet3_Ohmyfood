@@ -3662,6 +3662,9 @@ body {
   .grandcontainer .bloc .coeur1 {
     margin-left: 26rem;
   }
+  .grandcontainer .bloc .texteimage1 {
+    margin-left: 9rem;
+  }
   .grandcontainer .bloc2 {
     margin-left: 46rem;
     width: 30rem;
@@ -3669,6 +3672,9 @@ body {
   }
   .grandcontainer .bloc2 .coeur1 {
     margin-left: 26rem;
+  }
+  .grandcontainer .bloc2 .texteimage2 {
+    margin-left: 9rem;
   }
   .grandcontainer .bloc3 {
     margin-left: 5rem;
@@ -4081,8 +4087,14 @@ body {
   .grandcontainer .bloc .parent .texteimage1 {
     margin-left: 27rem;
   }
+  .grandcontainer .bloc .texteimage1 {
+    margin-left: 12rem;
+  }
   .grandcontainer .bloc2 {
     width: 33rem;
+  }
+  .grandcontainer .bloc2 .texteimage2 {
+    margin-left: 12rem;
   }
   .grandcontainer .bloc3 {
     width: 33rem;
@@ -4555,6 +4567,9 @@ body {
     margin-top: 12rem;
     width: 38rem;
     height: 21rem;
+  }
+  .grandcontainer .bloc .texteimage1 {
+    margin-left: 18rem;
   }
   .grandcontainer .bloc .coeur1 {
     margin-top: -4.2rem;
