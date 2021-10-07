@@ -3375,13 +3375,13 @@ body {
   }
 
   .fonctionnement:nth-child(2) {
-    margin-left: 3rem;
+    margin-left: 7rem;
   }
   .fonctionnement:nth-child(3) {
-    margin-left: 26rem;
+    margin-left: 30rem;
   }
   .fonctionnement:nth-child(4) {
-    margin-left: 49rem;
+    margin-left: 53rem;
   }
 
   .grandcontainer .titrerestaurant {
@@ -3635,11 +3635,24 @@ body {
     margin-right: 28rem;
   }
 
+  .fonctionnement:nth-child(2) {
+    margin-left: 8rem;
+  }
+  .fonctionnement:nth-child(3) {
+    margin-left: 33rem;
+  }
+  .fonctionnement:nth-child(4) {
+    margin-left: 57rem;
+  }
+  .fonctionnement .circle {
+    margin-right: 16.5rem;
+  }
+
   .grandcontainer {
     width: 100%;
   }
   .grandcontainer .titrerestaurant {
-    margin-left: 30rem;
+    margin-left: 23rem;
   }
   .grandcontainer .bloc {
     margin-left: 5rem;
@@ -4056,7 +4069,7 @@ body {
   }
 
   .grandcontainer .titrerestaurant {
-    margin-left: 32rem;
+    margin-left: 27rem;
   }
   .grandcontainer .titrerestaurant h3 {
     font-size: 2.5rem;
@@ -4536,7 +4549,7 @@ body {
   }
   .grandcontainer .titrerestaurant {
     font-size: 3rem;
-    margin-left: 32rem;
+    margin-left: 26rem;
   }
   .grandcontainer .bloc {
     margin-top: 12rem;
@@ -5188,16 +5201,19 @@ body {
   }
 
   .fonctionnement:nth-child(2) {
-    margin-left: 6rem;
+    margin-left: 11rem;
   }
   .fonctionnement:nth-child(3) {
-    margin-left: 34rem;
+    margin-left: 38rem;
+    top: 1rem;
   }
   .fonctionnement:nth-child(4) {
-    margin-left: 63rem;
+    position: relative;
+    top: 2rem;
+    margin-left: 65rem;
   }
   .fonctionnement .circle {
-    margin-right: 0rem;
+    margin-right: -3.3rem;
   }
 }
 @media screen and (min-width: 1505px) {
@@ -5613,17 +5629,32 @@ body {
     margin-left: 41rem;
   }
 
+  .exploration button {
+    margin-left: 42rem;
+  }
+
+  .titrefonction {
+    margin-left: 29rem;
+  }
+
   .fonctionnement:nth-child(2) {
-    margin-left: 6rem;
+    margin-left: 16rem;
   }
   .fonctionnement:nth-child(3) {
-    margin-left: 34rem;
+    margin-left: 42rem;
+    top: 1rem;
   }
   .fonctionnement:nth-child(4) {
-    margin-left: 63rem;
+    position: relative;
+    top: 2rem;
+    margin-left: 68rem;
   }
   .fonctionnement .circle {
-    margin-right: 0rem;
+    margin-right: -3.3rem;
+  }
+
+  .grandcontainer .titrerestaurant {
+    margin-left: 31rem;
   }
 }
 @media screen and (min-width: 1563px) {
@@ -5908,7 +5939,7 @@ body {
   }
 
   .grandcontainer .titrerestaurant {
-    margin-left: 40rem;
+    margin-left: 35rem;
   }
   .grandcontainer .bloc {
     margin-top: 12rem;
@@ -6321,7 +6352,7 @@ body {
 
   .grandcontainer .titrerestaurant {
     font-family: Shrikhand;
-    margin-left: 40rem;
+    margin-left: 34rem;
   }
   .grandcontainer .bloc {
     margin-left: 3rem;
@@ -6383,7 +6414,7 @@ body {
   }
   .grandcontainer .titrerestaurant h3 {
     font-size: 4rem;
-    margin-left: 2rem;
+    margin-left: 9rem;
   }
   .grandcontainer .bloc {
     margin-left: 6rem;

@@ -4743,15 +4743,15 @@ button {
 
     .fonctionnement {
         &:nth-child(2) {
-            margin-left: 3rem;
+            margin-left: 7rem;
         }
 
         &:nth-child(3) {
-            margin-left: 26rem;
+            margin-left: 30rem;
         }
 
         &:nth-child(4) {
-            margin-left: 49rem;
+            margin-left: 53rem;
         }
     }
 
@@ -5182,13 +5182,32 @@ button {
         margin-right: 28rem;
     }
 
+    .fonctionnement{
+
+        &:nth-child(2){
+            margin-left:8rem;
+        }
+    
+        &:nth-child(3){
+            margin-left:33rem;
+        }
+    
+        &:nth-child(4){
+            margin-left:57rem;
+        }
+
+        .circle{
+            margin-right: 16.5rem;
+        }
+    }
+
     // Container Restaurant 1280px //
 
     .grandcontainer {
         width: 100%;
 
         .titrerestaurant {
-            margin-left: 30rem;
+            margin-left: 23rem;
         }
 
         .bloc {
@@ -5839,7 +5858,7 @@ button {
 
     .grandcontainer {
         .titrerestaurant {
-            margin-left: 32rem;
+            margin-left: 27rem;
 
             h3 {
                 font-size: 2.5rem;
@@ -6547,7 +6566,7 @@ button {
 
         .titrerestaurant {
             font-size: 3rem;
-            margin-left: 32rem;
+            margin-left: 26rem;
         }
 
         // Restaurant 1 1440PX //
@@ -7524,19 +7543,22 @@ button {
     .fonctionnement{
 
         &:nth-child(2){
-            margin-left:6rem;
+            margin-left:11rem;
         }
-    
+
         &:nth-child(3){
-            margin-left:34rem;
+            margin-left: 38rem;
+            top: 1rem;
+
         }
-    
         &:nth-child(4){
-            margin-left:63rem;
+            position: relative;
+            top: 2rem;
+            margin-left: 65rem;
         }
 
         .circle{
-            margin-right: 0rem;
+            margin-right: -3.3rem;
         }
     }
 
@@ -8161,23 +8183,41 @@ button {
         }
     }
 
+    .exploration{
+        button{
+            margin-left: 42rem;
+        }
+    }
+    
+    .titrefonction{
+        margin-left: 29rem;
+    }
     .fonctionnement{
 
         &:nth-child(2){
-            margin-left:6rem;
+            margin-left:16rem;
         }
-    
+
         &:nth-child(3){
-            margin-left:34rem;
+            margin-left: 42rem;
+            top: 1rem;
+
         }
-    
         &:nth-child(4){
-            margin-left:63rem;
+            position: relative;
+            top: 2rem;
+            margin-left: 68rem;
         }
 
         .circle{
-            margin-right: 0rem;
+            margin-right: -3.3rem;
         }
+    }
+
+    .grandcontainer{
+     .titrerestaurant{
+         margin-left: 31rem;
+     }   
     }
 }
 
@@ -8598,8 +8638,10 @@ button {
     //Bloc Restaurant Desktop 1600px//
 
     .grandcontainer {
+
+        
         .titrerestaurant {
-            margin-left: 40rem;
+            margin-left: 35rem;
         }
 
         .bloc {
@@ -9187,7 +9229,7 @@ button {
     .grandcontainer {
         .titrerestaurant {
             @include titrepolice;
-            margin-left: 40rem;
+            margin-left: 34rem;
         }
 
         .bloc {
@@ -9265,7 +9307,7 @@ button {
         .titrerestaurant {
             h3 {
                 font-size: 4rem;
-                margin-left: 2rem;
+                margin-left: 9rem;
             }
         }
 
