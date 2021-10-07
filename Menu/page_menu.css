@@ -4062,11 +4062,11 @@ button:hover {
             animation-fill-mode: forwards;
   }
   .containerparent .titreentree {
-    margin-left: -8.9rem;
+    margin-left: -12rem;
   }
   .containerparent .titreplat p {
     font-size: 2rem;
-    margin-left: 2.5rem;
+    margin-left: 1rem;
     margin-top: 5rem;
     font-family: "Roboto";
   }
@@ -4079,7 +4079,7 @@ button:hover {
   }
   .containerparent .titredesserts p {
     font-size: 2rem;
-    margin-left: 2rem;
+    margin-left: 1rem;
     margin-top: 14rem;
     font-family: "Roboto";
   }
@@ -4242,7 +4242,7 @@ button:hover {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-left: 5rem;
+    margin-left: -3rem;
     margin-top: 8rem;
     -webkit-box-pack: center;
         -ms-flex-pack: center;

@@ -4485,6 +4485,12 @@ button {
     }
 }
 
+
+
+
+
+
+
 @media screen and (min-width: 1121px) {
     .backgroundicone {
         .icone1 {
@@ -4530,80 +4536,6 @@ button {
     }
 }
 
-@media screen and (min-width:1135px){
-
-
-//Fonctionnement 1135px //
-
-
-.fonctionnement{
-
-    &:nth-child(2){
-        margin-left:6rem;
-    }
-
-    &:nth-child(3){
-        margin-left:29rem;
-    }
-
-    &:nth-child(4){
-        margin-left:51.5rem;
-    }
-
-    .circle{
-        margin-right: 16.7rem;
-    }
-}
-
-// Container BLoc Restaurants 1135px // 
-
-.grandcontainer{
-
-    .titrerestaurant{
-        margin-left: 26rem;
-    }
-    .bloc{
-        .texteimage1{
-            margin-left: 1.5rem;
-        }
-    }
-
-    .bloc2{
-        .texteimage2{
-            margin-left: 0.5rem;
-        }
-    }
-}
-
-
-}
-
-
-@media screen and (min-width: 1222px) {
-    .backgroundicone {
-        .icone1 {
-            margin-left: 37.5rem;
-        }
-    }
-
-    .exploration {
-        button {
-            margin-left: 35rem;
-        }
-    }
-}
-
-@media screen and (min-width: 1224px) {
-    // Exploration 1248px //
-
-    .exploration {
-        button {
-            margin-left: 29rem;
-        }
-    }
-
-   
-}
 
 @media screen and (min-width: 1127px) {
     .backgroundicone {
@@ -4647,6 +4579,32 @@ button {
         .circle{
             margin-right: 16.7rem;
         }
+    }
+}
+
+
+@media screen and (min-width:1135px){
+
+
+//Fonctionnement 1135px //
+
+
+.fonctionnement{
+
+    &:nth-child(2){
+        margin-left:6rem;
+    }
+
+    &:nth-child(3){
+        margin-left:29rem;
+    }
+
+    &:nth-child(4){
+        margin-left:51.5rem;
+    }
+
+    .circle{
+        margin-right: 16.7rem;
     }
 }
 
@@ -4886,6 +4844,7 @@ button {
     }
 }
 
+
 @media screen and (min-width: 1173px) {
     // background & icone 1173px//
 
@@ -4940,7 +4899,7 @@ button {
     }
 }
 
-@media screen and (min-width:1187px){
+
 
     
 @media screen and (min-width:1187px){
@@ -4968,6 +4927,8 @@ button {
     
 }
 }
+
+
 
 @media screen and (min-width: 1217px) {
     // Background & Icone 1217px //
@@ -5010,6 +4971,38 @@ button {
         }
     }
 }
+
+
+
+
+@media screen and (min-width: 1222px) {
+    .backgroundicone {
+        .icone1 {
+            margin-left: 37.5rem;
+        }
+    }
+
+    .exploration {
+        button {
+            margin-left: 35rem;
+        }
+    }
+}
+
+@media screen and (min-width: 1224px) {
+    // Exploration 1248px //
+
+    .exploration {
+        button {
+            margin-left: 29rem;
+        }
+    }
+
+   
+}
+
+
+
 
 @media screen and (min-width: 1230px) {
     // Exploration 1248px //
@@ -5568,9 +5561,34 @@ button {
 
 }
 
+@media screen and (min-width:1325px){
+
+
+    .fonctionnement{
+
+        &:nth-child(2){
+            margin-left:8rem;
+        }
+    
+        &:nth-child(3){
+            margin-left:33rem;
+        }
+    
+        &:nth-child(4){
+            margin-left:58rem;
+        }
+
+        .circle{
+            margin-right: 16.7rem;
+        }
+    }
+
+    
+}
+
 @media screen and (min-width:1329px){
     
-@media screen and (min-width:1187px){
+
 
     
     .fonctionnement{
@@ -5593,7 +5611,7 @@ button {
     }
 
     
-}
+
 }
 
 @media screen and (min-width: 1331px) {
@@ -6498,23 +6516,22 @@ button {
         margin-left: 29rem;
     }
 
-    .fonctionnement {
-        padding: 1.5rem;
+    .fonctionnement{
 
-        &:nth-child(2) {
-            margin-left: -6rem;
+        &:nth-child(2){
+            margin-left:12rem;
         }
 
-        &:nth-child(3) {
-            margin-left: 22rem;
-            margin-top: -6rem;
+        &:nth-child(3){
+            margin-left: 39rem;
         }
-
-        &:nth-child(4) {
-            margin-left: 50rem;
-            margin-top: -6rem;
+        &:nth-child(4){
+            margin-left: 65rem;
         }
     }
+
+  
+
 
     // Partie Restaurant Desktop//
 
@@ -6858,25 +6875,28 @@ button {
         }
     }
 
-    .fonctionnement:nth-child(2) {
-        margin-left: 6rem;
-    }
-
-    .fonctionnement:nth-child(3) {
-        margin-left: 33rem;
-    }
-    .fonctionnement:nth-child(4) {
-        margin-left: 60rem;
-    }
-
     .fonctionnement{
 
+        &:nth-child(2){
+            margin-left:6rem;
+        }
+    
+        &:nth-child(3){
+            margin-left:35rem;
+        }
+    
+        &:nth-child(4){
+            margin-left:64rem;
+        }
+
         .circle{
-            margin-right: 19.5rem;
+            margin-right: 16.5rem;
         }
     }
 
-}
+    }
+
+
 
 @media screen and (min-width: 1451px) {
     .backgroundicone {
@@ -6954,19 +6974,22 @@ button {
     .fonctionnement{
 
         &:nth-child(2){
-            margin-left:6rem;
+            margin-left:14rem;
         }
-    
+
         &:nth-child(3){
-            margin-left:34rem;
+            margin-left: 40rem;
+            top: 1rem;
+
         }
-    
         &:nth-child(4){
-            margin-left:63rem;
+            position: relative;
+            top: 2rem;
+            margin-left: 66rem;
         }
 
         .circle{
-            margin-right: 19.5rem;
+            margin-right: 17rem;
         }
     }
 }
@@ -6995,19 +7018,22 @@ button {
     .fonctionnement{
 
         &:nth-child(2){
-            margin-left:6rem;
+            margin-left:11rem;
         }
-    
+
         &:nth-child(3){
-            margin-left:34rem;
+            margin-left: 38rem;
+            top: 1rem;
+
         }
-    
         &:nth-child(4){
-            margin-left:63rem;
+            position: relative;
+            top: 2rem;
+            margin-left: 65rem;
         }
 
         .circle{
-            margin-right: 0rem;
+            margin-right: -3.3rem;
         }
     }
 }
@@ -7055,6 +7081,31 @@ button {
     }
 }
 
+@media screen and (min-width:1459px){
+
+    .fonctionnement{
+
+        &:nth-child(2){
+            margin-left:16rem;
+        }
+
+        &:nth-child(3){
+            margin-left: 42rem;
+            top: 1rem;
+
+        }
+        &:nth-child(4){
+            position: relative;
+            top: 2rem;
+            margin-left: 68rem;
+        }
+
+        .circle{
+            margin-right: -3.3rem;
+        }
+    }
+}
+
 @media screen and (min-width: 1461px) {
     //Background & Icone 1465 px //
 
@@ -7088,19 +7139,22 @@ button {
     .fonctionnement{
 
         &:nth-child(2){
-            margin-left:6rem;
+            margin-left:12rem;
         }
-    
+
         &:nth-child(3){
-            margin-left:34rem;
+            margin-left: 39rem;
+            top: 1rem;
+
         }
-    
         &:nth-child(4){
-            margin-left:63rem;
+            position: relative;
+            top: 2rem;
+            margin-left: 64rem;
         }
 
         .circle{
-            margin-right: 0rem;
+            margin-right: -3.3rem;
         }
     }
 
@@ -7155,6 +7209,31 @@ button {
     }
 }
 
+
+@media screen and (min-width:1473px){
+
+    .fonctionnement{
+
+        &:nth-child(2){
+            margin-left:14rem;
+        }
+
+        &:nth-child(3){
+            margin-left: 40rem;
+            top: 1rem;
+
+        }
+        &:nth-child(4){
+            position: relative;
+            top: 2rem;
+            margin-left: 66rem;
+        }
+
+        .circle{
+            margin-right: -3.3rem;
+        }
+    }
+}
 @media screen and (min-width: 1479px) {
     //Background & Icone 1491 px //
 
@@ -7232,6 +7311,31 @@ button {
 
 }
 
+@media screen and (min-width:1489px){
+
+    .fonctionnement{
+
+        &:nth-child(2){
+            margin-left:11rem;
+        }
+
+        &:nth-child(3){
+            margin-left: 38rem;
+            top: 1rem;
+
+        }
+        &:nth-child(4){
+            position: relative;
+            top: 2rem;
+            margin-left: 65rem;
+        }
+
+        .circle{
+            margin-right: -3.3rem;
+        }
+    }
+}
+
 @media screen and (min-width: 1491px) {
     //Background & Icone 1491 px //
 
@@ -7258,19 +7362,22 @@ button {
     .fonctionnement{
 
         &:nth-child(2){
-            margin-left:6rem;
+            margin-left:16rem;
         }
-    
+
         &:nth-child(3){
-            margin-left:34rem;
+            margin-left: 42rem;
+            top: 1rem;
+
         }
-    
         &:nth-child(4){
-            margin-left:63rem;
+            position: relative;
+            top: 2rem;
+            margin-left: 68rem;
         }
 
         .circle{
-            margin-right: 0rem;
+            margin-right: -3.3rem;
         }
     }
 
@@ -7281,19 +7388,22 @@ button {
     .fonctionnement{
 
         &:nth-child(2){
-            margin-left:-8rem;
+            margin-left:16rem;
         }
-    
+
         &:nth-child(3){
-            margin-left:20rem;
+            margin-left: 42rem;
+            top: 1rem;
+
         }
-    
         &:nth-child(4){
-            margin-left:48.5rem;
+            position: relative;
+            top: 2rem;
+            margin-left: 68rem;
         }
 
         .circle{
-            margin-right: 16.5rem;
+            margin-right: -3.3rem;
         }
     }
 
@@ -7324,19 +7434,74 @@ button {
     .fonctionnement{
 
         &:nth-child(2){
-            margin-left:6rem;
+            margin-left:10rem;
         }
-    
+
         &:nth-child(3){
-            margin-left:34rem;
+            margin-left: 38rem;
+            top: 1rem;
+
         }
-    
         &:nth-child(4){
-            margin-left:63rem;
+            position: relative;
+            top: 2rem;
+            margin-left: 65rem;
         }
 
         .circle{
-            margin-right: 0rem;
+            margin-right: -3.3rem;
+        }
+    }
+}
+
+@media screen and (min-width:1497px){
+
+
+    .fonctionnement{
+
+        &:nth-child(2){
+            margin-left:16rem;
+        }
+
+        &:nth-child(3){
+            margin-left: 42rem;
+            top: 1rem;
+
+        }
+        &:nth-child(4){
+            position: relative;
+            top: 2rem;
+            margin-left: 68rem;
+        }
+
+        .circle{
+            margin-right: -3.3rem;
+        }
+    }
+
+
+}
+
+@media screen and (min-width:1501px){
+    .fonctionnement{
+
+        &:nth-child(2){
+            margin-left:14rem;
+        }
+
+        &:nth-child(3){
+            margin-left: 40rem;
+            top: 1rem;
+
+        }
+        &:nth-child(4){
+            position: relative;
+            top: 2rem;
+            margin-left: 66rem;
+        }
+
+        .circle{
+            margin-right: -3.3rem;
         }
     }
 }
@@ -7375,19 +7540,22 @@ button {
     .fonctionnement{
 
         &:nth-child(2){
-            margin-left:6rem;
+            margin-left:11rem;
         }
-    
+
         &:nth-child(3){
-            margin-left:34rem;
+            margin-left: 38rem;
+            top: 1rem;
+
         }
-    
         &:nth-child(4){
-            margin-left:63rem;
+            position: relative;
+            top: 2rem;
+            margin-left: 65rem;
         }
 
         .circle{
-            margin-right: 0rem;
+            margin-right: -3.3rem;
         }
     }
 }
@@ -7408,6 +7576,28 @@ button {
     .exploration {
         button {
             margin-left: 36rem;
+        }
+    }
+
+    .fonctionnement{
+
+        &:nth-child(2){
+            margin-left:14rem;
+        }
+
+        &:nth-child(3){
+            margin-left: 41rem;
+            top: 1rem;
+
+        }
+        &:nth-child(4){
+            position: relative;
+            top: 2rem;
+            margin-left: 70rem;
+        }
+
+        .circle{
+            margin-right: -3.3rem;
         }
     }
 }
@@ -7461,17 +7651,25 @@ button {
         margin-left: 30rem;
     }
 
-    .fonctionnement {
-        &:nth-child(2) {
-            margin-left: -4rem;
+    .fonctionnement{
+
+        &:nth-child(2){
+            margin-left:14rem;
         }
 
-        &:nth-child(3) {
-            margin-left: 24rem;
+        &:nth-child(3){
+            margin-left: 41rem;
+            top: 1rem;
+
+        }
+        &:nth-child(4){
+            position: relative;
+            top: 2rem;
+            margin-left: 70rem;
         }
 
-        &:nth-child(4) {
-            margin-left: 52rem;
+        .circle{
+            margin-right: -3.3rem;
         }
     }
 }
@@ -7485,19 +7683,22 @@ button {
     .fonctionnement{
 
         &:nth-child(2){
-            margin-left:6rem;
+            margin-left:16rem;
         }
-    
+
         &:nth-child(3){
-            margin-left:34rem;
+            margin-left: 42rem;
+            top: 1rem;
+
         }
-    
         &:nth-child(4){
-            margin-left:63rem;
+            position: relative;
+            top: 2rem;
+            margin-left: 68rem;
         }
 
         .circle{
-            margin-right: 0rem;
+            margin-right: -3.3rem;
         }
     }
 
@@ -7526,19 +7727,22 @@ button {
     .fonctionnement{
 
         &:nth-child(2){
-            margin-left:6rem;
+            margin-left:14rem;
         }
-    
+
         &:nth-child(3){
-            margin-left:34rem;
+            margin-left: 41rem;
+            top: 1rem;
+
         }
-    
         &:nth-child(4){
-            margin-left:63rem;
+            position: relative;
+            top: 2rem;
+            margin-left: 68rem;
         }
 
         .circle{
-            margin-right: 0rem;
+            margin-right: -3.3rem;
         }
     }
 
@@ -7613,19 +7817,22 @@ button {
     .fonctionnement{
 
         &:nth-child(2){
-            margin-left:6rem;
+            margin-left:16rem;
         }
-    
+
         &:nth-child(3){
-            margin-left:34rem;
+            margin-left: 42rem;
+            top: 1rem;
+
         }
-    
         &:nth-child(4){
-            margin-left:63rem;
+            position: relative;
+            top: 2rem;
+            margin-left: 68rem;
         }
 
         .circle{
-            margin-right: 0rem;
+            margin-right: -3.3rem;
         }
     }
 }
@@ -7660,19 +7867,22 @@ button {
     .fonctionnement{
 
         &:nth-child(2){
-            margin-left:6rem;
+            margin-left:14rem;
         }
-    
+
         &:nth-child(3){
-            margin-left:34rem;
+            margin-left: 40rem;
+            top: 1rem;
+
         }
-    
         &:nth-child(4){
-            margin-left:63rem;
+            position: relative;
+            top: 2rem;
+            margin-left: 66rem;
         }
 
         .circle{
-            margin-right: 0rem;
+            margin-right: -3.3rem;
         }
     }
 }
@@ -7692,24 +7902,55 @@ button {
 }
 
 @media screen and (min-width:1539px){
-     .fonctionnement{
+    .fonctionnement{
 
         &:nth-child(2){
-            margin-left:6rem;
+            margin-left:11rem;
         }
-    
+
         &:nth-child(3){
-            margin-left:34rem;
+            margin-left: 38rem;
+            top: 1rem;
+
         }
-    
         &:nth-child(4){
-            margin-left:63rem;
+            position: relative;
+            top: 2rem;
+            margin-left: 65rem;
         }
 
         .circle{
-            margin-right: 0rem;
+            margin-right: -3.3rem;
         }
     }
+}
+
+@media screen and (min-width:1543px){
+
+
+    .fonctionnement{
+
+        &:nth-child(2){
+            margin-left:16rem;
+        }
+
+        &:nth-child(3){
+            margin-left: 42rem;
+            top: 1rem;
+
+        }
+        &:nth-child(4){
+            position: relative;
+            top: 2rem;
+            margin-left: 68rem;
+        }
+
+        .circle{
+            margin-right: -3.3rem;
+        }
+    }
+
+
 }
 
 @media screen and (min-width: 1550px) {
@@ -7740,6 +7981,28 @@ button {
     .exploration {
         button {
             margin-left: 38rem;
+        }
+    }
+
+    .fonctionnement{
+
+        &:nth-child(2){
+            margin-left:16rem;
+        }
+
+        &:nth-child(3){
+            margin-left: 42rem;
+            top: 1rem;
+
+        }
+        &:nth-child(4){
+            position: relative;
+            top: 2rem;
+            margin-left: 68rem;
+        }
+
+        .circle{
+            margin-right: -3.3rem;
         }
     }
 }
@@ -7793,19 +8056,22 @@ button {
     .fonctionnement{
 
         &:nth-child(2){
-            margin-left:6rem;
+            margin-left:12rem;
         }
-    
+
         &:nth-child(3){
-            margin-left:34rem;
+            margin-left: 39rem;
+            top: 1rem;
+
         }
-    
         &:nth-child(4){
-            margin-left:63rem;
+            position: relative;
+            top: 2rem;
+            margin-left: 65rem;
         }
 
         .circle{
-            margin-right: 0rem;
+            margin-right: -3.3rem;
         }
     }
 
@@ -7856,6 +8122,28 @@ button {
             margin-left: 38rem;
         }
     }
+
+    .fonctionnement{
+
+        &:nth-child(2){
+            margin-left:14rem;
+        }
+
+        &:nth-child(3){
+            margin-left: 41rem;
+            top: 1rem;
+
+        }
+        &:nth-child(4){
+            position: relative;
+            top: 2rem;
+            margin-left: 70rem;
+        }
+
+        .circle{
+            margin-right: -3.3rem;
+        }
+    }
 }
 
 @media screen and (min-width: 1561px) {
@@ -7887,6 +8175,55 @@ button {
     }
 }
 
+@media screen and (min-width:1563px){
+
+    .fonctionnement{
+
+        &:nth-child(2){
+            margin-left:16rem;
+        }
+
+        &:nth-child(3){
+            margin-left: 42rem;
+            top: 1rem;
+
+        }
+        &:nth-child(4){
+            position: relative;
+            top: 2rem;
+            margin-left: 68rem;
+        }
+
+        .circle{
+            margin-right: -3.3rem;
+        }
+    }
+}
+
+@media screen and (min-width:1569px){
+    .fonctionnement{
+
+        &:nth-child(2){
+            margin-left:16rem;
+        }
+
+        &:nth-child(3){
+            margin-left: 42rem;
+            top: 1rem;
+
+        }
+        &:nth-child(4){
+            position: relative;
+            top: 2rem;
+            margin-left: 68rem;
+        }
+
+        .circle{
+            margin-right: -3.3rem;
+        }
+    }
+}
+
 @media screen and (min-width: 1570px) {
     // Exploration 1248px //
 
@@ -7911,23 +8248,52 @@ button {
     }
 }
 
+@media screen and (min-width:1573px){
+
+    .fonctionnement{
+
+        &:nth-child(2){
+            margin-left:16rem;
+        }
+
+        &:nth-child(3){
+            margin-left: 42rem;
+            top: 1rem;
+
+        }
+        &:nth-child(4){
+            position: relative;
+            top: 2rem;
+            margin-left: 68rem;
+        }
+
+        .circle{
+            margin-right: -3.3rem;
+        }
+    }
+
+}
+
 @media screen and (min-width:1581px){
     .fonctionnement{
 
         &:nth-child(2){
-            margin-left:6rem;
+            margin-left:16rem;
         }
-    
+
         &:nth-child(3){
-            margin-left:34rem;
+            margin-left: 42rem;
+            top: 1rem;
+
         }
-    
         &:nth-child(4){
-            margin-left:63rem;
+            position: relative;
+            top: 2rem;
+            margin-left: 68rem;
         }
 
         .circle{
-            margin-right: 0rem;
+            margin-right: -3.3rem;
         }
     }
 }
@@ -7970,19 +8336,22 @@ button {
     .fonctionnement{
 
         &:nth-child(2){
-            margin-left:6rem;
+            margin-left:16rem;
         }
-    
+
         &:nth-child(3){
-            margin-left:34rem;
+            margin-left: 42rem;
+            top: 1rem;
+
         }
-    
         &:nth-child(4){
-            margin-left:63rem;
+            position: relative;
+            top: 2rem;
+            margin-left: 68rem;
         }
 
         .circle{
-            margin-right: 0rem;
+            margin-right: -3.3rem;
         }
     }
 
@@ -7997,6 +8366,34 @@ button {
             margin-left: 40rem;
         }
     }
+}
+
+@media screen and (min-width:1593px){
+
+
+    .fonctionnement{
+
+        &:nth-child(2){
+            margin-left:16rem;
+        }
+
+        &:nth-child(3){
+            margin-left: 42rem;
+            top: 1rem;
+
+        }
+        &:nth-child(4){
+            position: relative;
+            top: 2rem;
+            margin-left: 68rem;
+        }
+
+        .circle{
+            margin-right: -3.3rem;
+        }
+    }
+
+
 }
 
 @media screen and (min-width: 1595px) {
@@ -8036,19 +8433,22 @@ button {
     .fonctionnement{
 
         &:nth-child(2){
-            margin-left:6rem;
+            margin-left:14rem;
         }
-    
+
         &:nth-child(3){
-            margin-left:34rem;
+            margin-left: 41rem;
+            top: 1rem;
+
         }
-    
         &:nth-child(4){
-            margin-left:63rem;
+            position: relative;
+            top: 2rem;
+            margin-left: 69rem;
         }
 
         .circle{
-            margin-right: 0rem;
+            margin-right: -3.3rem;
         }
     }
 
@@ -8088,19 +8488,22 @@ button {
     .fonctionnement{
 
         &:nth-child(2){
-            margin-left:6rem;
+            margin-left:16rem;
         }
-    
+
         &:nth-child(3){
-            margin-left:34rem;
+            margin-left: 42rem;
+            top: 1rem;
+
         }
-    
         &:nth-child(4){
-            margin-left:63rem;
+            position: relative;
+            top: 2rem;
+            margin-left: 68rem;
         }
 
         .circle{
-            margin-right: 0rem;
+            margin-right: -3.3rem;
         }
     }
 
@@ -8120,19 +8523,22 @@ button {
     .fonctionnement{
 
         &:nth-child(2){
-            margin-left:6rem;
+            margin-left:14rem;
         }
-    
+
         &:nth-child(3){
-            margin-left:34rem;
+            margin-left: 40rem;
+            top: 1rem;
+
         }
-    
         &:nth-child(4){
-            margin-left:63rem;
+            position: relative;
+            top: 2rem;
+            margin-left: 66rem;
         }
 
         .circle{
-            margin-right: 0rem;
+            margin-right: -3.3rem;
         }
     }
 }
@@ -8161,9 +8567,26 @@ button {
         margin-left: 36rem;
     }
 
-    .fonctionnement {
-        position: relative;
-        left: 19rem;
+    .fonctionnement{
+
+        &:nth-child(2){
+            margin-left:21rem;
+        }
+
+        &:nth-child(3){
+            margin-left: 47rem;
+            top: 1rem;
+
+        }
+        &:nth-child(4){
+            position: relative;
+            top: 2rem;
+            margin-left: 73rem;
+        }
+
+        .circle{
+            margin-right: -3.3rem;
+        }
     }
 
     //Bloc Restaurant Desktop 1600px//
@@ -8318,17 +8741,25 @@ button {
         margin-left: 34rem;
     }
 
-    .fonctionnement {
-        &:nth-child(2) {
-            margin-left: -6rem;
+    .fonctionnement{
+
+        &:nth-child(2){
+            margin-left:19rem;
         }
 
-        &:nth-child(3) {
-            margin-left: 22rem;
+        &:nth-child(3){
+            margin-left: 46rem;
+            top: 1rem;
+
+        }
+        &:nth-child(4){
+            position: relative;
+            top: 2rem;
+            margin-left: 73rem;
         }
 
-        &:nth-child(4) {
-            margin-left: 50rem;
+        .circle{
+            margin-right: -3.3rem;
         }
     }
 
@@ -8377,6 +8808,30 @@ button {
     }
 }
 
+@media screen and (min-width:1607px){
+    .fonctionnement{
+
+        &:nth-child(2){
+            margin-left:21rem;
+        }
+
+        &:nth-child(3){
+            margin-left: 47rem;
+            top: 1rem;
+
+        }
+        &:nth-child(4){
+            position: relative;
+            top: 2rem;
+            margin-left: 74rem;
+        }
+
+        .circle{
+            margin-right: -3.3rem;
+        }
+    }
+}
+
 @media screen and (min-width: 1609px) {
     .backgroundicone {
         .icone1 {
@@ -8391,19 +8846,22 @@ button {
     .fonctionnement{
 
         &:nth-child(2){
-            margin-left:-7rem;
+            margin-left:16rem;
         }
-    
+
         &:nth-child(3){
-            margin-left:22rem;
+            margin-left: 46rem;
+            top: 1rem;
+
         }
-    
         &:nth-child(4){
-            margin-left:51rem;
+            position: relative;
+            top: 2rem;
+            margin-left: 74rem;
         }
 
         .circle{
-            margin-right: 0rem;
+            margin-right: -3.3rem;
         }
     }
     .exploration {
@@ -8459,28 +8917,55 @@ button {
     }
 }
 
+@media screen and (min-width:1613px){
+
+    .fonctionnement{
+
+        &:nth-child(2){
+            margin-left:21rem;
+        }
+
+        &:nth-child(3){
+            margin-left: 47rem;
+            top: 1rem;
+
+        }
+        &:nth-child(4){
+            position: relative;
+            top: 2rem;
+            margin-left: 74rem;
+        }
+
+        .circle{
+            margin-right: -3.3rem;
+        }
+    }
+
+    
+}
+
 @media screen and (min-width:1619px){
 
     .fonctionnement{
 
-     
-
         &:nth-child(2){
-            margin-left:-5rem;
+            margin-left:21rem;
         }
-    
+
         &:nth-child(3){
-            margin-left:23rem;
+            margin-left: 47rem;
+            top: 1rem;
+
         }
-    
         &:nth-child(4){
-            margin-left:53rem;
+            position: relative;
+            top: 2rem;
+            margin-left: 74rem;
         }
-        
+
         .circle{
-            margin-right:0rem;
+            margin-right: -3.3rem;
         }
-      
     }
 }
 
@@ -8495,6 +8980,28 @@ button {
         margin-left: 32rem;
     }
 
+    .fonctionnement{
+
+        &:nth-child(2){
+            margin-left:21rem;
+        }
+
+        &:nth-child(3){
+            margin-left: 47rem;
+            top: 1rem;
+
+        }
+        &:nth-child(4){
+            position: relative;
+            top: 2rem;
+            margin-left: 74rem;
+        }
+
+        .circle{
+            margin-right: -3.3rem;
+        }
+    }
+
     .exploration {
         button {
             margin-left: 45rem;
@@ -8542,6 +9049,31 @@ button {
             .coeur1 {
                 margin-left: 30rem;
             }
+        }
+    }
+}
+
+@media screen and (min-width:1625px){
+
+    .fonctionnement{
+
+        &:nth-child(2){
+            margin-left:20rem;
+        }
+
+        &:nth-child(3){
+            margin-left: 47rem;
+            top: 1rem;
+
+        }
+        &:nth-child(4){
+            position: relative;
+            top: 2rem;
+            margin-left: 73rem;
+        }
+
+        .circle{
+            margin-right: -3.3rem;
         }
     }
 }
@@ -8605,19 +9137,22 @@ button {
     .fonctionnement{
 
         &:nth-child(2){
-            margin-left:-7rem;
+            margin-left:20rem;
         }
-    
+
         &:nth-child(3){
-            margin-left:23rem;
+            margin-left: 47rem;
+            top: 1rem;
+
         }
-    
         &:nth-child(4){
-            margin-left:53rem;
+            position: relative;
+            top: 2rem;
+            margin-left: 73rem;
         }
 
         .circle{
-            margin-right: 0rem;
+            margin-right: -3.3rem;
         }
     }
 
@@ -8691,11 +9226,27 @@ button {
         margin-left: 35rem;
     }
 
-    .fonctionnement {
-        position: relative;
-        left: 21rem;
-    }
+    .fonctionnement{
 
+        &:nth-child(2){
+            margin-left:22rem;
+        }
+
+        &:nth-child(3){
+            margin-left: 49rem;
+            top: 1rem;
+
+        }
+        &:nth-child(4){
+            position: relative;
+            top: 2rem;
+            margin-left: 76rem;
+        }
+
+        .circle{
+            margin-right: -3.3rem;
+        }
+    }
     .exploration {
         button {
             margin-left: 47rem;
@@ -9075,17 +9626,25 @@ button {
         margin-left: 29rem;
     }
 
-    .fonctionnement {
-        &:nth-child(2) {
-            margin-left: 0rem;
+    .fonctionnement{
+
+        &:nth-child(2){
+            margin-left:24rem;
         }
 
-        &:nth-child(3) {
-            margin-left: 27rem;
+        &:nth-child(3){
+            margin-left: 52rem;
+            top: 1rem;
+
+        }
+        &:nth-child(4){
+            position: relative;
+            top: 2rem;
+            margin-left: 80rem;
         }
 
-        .circle {
-            margin-right: 0rem;
+        .circle{
+            margin-right: -3.3rem;
         }
     }
 
