@@ -7699,7 +7699,7 @@ button:hover {
     margin-left: 15rem;
   }
   .containerparent .titreentree {
-    margin-left: 6rem;
+    margin-left: 10rem;
   }
   .containerparent .titreentree::after {
     content: "";
@@ -7790,7 +7790,7 @@ button:hover {
     margin-left: 17rem;
   }
   .containerparent .titreentree {
-    margin-left: 6.5rem;
+    margin-left: 10rem;
   }
   .containerparent .titreplat {
     margin-left: 24rem;
@@ -8894,7 +8894,7 @@ button:hover {
     margin-top: -15rem;
   }
   .containerparent .titreentree {
-    margin-left: 8rem;
+    margin-left: 12rem;
   }
   .containerparent .titreplat {
     margin-left: 27rem;
