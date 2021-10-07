@@ -2080,6 +2080,11 @@ body {
     font-size: 1.1rem;
     margin-left: 6rem;
   }
+  .grandcontainer .bloc .texteimage1 {
+    margin-left: 1rem;
+    width: 4rem;
+    height: 1.8rem;
+  }
   .grandcontainer .bloc .coeur1 {
     margin-top: -3.3rem;
     margin-left: 17rem;
@@ -2125,6 +2130,11 @@ body {
   }
   .grandcontainer .bloc2 .parent img {
     width: 100%;
+  }
+  .grandcontainer .bloc2 .texteimage2 {
+    margin-left: 0rem;
+    width: 4rem;
+    height: 1.8rem;
   }
   .grandcontainer .bloc2 .coeur1 {
     margin-top: -3.3rem;
@@ -2216,7 +2226,7 @@ body {
     box-shadow: 0px 7px 15px 3px #7a7a7a;
   }
   .grandcontainer .bloc3 .coeur1 {
-    margin-top: -3.4rem;
+    margin-left: 17rem;
   }
   .grandcontainer .bloc3 .coeur1 .emptyHeart {
     font-size: 1.6rem;

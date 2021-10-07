@@ -2952,6 +2952,12 @@ button {
                 }
             }
 
+            .texteimage1{
+                margin-left: 1rem;
+                width: 4rem;
+                height: 1.8rem;
+            }
+
             .coeur1 {
                 margin-top: -3.3rem;
                 margin-left: 17rem;
@@ -3010,6 +3016,12 @@ button {
                 img {
                     width: 100%;
                 }
+            }
+
+            .texteimage2{
+                margin-left: 0rem;
+                width: 4rem;
+                height: 1.8rem;
             }
 
             .coeur1 {
@@ -3119,7 +3131,7 @@ button {
             box-shadow: 0px 7px 15px 3px #7a7a7a;
 
             .coeur1 {
-                margin-top: -3.4rem;
+               margin-left: 17rem;
 
                 .emptyHeart {
                     font-size: 1.6rem;
