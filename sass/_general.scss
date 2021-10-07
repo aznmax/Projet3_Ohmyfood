@@ -305,23 +305,21 @@ body {
         -webkit-box-shadow: 0px 7px 15px 3px #7a7a7a;
         box-shadow: 0px 7px 15px 3px #7a7a7a;
 
-  
-            .texteimage1 {
-                display: inline-flex;
-                padding: 1rem 1rem;
-                background: #99e2d0;
-                color: #a1e7d6;
-                align-items: center;
-                justify-content: center;
-                position: absolute;
-                width: 4rem;
-                height: 0.2rem;
-                left: 12.8rem;
-                top: 1rem;
-                color: #109071;
-                font-size: 1.2rem;
-            }
-        
+        .texteimage1 {
+            display: inline-flex;
+            padding: 1rem 1rem;
+            background: #99e2d0;
+            color: #a1e7d6;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            width: 4rem;
+            height: 0.2rem;
+            left: 12.8rem;
+            top: 1rem;
+            color: #109071;
+            font-size: 1.2rem;
+        }
 
         img {
             position: relative;
@@ -410,23 +408,21 @@ body {
             color: black;
         }
 
-       
-            .texteimage2 {
-                display: inline-flex;
-                padding: 1rem 1rem;
-                background: #99e2d0;
-                color: #a1e7d6;
-                align-items: center;
-                justify-content: center;
-                position: absolute;
-                width: 4rem;
-                height: 0.2rem;
-                left: 12.8rem;
-                top: 1rem;
-                color: #109071;
-                font-size: 1.3rem;
-            }
-        
+        .texteimage2 {
+            display: inline-flex;
+            padding: 1rem 1rem;
+            background: #99e2d0;
+            color: #a1e7d6;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            width: 4rem;
+            height: 0.2rem;
+            left: 12.8rem;
+            top: 1rem;
+            color: #109071;
+            font-size: 1.3rem;
+        }
 
         img {
             position: relative;
@@ -697,94 +693,71 @@ button {
     width: 100%;
     color: #f1f1f1;
     margin-bottom: 0rem;
-    margin-top: 2rem;
-    position: relative;
-    
-    
+    display: flex;
+    align-items: center;
+    padding: 0 2rem;
+
     .titrefooter {
         font-size: 1.5rem;
         font-family: Shrikhand;
-        position: absolute;
-       top: 2.5rem;
-       left: 2rem;
+        margin-top: -9rem;
     }
-    
+
     .infofooter {
-        display: flex;
-        align-items: center;
-        padding: 0 2rem;
-        margin-top: -3.5rem;
+        margin-left: -8rem;
+        margin-top: 3rem;
 
-
-    .iconefooter{
-        margin-top: 0rem;
-        font-size: 1rem;
-    }
-
-        .info1{
-
-            .paraph1{
-                margin-top: 0rem;
-                margin-left: 1.3rem;
-                font-size: 1.2rem;
-            }
-
-
-        }
-
-        .iconefooter2{
-            position: absolute;
-            top: 7.5rem;
-            left: 1.8rem;
+        .iconefooter {
             font-size: 1rem;
         }
 
-        .info2{
-            
-            .paraph2{
-                margin-top: 7.5rem;
-                margin-left: -12.5rem;
-                font-size: 1.2rem;
+        .info1 {
+            margin-top: -1.2rem;
+            font-size: 1.1rem;
+
+            .paraph1 {
+                margin-left: 2rem;
             }
-
-
         }
 
-        
-        .info3{
-
-            .paraph3{
-               margin-left: -14.5rem;
-               margin-top: 0.5rem;
-                font-size: 1.2rem;
-            }
-
-
+        .iconefooter2 {
+            font-size: 1rem;
+            margin-left: -0.2rem;
+            margin-top: 0.8rem;
         }
 
-        
-        .info4{
+        .info2 {
+            font-size: 1.1rem;
 
-            .paraph4{
-                margin-left: -14.5rem;
+            .paraph2 {
+                margin-left: 2rem;
+                margin-top: -1.3rem;
+            }
+        }
+
+        .info3 {
+            font-size: 1.1rem;
+
+            .paraph3 {
+                margin-left: 0rem;
                 margin-top: 0.5rem;
-                font-size: 1.2rem;
+            }
+        }
+
+        .info4 {
+            font-size: 1.1rem;
+
+            .paraph4 {
+                margin-left: 0rem;
+                margin-top: 0.5rem;
             }
 
-            a{
+            a {
                 text-decoration: none;
                 color: white;
             }
-
-
         }
-
-       
-
-
-
-}
-
+    }
 }
 
 @media screen and (min-width: 387px) {
@@ -1033,6 +1006,45 @@ button {
     }
 }
 
+@media screen and (min-width: 451px) {
+    // Icone 451 px // 
+
+    .backgroundicone{
+
+        .icone1{
+            margin-left: 8.2rem;
+        }
+        .texteicone1{
+            margin-left: 10rem;
+        }
+    }
+
+
+    // Fonctionnement 451px //
+
+    .fonctionnement {
+        .circle {
+            margin-right: 4rem;
+        }
+    }
+
+    // Container Bloc Restaurants 451px //
+
+    .grandcontainer {
+        .bloc {
+            .texteimage1 {
+                margin-left: 5.5rem;
+            }
+        }
+
+        .bloc2 {
+            .texteimage2 {
+                margin-left: 5.5rem;
+            }
+        }
+    }
+}
+
 @media screen and (min-width: 465px) {
     .backgroundicone {
         .icone1 {
@@ -1121,6 +1133,30 @@ button {
             margin-left: 2rem;
         }
     }
+
+    // Fonctionnement 473px //
+
+    .fonctionnement {
+        .circle {
+            margin-right: 5.5rem;
+        }
+    }
+
+    // Bloc Restaurants 473 px //
+
+    .grandcontainer {
+        .bloc {
+            .texteimage1 {
+                margin-left: 7rem;
+            }
+        }
+
+        .bloc2 {
+            .texteimage2 {
+                margin-left: 7rem;
+            }
+        }
+    }
 }
 
 @media screen and (min-width: 483px) {
@@ -1152,7 +1188,7 @@ button {
 @media screen and (min-width: 487px) {
     .backgroundicone {
         .icone1 {
-            margin-left: 9.5rem;
+            margin-left: 9.3rem;
         }
 
         .texteicone1 {
@@ -1164,7 +1200,7 @@ button {
 
     .exploration {
         button {
-            margin-left: 8rem;
+            margin-left: 2.3rem;
         }
     }
 }
@@ -1184,7 +1220,7 @@ button {
         left: -3rem;
 
         .circle {
-            margin-left: -26rem;
+            margin-left: -28rem;
         }
     }
 }
@@ -1218,42 +1254,37 @@ button {
     }
 }
 
-@media screen and (min-width:501px){
+@media screen and (min-width: 501px) {
+    // Eploxration 501px //
 
-// Eploxration 501px // 
-
-.exploration{
-    button{
-        margin-left: 2rem;
-    }
-}
-
-// Fonctionnement 501px // 
-
-.fonctionnement{
-    &:nth-child(2){
-        margin-left: 5rem;
-        
+    .exploration {
+        button {
+            margin-left: 2rem;
+        }
     }
 
-    &:nth-child(3){
-        margin-left: 5rem;
+    // Fonctionnement 501px //
+
+    .fonctionnement {
+        &:nth-child(2) {
+            margin-left: 5rem;
+        }
+
+        &:nth-child(3) {
+            margin-left: 5rem;
+        }
+
+        &:nth-child(4) {
+            margin-left: 5rem;
+        }
+
+        .circle {
+            margin-right: 1rem;
+            font-size: 1rem;
+            width: 1.8rem;
+            height: 1.8rem;
+        }
     }
-
-    &:nth-child(4){
-        margin-left: 5rem;
-    }
-
-    .circle{
-        margin-right: 1rem;
-        font-size: 1rem;
-        width: 1.8rem;
-        height: 1.8rem;
-    }
-}
-
-
-
 }
 
 @media screen and (min-width: 503px) {
@@ -1301,40 +1332,54 @@ button {
     }
 }
 
-@media screen and (min-width:509px){
-
-
-.grandcontainer{
-    .bloc{
-        .coeur1{
-            margin-top: -3rem;
-            margin-left: 22rem;
+@media screen and (min-width: 509px) {
+    .grandcontainer {
+        .bloc {
+            .coeur1 {
+                margin-top: -3rem;
+                margin-left: 22rem;
+            }
         }
-    }
 
-    .bloc2{
-        .coeur1{
-            margin-top: -3rem;
-            margin-left: 22rem;
+        .bloc2 {
+            .coeur1 {
+                margin-top: -3rem;
+                margin-left: 22rem;
+            }
         }
-    }
 
-    .bloc3{
-        .coeur1{
-            margin-top: -3rem;
-            margin-left: 22rem;
+        .bloc3 {
+            .coeur1 {
+                margin-top: -3rem;
+                margin-left: 22rem;
+            }
         }
-    }
 
-    .bloc4{
-        .coeur1{
-            margin-top: -3rem;
-            margin-left: 22rem;
+        .bloc4 {
+            .coeur1 {
+                margin-top: -3rem;
+                margin-left: 22rem;
+            }
         }
     }
 }
 
+@media screen and (min-width: 521px) {
+    // Header & Icone //
 
+    .backgroundicone {
+        .icone1 {
+            margin-left: 10.3rem;
+        }
+    }
+
+    // Fonctionnement 521 px //
+
+    .fonctionnement {
+        .circle {
+            margin-right: 1.5rem;
+        }
+    }
 }
 
 @media screen and (min-width: 547px) {
@@ -1411,95 +1456,228 @@ button {
     }
 }
 
+@media screen and (min-width:567px){
+
+//exploration 567px // 
+
+.exploration{
+    button{
+        margin-left: 2rem;
+    }
+}
+
+// fonctionnement 567px // 
+
+.fonctionnement{
+    width: 92%;
+    &:nth-child(2){
+        margin-left: 5rem;
+    }
+
+    &:nth-child(3){
+        margin-left: 5rem;
+    }
+
+    &:nth-child(4){
+        margin-left: 5rem;
+    }
+
+    .circle{
+        margin-right: 4.5rem;
+    }
+}
+
+// Container Bloc restaurants 567px // 
+    .grandcontainer{
+
+        .titrerestaurant{
+            margin-left: 7rem;
+        }
+        .bloc{
+            margin-left: 2rem;
+            .coeur1{
+                margin-left: 25rem;
+            }
+    
+            .texteimage1{
+                margin-left: 12rem;
+            }
+        }
+    
+        .bloc2{
+            margin-left: 2rem;
+            .coeur1{
+                margin-left: 25rem;
+            }
+    
+            .texteimage2{
+                margin-left: 12rem;
+            }
+        }
+    
+        .bloc3{
+            margin-left: 2rem;
+            .coeur1{
+                margin-left: 25rem;
+            }
+        }
+    
+        .bloc4{
+            margin-left: 2rem;
+            .coeur1{
+                margin-left: 25rem;
+            }
+        }
+    }
+
+
+}
+
+@media screen and (min-width: 573px) {
+    // Localisation  & Texte 573px //
+
+    .backgroundicone {
+        .icone1 {
+            margin-left: 12rem;
+        }
+    }
+
+    // Exploration 573px //
+
+    .exploration {
+        button {
+            margin-left: 2rem;
+        }
+    }
+
+    // Fonctionnement 573px //
+
+    .fonctionnement {
+        width: 90%;
+
+        &:nth-child(2) {
+            margin-left: 5rem;
+        }
+
+        &:nth-child(3) {
+            margin-left: 5rem;
+        }
+
+        &:nth-child(4) {
+            margin-left: 5rem;
+        }
+
+        .circle {
+            margin-right: 4.2rem;
+        }
+    }
+
+    // Bloc restaurants 573 px //
+
+    .grandcontainer {
+        .bloc {
+            margin-left: 2rem;
+            .texteimage1 {
+                margin-left: 12rem;
+            }
+        }
+
+        .bloc2 {
+            margin-left: 2rem;
+            .texteimage2 {
+                margin-left: 12rem;
+            }
+        }
+
+        .bloc3 {
+            margin-left: 2rem;
+        }
+
+        .bloc4 {
+            margin-left: 2rem;
+        }
+    }
+}
+
 @media screen and (min-width: 601px) {
+    // Header & Icone 601px //
 
-    // Header & Icone 601px // 
-
-    .backgroundicone{
-        .icone1{
+    .backgroundicone {
+        .icone1 {
             font-size: 1.5rem;
             margin-left: 12.7rem;
             margin-top: -2.5rem;
         }
 
-        .texteicone1{
+        .texteicone1 {
             font-size: 1.3rem;
             margin-left: 15rem;
         }
     }
-
-
 
     // Exploration 601px //
 
     .exploration {
         button {
             margin-left: 2rem;
-            
         }
     }
 
     //Fonctionnement 601px//
 
-    .fonctionnement{
-
-        &:nth-child(2){
+    .fonctionnement {
+        &:nth-child(2) {
             margin-left: 6rem;
         }
 
-        &:nth-child(3){
+        &:nth-child(3) {
             margin-left: 6rem;
         }
 
-        &:nth-child(4){
+        &:nth-child(4) {
             margin-left: 6rem;
         }
 
-        .circle{
+        .circle {
             margin-right: 6rem;
             font-size: 0.8rem;
         }
-
     }
 
-    // Blocs restaurants 601px // 
+    // Blocs restaurants 601px //
 
-    .grandcontainer{
-        .bloc{
+    .grandcontainer {
+        .bloc {
             margin-left: 2rem;
-            .coeur1{
+            .coeur1 {
                 margin-top: -3rem;
                 margin-left: 22rem;
             }
         }
 
-        .bloc2{
+        .bloc2 {
             margin-left: 2rem;
-            .coeur1{
+            .coeur1 {
                 margin-top: -3rem;
                 margin-left: 22rem;
             }
         }
 
-        .bloc3{
+        .bloc3 {
             margin-left: 2rem;
-            .coeur1{
+            .coeur1 {
                 margin-top: -3rem;
                 margin-left: 22rem;
             }
         }
-        .bloc4{
+        .bloc4 {
             margin-left: 2rem;
-            .coeur1{
+            .coeur1 {
                 margin-top: -3rem;
                 margin-left: 22rem;
             }
         }
     }
-
-
-
-
 }
 
 @media screen and (min-width: 609px) {
@@ -1606,6 +1784,47 @@ button {
     }
 }
 
+@media screen and (min-width: 629px) {
+    // Background & Icone 629px //
+
+    // Exploration 629 px //
+
+    .exploration {
+        h3 {
+            margin-left: 9rem;
+        }
+
+        .p2 {
+            margin-left: 11rem;
+        }
+
+        button {
+            margin-left: 3rem;
+        }
+    }
+
+    // Fonctionnement 629 px //
+
+    .fonctionnement {
+        width: 90%;
+        &:nth-child(2) {
+            margin-left: 5rem;
+        }
+
+        &:nth-child(3) {
+            margin-left: 5rem;
+        }
+
+        &:nth-child(4) {
+            margin-left: 5rem;
+        }
+
+        .circle {
+            margin-right: 8rem;
+        }
+    }
+}
+
 @media screen and (min-width: 637px) {
     // Background & Icone 637px //
 
@@ -1664,95 +1883,6 @@ button {
     }
 }
 
-@media screen and (min-width: 667px) {
-    .backgroundicone {
-        .icone1 {
-            margin-left: 19rem;
-        }
-
-        .texteicone1 {
-            margin-left: 10rem;
-        }
-    }
-
-    //exploration 811 px //
-    .exploration {
-        width: 100%;
-
-        h3 {
-            position: relative;
-            left: 0rem;
-        }
-    }
-
-    //fonctionnement 811px //
-
-    .titrefonction {
-        margin-left: 15rem;
-    }
-
-    .fonctionnement {
-        &:nth-child(2) {
-            margin-left: 12rem;
-        }
-
-        &:nth-child(3) {
-            margin-left: 12rem;
-        }
-
-        &:nth-child(4) {
-            margin-left: 12rem;
-        }
-    }
-
-    .grandcontainer {
-        .bloc {
-            margin-left: 9rem;
-        }
-
-        .bloc2 {
-            margin-left: 9rem;
-        }
-
-        .bloc3 {
-            margin-left: 9rem;
-        }
-
-        .bloc4 {
-            margin-left: 9rem;
-        }
-    }
-}
-
-@media screen and (min-width: 681px) {
-    // Background Icone 687 px //
-
-    .backgroundicone {
-        .icone1 {
-            position: relative;
-            left: 0.5rem;
-        }
-
-        .texteicone1 {
-            margin-left: 17rem;
-        }
-    }
-
-    // Exploration 687 px //
-
-    .exploration {
-       
-
-        .p2 {
-            margin-left: 17rem;
-        }
-
-        button {
-            margin-left: 13rem;
-        }
-    }
-}
-
 @media screen and (min-width: 659px) {
     // Background & Icone 659px //
 
@@ -1769,26 +1899,6 @@ button {
 
         button {
             margin-left: 13rem;
-        }
-    }
-}
-
-@media screen and (min-width: 629px) {
-    // Background & Icone 629px //
-
-    // Exploration 629 px //
-
-    .exploration {
-        h3 {
-            margin-left: 9rem;
-        }
-
-        .p2 {
-            margin-left: 11rem;
-        }
-
-        button {
-            margin-left: 12rem;
         }
     }
 }
@@ -1822,17 +1932,101 @@ button {
         }
     }
 
-    // Fonctionnement 665px // 
-    .fonctionnement{
+    // Fonctionnement 665px //
+    .fonctionnement {
         width: 90%;
-        
-        &:nth-child(2){
+
+        &:nth-child(2) {
             margin-left: 5rem;
         }
-        
+    }
+}
+
+@media screen and (min-width: 667px) {
+    .backgroundicone {
+        .icone1 {
+            margin-left: 14.8rem;
+        }
+
+        .texteicone1 {
+            margin-left: 17rem;
+        }
     }
 
-    
+    //exploration 811 px //
+    .exploration {
+        width: 100%;
+
+        h3 {
+            position: relative;
+            left: 0rem;
+        }
+        button{
+            margin-left: 3rem;
+        }
+    }
+
+    //fonctionnement 811px //
+
+    .titrefonction {
+        margin-left: 15rem;
+    }
+
+    .fonctionnement {
+        &:nth-child(2) {
+            margin-left: 5rem;
+        }
+
+        &:nth-child(3) {
+            margin-left: 5rem;
+        }
+
+        &:nth-child(4) {
+            margin-left: 5rem;
+        }
+
+        .circle{
+            margin-right: 10.5rem;
+        }
+    }
+
+    .grandcontainer {
+        .bloc {
+            margin-left: 2rem;
+
+            .texteimage1{
+                margin-left: 17rem;
+            }
+
+            .coeur1{
+                margin-left: 24rem;
+            }
+        }
+
+        .bloc2 {
+            margin-left: 2rem;
+            .texteimage2{
+                margin-left: 17rem;
+            }
+            .coeur1{
+                margin-left: 24rem;
+            }
+        }
+
+        .bloc3 {
+            margin-left: 2rem;
+            .coeur1{
+                margin-left: 24rem;
+            }
+        }
+
+        .bloc4 {
+            margin-left: 2rem;
+            .coeur1{
+                margin-left: 24rem;
+            }
+        }
+    }
 }
 
 @media screen and (min-width: 673px) {
@@ -1855,6 +2049,114 @@ button {
             margin-left: 13rem;
         }
     }
+}
+
+@media screen and (min-width: 681px) {
+    // Background Icone 687 px //
+
+    .backgroundicone {
+        .icone1 {
+            position: relative;
+            left: 0.5rem;
+        }
+
+        .texteicone1 {
+            margin-left: 17rem;
+        }
+    }
+
+    // Exploration 687 px //
+
+    .exploration {
+        .p2 {
+            margin-left: 17rem;
+        }
+
+        button {
+            margin-left: 13rem;
+        }
+    }
+}
+
+@media screen and (min-width:683px){
+
+    // Geo & texte 683px // 
+
+    .backgroundicone{
+        .icone1{
+            margin-left: 14.8rem;
+        }
+
+        .texteicone1{
+            margin-left: 17.5rem;
+        }
+    }
+
+    // Exploration 683px// 
+
+    .exploration{
+        button{
+            margin-left: 4rem;
+        }
+    }
+
+//Fonctionnement 683px // 
+
+.fonctionnement{
+    &:nth-child(2){
+        margin-left: 5rem;
+    }
+
+    &:nth-child(3){
+        margin-left: 5rem;
+    }
+
+    &:nth-child(4){
+        margin-left: 5rem;
+    }
+
+    .circle{
+        margin-right: 11.4rem;
+    }
+}
+
+.grandcontainer{
+    .bloc{
+        margin-left: 2rem;
+        .texteimage1{
+            margin-left: 18rem;
+        }
+        .coeur1{
+            margin-left: 24rem;
+        }
+    }
+
+    .bloc2{
+        margin-left: 2rem;
+        .texteimage2{
+            margin-left: 18rem;
+        }
+        .coeur1{
+            margin-left: 24rem;
+        }
+    }
+
+    .bloc3{
+        margin-left: 2rem;
+        .coeur1{
+            margin-left: 24rem;
+        }
+    }
+
+    .bloc4{
+        margin-left: 2rem;
+        .coeur1{
+            margin-left: 24rem;
+        }
+    }
+}
+
+
 }
 
 @media screen and (min-width: 687px) {
@@ -1885,6 +2187,100 @@ button {
             margin-left: 13rem;
         }
     }
+}
+
+@media screen and (min-width:697px){
+
+    .backgroundicone{
+        .icone1{
+            margin-left: 15.2rem;
+        }
+
+        .texteicone1{
+            margin-left: 18rem;
+        }
+    }
+
+
+// Exploration 697px // 
+
+.exploration{
+    button{
+        margin-left: 4rem;
+    }
+}
+
+//fonctionnement 697px // 
+
+.fonctionnement{
+
+&:nth-child(2){
+    margin-left: 5rem;
+}
+
+&:nth-child(3){
+    margin-left: 5rem;
+}
+
+&:nth-child(4){
+    margin-left: 5rem;
+}
+
+.circle{
+    margin-right: 12rem;
+}
+
+
+}
+
+.grandcontainer{
+
+    .titrerestaurant{
+        margin-left: 7rem;
+    }
+    .bloc{
+        margin-left: 2rem;
+        .coeur1{
+            margin-left: 25rem;
+        }
+
+        .texteimage1{
+            margin-left: 18rem;
+        }
+    }
+
+    .bloc2{
+        margin-left: 2rem;
+        .coeur1{
+            margin-left: 25rem;
+        }
+
+        .texteimage2{
+            margin-left: 18rem;
+        }
+    }
+
+    .bloc3{
+        margin-left: 2rem;
+        .coeur1{
+            margin-left: 25rem;
+        }
+    }
+
+    .bloc4{
+        margin-left: 2rem;
+        .coeur1{
+            margin-left: 25rem;
+        }
+    }
+}
+
+
+
+
+
+
+
 }
 
 @media screen and (min-width: 703px) {
@@ -1945,8 +2341,223 @@ button {
     }
 }
 
+@media screen and (min-width: 705px) {
+    // Exploration 705px //
+
+    .exploration {
+        button {
+            margin-left: 5rem;
+        }
+    }
+
+    // Fonctionnement 705px //
+
+    .fonctionnement {
+        &:nth-child(2) {
+            margin-left: 6rem;
+        }
+
+        &:nth-child(3) {
+            margin-left: 6rem;
+        }
+
+        &:nth-child(4) {
+            margin-left: 6rem;
+        }
+
+        .circle {
+            margin-right: 13rem;
+        }
+    }
+
+    // bloc Restaurnts 705px //
+
+    .grandcontainer {
+        .titrerestaurant {
+            margin-left: 7rem;
+        }
+        .bloc {
+            margin-left: 2rem;
+            .coeur1 {
+                margin-left: 25rem;
+            }
+
+            .texteimage1 {
+                margin-left: 18rem;
+            }
+        }
+
+        .bloc2 {
+            margin-left: 2rem;
+            .coeur1 {
+                margin-left: 25rem;
+            }
+
+            .texteimage2 {
+                margin-left: 18rem;
+            }
+        }
+
+        .bloc3 {
+            margin-left: 2rem;
+            .coeur1 {
+                margin-left: 25rem;
+            }
+        }
+
+        .bloc4 {
+            margin-left: 2rem;
+            .coeur1 {
+                margin-left: 25rem;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 713px) {
+    // Exploration 713 px //
+
+    .exploration {
+        button {
+            margin-left: 5rem;
+        }
+    }
+
+    // Fonctionnement 713px //
+
+    .fonctionnement {
+        width: 92%;
+        &:nth-child(2) {
+            margin-left: 5rem;
+        }
+
+        &:nth-child(3) {
+            margin-left: 5rem;
+        }
+
+        &:nth-child(4) {
+            margin-left: 5rem;
+        }
+
+        .circle {
+            margin-right: 14rem;
+        }
+    }
+
+    .grandcontainer {
+        .bloc {
+            margin-left: 2rem;
+            .coeur1 {
+                margin-left: 24rem;
+            }
+
+            .texteimage1 {
+                margin-left: 18rem;
+            }
+        }
+
+        .bloc2 {
+            margin-left: 2rem;
+            .coeur1 {
+                margin-left: 24rem;
+            }
+
+            .texteimage2 {
+                margin-left: 18rem;
+            }
+        }
+
+        .bloc3 {
+            margin-left: 2rem;
+            .coeur1 {
+                margin-left: 24rem;
+            }
+        }
+
+        .bloc4 {
+            margin-left: 2rem;
+            .coeur1 {
+                margin-left: 24rem;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 723px) {
+    // Icone & Texte 723 px //
+
+    // Exploration 723px //
+
+    .exploration {
+        button {
+            margin-left: 2rem;
+        }
+    }
+
+    // Fonctionnement 723px //
+
+    .fonctionnement {
+        &:nth-child(2) {
+            margin-left: 5rem;
+        }
+
+        &:nth-child(3) {
+            margin-left: 5rem;
+        }
+
+        &:nth-child(4) {
+            margin-left: 5rem;
+        }
+
+        .circle {
+            margin-right: 13.2rem;
+        }
+    }
+
+    // bloc Restaurants 723 px //
+
+    .grandcontainer {
+        .bloc {
+            margin-left: 2rem;
+
+            .coeur1 {
+                margin-left: 25rem;
+            }
+
+            .texteimage1 {
+                margin-left: 18rem;
+            }
+        }
+
+        .bloc2 {
+            margin-left: 2rem;
+            .coeur1 {
+                margin-left: 25rem;
+            }
+
+            .texteimage2 {
+                margin-left: 18rem;
+            }
+        }
+
+        .bloc3 {
+            margin-left: 2rem;
+            .coeur1 {
+                margin-left: 25rem;
+            }
+        }
+
+        .bloc4 {
+            margin-left: 2rem;
+            .coeur1 {
+                margin-left: 25rem;
+            }
+        }
+    }
+}
+
 @media screen and (min-width: 727px) {
-    // Background & Icone 643px //
+    // Background & Icone 727px //
 
     .backgroundicone {
         .icone1 {
@@ -1958,13 +2569,41 @@ button {
         }
     }
 
-    // Exploration 643 px //
+    // Exploration 727 px //
 
     .exploration {
-        
-
         button {
             margin-left: 15rem;
+        }
+    }
+}
+
+@media screen and (min-width: 739px) {
+    // exploration 739px //
+
+    .exploration {
+        button {
+            margin-left: 5rem;
+        }
+    }
+
+    // fonctionnement 739px //
+
+    .titrefonction {
+        font-size: 1.6rem;
+    }
+
+    .fonctionnement {
+        .circle {
+            margin-right: 15rem;
+        }
+    }
+
+    // Bloc restaurnts 739px //
+
+    .grandcontainer {
+        .titrerestaurant {
+            margin-left: 8rem;
         }
     }
 }
@@ -2009,8 +2648,6 @@ button {
     }
 
     // Exploration 643 px //
-
-    
 }
 
 @media screen and (min-width: 747px) {
@@ -2027,8 +2664,24 @@ button {
     }
 
     // Exploration 643 px //
+}
 
-    
+@media screen and (min-width: 757px) {
+    // Exploration 757 px //
+
+    .exploration {
+        button {
+            margin-left: 5rem;
+        }
+    }
+
+    // Fonctionnement 757 px //
+
+    .fonctionnement {
+        .circle {
+            margin-right: 16.5rem;
+        }
+    }
 }
 
 // Responsive iPad //
@@ -2174,16 +2827,16 @@ button {
         border-radius: 1.2rem;
 
         &:nth-child(2) {
-            margin-left: 2rem;
+            margin-left: 6rem;
         }
 
         &:nth-child(3) {
-            margin-left: 26rem;
+            margin-left: 29rem;
             margin-top: -6rem;
         }
 
         &:nth-child(4) {
-            margin-left: 15rem;
+            margin-left: 17rem;
         }
 
         .soustitre {
@@ -2198,13 +2851,12 @@ button {
         }
 
         .circle {
-            
             width: 2rem;
             height: 2rem;
             background: #9356dc;
             border-radius: 3rem;
             color: #ffff;
-            margin-left: -20rem;
+            margin-left:-3.2rem;
             margin-top: 0rem;
             font-size: 1.3rem;
         }
@@ -2216,14 +2868,13 @@ button {
 
     .grandcontainer {
         margin-top: 5rem;
-        
+
         width: 50rem;
         height: 60rem;
         background: #f6f6f6;
 
         .titrerestaurant {
             h3 {
-                
                 margin-top: 3rem;
                 font-size: 2.5rem;
                 margin-left: 2rem;
@@ -2662,74 +3313,81 @@ button {
 
     .backgroundfooter {
         background: #353535;
-        height: 23rem;
+        height: 16rem;
         width: 100%;
         color: #f1f1f1;
+        margin-bottom: 0rem;
         display: flex;
-        margin-top: 0rem;
-        justify-content: center;
         align-items: center;
-     
-
+        padding: 0 2rem;
+    
         .titrefooter {
-        
-            font-size: 3rem;
+           position: relative;
+           left: -0.5rem;
+            font-size: 2rem;
             font-family: Shrikhand;
-            margin-right: 15rem;
-            margin-top: -15rem;
-        }
-
-        .infofooter {
+            margin-left: 2rem;
+            
            
-            margin-right: 10rem;
-            margin-top: 2rem;
-
-            .info1 {
-                margin-left: -17rem;
-                margin-top: -2rem;
-                font-family: Roboto;
-                font-size: 1.5rem;
-                white-space: nowrap;
+           
+        }
+    
+        .infofooter {
+            margin-left: -11rem;
+            margin-top: 5rem;
+    
+            .iconefooter {
+                font-size: 1rem;
             }
-
-            .info2 {
-                margin-top: 0.3rem;
-                margin-left: 3rem;
-
-                .paraph2 {
-                    font-size: 1.5rem;
-                    margin-top: -1rem;
-                    margin-left: -11rem;
+    
+            .info1 {
+                margin-top: -1.2rem;
+                font-size: 1.4rem;
+    
+                .paraph1 {
+                    margin-left: 2rem;
                 }
             }
-
-            .info3 {
-                font-size: 1.5rem;
-                margin-top: 0.3rem;
-                margin-left: -5.5rem;
+    
+            .iconefooter2 {
+                font-size: 1rem;
+                margin-left: -0.2rem;
+                margin-top: 0.8rem;
             }
-
+    
+            .info2 {
+                font-size: 1.4rem;
+    
+                .paraph2 {
+                    margin-left: 2rem;
+                    margin-top: -1.3rem;
+                }
+            }
+    
+            .info3 {
+                font-size: 1.4rem;
+    
+                .paraph3 {
+                    margin-left: 0rem;
+                    margin-top: 0.5rem;
+                }
+            }
+    
             .info4 {
-                font-size: 1.5rem;
-                margin-top: 0.3rem;
-
+                font-size: 1.4rem;
+    
+                .paraph4 {
+                    margin-left: 0rem;
+                    margin-top: 0.5rem;
+                }
+    
                 a {
                     text-decoration: none;
-                    color: #f1f1f1;
+                    color: white;
                 }
             }
-
-            .iconefooter {
-              
-                font-size: 1.6rem;
-            }
-
-            .iconefooter2 {
-               
-                font-size: 1.6rem;
-            }
         }
-    }
+        }
 }
 
 @media screen and (min-width: 797px) {
@@ -2972,6 +3630,11 @@ button {
 
     .grandcontainer {
         width: 100%;
+        .bloc3{
+            .coeur1{
+                margin-left: 16.5rem;
+            }
+        }
     }
 }
 
@@ -3521,6 +4184,71 @@ button {
     }
 }
 
+@media screen and (min-width:1027px){
+
+// fonctionnement 1027px // 
+
+.fonctionnement{
+
+    &:nth-child(2){
+        margin-left:4rem;
+    }
+
+    &:nth-child(3){
+        margin-left:25.3rem;
+    }
+
+    &:nth-child(4){
+        margin-left:46.5rem;
+    }
+}
+
+
+}
+
+@media screen and (min-width:1065px){
+
+// Icone & Texte 1065px // 
+
+.backgroundicone{
+    .icone1{
+
+        margin-left: 27rem;
+    }
+}
+
+
+    // Fonctionnement 1065px // 
+
+
+.fonctionnement{
+    &:nth-child(2){
+
+        margin-left: 4.5rem;
+    }
+
+    &:nth-child(3){
+
+        margin-left: 26.5rem;
+    }
+
+    &:nth-child(4){
+
+        margin-left: 48.5rem;
+    }
+}
+
+.grandcontainer{
+    .bloc3{
+        .coeur1{
+            margin-left: 16.5rem;
+        }
+    }
+}
+
+
+}
+
 @media screen and (min-width: 1068px) {
     // Background 1068px //
 
@@ -3595,6 +4323,40 @@ button {
     }
 }
 
+@media screen and (min-width:1135px){
+
+
+//Fonctionnement 1135px //
+
+
+.fonctionnement{
+   position: relative;
+   left: 1rem;
+}
+
+// Container BLoc Restaurants 1135px // 
+
+.grandcontainer{
+
+    .titrerestaurant{
+        margin-left: 26rem;
+    }
+    .bloc{
+        .texteimage1{
+            margin-left: 1.5rem;
+        }
+    }
+
+    .bloc2{
+        .texteimage2{
+            margin-left: 0.5rem;
+        }
+    }
+}
+
+
+}
+
 @media screen and (min-width: 1222px) {
     .backgroundicone {
         .icone1 {
@@ -3607,8 +4369,6 @@ button {
             margin-left: 35rem;
         }
     }
-
-   
 }
 
 @media screen and (min-width: 1224px) {
@@ -3621,7 +4381,6 @@ button {
     }
 
     .grandcontainer {
-       
     }
 }
 
@@ -4053,8 +4812,6 @@ button {
         margin-right: 28rem;
     }
 
-   
-
     // Container Restaurant 1280px //
 
     .grandcontainer {
@@ -4295,7 +5052,55 @@ button {
 @media screen and (min-width: 1283px) {
     .backgroundicone {
         .icone1 {
-            margin-left: 34.2rem;
+            margin-left: 33.6rem;
+            font-size: 1.4rem;
+            margin-top: -3.5rem;
+        }
+    }
+
+    // Exploration 1283px // 
+
+    .exploration{
+        h3{
+            margin-left: 25rem;
+        }
+
+        .p2{
+            margin-left: 24.5rem;
+        }
+    }
+
+    // fonctionnement 1283px // 
+
+    .titrefonction{
+        margin-left: 30rem;
+    }
+
+    .fonctionnement{
+
+        &:nth-child(2){
+            margin-left: 5rem;
+        }
+
+        &:nth-child(3){
+            margin-left: 30rem;
+        }
+        &:nth-child(4){
+            margin-left: 55rem;
+        }
+    }
+
+    .grandcontainer{
+        .bloc{
+            .texteimage1{
+                margin-left: 10rem;
+            }
+        }
+
+        .bloc2{
+            .texteimage2{
+                margin-left: 10rem;
+            }
         }
     }
 }
@@ -4324,8 +5129,6 @@ button {
     }
 }
 
-
-
 @media screen and (min-width: 1291px) {
     .grandcontainer {
         .titrerestaurant {
@@ -4346,8 +5149,52 @@ button {
     .titrefonction {
         margin-left: 26rem;
     }
+}
 
-  
+@media screen and (min-width:1303px){
+
+// Background & icone 1303px // 
+
+.backgroundicone{
+    .icone1{
+        margin-left: 34.4rem;
+    }
+}
+
+
+    // Fonctionnement 1303px //
+
+.fonctionnement{
+
+    &:nth-child(2){
+        margin-left: 4rem;
+    }
+
+    &:nth-child(3){
+        margin-left: 28.5rem;
+    }
+
+    &:nth-child(4){
+        margin-left: 53rem;
+    }
+}
+
+.grandcontainer{
+
+    .bloc{
+        .texteimage1{
+            margin-left: 9rem;
+        }
+    }
+
+    .bloc2{
+        .texteimage2{
+            margin-left: 9rem;
+        }
+    }
+}
+
+
 }
 
 @media screen and (min-width: 1331px) {
@@ -4677,11 +5524,15 @@ button {
         }
     }
 
+    .fonctionnement:nth-child(2) {
+        margin-left: 6rem;
+    }
+
     .fonctionnement:nth-child(3) {
-        margin-left: 21rem;
+        margin-left: 33rem;
     }
     .fonctionnement:nth-child(4) {
-        margin-left: 45rem;
+        margin-left: 60rem;
     }
 
     .grandcontainer {
@@ -4690,6 +5541,18 @@ button {
                 font-size: 3rem;
             }
         }
+
+    .bloc{
+        .texteimage1{
+            margin-left: 14rem;
+        }
+    }
+
+    .bloc2{
+        .texteimage2{
+            margin-left: 14rem;
+        }
+    }
     }
 }
 
@@ -4757,17 +5620,15 @@ button {
         }
     }
 
-    .fonctionnement {
-        &:nth-child(2) {
-            margin-left: -3rem;
-        }
-        &:nth-child(3) {
-            margin-left: 21rem;
-        }
+    .fonctionnement:nth-child(2) {
+        margin-left: 6rem;
+    }
 
-        &:nth-child(4) {
-            margin-left: 45rem;
-        }
+    .fonctionnement:nth-child(3) {
+        margin-left: 33rem;
+    }
+    .fonctionnement:nth-child(4) {
+        margin-left: 60rem;
     }
 
     .grandcontainer {
@@ -4797,6 +5658,40 @@ button {
     }
 }
 
+@media screen and (min-width:1381px){
+
+
+.fonctionnement{
+
+    &:nth-child(2){
+        margin-left: 9rem;
+    }
+
+    &:nth-child(3){
+        margin-left: 34rem;
+    }
+    &:nth-child(4){
+        margin-left: 60rem;
+    }
+}
+
+.grandcontainer{
+    .bloc{
+        .texteimage1{
+            margin-left: 15rem;
+        }
+    }
+
+    .bloc2{
+        .texteimage2{
+            margin-left: 15rem;
+        }
+    }
+}
+
+
+}
+
 @media screen and (min-width: 1406px) {
     .backgroundicone {
         .icone1 {
@@ -4819,8 +5714,6 @@ button {
 
 @media screen and (min-width: 1413px) {
     // Background & Icone : 1413px //
-
-   
 
     // Bouton Section Exploration 1413px //
 
@@ -4919,15 +5812,21 @@ button {
     }
 
     .fonctionnement:nth-child(2) {
-        margin-left: -5rem;
+        margin-left: 6rem;
     }
 
     .fonctionnement:nth-child(3) {
-        margin-left: 20rem;
+        margin-left: 33rem;
+    }
+    .fonctionnement:nth-child(4) {
+        margin-left: 60rem;
     }
 
-    .fonctionnement:nth-child(4) {
-        margin-left: 45rem;
+    .fonctionnement{
+
+        .circle{
+            margin-right: 16.5rem;
+        }
     }
 
     .grandcontainer {
@@ -4974,19 +5873,86 @@ button {
 }
 
 @media screen and (min-width: 1435px) {
-    .backgroundicone {
-        .icone1 {
-            margin-left: 39rem;
-        }
-    }
-}
 
-@media screen and (min-width: 1437px) {
     .backgroundicone {
         .icone1 {
             margin-left: 37.4rem;
         }
     }
+
+    .titrefonction{
+        margin-left: 28rem;
+    }
+
+    .fonctionnement:nth-child(2) {
+        margin-left: 6rem;
+    }
+
+    .fonctionnement:nth-child(3) {
+        margin-left: 33rem;
+    }
+    .fonctionnement:nth-child(4) {
+        margin-left: 60rem;
+    }
+
+    .fonctionnement{
+
+        .circle{
+            margin-right: 16.5rem;
+        }
+    }
+
+    
+}
+
+@media screen and (min-width: 1437px) {
+
+    // Background & Icone 1437px // 
+
+    .backgroundicone {
+        .icone1 {
+            margin-left: 37.4rem;
+        }
+    
+    
+    }
+
+    // Fonctionnement 1437px // 
+
+    .titrefonction{
+        margin-left: 28rem;
+    }
+
+    .fonctionnement{
+
+        &:nth-child(2){
+            margin-left: 8rem;
+        }
+
+        &:nth-child(3){
+        margin-left: 34rem;
+        }
+
+        &:nth-child(4){
+            margin-left: 59rem;
+        }
+    }
+
+    .grandcontainer{
+        .bloc{
+            .texteimage1{
+                margin-left: 15rem;
+            }
+        }
+
+        .bloc2{
+            .texteimage2{
+                margin-left: 15rem;
+            }
+        }
+    }
+
+
 }
 
 @media screen and (min-width: 1438px) {
@@ -5281,21 +6247,18 @@ button {
     }
 
     .titrefonction {
-        margin-left: 25rem;
+        margin-left: 28rem;
     }
 
-    .fonctionnement {
-        &:nth-child(2) {
-            margin-left: -8rem;
-        }
+    .fonctionnement:nth-child(2) {
+        margin-left: 6rem;
+    }
 
-        &:nth-child(3) {
-            margin-left: 20rem;
-        }
-
-        &:nth-child(4) {
-            margin-left: 48rem;
-        }
+    .fonctionnement:nth-child(3) {
+        margin-left: 33rem;
+    }
+    .fonctionnement:nth-child(4) {
+        margin-left: 60rem;
     }
 }
 
@@ -5406,6 +6369,25 @@ button {
             margin-left: 25rem;
         }
     }
+
+    .fonctionnement:nth-child(2) {
+        margin-left: 6rem;
+    }
+
+    .fonctionnement:nth-child(3) {
+        margin-left: 33rem;
+    }
+    .fonctionnement:nth-child(4) {
+        margin-left: 60rem;
+    }
+
+    .fonctionnement{
+
+        .circle{
+            margin-right: 19.5rem;
+        }
+    }
+
 }
 
 @media screen and (min-width: 1451px) {
@@ -5662,6 +6644,39 @@ button {
             margin-left: 37rem;
         }
     }
+
+    .fonctionnement:nth-child(2) {
+        margin-left: 6rem;
+    }
+
+    .fonctionnement:nth-child(3) {
+        margin-left: 33rem;
+    }
+    .fonctionnement:nth-child(4) {
+        margin-left: 60rem;
+    }
+
+    .fonctionnement{
+
+        .circle{
+            margin-right: 0rem;
+        }
+    }
+
+    .grandcontainer{
+        .bloc{
+            .texteimage1{
+                margin-left: 19rem;
+            }
+        }
+
+        .bloc2{
+            .texteimage2{
+                margin-left: 19rem;
+            }
+        }
+    }
+
 }
 
 @media screen and (min-width: 1491px) {
@@ -5684,6 +6699,47 @@ button {
             margin-left: 37rem;
         }
     }
+
+    //fonctionnement 1491px // 
+
+    .fonctionnement{
+
+     position: relative;
+     left: 14rem;
+     .circle{
+         margin-left: -6.2rem;
+     }
+    }
+
+}
+
+@media screen and (min-width:1503px){
+
+    .backgroundicone{
+        .icone1{
+            margin-left: 39.3rem;
+        }
+    }
+
+
+    .fonctionnement:nth-child(2) {
+        margin-left: -8rem;
+    }
+
+    .fonctionnement:nth-child(3) {
+        margin-left: 21rem;
+    }
+    .fonctionnement:nth-child(4) {
+        margin-left: 49rem;
+    }
+
+    .fonctionnement{
+
+        .circle{
+            margin-right: 16.5rem;
+        }
+    }
+
 }
 
 @media screen and (min-width: 1507px) {
@@ -5796,6 +6852,25 @@ button {
             margin-left: 40rem;
         }
     }
+
+    .fonctionnement:nth-child(2) {
+        margin-left: -5rem;
+    }
+
+    .fonctionnement:nth-child(3) {
+        margin-left: 23.5rem;
+    }
+    .fonctionnement:nth-child(4) {
+        margin-left: 53rem;
+    }
+
+    .fonctionnement{
+
+        .circle{
+            margin-right: 16.5rem;
+        }
+    }
+
 }
 
 @media screen and (min-width: 1525px) {
@@ -6473,6 +7548,12 @@ button {
         margin-left: 33rem;
     }
 
+    .fonctionnement{
+        .circle{
+            margin-right: 17rem;
+        }
+    }
+
     .exploration {
         button {
             margin-left: 45rem;
@@ -6684,10 +7765,20 @@ button {
 
         .bloc {
             margin-left: 3rem;
+            .texteimage1{
+                width: 5rem;
+                height: 1.5rem;
+                margin-left: 23rem;
+            }
         }
 
         .bloc2 {
             margin-left: 53rem;
+            .texteimage2{
+                width: 5rem;
+                height: 1.5rem;
+                margin-left: 23rem;
+            }
         }
 
         .bloc3 {
@@ -7060,9 +8151,8 @@ button {
     // Icone localisation 1920px Desktop //
 
     .backgroundicone {
-        .icone {
-            position: relative;
-            left: 28.2rem;
+        .icone1 {
+            margin-left: 50.2rem;
         }
 
         .texteicone1 {
@@ -7073,12 +8163,21 @@ button {
     // Exploration 1920px Desktop //
 
     .exploration {
+
+        h3{
+            margin-left: 15rem;
+        }
+        
         .p2 {
-            margin-left: 22rem;
+            margin-left: 15rem;
+        }
+
+        p{
+            margin-left:1rem;
         }
 
         button {
-            margin-left: 53.5rem;
+            margin-left: 51rem;
         }
     }
 
@@ -7100,7 +8199,7 @@ button {
         }
 
         .circle {
-            margin-left: -23rem;
+            margin-left: -6.5rem;
         }
     }
 
@@ -7141,6 +8240,14 @@ button {
                     }
                 }
             }
+
+            .texteimage1{
+                width: 8rem;
+                height: 1.5rem;
+                margin-left: 25rem;
+            }
+
+           
 
             .coeur1 {
                 margin-top: -4.3rem;
@@ -7202,6 +8309,12 @@ button {
                 .emptyHeart {
                     font-size: 2.2rem;
                 }
+            }
+
+            .texteimage2{
+                width: 8rem;
+                height: 1.5rem;
+                margin-left: 25rem;
             }
 
             .infodubloc {
@@ -7293,40 +8406,53 @@ button {
 
     .backgroundfooter {
         background: #353535;
-        height: 25rem;
+        height: 27rem;
         width: 100%;
+        position: relative;
         color: #f1f1f1;
         display: flex;
         margin-bottom: 0;
-        justify-content: center;
         align-items: center;
 
         .titrefooter {
             font-size: 5rem;
             font-family: Shrikhand;
             margin-top: -15rem;
+            left: 10.8rem;
+           position: absolute;
         }
 
         .infofooter {
             margin-top: -5rem;
-            margin-left: -10rem;
+            margin-left: 28rem;
+
+            .iconefooter{
+                margin-left: -15.5rem;
+                margin-top: 2rem;
+            }
+
 
             .info1 {
                 margin-top: 9rem;
                 font-family: Roboto;
                 font-size: 2.2rem;
-                margin-left: 2rem;
+                margin-left: -14rem;
 
                 .paraph1 {
                     margin-left: 2rem;
                 }
             }
 
+            .iconefooter2{
+                margin-left: -21rem;
+                margin-top: 0.5rem;
+            }
+
             .info2 {
                 .paraph2 {
                     font-size: 2.2rem;
-                    margin-left: 1rem;
-                    margin-top: -2rem;
+                    margin-left: -12rem;
+                    margin-top: -2.2rem;
                 }
             }
 
@@ -7334,7 +8460,7 @@ button {
                 font-size: 2.2rem;
 
                 .paraph3 {
-                    margin-left: 1.5rem;
+                    margin-left: -17rem;
                     margin-top: 1rem;
                 }
             }
@@ -7343,7 +8469,7 @@ button {
                 font-size: 2.2rem;
 
                 .paraph4 {
-                    margin-left: 1.5rem;
+                    margin-left: -17rem;
                 }
 
                 a {

@@ -1675,6 +1675,57 @@
   }
 }
 
+@media screen and (min-width: 444px) {
+  .titreentree {
+    margin-left: 3.1rem;
+  }
+  .containerparent .infotitre .titrerestaurants1 {
+    font-size: 1.6rem;
+    margin-left: 4.8rem;
+  }
+  .containerparent .coeur1 {
+    margin-left: 1.5rem;
+  }
+  .containerparent .coeur1 .emptyHeart {
+    font-size: 1.6rem;
+  }
+  .containerparent .container {
+    margin-left: 2rem;
+  }
+  .containerparent .container .menu_lane {
+    width: 80%;
+  }
+  .containerparent .container .menu_lane2 {
+    width: 80%;
+  }
+  .containerparent .container .menu_lane3 {
+    width: 80%;
+  }
+  .containerparent .container .menu_lane4 {
+    width: 80%;
+  }
+  .containerparent .container .menu_lane5 {
+    width: 80%;
+  }
+  .containerparent .container .menu_lane6 {
+    width: 80%;
+  }
+  .containerparent .container .menu_lane7 {
+    width: 80%;
+  }
+  .containerparent button {
+    width: 80%;
+    height: 3rem;
+    margin-left: 1.5rem;
+  }
+  .backgroundfooter {
+    width: 100%;
+  }
+  button {
+    margin-left: 5.5rem;
+  }
+}
+
 @media screen and (min-width: 445px) {
   .containerparent .infotitre .coeur2 {
     margin-left: 4rem;
@@ -1759,9 +1810,110 @@
   }
 }
 
+@media screen and (min-width: 512px) {
+  .titreentree {
+    margin-left: 3.1rem;
+  }
+  .containerparent .infotitre .titrerestaurants1 {
+    font-size: 1.8rem;
+    margin-left: 4.8rem;
+  }
+  .containerparent .coeur1 {
+    margin-left: 5.5rem;
+  }
+  .containerparent .coeur1 .emptyHeart {
+    font-size: 1.8rem;
+  }
+  .containerparent .container {
+    margin-left: 2rem;
+  }
+  .containerparent .container .menu_lane {
+    width: 100%;
+  }
+  .containerparent .container .menu_lane2 {
+    width: 100%;
+  }
+  .containerparent .container .menu_lane3 {
+    width: 100%;
+  }
+  .containerparent .container .menu_lane4 {
+    width: 100%;
+  }
+  .containerparent .container .menu_lane5 {
+    width: 100%;
+  }
+  .containerparent .container .menu_lane6 {
+    width: 100%;
+  }
+  .containerparent .container .menu_lane7 {
+    width: 100%;
+  }
+  .containerparent button {
+    width: 100%;
+    height: 3rem;
+    margin-left: 1.5rem;
+  }
+  .backgroundfooter {
+    width: 100%;
+  }
+  button {
+    margin-left: 5.5rem;
+  }
+}
+
 @media screen and (min-width: 513px) {
   .containerparent .container {
     margin-left: 5rem;
+  }
+}
+
+@media screen and (min-width: 516px) {
+  .titreentree {
+    margin-left: 3.1rem;
+  }
+  .containerparent .infotitre .titrerestaurants1 {
+    font-size: 1.7rem;
+    margin-left: 1.8rem;
+  }
+  .containerparent .coeur1 {
+    margin-left: 6.5rem;
+  }
+  .containerparent .coeur1 .emptyHeart {
+    font-size: 1.7rem;
+  }
+  .containerparent .container {
+    margin-left: 2rem;
+  }
+  .containerparent .container .menu_lane {
+    width: 100%;
+  }
+  .containerparent .container .menu_lane2 {
+    width: 100%;
+  }
+  .containerparent .container .menu_lane3 {
+    width: 100%;
+  }
+  .containerparent .container .menu_lane4 {
+    width: 100%;
+  }
+  .containerparent .container .menu_lane5 {
+    width: 100%;
+  }
+  .containerparent .container .menu_lane6 {
+    width: 100%;
+  }
+  .containerparent .container .menu_lane7 {
+    width: 100%;
+  }
+  .containerparent button {
+    width: 100%;
+    height: 3rem;
+  }
+  .backgroundfooter {
+    width: 100%;
+  }
+  button {
+    margin-left: 5.5rem;
   }
 }
 
@@ -1817,56 +1969,6 @@
   }
 }
 
-@media screen and (min-width: 516px) {
-  .titreentree {
-    margin-left: 3.1rem;
-  }
-  .containerparent .infotitre .titrerestaurants1 {
-    font-size: 1.7rem;
-    margin-left: 1.8rem;
-  }
-  .containerparent .coeur1 {
-    margin-left: 6.5rem;
-  }
-  .containerparent .coeur1 .emptyHeart {
-    font-size: 1.7rem;
-  }
-  .containerparent .container {
-    margin-left: 2rem;
-  }
-  .containerparent .container .menu_lane {
-    width: 100%;
-  }
-  .containerparent .container .menu_lane2 {
-    width: 100%;
-  }
-  .containerparent .container .menu_lane3 {
-    width: 100%;
-  }
-  .containerparent .container .menu_lane4 {
-    width: 100%;
-  }
-  .containerparent .container .menu_lane5 {
-    width: 100%;
-  }
-  .containerparent .container .menu_lane6 {
-    width: 100%;
-  }
-  .containerparent .container .menu_lane7 {
-    width: 100%;
-  }
-  .containerparent button {
-    width: 100%;
-    height: 3rem;
-  }
-  .backgroundfooter {
-    width: 100%;
-  }
-  button {
-    margin-left: 5.5rem;
-  }
-}
-
 @media screen and (min-width: 523px) {
   .titreentree {
     margin-left: 5rem;
@@ -1879,108 +1981,6 @@
   }
   .containerparent .container {
     margin-left: 4rem;
-  }
-  .backgroundfooter {
-    width: 100%;
-  }
-  button {
-    margin-left: 5.5rem;
-  }
-}
-
-@media screen and (min-width: 444px) {
-  .titreentree {
-    margin-left: 3.1rem;
-  }
-  .containerparent .infotitre .titrerestaurants1 {
-    font-size: 1.6rem;
-    margin-left: 4.8rem;
-  }
-  .containerparent .coeur1 {
-    margin-left: 1.5rem;
-  }
-  .containerparent .coeur1 .emptyHeart {
-    font-size: 1.6rem;
-  }
-  .containerparent .container {
-    margin-left: 2rem;
-  }
-  .containerparent .container .menu_lane {
-    width: 80%;
-  }
-  .containerparent .container .menu_lane2 {
-    width: 80%;
-  }
-  .containerparent .container .menu_lane3 {
-    width: 80%;
-  }
-  .containerparent .container .menu_lane4 {
-    width: 80%;
-  }
-  .containerparent .container .menu_lane5 {
-    width: 80%;
-  }
-  .containerparent .container .menu_lane6 {
-    width: 80%;
-  }
-  .containerparent .container .menu_lane7 {
-    width: 80%;
-  }
-  .containerparent button {
-    width: 80%;
-    height: 3rem;
-    margin-left: 1.5rem;
-  }
-  .backgroundfooter {
-    width: 100%;
-  }
-  button {
-    margin-left: 5.5rem;
-  }
-}
-
-@media screen and (min-width: 512px) {
-  .titreentree {
-    margin-left: 3.1rem;
-  }
-  .containerparent .infotitre .titrerestaurants1 {
-    font-size: 1.8rem;
-    margin-left: 4.8rem;
-  }
-  .containerparent .coeur1 {
-    margin-left: 5.5rem;
-  }
-  .containerparent .coeur1 .emptyHeart {
-    font-size: 1.8rem;
-  }
-  .containerparent .container {
-    margin-left: 2rem;
-  }
-  .containerparent .container .menu_lane {
-    width: 100%;
-  }
-  .containerparent .container .menu_lane2 {
-    width: 100%;
-  }
-  .containerparent .container .menu_lane3 {
-    width: 100%;
-  }
-  .containerparent .container .menu_lane4 {
-    width: 100%;
-  }
-  .containerparent .container .menu_lane5 {
-    width: 100%;
-  }
-  .containerparent .container .menu_lane6 {
-    width: 100%;
-  }
-  .containerparent .container .menu_lane7 {
-    width: 100%;
-  }
-  .containerparent button {
-    width: 100%;
-    height: 3rem;
-    margin-left: 1.5rem;
   }
   .backgroundfooter {
     width: 100%;
@@ -3993,6 +3993,22 @@
   }
 }
 
+@media screen and (min-width: 820px) {
+  .backgroundimage img {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 821px) {
+  .containerparent .titreentree {
+    margin-left: -8.5rem;
+  }
+  .boutoncommande button {
+    height: 4rem;
+    margin-left: 8rem;
+  }
+}
+
 @media screen and (min-width: 823px) {
   .backgroundfooter .titrefooter {
     margin-top: -3.5rem;
@@ -4056,12 +4072,6 @@
   }
 }
 
-@media screen and (min-width: 820px) {
-  .backgroundimage img {
-    width: 100%;
-  }
-}
-
 @media screen and (min-width: 831px) {
   .containerparent {
     height: 110rem;
@@ -4078,18 +4088,6 @@
   .titreentree {
     position: relative;
     left: 0rem;
-  }
-}
-
-@media screen and (min-width: 817px) {
-  .containerparent .titreentree {
-    margin-left: -9rem;
-  }
-}
-
-@media screen and (min-width: 821px) {
-  .containerparent .titreentree {
-    margin-left: -12rem;
   }
 }
 
@@ -4116,6 +4114,12 @@
 @media screen and (min-width: 871px) {
   .backgroundfooter .titrefooter {
     margin-top: -4rem;
+  }
+}
+
+@media screen and (min-width: 883px) {
+  .containerparent .titreentree {
+    margin-left: -11.5rem;
   }
 }
 
@@ -4477,9 +4481,8 @@
 }
 
 @media screen and (min-width: 1079px) {
-  .titreentree {
-    position: relative;
-    left: -1.8rem;
+  .containerparent .infotitre .coeur2 .emptyheart {
+    font-size: 2rem;
   }
 }
 
@@ -6677,9 +6680,15 @@
   }
 }
 
-@media screen and (min-width: 1079px) {
-  .containerparent .infotitre .coeur2 .emptyheart {
-    font-size: 2rem;
+@media screen and (min-width: 1321px) {
+  .containerparent .titreentree {
+    margin-left: 6.5rem;
+  }
+  .containerparent .titredesserts {
+    margin-left: 48.5rem;
+  }
+  .containerparent .container3 {
+    margin-left: 1rem;
   }
 }
 
@@ -6728,6 +6737,18 @@
   }
 }
 
+@media screen and (min-width: 1351px) {
+  .containerparent .titreentree {
+    margin-left: 6.5rem;
+  }
+}
+
+@media screen and (min-width: 1355px) {
+  .containerparent .titreentree {
+    margin-left: 6.5rem;
+  }
+}
+
 @media screen and (min-width: 1366px) {
   .titreentree {
     position: relative;
@@ -6737,7 +6758,7 @@
     height: 60rem;
   }
   .containerparent .titreplat {
-    margin-left: 20.5rem;
+    margin-left: 22.5rem;
   }
   .containerparent article .menu_lane {
     position: relative;
@@ -6748,7 +6769,7 @@
     font-size: 3rem;
   }
   .containerparent .titreentree p {
-    margin-left: -6rem;
+    margin-right: 8rem;
     margin-top: 5rem;
   }
   .containerparent .titreentree p::after {
@@ -6768,6 +6789,9 @@
     width: 55px;
     height: 5px;
     background: #94e1ce;
+  }
+  .containerparent .titredesserts {
+    margin-left: 51rem;
   }
 }
 
@@ -6849,6 +6873,26 @@
   }
 }
 
+@media screen and (min-width: 1391px) {
+  .containerparent .titreentree {
+    margin-left: 4.5rem;
+    margin-bottom: 2.5rem;
+  }
+  .containerparent .container article .menu_lane {
+    position: relative;
+    top: 1rem;
+  }
+  .containerparent .titreplat {
+    margin-left: 22rem;
+  }
+  .containerparent .titredesserts {
+    margin-left: 51rem;
+  }
+  .containerparent .container3 {
+    margin-left: 1rem;
+  }
+}
+
 @media screen and (min-width: 1399px) {
   .containerparent .titredesserts {
     margin-left: 48rem;
@@ -6889,8 +6933,11 @@
     width: 100%;
     height: 60rem;
   }
+  .containerparent .infotitre .titrerestaurants1 {
+    margin-left: 15rem;
+  }
   .containerparent .titreentree {
-    margin-left: 10.8rem;
+    margin-left: 6rem;
   }
   .containerparent .titreentree::after {
     content: "";
@@ -6900,13 +6947,28 @@
     background: #94e1ce;
   }
   .containerparent .titreplat {
-    margin-left: 20.5rem;
+    margin-left: 22rem;
+  }
+  .containerparent .titredesserts {
+    margin-left: 51rem;
   }
   .container {
     margin-left: 30rem;
   }
   .backgroundfooter {
     padding-top: 15px;
+  }
+}
+
+@media screen and (min-width: 1468px) {
+  .containerparent .titreentree {
+    margin-left: 4rem;
+  }
+  .containerparent .titreplat {
+    margin-left: 22rem;
+  }
+  .containerparent .titredesserts {
+    margin-left: 51rem;
   }
 }
 
@@ -6935,8 +6997,17 @@
   .iconeretourmenu {
     margin-right: 5rem;
   }
-  .titreentree {
-    margin-left: 20rem;
+  .containerparent .infotitre .titrerestaurants1 {
+    margin-left: 17rem;
+  }
+  .containerparent .titreentree {
+    margin-left: 6.5rem;
+  }
+  .containerparent .titreplat {
+    margin-left: 24rem;
+  }
+  .containerparent .titredesserts {
+    margin-left: 53rem;
   }
   .container {
     margin-left: 34rem;
@@ -7966,438 +8037,6 @@
   }
 }
 
-@media screen and (min-width: 1273px) {
-  .backgroundfooter {
-    height: 20rem;
-  }
-  .infofooter {
-    position: relative;
-    top: -1.5rem;
-  }
-}
-
-@media screen and (min-width: 1287px) {
-  .containerparent .infotitre .titrerestaurants1 {
-    margin-left: 6rem;
-  }
-  .containerparent .infotitre .coeur2 {
-    margin-top: 5rem;
-    margin-left: 20rem;
-  }
-  .containerparent .infotitre .coeur2 .emptyheart {
-    font-size: 3rem;
-  }
-}
-
-@media screen and (min-width: 1289px) {
-  .backgroundfooter {
-    height: 20rem;
-  }
-  .infofooter {
-    position: relative;
-    top: -1.5rem;
-  }
-}
-
-@media screen and (min-width: 1293px) {
-  .titreentree {
-    position: relative;
-    left: -1rem;
-  }
-  .containerparent .titreplat {
-    position: relative;
-    left: -2rem;
-  }
-  .containerparent .titredesserts {
-    position: relative;
-    left: -3rem;
-  }
-}
-
-@media screen and (min-width: 1299px) {
-  .containerparent .infotitre .titrerestaurants1 {
-    margin-left: 15rem;
-  }
-  .containerparent .infotitre .coeur1 {
-    margin-top: 4rem;
-    margin-left: 14rem;
-  }
-}
-
-@media screen and (min-width: 1300px) {
-  .backgroundfooter .titrefooter {
-    margin-top: -8rem;
-  }
-}
-
-@media screen and (min-width: 1308px) {
-  .backgroundfooter .titrefooter {
-    margin-top: -8rem;
-  }
-}
-
-@media screen and (min-width: 1312px) {
-  .backgroundfooter .titrefooter {
-    margin-top: -8rem;
-  }
-}
-
-@media screen and (min-width: 1367px) {
-  .backgroundfooter {
-    height: 20rem;
-  }
-  .infofooter {
-    position: relative;
-    top: -1.5rem;
-  }
-}
-
-@media screen and (min-width: 1373px) {
-  .backgroundfooter {
-    height: 20rem;
-  }
-  .infofooter {
-    position: relative;
-    top: -1.5rem;
-  }
-}
-
-@media screen and (min-width: 1375px) {
-  .containerparent .infotitre .titrerestaurants1 {
-    margin-left: 6rem;
-  }
-  .containerparent .infotitre .coeur2 {
-    margin-top: 4rem;
-    margin-left: 20rem;
-  }
-  .containerparent .infotitre .coeur2 .emptyheart {
-    font-size: 4rem;
-  }
-}
-
-@media screen and (min-width: 1379px) {
-  .backgroundfooter .titrefooter {
-    margin-top: -8rem;
-  }
-}
-
-@media screen and (min-width: 1381px) {
-  .titreentree {
-    position: relative;
-    left: -2.5rem;
-  }
-  .containerparent .titreplat {
-    position: relative;
-    left: 0rem;
-  }
-  .containerparent .titredesserts {
-    position: relative;
-    left: 0rem;
-  }
-}
-
-@media screen and (min-width: 1401px) {
-  .containerparent .infotitre .titrerestaurants1 {
-    margin-left: 20rem;
-  }
-  .containerparent .infotitre .coeur1 {
-    margin-top: 4rem;
-    margin-left: 13rem;
-  }
-}
-
-@media screen and (min-width: 1407px) {
-  .titreentree {
-    position: relative;
-    left: -2.5rem;
-  }
-}
-
-@media screen and (min-width: 1417px) {
-  .containerparent .infotitre .titrerestaurants1 {
-    margin-left: 28rem;
-  }
-  .containerparent .infotitre .coeur1 {
-    margin-top: 4.5rem;
-    margin-left: 10rem;
-  }
-  .containerparent .infotitre .backgroundfooter .titrefooter {
-    margin-top: -8rem;
-  }
-}
-
-@media screen and (min-width: 1419px) {
-  .backgroundfooter .titrefooter {
-    margin-top: -8rem;
-  }
-}
-
-@media screen and (min-width: 1429px) {
-  .containerparent .infotitre .titrerestaurants1 {
-    margin-left: 20rem;
-  }
-  .containerparent .infotitre .coeur1 {
-    margin-top: -0.5rem;
-    margin-left: 20rem;
-  }
-  .containerparent .infotitre .titreentree {
-    position: relative;
-    left: -2.5rem;
-  }
-  .containerparent .infotitre .containerparent .titreplat {
-    position: relative;
-    left: 0rem;
-  }
-  .containerparent .infotitre .containerparent .titredesserts {
-    position: relative;
-    left: 0rem;
-  }
-}
-
-@media screen and (min-width: 1431px) {
-  .containerparent .infotitre .titrerestaurants1 {
-    margin-left: 15rem;
-  }
-  .containerparent .infotitre .coeur1 {
-    margin-top: 4rem;
-  }
-}
-
-@media screen and (min-width: 1433px) {
-  .containerparent .infotitre .titrerestaurants1 {
-    margin-left: 15rem;
-  }
-  .containerparent .infotitre .coeur1 {
-    margin-top: 4rem;
-  }
-}
-
-@media screen and (min-width: 1439px) {
-  .containerparent .infotitre .titrerestaurants1 {
-    margin-left: 28rem;
-  }
-  .containerparent .infotitre .coeur1 {
-    margin-top: 4rem;
-    margin-left: 13rem;
-  }
-}
-
-@media screen and (min-width: 1451px) {
-  .backgroundfooter {
-    height: 20rem;
-  }
-  .infofooter {
-    position: relative;
-    top: -1.5rem;
-  }
-}
-
-@media screen and (min-width: 1505px) {
-  .backgroundfooter .titrefooter {
-    margin-top: -8rem;
-  }
-}
-
-@media screen and (min-width: 1511px) {
-  .containerparent .infotitre .titrerestaurants1 {
-    margin-left: 28rem;
-  }
-  .containerparent .infotitre .coeur1 {
-    margin-top: 4.5rem;
-    margin-left: 16rem;
-  }
-  .containerparent .infotitre .backgroundfooter .titrefooter {
-    margin-top: -8rem;
-  }
-}
-
-@media screen and (min-width: 1513px) {
-  .containerparent .infotitre .titrerestaurants1 {
-    margin-left: 15rem;
-  }
-  .containerparent .infotitre .coeur1 {
-    margin-top: 4rem;
-  }
-}
-
-@media screen and (min-width: 1517px) {
-  .containerparent .infotitre .titrerestaurants1 {
-    margin-left: 15rem;
-  }
-  .containerparent .infotitre .coeur1 {
-    margin-top: 4rem;
-  }
-  .containerparent .infotitre .titrerestaurants1 {
-    margin-left: 6rem;
-  }
-  .containerparent .infotitre .coeur2 {
-    margin-top: 5rem;
-    margin-left: 20rem;
-  }
-  .containerparent .infotitre .coeur2 .emptyheart {
-    font-size: 3rem;
-  }
-}
-
-@media screen and (min-width: 1519px) {
-  .containerparent .infotitre .titrerestaurants1 {
-    margin-left: 25rem;
-  }
-  .containerparent .infotitre .coeur1 {
-    margin-top: 4rem;
-  }
-  .backgroundfooter {
-    height: 20rem;
-  }
-  .infofooter {
-    position: relative;
-    top: -1.5rem;
-  }
-}
-
-@media screen and (min-width: 1521px) {
-  .containerparent .infotitre .titrerestaurants1 {
-    margin-left: 15rem;
-  }
-  .containerparent .infotitre .coeur1 {
-    margin-top: 4rem;
-  }
-}
-
-@media screen and (min-width: 1523px) {
-  .containerparent .infotitre .titrerestaurants1 {
-    margin-left: 25rem;
-  }
-  .containerparent .infotitre .coeur1 {
-    margin-top: 4rem;
-    margin-left: 18rem;
-  }
-}
-
-@media screen and (min-width: 1525px) {
-  .containerparent .infotitre .titrerestaurants1 {
-    margin-left: 15rem;
-  }
-  .containerparent .infotitre .coeur1 {
-    margin-top: 4rem;
-  }
-}
-
-@media screen and (min-width: 1527px) {
-  .containerparent .infotitre .titrerestaurants1 {
-    margin-left: 28rem;
-  }
-  .containerparent .infotitre .coeur1 {
-    margin-top: 4rem;
-    margin-left: 13rem;
-  }
-}
-
-@media screen and (min-width: 1533px) {
-  .backgroundfooter {
-    height: 20rem;
-  }
-  .infofooter {
-    position: relative;
-    top: -1.5rem;
-  }
-}
-
-@media screen and (min-width: 1537px) {
-  .containerparent .infotitre .titrerestaurants1 {
-    margin-left: 28rem;
-  }
-  .containerparent .infotitre .coeur1 {
-    margin-top: 4rem;
-    margin-left: 13rem;
-  }
-}
-
-@media screen and (min-width: 1543px) {
-  .backgroundfooter .titrefooter {
-    margin-top: -8rem;
-  }
-}
-
-@media screen and (min-width: 1563px) {
-  .containerparent .infotitre .titrerestaurants1 {
-    margin-left: 28rem;
-  }
-  .containerparent .infotitre .coeur1 {
-    margin-top: 4rem;
-    margin-left: 17rem;
-  }
-}
-
-@media screen and (min-width: 1565px) {
-  .containerparent .infotitre .titrerestaurants1 {
-    margin-left: 28rem;
-  }
-  .containerparent .infotitre .coeur1 {
-    margin-top: 4rem;
-    margin-left: 13rem;
-  }
-  .backgroundfooter {
-    height: 20rem;
-  }
-  .infofooter {
-    position: relative;
-    top: -1.5rem;
-  }
-}
-
-@media screen and (min-width: 1567px) {
-  .backgroundfooter .titrefooter {
-    margin-top: -8rem;
-  }
-}
-
-@media screen and (min-width: 1572px) {
-  .containerparent .infotitre .titrerestaurants1 {
-    margin-left: 28rem;
-  }
-  .containerparent .infotitre .coeur1 {
-    margin-top: 4rem;
-    margin-left: 13rem;
-  }
-}
-
-@media screen and (min-width: 1589px) {
-  .backgroundfooter {
-    height: 20rem;
-  }
-  .infofooter {
-    position: relative;
-    top: -1.5rem;
-  }
-}
-
-@media screen and (min-width: 1603px) {
-  .backgroundfooter .titrefooter {
-    margin-top: -8rem;
-  }
-}
-
-@media screen and (min-width: 1613px) {
-  .backgroundfooter .titrefooter {
-    margin-top: -8rem;
-  }
-}
-
-@media screen and (min-width: 1617px) {
-  .titreentree {
-    position: relative;
-    left: -3.5rem;
-  }
-}
-
-@media screen and (min-width: 1627px) {
-  .titreentree {
-    position: relative;
-    left: -3.5rem;
-  }
-}
-
 @media screen and (min-width: 1629px) {
   .containerparent .infotitre .titrerestaurants1 {
     margin-left: 28rem;
@@ -8411,16 +8050,13 @@
     margin-top: 5rem;
   }
   .containerparent .titreentree {
-    position: relative;
-    left: -3.5rem;
+    margin-left: 6.5rem;
   }
-  .containerparent .containerparent .titreplat {
-    position: relative;
-    left: 0rem;
+  .containerparent .titreplat {
+    margin-left: 24rem;
   }
-  .containerparent .containerparent .titredesserts {
-    position: relative;
-    left: 0rem;
+  .containerparent .titredesserts {
+    margin-left: 53rem;
   }
   .backgroundfooter .titrefooter {
     margin-top: -8rem;
@@ -8443,6 +8079,15 @@
   }
   .containerparent .bloc2 {
     margin-top: -15rem;
+  }
+  .containerparent .titreentree {
+    margin-left: 8rem;
+  }
+  .containerparent .titreplat {
+    margin-left: 27rem;
+  }
+  .containerparent .titredesserts {
+    margin-left: 56rem;
   }
 }
 
@@ -8567,9 +8212,8 @@
     font-size: 3rem;
   }
   .containerparent .titreentree {
-    margin-left: 21rem;
-    position: relative;
-    top: -0.3rem;
+    margin-left: 16rem;
+    margin-bottom: 3.5rem;
   }
   .containerparent .titreentree p {
     margin-top: 5rem;
@@ -8580,7 +8224,7 @@
   }
   .containerparent .titreplat {
     margin-top: -30rem;
-    margin-left: 24.5rem;
+    margin-left: 26rem;
   }
   .containerparent .titreplat p {
     font-size: 2rem;
@@ -8592,7 +8236,7 @@
     height: 0.5rem;
   }
   .containerparent .titredesserts {
-    margin-left: 55.5rem;
+    margin-left: 58rem;
     margin-top: 2rem;
   }
   .containerparent .titredesserts p {

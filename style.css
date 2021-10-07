@@ -537,51 +537,54 @@ button {
   width: 100%;
   color: #f1f1f1;
   margin-bottom: 0rem;
-  margin-top: 2rem;
-  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 0 2rem;
 }
 .backgroundfooter .titrefooter {
   font-size: 1.5rem;
   font-family: Shrikhand;
-  position: absolute;
-  top: 2.5rem;
-  left: 2rem;
+  margin-top: -9rem;
 }
 .backgroundfooter .infofooter {
-  display: flex;
-  align-items: center;
-  padding: 0 2rem;
-  margin-top: -3.5rem;
+  margin-left: -8rem;
+  margin-top: 3rem;
 }
 .backgroundfooter .infofooter .iconefooter {
-  margin-top: 0rem;
   font-size: 1rem;
+}
+.backgroundfooter .infofooter .info1 {
+  margin-top: -1.2rem;
+  font-size: 1.1rem;
 }
 .backgroundfooter .infofooter .info1 .paraph1 {
-  margin-top: 0rem;
-  margin-left: 1.3rem;
-  font-size: 1.2rem;
+  margin-left: 2rem;
 }
 .backgroundfooter .infofooter .iconefooter2 {
-  position: absolute;
-  top: 7.5rem;
-  left: 1.8rem;
   font-size: 1rem;
+  margin-left: -0.2rem;
+  margin-top: 0.8rem;
+}
+.backgroundfooter .infofooter .info2 {
+  font-size: 1.1rem;
 }
 .backgroundfooter .infofooter .info2 .paraph2 {
-  margin-top: 7.5rem;
-  margin-left: -12.5rem;
-  font-size: 1.2rem;
+  margin-left: 2rem;
+  margin-top: -1.3rem;
+}
+.backgroundfooter .infofooter .info3 {
+  font-size: 1.1rem;
 }
 .backgroundfooter .infofooter .info3 .paraph3 {
-  margin-left: -14.5rem;
+  margin-left: 0rem;
   margin-top: 0.5rem;
-  font-size: 1.2rem;
+}
+.backgroundfooter .infofooter .info4 {
+  font-size: 1.1rem;
 }
 .backgroundfooter .infofooter .info4 .paraph4 {
-  margin-left: -14.5rem;
+  margin-left: 0rem;
   margin-top: 0.5rem;
-  font-size: 1.2rem;
 }
 .backgroundfooter .infofooter .info4 a {
   text-decoration: none;
@@ -772,6 +775,25 @@ button {
     width: 100%;
   }
 }
+@media screen and (min-width: 451px) {
+  .backgroundicone .icone1 {
+    margin-left: 8.2rem;
+  }
+  .backgroundicone .texteicone1 {
+    margin-left: 10rem;
+  }
+
+  .fonctionnement .circle {
+    margin-right: 4rem;
+  }
+
+  .grandcontainer .bloc .texteimage1 {
+    margin-left: 5.5rem;
+  }
+  .grandcontainer .bloc2 .texteimage2 {
+    margin-left: 5.5rem;
+  }
+}
 @media screen and (min-width: 465px) {
   .backgroundicone .icone1 {
     margin-left: 8.7rem;
@@ -824,6 +846,17 @@ button {
   .exploration button {
     margin-left: 2rem;
   }
+
+  .fonctionnement .circle {
+    margin-right: 5.5rem;
+  }
+
+  .grandcontainer .bloc .texteimage1 {
+    margin-left: 7rem;
+  }
+  .grandcontainer .bloc2 .texteimage2 {
+    margin-left: 7rem;
+  }
 }
 @media screen and (min-width: 483px) {
   .backgroundicone .icone1 {
@@ -842,14 +875,14 @@ button {
 }
 @media screen and (min-width: 487px) {
   .backgroundicone .icone1 {
-    margin-left: 9.5rem;
+    margin-left: 9.3rem;
   }
   .backgroundicone .texteicone1 {
     margin-left: 11rem;
   }
 
   .exploration button {
-    margin-left: 8rem;
+    margin-left: 2.3rem;
   }
 }
 @media screen and (min-width: 491px) {
@@ -863,7 +896,7 @@ button {
     left: -3rem;
   }
   .fonctionnement .circle {
-    margin-left: -26rem;
+    margin-left: -28rem;
   }
 }
 @media screen and (min-width: 500px) {
@@ -955,6 +988,15 @@ button {
     margin-left: 22rem;
   }
 }
+@media screen and (min-width: 521px) {
+  .backgroundicone .icone1 {
+    margin-left: 10.3rem;
+  }
+
+  .fonctionnement .circle {
+    margin-right: 1.5rem;
+  }
+}
 @media screen and (min-width: 547px) {
   .backgroundicone .icone1 {
     margin-left: 11.2rem;
@@ -1000,6 +1042,105 @@ button {
   }
   .grandcontainer .bloc4 {
     margin-left: 5rem;
+  }
+}
+@media screen and (min-width: 567px) {
+  .exploration button {
+    margin-left: 2rem;
+  }
+
+  .fonctionnement {
+    width: 92%;
+  }
+  .fonctionnement:nth-child(2) {
+    margin-left: 5rem;
+  }
+  .fonctionnement:nth-child(3) {
+    margin-left: 5rem;
+  }
+  .fonctionnement:nth-child(4) {
+    margin-left: 5rem;
+  }
+  .fonctionnement .circle {
+    margin-right: 4.5rem;
+  }
+
+  .grandcontainer .titrerestaurant {
+    margin-left: 7rem;
+  }
+  .grandcontainer .bloc {
+    margin-left: 2rem;
+  }
+  .grandcontainer .bloc .coeur1 {
+    margin-left: 25rem;
+  }
+  .grandcontainer .bloc .texteimage1 {
+    margin-left: 12rem;
+  }
+  .grandcontainer .bloc2 {
+    margin-left: 2rem;
+  }
+  .grandcontainer .bloc2 .coeur1 {
+    margin-left: 25rem;
+  }
+  .grandcontainer .bloc2 .texteimage2 {
+    margin-left: 12rem;
+  }
+  .grandcontainer .bloc3 {
+    margin-left: 2rem;
+  }
+  .grandcontainer .bloc3 .coeur1 {
+    margin-left: 25rem;
+  }
+  .grandcontainer .bloc4 {
+    margin-left: 2rem;
+  }
+  .grandcontainer .bloc4 .coeur1 {
+    margin-left: 25rem;
+  }
+}
+@media screen and (min-width: 573px) {
+  .backgroundicone .icone1 {
+    margin-left: 12rem;
+  }
+
+  .exploration button {
+    margin-left: 2rem;
+  }
+
+  .fonctionnement {
+    width: 90%;
+  }
+  .fonctionnement:nth-child(2) {
+    margin-left: 5rem;
+  }
+  .fonctionnement:nth-child(3) {
+    margin-left: 5rem;
+  }
+  .fonctionnement:nth-child(4) {
+    margin-left: 5rem;
+  }
+  .fonctionnement .circle {
+    margin-right: 4.2rem;
+  }
+
+  .grandcontainer .bloc {
+    margin-left: 2rem;
+  }
+  .grandcontainer .bloc .texteimage1 {
+    margin-left: 12rem;
+  }
+  .grandcontainer .bloc2 {
+    margin-left: 2rem;
+  }
+  .grandcontainer .bloc2 .texteimage2 {
+    margin-left: 12rem;
+  }
+  .grandcontainer .bloc3 {
+    margin-left: 2rem;
+  }
+  .grandcontainer .bloc4 {
+    margin-left: 2rem;
   }
 }
 @media screen and (min-width: 601px) {
@@ -1138,6 +1279,33 @@ button {
     margin-left: -27rem;
   }
 }
+@media screen and (min-width: 629px) {
+  .exploration h3 {
+    margin-left: 9rem;
+  }
+  .exploration .p2 {
+    margin-left: 11rem;
+  }
+  .exploration button {
+    margin-left: 3rem;
+  }
+
+  .fonctionnement {
+    width: 90%;
+  }
+  .fonctionnement:nth-child(2) {
+    margin-left: 5rem;
+  }
+  .fonctionnement:nth-child(3) {
+    margin-left: 5rem;
+  }
+  .fonctionnement:nth-child(4) {
+    margin-left: 5rem;
+  }
+  .fonctionnement .circle {
+    margin-right: 8rem;
+  }
+}
 @media screen and (min-width: 637px) {
   .backgroundicone .icone1 {
     margin-left: 14.1rem;
@@ -1172,65 +1340,6 @@ button {
     left: 4rem;
   }
 }
-@media screen and (min-width: 667px) {
-  .backgroundicone .icone1 {
-    margin-left: 19rem;
-  }
-  .backgroundicone .texteicone1 {
-    margin-left: 10rem;
-  }
-
-  .exploration {
-    width: 100%;
-  }
-  .exploration h3 {
-    position: relative;
-    left: 0rem;
-  }
-
-  .titrefonction {
-    margin-left: 15rem;
-  }
-
-  .fonctionnement:nth-child(2) {
-    margin-left: 12rem;
-  }
-  .fonctionnement:nth-child(3) {
-    margin-left: 12rem;
-  }
-  .fonctionnement:nth-child(4) {
-    margin-left: 12rem;
-  }
-
-  .grandcontainer .bloc {
-    margin-left: 9rem;
-  }
-  .grandcontainer .bloc2 {
-    margin-left: 9rem;
-  }
-  .grandcontainer .bloc3 {
-    margin-left: 9rem;
-  }
-  .grandcontainer .bloc4 {
-    margin-left: 9rem;
-  }
-}
-@media screen and (min-width: 681px) {
-  .backgroundicone .icone1 {
-    position: relative;
-    left: 0.5rem;
-  }
-  .backgroundicone .texteicone1 {
-    margin-left: 17rem;
-  }
-
-  .exploration .p2 {
-    margin-left: 17rem;
-  }
-  .exploration button {
-    margin-left: 13rem;
-  }
-}
 @media screen and (min-width: 659px) {
   .exploration h3 {
     margin-left: 9rem;
@@ -1240,17 +1349,6 @@ button {
   }
   .exploration button {
     margin-left: 13rem;
-  }
-}
-@media screen and (min-width: 629px) {
-  .exploration h3 {
-    margin-left: 9rem;
-  }
-  .exploration .p2 {
-    margin-left: 11rem;
-  }
-  .exploration button {
-    margin-left: 12rem;
   }
 }
 @media screen and (min-width: 665px) {
@@ -1278,6 +1376,73 @@ button {
     margin-left: 5rem;
   }
 }
+@media screen and (min-width: 667px) {
+  .backgroundicone .icone1 {
+    margin-left: 14.8rem;
+  }
+  .backgroundicone .texteicone1 {
+    margin-left: 17rem;
+  }
+
+  .exploration {
+    width: 100%;
+  }
+  .exploration h3 {
+    position: relative;
+    left: 0rem;
+  }
+  .exploration button {
+    margin-left: 3rem;
+  }
+
+  .titrefonction {
+    margin-left: 15rem;
+  }
+
+  .fonctionnement:nth-child(2) {
+    margin-left: 5rem;
+  }
+  .fonctionnement:nth-child(3) {
+    margin-left: 5rem;
+  }
+  .fonctionnement:nth-child(4) {
+    margin-left: 5rem;
+  }
+  .fonctionnement .circle {
+    margin-right: 10.5rem;
+  }
+
+  .grandcontainer .bloc {
+    margin-left: 2rem;
+  }
+  .grandcontainer .bloc .texteimage1 {
+    margin-left: 17rem;
+  }
+  .grandcontainer .bloc .coeur1 {
+    margin-left: 24rem;
+  }
+  .grandcontainer .bloc2 {
+    margin-left: 2rem;
+  }
+  .grandcontainer .bloc2 .texteimage2 {
+    margin-left: 17rem;
+  }
+  .grandcontainer .bloc2 .coeur1 {
+    margin-left: 24rem;
+  }
+  .grandcontainer .bloc3 {
+    margin-left: 2rem;
+  }
+  .grandcontainer .bloc3 .coeur1 {
+    margin-left: 24rem;
+  }
+  .grandcontainer .bloc4 {
+    margin-left: 2rem;
+  }
+  .grandcontainer .bloc4 .coeur1 {
+    margin-left: 24rem;
+  }
+}
 @media screen and (min-width: 673px) {
   .backgroundicone .icone1 {
     margin-left: 15.2rem;
@@ -1288,6 +1453,78 @@ button {
   }
   .exploration .p2 {
     margin-left: 13rem;
+  }
+}
+@media screen and (min-width: 681px) {
+  .backgroundicone .icone1 {
+    position: relative;
+    left: 0.5rem;
+  }
+  .backgroundicone .texteicone1 {
+    margin-left: 17rem;
+  }
+
+  .exploration .p2 {
+    margin-left: 17rem;
+  }
+  .exploration button {
+    margin-left: 13rem;
+  }
+}
+@media screen and (min-width: 683px) {
+  .backgroundicone .icone1 {
+    margin-left: 14.8rem;
+  }
+  .backgroundicone .texteicone1 {
+    margin-left: 17.5rem;
+  }
+
+  .exploration button {
+    margin-left: 4rem;
+  }
+
+  .fonctionnement:nth-child(2) {
+    margin-left: 5rem;
+  }
+  .fonctionnement:nth-child(3) {
+    margin-left: 5rem;
+  }
+  .fonctionnement:nth-child(4) {
+    margin-left: 5rem;
+  }
+  .fonctionnement .circle {
+    margin-right: 11.4rem;
+  }
+
+  .grandcontainer .bloc {
+    margin-left: 2rem;
+  }
+  .grandcontainer .bloc .texteimage1 {
+    margin-left: 18rem;
+  }
+  .grandcontainer .bloc .coeur1 {
+    margin-left: 24rem;
+  }
+  .grandcontainer .bloc2 {
+    margin-left: 2rem;
+  }
+  .grandcontainer .bloc2 .texteimage2 {
+    margin-left: 18rem;
+  }
+  .grandcontainer .bloc2 .coeur1 {
+    margin-left: 24rem;
+  }
+  .grandcontainer .bloc3 {
+    margin-left: 2rem;
+  }
+  .grandcontainer .bloc3 .coeur1 {
+    margin-left: 24rem;
+  }
+  .grandcontainer .bloc4 {
+    margin-left: 2rem;
+  }
+  .grandcontainer .bloc4 .coeur1 {
+    margin-left: 24rem;
   }
 }
 @media screen and (min-width: 687px) {
@@ -1306,6 +1543,65 @@ button {
   }
   .exploration button {
     margin-left: 13rem;
+  }
+}
+@media screen and (min-width: 697px) {
+  .backgroundicone .icone1 {
+    margin-left: 15.2rem;
+  }
+  .backgroundicone .texteicone1 {
+    margin-left: 18rem;
+  }
+
+  .exploration button {
+    margin-left: 4rem;
+  }
+
+  .fonctionnement:nth-child(2) {
+    margin-left: 5rem;
+  }
+  .fonctionnement:nth-child(3) {
+    margin-left: 5rem;
+  }
+  .fonctionnement:nth-child(4) {
+    margin-left: 5rem;
+  }
+  .fonctionnement .circle {
+    margin-right: 12rem;
+  }
+
+  .grandcontainer .titrerestaurant {
+    margin-left: 7rem;
+  }
+  .grandcontainer .bloc {
+    margin-left: 2rem;
+  }
+  .grandcontainer .bloc .coeur1 {
+    margin-left: 25rem;
+  }
+  .grandcontainer .bloc .texteimage1 {
+    margin-left: 18rem;
+  }
+  .grandcontainer .bloc2 {
+    margin-left: 2rem;
+  }
+  .grandcontainer .bloc2 .coeur1 {
+    margin-left: 25rem;
+  }
+  .grandcontainer .bloc2 .texteimage2 {
+    margin-left: 18rem;
+  }
+  .grandcontainer .bloc3 {
+    margin-left: 2rem;
+  }
+  .grandcontainer .bloc3 .coeur1 {
+    margin-left: 25rem;
+  }
+  .grandcontainer .bloc4 {
+    margin-left: 2rem;
+  }
+  .grandcontainer .bloc4 .coeur1 {
+    margin-left: 25rem;
   }
 }
 @media screen and (min-width: 703px) {
@@ -1349,6 +1645,159 @@ button {
     margin-left: 10rem;
   }
 }
+@media screen and (min-width: 705px) {
+  .exploration button {
+    margin-left: 5rem;
+  }
+
+  .fonctionnement:nth-child(2) {
+    margin-left: 6rem;
+  }
+  .fonctionnement:nth-child(3) {
+    margin-left: 6rem;
+  }
+  .fonctionnement:nth-child(4) {
+    margin-left: 6rem;
+  }
+  .fonctionnement .circle {
+    margin-right: 13rem;
+  }
+
+  .grandcontainer .titrerestaurant {
+    margin-left: 7rem;
+  }
+  .grandcontainer .bloc {
+    margin-left: 2rem;
+  }
+  .grandcontainer .bloc .coeur1 {
+    margin-left: 25rem;
+  }
+  .grandcontainer .bloc .texteimage1 {
+    margin-left: 18rem;
+  }
+  .grandcontainer .bloc2 {
+    margin-left: 2rem;
+  }
+  .grandcontainer .bloc2 .coeur1 {
+    margin-left: 25rem;
+  }
+  .grandcontainer .bloc2 .texteimage2 {
+    margin-left: 18rem;
+  }
+  .grandcontainer .bloc3 {
+    margin-left: 2rem;
+  }
+  .grandcontainer .bloc3 .coeur1 {
+    margin-left: 25rem;
+  }
+  .grandcontainer .bloc4 {
+    margin-left: 2rem;
+  }
+  .grandcontainer .bloc4 .coeur1 {
+    margin-left: 25rem;
+  }
+}
+@media screen and (min-width: 713px) {
+  .exploration button {
+    margin-left: 5rem;
+  }
+
+  .fonctionnement {
+    width: 92%;
+  }
+  .fonctionnement:nth-child(2) {
+    margin-left: 5rem;
+  }
+  .fonctionnement:nth-child(3) {
+    margin-left: 5rem;
+  }
+  .fonctionnement:nth-child(4) {
+    margin-left: 5rem;
+  }
+  .fonctionnement .circle {
+    margin-right: 14rem;
+  }
+
+  .grandcontainer .bloc {
+    margin-left: 2rem;
+  }
+  .grandcontainer .bloc .coeur1 {
+    margin-left: 24rem;
+  }
+  .grandcontainer .bloc .texteimage1 {
+    margin-left: 18rem;
+  }
+  .grandcontainer .bloc2 {
+    margin-left: 2rem;
+  }
+  .grandcontainer .bloc2 .coeur1 {
+    margin-left: 24rem;
+  }
+  .grandcontainer .bloc2 .texteimage2 {
+    margin-left: 18rem;
+  }
+  .grandcontainer .bloc3 {
+    margin-left: 2rem;
+  }
+  .grandcontainer .bloc3 .coeur1 {
+    margin-left: 24rem;
+  }
+  .grandcontainer .bloc4 {
+    margin-left: 2rem;
+  }
+  .grandcontainer .bloc4 .coeur1 {
+    margin-left: 24rem;
+  }
+}
+@media screen and (min-width: 723px) {
+  .exploration button {
+    margin-left: 2rem;
+  }
+
+  .fonctionnement:nth-child(2) {
+    margin-left: 5rem;
+  }
+  .fonctionnement:nth-child(3) {
+    margin-left: 5rem;
+  }
+  .fonctionnement:nth-child(4) {
+    margin-left: 5rem;
+  }
+  .fonctionnement .circle {
+    margin-right: 13.2rem;
+  }
+
+  .grandcontainer .bloc {
+    margin-left: 2rem;
+  }
+  .grandcontainer .bloc .coeur1 {
+    margin-left: 25rem;
+  }
+  .grandcontainer .bloc .texteimage1 {
+    margin-left: 18rem;
+  }
+  .grandcontainer .bloc2 {
+    margin-left: 2rem;
+  }
+  .grandcontainer .bloc2 .coeur1 {
+    margin-left: 25rem;
+  }
+  .grandcontainer .bloc2 .texteimage2 {
+    margin-left: 18rem;
+  }
+  .grandcontainer .bloc3 {
+    margin-left: 2rem;
+  }
+  .grandcontainer .bloc3 .coeur1 {
+    margin-left: 25rem;
+  }
+  .grandcontainer .bloc4 {
+    margin-left: 2rem;
+  }
+  .grandcontainer .bloc4 .coeur1 {
+    margin-left: 25rem;
+  }
+}
 @media screen and (min-width: 727px) {
   .backgroundicone .icone1 {
     margin-left: 16.4rem;
@@ -1359,6 +1808,23 @@ button {
 
   .exploration button {
     margin-left: 15rem;
+  }
+}
+@media screen and (min-width: 739px) {
+  .exploration button {
+    margin-left: 5rem;
+  }
+
+  .titrefonction {
+    font-size: 1.6rem;
+  }
+
+  .fonctionnement .circle {
+    margin-right: 15rem;
+  }
+
+  .grandcontainer .titrerestaurant {
+    margin-left: 8rem;
   }
 }
 @media screen and (min-width: 741px) {
@@ -1393,6 +1859,15 @@ button {
   }
   .backgroundicone .texteicone1 {
     margin-left: 20rem;
+  }
+}
+@media screen and (min-width: 757px) {
+  .exploration button {
+    margin-left: 5rem;
+  }
+
+  .fonctionnement .circle {
+    margin-right: 16.5rem;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1503,14 +1978,14 @@ body {
     border-radius: 1.2rem;
   }
   .fonctionnement:nth-child(2) {
-    margin-left: 2rem;
+    margin-left: 6rem;
   }
   .fonctionnement:nth-child(3) {
-    margin-left: 26rem;
+    margin-left: 29rem;
     margin-top: -6rem;
   }
   .fonctionnement:nth-child(4) {
-    margin-left: 15rem;
+    margin-left: 17rem;
   }
   .fonctionnement .soustitre {
     font-size: 0.8rem;
@@ -1527,7 +2002,7 @@ body {
     background: #9356dc;
     border-radius: 3rem;
     color: #ffff;
-    margin-left: -20rem;
+    margin-left: -3.2rem;
     margin-top: 0rem;
     font-size: 1.3rem;
   }
@@ -1904,58 +2379,64 @@ body {
 
   .backgroundfooter {
     background: #353535;
-    height: 23rem;
+    height: 16rem;
     width: 100%;
     color: #f1f1f1;
+    margin-bottom: 0rem;
     display: flex;
-    margin-top: 0rem;
-    justify-content: center;
     align-items: center;
+    padding: 0 2rem;
   }
   .backgroundfooter .titrefooter {
-    font-size: 3rem;
+    position: relative;
+    left: -0.5rem;
+    font-size: 2rem;
     font-family: Shrikhand;
-    margin-right: 15rem;
-    margin-top: -15rem;
+    margin-left: 2rem;
   }
   .backgroundfooter .infofooter {
-    margin-right: 10rem;
-    margin-top: 2rem;
+    margin-left: -11rem;
+    margin-top: 5rem;
+  }
+  .backgroundfooter .infofooter .iconefooter {
+    font-size: 1rem;
   }
   .backgroundfooter .infofooter .info1 {
-    margin-left: -17rem;
-    margin-top: -2rem;
-    font-family: Roboto;
-    font-size: 1.5rem;
-    white-space: nowrap;
+    margin-top: -1.2rem;
+    font-size: 1.4rem;
+  }
+  .backgroundfooter .infofooter .info1 .paraph1 {
+    margin-left: 2rem;
+  }
+  .backgroundfooter .infofooter .iconefooter2 {
+    font-size: 1rem;
+    margin-left: -0.2rem;
+    margin-top: 0.8rem;
   }
   .backgroundfooter .infofooter .info2 {
-    margin-top: 0.3rem;
-    margin-left: 3rem;
+    font-size: 1.4rem;
   }
   .backgroundfooter .infofooter .info2 .paraph2 {
-    font-size: 1.5rem;
-    margin-top: -1rem;
-    margin-left: -11rem;
+    margin-left: 2rem;
+    margin-top: -1.3rem;
   }
   .backgroundfooter .infofooter .info3 {
-    font-size: 1.5rem;
-    margin-top: 0.3rem;
-    margin-left: -5.5rem;
+    font-size: 1.4rem;
+  }
+  .backgroundfooter .infofooter .info3 .paraph3 {
+    margin-left: 0rem;
+    margin-top: 0.5rem;
   }
   .backgroundfooter .infofooter .info4 {
-    font-size: 1.5rem;
-    margin-top: 0.3rem;
+    font-size: 1.4rem;
+  }
+  .backgroundfooter .infofooter .info4 .paraph4 {
+    margin-left: 0rem;
+    margin-top: 0.5rem;
   }
   .backgroundfooter .infofooter .info4 a {
     text-decoration: none;
-    color: #f1f1f1;
-  }
-  .backgroundfooter .infofooter .iconefooter {
-    font-size: 1.6rem;
-  }
-  .backgroundfooter .infofooter .iconefooter2 {
-    font-size: 1.6rem;
+    color: white;
   }
 }
 @media screen and (min-width: 797px) {
@@ -2140,6 +2621,9 @@ body {
 
   .grandcontainer {
     width: 100%;
+  }
+  .grandcontainer .bloc3 .coeur1 {
+    margin-left: 16.5rem;
   }
 }
 @media screen and (min-width: 854px) {
@@ -2506,6 +2990,36 @@ body {
     margin-left: 22rem;
   }
 }
+@media screen and (min-width: 1027px) {
+  .fonctionnement:nth-child(2) {
+    margin-left: 4rem;
+  }
+  .fonctionnement:nth-child(3) {
+    margin-left: 25.3rem;
+  }
+  .fonctionnement:nth-child(4) {
+    margin-left: 46.5rem;
+  }
+}
+@media screen and (min-width: 1065px) {
+  .backgroundicone .icone1 {
+    margin-left: 27rem;
+  }
+
+  .fonctionnement:nth-child(2) {
+    margin-left: 4.5rem;
+  }
+  .fonctionnement:nth-child(3) {
+    margin-left: 26.5rem;
+  }
+  .fonctionnement:nth-child(4) {
+    margin-left: 48.5rem;
+  }
+
+  .grandcontainer .bloc3 .coeur1 {
+    margin-left: 16.5rem;
+  }
+}
 @media screen and (min-width: 1068px) {
   .backgroundicone .icone1 {
     margin-left: 27.5rem;
@@ -2548,6 +3062,22 @@ body {
   }
   .fonctionnement:nth-child(4) {
     margin-left: 48rem;
+  }
+}
+@media screen and (min-width: 1135px) {
+  .fonctionnement {
+    position: relative;
+    left: 1rem;
+  }
+
+  .grandcontainer .titrerestaurant {
+    margin-left: 26rem;
+  }
+  .grandcontainer .bloc .texteimage1 {
+    margin-left: 1.5rem;
+  }
+  .grandcontainer .bloc2 .texteimage2 {
+    margin-left: 0.5rem;
   }
 }
 @media screen and (min-width: 1222px) {
@@ -3010,7 +3540,37 @@ body {
 }
 @media screen and (min-width: 1283px) {
   .backgroundicone .icone1 {
-    margin-left: 34.2rem;
+    margin-left: 33.6rem;
+    font-size: 1.4rem;
+    margin-top: -3.5rem;
+  }
+
+  .exploration h3 {
+    margin-left: 25rem;
+  }
+  .exploration .p2 {
+    margin-left: 24.5rem;
+  }
+
+  .titrefonction {
+    margin-left: 30rem;
+  }
+
+  .fonctionnement:nth-child(2) {
+    margin-left: 5rem;
+  }
+  .fonctionnement:nth-child(3) {
+    margin-left: 30rem;
+  }
+  .fonctionnement:nth-child(4) {
+    margin-left: 55rem;
+  }
+
+  .grandcontainer .bloc .texteimage1 {
+    margin-left: 10rem;
+  }
+  .grandcontainer .bloc2 .texteimage2 {
+    margin-left: 10rem;
   }
 }
 @media screen and (min-width: 1284px) {
@@ -3040,6 +3600,28 @@ body {
 
   .titrefonction {
     margin-left: 26rem;
+  }
+}
+@media screen and (min-width: 1303px) {
+  .backgroundicone .icone1 {
+    margin-left: 34.4rem;
+  }
+
+  .fonctionnement:nth-child(2) {
+    margin-left: 4rem;
+  }
+  .fonctionnement:nth-child(3) {
+    margin-left: 28.5rem;
+  }
+  .fonctionnement:nth-child(4) {
+    margin-left: 53rem;
+  }
+
+  .grandcontainer .bloc .texteimage1 {
+    margin-left: 9rem;
+  }
+  .grandcontainer .bloc2 .texteimage2 {
+    margin-left: 9rem;
   }
 }
 @media screen and (min-width: 1331px) {
@@ -3250,16 +3832,26 @@ body {
     height: 19rem;
   }
 
+  .fonctionnement:nth-child(2) {
+    margin-left: 6rem;
+  }
+
   .fonctionnement:nth-child(3) {
-    margin-left: 21rem;
+    margin-left: 33rem;
   }
 
   .fonctionnement:nth-child(4) {
-    margin-left: 45rem;
+    margin-left: 60rem;
   }
 
   .grandcontainer .titrerestaurant h3 {
     font-size: 3rem;
+  }
+  .grandcontainer .bloc .texteimage1 {
+    margin-left: 14rem;
+  }
+  .grandcontainer .bloc2 .texteimage2 {
+    margin-left: 14rem;
   }
 }
 @media screen and (min-width: 1373px) {
@@ -3304,13 +3896,15 @@ body {
   }
 
   .fonctionnement:nth-child(2) {
-    margin-left: -3rem;
+    margin-left: 6rem;
   }
+
   .fonctionnement:nth-child(3) {
-    margin-left: 21rem;
+    margin-left: 33rem;
   }
+
   .fonctionnement:nth-child(4) {
-    margin-left: 45rem;
+    margin-left: 60rem;
   }
 
   .grandcontainer .titrerestaurant {
@@ -3328,6 +3922,24 @@ body {
 
   .grandcontainer .titrerestaurant {
     margin-left: 31rem;
+  }
+}
+@media screen and (min-width: 1381px) {
+  .fonctionnement:nth-child(2) {
+    margin-left: 9rem;
+  }
+  .fonctionnement:nth-child(3) {
+    margin-left: 34rem;
+  }
+  .fonctionnement:nth-child(4) {
+    margin-left: 60rem;
+  }
+
+  .grandcontainer .bloc .texteimage1 {
+    margin-left: 15rem;
+  }
+  .grandcontainer .bloc2 .texteimage2 {
+    margin-left: 15rem;
   }
 }
 @media screen and (min-width: 1406px) {
@@ -3409,15 +4021,19 @@ body {
   }
 
   .fonctionnement:nth-child(2) {
-    margin-left: -5rem;
+    margin-left: 6rem;
   }
 
   .fonctionnement:nth-child(3) {
-    margin-left: 20rem;
+    margin-left: 33rem;
   }
 
   .fonctionnement:nth-child(4) {
-    margin-left: 45rem;
+    margin-left: 60rem;
+  }
+
+  .fonctionnement .circle {
+    margin-right: 16.5rem;
   }
 
   .grandcontainer .titrerestaurant {
@@ -3449,12 +4065,53 @@ body {
 }
 @media screen and (min-width: 1435px) {
   .backgroundicone .icone1 {
-    margin-left: 39rem;
+    margin-left: 37.4rem;
+  }
+
+  .titrefonction {
+    margin-left: 28rem;
+  }
+
+  .fonctionnement:nth-child(2) {
+    margin-left: 6rem;
+  }
+
+  .fonctionnement:nth-child(3) {
+    margin-left: 33rem;
+  }
+
+  .fonctionnement:nth-child(4) {
+    margin-left: 60rem;
+  }
+
+  .fonctionnement .circle {
+    margin-right: 16.5rem;
   }
 }
 @media screen and (min-width: 1437px) {
   .backgroundicone .icone1 {
     margin-left: 37.4rem;
+  }
+
+  .titrefonction {
+    margin-left: 28rem;
+  }
+
+  .fonctionnement:nth-child(2) {
+    margin-left: 8rem;
+  }
+  .fonctionnement:nth-child(3) {
+    margin-left: 34rem;
+  }
+  .fonctionnement:nth-child(4) {
+    margin-left: 59rem;
+  }
+
+  .grandcontainer .bloc .texteimage1 {
+    margin-left: 15rem;
+  }
+  .grandcontainer .bloc2 .texteimage2 {
+    margin-left: 15rem;
   }
 }
 @media screen and (min-width: 1438px) {
@@ -3660,17 +4317,19 @@ body {
   }
 
   .titrefonction {
-    margin-left: 25rem;
+    margin-left: 28rem;
   }
 
   .fonctionnement:nth-child(2) {
-    margin-left: -8rem;
+    margin-left: 6rem;
   }
+
   .fonctionnement:nth-child(3) {
-    margin-left: 20rem;
+    margin-left: 33rem;
   }
+
   .fonctionnement:nth-child(4) {
-    margin-left: 48rem;
+    margin-left: 60rem;
   }
 }
 @media screen and (min-width: 1445px) {
@@ -3743,6 +4402,22 @@ body {
   }
   .backgroundicone .texteicone1 {
     margin-left: 25rem;
+  }
+
+  .fonctionnement:nth-child(2) {
+    margin-left: 6rem;
+  }
+
+  .fonctionnement:nth-child(3) {
+    margin-left: 33rem;
+  }
+
+  .fonctionnement:nth-child(4) {
+    margin-left: 60rem;
+  }
+
+  .fonctionnement .circle {
+    margin-right: 19.5rem;
   }
 }
 @media screen and (min-width: 1451px) {
@@ -3919,6 +4594,29 @@ body {
   .exploration button {
     margin-left: 37rem;
   }
+
+  .fonctionnement:nth-child(2) {
+    margin-left: 6rem;
+  }
+
+  .fonctionnement:nth-child(3) {
+    margin-left: 33rem;
+  }
+
+  .fonctionnement:nth-child(4) {
+    margin-left: 60rem;
+  }
+
+  .fonctionnement .circle {
+    margin-right: 0rem;
+  }
+
+  .grandcontainer .bloc .texteimage1 {
+    margin-left: 19rem;
+  }
+  .grandcontainer .bloc2 .texteimage2 {
+    margin-left: 19rem;
+  }
 }
 @media screen and (min-width: 1491px) {
   .backgroundicone .icone1 {
@@ -3930,6 +4628,35 @@ body {
 
   .exploration button {
     margin-left: 37rem;
+  }
+
+  .fonctionnement {
+    position: relative;
+    left: 14rem;
+  }
+  .fonctionnement .circle {
+    margin-left: -6.2rem;
+  }
+}
+@media screen and (min-width: 1503px) {
+  .backgroundicone .icone1 {
+    margin-left: 39.3rem;
+  }
+
+  .fonctionnement:nth-child(2) {
+    margin-left: -8rem;
+  }
+
+  .fonctionnement:nth-child(3) {
+    margin-left: 21rem;
+  }
+
+  .fonctionnement:nth-child(4) {
+    margin-left: 49rem;
+  }
+
+  .fonctionnement .circle {
+    margin-right: 16.5rem;
   }
 }
 @media screen and (min-width: 1507px) {
@@ -4004,6 +4731,22 @@ body {
 @media screen and (min-width: 1523px) {
   .backgroundicone .icone1 {
     margin-left: 40rem;
+  }
+
+  .fonctionnement:nth-child(2) {
+    margin-left: -5rem;
+  }
+
+  .fonctionnement:nth-child(3) {
+    margin-left: 23.5rem;
+  }
+
+  .fonctionnement:nth-child(4) {
+    margin-left: 53rem;
+  }
+
+  .fonctionnement .circle {
+    margin-right: 16.5rem;
   }
 }
 @media screen and (min-width: 1525px) {
@@ -4452,6 +5195,10 @@ body {
     margin-left: 33rem;
   }
 
+  .fonctionnement .circle {
+    margin-right: 17rem;
+  }
+
   .exploration button {
     margin-left: 45rem;
   }
@@ -4605,8 +5352,18 @@ body {
   .grandcontainer .bloc {
     margin-left: 3rem;
   }
+  .grandcontainer .bloc .texteimage1 {
+    width: 5rem;
+    height: 1.5rem;
+    margin-left: 23rem;
+  }
   .grandcontainer .bloc2 {
     margin-left: 53rem;
+  }
+  .grandcontainer .bloc2 .texteimage2 {
+    width: 5rem;
+    height: 1.5rem;
+    margin-left: 23rem;
   }
   .grandcontainer .bloc3 {
     margin-left: 3rem;
@@ -4884,19 +5641,24 @@ body {
   }
 }
 @media screen and (min-width: 1920px) {
-  .backgroundicone .icone {
-    position: relative;
-    left: 28.2rem;
+  .backgroundicone .icone1 {
+    margin-left: 50.2rem;
   }
   .backgroundicone .texteicone1 {
     margin-left: 25rem;
   }
 
+  .exploration h3 {
+    margin-left: 15rem;
+  }
   .exploration .p2 {
-    margin-left: 22rem;
+    margin-left: 15rem;
+  }
+  .exploration p {
+    margin-left: 1rem;
   }
   .exploration button {
-    margin-left: 53.5rem;
+    margin-left: 51rem;
   }
 
   .titrefonction {
@@ -4912,7 +5674,7 @@ body {
     margin-left: 27rem;
   }
   .fonctionnement .circle {
-    margin-left: -23rem;
+    margin-left: -6.5rem;
   }
 
   .grandcontainer {
@@ -4941,6 +5703,11 @@ body {
   }
   .grandcontainer .bloc .infodubloc .texte1 p {
     font-size: 1.8rem;
+  }
+  .grandcontainer .bloc .texteimage1 {
+    width: 8rem;
+    height: 1.5rem;
+    margin-left: 25rem;
   }
   .grandcontainer .bloc .coeur1 {
     margin-top: -4.3rem;
@@ -4990,6 +5757,11 @@ body {
   }
   .grandcontainer .bloc2 .coeur1 .emptyHeart {
     font-size: 2.2rem;
+  }
+  .grandcontainer .bloc2 .texteimage2 {
+    width: 8rem;
+    height: 1.5rem;
+    margin-left: 25rem;
   }
   .grandcontainer .bloc2 .infodubloc .texte2 h4 {
     font-size: 2rem;
@@ -5052,49 +5824,59 @@ body {
 
   .backgroundfooter {
     background: #353535;
-    height: 25rem;
+    height: 27rem;
     width: 100%;
+    position: relative;
     color: #f1f1f1;
     display: flex;
     margin-bottom: 0;
-    justify-content: center;
     align-items: center;
   }
   .backgroundfooter .titrefooter {
     font-size: 5rem;
     font-family: Shrikhand;
     margin-top: -15rem;
+    left: 10.8rem;
+    position: absolute;
   }
   .backgroundfooter .infofooter {
     margin-top: -5rem;
-    margin-left: -10rem;
+    margin-left: 28rem;
+  }
+  .backgroundfooter .infofooter .iconefooter {
+    margin-left: -15.5rem;
+    margin-top: 2rem;
   }
   .backgroundfooter .infofooter .info1 {
     margin-top: 9rem;
     font-family: Roboto;
     font-size: 2.2rem;
-    margin-left: 2rem;
+    margin-left: -14rem;
   }
   .backgroundfooter .infofooter .info1 .paraph1 {
     margin-left: 2rem;
   }
+  .backgroundfooter .infofooter .iconefooter2 {
+    margin-left: -21rem;
+    margin-top: 0.5rem;
+  }
   .backgroundfooter .infofooter .info2 .paraph2 {
     font-size: 2.2rem;
-    margin-left: 1rem;
-    margin-top: -2rem;
+    margin-left: -12rem;
+    margin-top: -2.2rem;
   }
   .backgroundfooter .infofooter .info3 {
     font-size: 2.2rem;
   }
   .backgroundfooter .infofooter .info3 .paraph3 {
-    margin-left: 1.5rem;
+    margin-left: -17rem;
     margin-top: 1rem;
   }
   .backgroundfooter .infofooter .info4 {
     font-size: 2.2rem;
   }
   .backgroundfooter .infofooter .info4 .paraph4 {
-    margin-left: 1.5rem;
+    margin-left: -17rem;
   }
   .backgroundfooter .infofooter .info4 a {
     text-decoration: none;
