@@ -5,11 +5,7 @@
     box-sizing: border-box;
 }
 
-
-// Responsive mobile // 
-
-
-
+// Responsive mobile //
 
 @keyframes spinner {
     0% {
@@ -32,7 +28,6 @@
 }
 
 @keyframes hide2 {
-
     0%,
     100% {
         width: 0;
@@ -40,691 +35,296 @@
     }
 }
 
-.loading {
-    position: fixed;
-    z-index: 999;
-    height: 2em;
-    width: 2em;
-    overflow: visible;
-    margin: auto;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    animation: hide 1000ms linear 3000ms forwards;
-}
+// .loading {
+//     position: fixed;
+//     z-index: 999;
+//     height: 2em;
+//     width: 2em;
+//     overflow: visible;
+//     margin: auto;
+//     top: 0;
+//     left: 0;
+//     bottom: 0;
+//     right: 0;
+//     animation: hide 1000ms linear 3000ms forwards;
+// }
 
-/* Transparent Overlay */
-.loading:before {
-    content: "";
-    display: block;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
+// /* Transparent Overlay */
+// .loading:before {
+//     content: "";
+//     display: block;
+//     position: fixed;
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//     height: 100%;
+//     background: radial-gradient(#9356dc, #ff79da);
+//     animation: hide2 1000ms linear 3300ms forwards;
+// }
+
+// .loading:not(:required) {
+//     /* hide "loading..." text */
+//     font: 0/0 a;
+//     color: transparent;
+//     text-shadow: none;
+//     background-color: transparent;
+//     border: 0;
+// }
+
+// .loading:not(:required):after {
+//     content: "";
+//     display: block;
+//     font-size: 30px;
+//     width: 1em;
+//     height: 1em;
+//     margin-top: -0.5em;
+//     -webkit-animation: spinner 150ms linear;
+//     -moz-animation: spinner 150ms linear;
+//     -ms-animation: spinner 150ms linear;
+//     -o-animation: spinner 150ms linear;
+//     animation: spinner 3000ms linear;
+//     border-radius: 0.5em;
+//     -webkit-box-shadow: rgba(255, 255, 255, 0.75) 1.5em 0 0 0, rgba(255, 255, 255, 0.75) 1.1em 1.1em 0 0,
+//         rgba(255, 255, 255, 0.75) 0 1.5em 0 0, rgba(255, 255, 255, 0.75) -1.1em 1.1em 0 0,
+//         rgba(255, 255, 255, 0.75) -1.5em 0 0 0, rgba(255, 255, 255, 0.75) -1.1em -1.1em 0 0,
+//         rgba(255, 255, 255, 0.75) 0 -1.5em 0 0, rgba(255, 255, 255, 0.75) 1.1em -1.1em 0 0;
+//     box-shadow: rgba(255, 255, 255, 0.75) 1.5em 0 0 0, rgba(255, 255, 255, 0.75) 1.1em 1.1em 0 0,
+//         rgba(255, 255, 255, 0.75) 0 1.5em 0 0, rgba(255, 255, 255, 0.75) -1.1em 1.1em 0 0,
+//         rgba(255, 255, 255, 0.75) -1.5em 0 0 0, rgba(255, 255, 255, 0.75) -1.1em -1.1em 0 0,
+//         rgba(255, 255, 255, 0.75) 0 -1.5em 0 0, rgba(255, 255, 255, 0.75) 1.1em -1.1em 0 0;
+// }
+
+html,
+body {
     height: 100%;
-    background: radial-gradient(#9356DC, #FF79DA);
-    animation: hide2 1000ms linear 3300ms forwards;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    width: 100%;
 }
 
-.loading:not(:required) {
-    /* hide "loading..." text */
-    font: 0/0 a;
-    color: transparent;
-    text-shadow: none;
-    background-color: transparent;
-    border: 0;
-}
+body {
+    height: 100vh;
+    font-size: 10px;
+    @include texte;
 
-.loading:not(:required):after {
-    content: "";
-    display: block;
-    font-size: 30px;
-    width: 1em;
-    height: 1em;
-    margin-top: -0.5em;
-    -webkit-animation: spinner 150ms linear;
-    -moz-animation: spinner 150ms linear;
-    -ms-animation: spinner 150ms linear;
-    -o-animation: spinner 150ms linear;
-    animation: spinner 3000ms linear;
-    border-radius: 0.5em;
-    -webkit-box-shadow: rgba(255, 255, 255, 0.75) 1.5em 0 0 0,
-        rgba(255, 255, 255, 0.75) 1.1em 1.1em 0 0,
-        rgba(255, 255, 255, 0.75) 0 1.5em 0 0,
-        rgba(255, 255, 255, 0.75) -1.1em 1.1em 0 0,
-        rgba(255, 255, 255, 0.75) -1.5em 0 0 0,
-        rgba(255, 255, 255, 0.75) -1.1em -1.1em 0 0,
-        rgba(255, 255, 255, 0.75) 0 -1.5em 0 0,
-        rgba(255, 255, 255, 0.75) 1.1em -1.1em 0 0;
-    box-shadow: rgba(255, 255, 255, 0.75) 1.5em 0 0 0,
-        rgba(255, 255, 255, 0.75) 1.1em 1.1em 0 0,
-        rgba(255, 255, 255, 0.75) 0 1.5em 0 0,
-        rgba(255, 255, 255, 0.75) -1.1em 1.1em 0 0,
-        rgba(255, 255, 255, 0.75) -1.5em 0 0 0,
-        rgba(255, 255, 255, 0.75) -1.1em -1.1em 0 0,
-        rgba(255, 255, 255, 0.75) 0 -1.5em 0 0,
-        rgba(255, 255, 255, 0.75) 1.1em -1.1em 0 0;
-}
-
-
-
-
-
-
-@media screen and (min-width: 375px) {
-
-
-    html,
-    body {
-        height: 100%;
-        overflow-x: hidden;
+    p {
         margin: 0;
-        padding: 0;
-        width: 100%;
     }
 
-    body {
-        height: 100vh;
-        font-size: 10px;
-        @include texte;
-
-
-
-        p {
-            margin: 0;
-        }
-
-        h3 {
-            margin: 0;
-        }
-
-        h4 {
-            margin: 0;
-        }
+    h3 {
+        margin: 0;
     }
 
+    h4 {
+        margin: 0;
+    }
+}
 
-    // Logo Header mobile //
+// Logo Header mobile //
 
-    .banniereheader {
-        width: 100%;
-        height: 4.3rem;
-        background: #f6f6f6;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 0rem
+.banniereheader {
+    width: 100%;
+    height: 4.3rem;
+    background: #f6f6f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0rem;
+}
+
+.logoheader {
+    @include titrepolice();
+}
+
+//Localisation & icone mobile //
+
+.backgroundicone {
+    width: 23.3rem;
+    height: 3rem;
+    background: #eaeaea;
+    margin-top: -1rem;
+
+    .texteicone1 {
+        margin-left: 7.5rem;
+        line-height: 3rem;
+        font-size: 1rem;
     }
 
-    .logoheader {
-        @include titrepolice();
+    .icone1 {
+        margin-left: 6rem;
+        margin-top: -2.2rem;
+        font-size: 0.9rem;
     }
+}
 
-    //Localisation & icone mobile //
+// Partie Exploration mobile //
 
-    .backgroundicone {
-        width: 23.3rem;
-        height: 3rem;
-        background: #eaeaea;
-        margin-top: -1rem;
+.exploration {
+    background: #f6f6f6;
+    width: 24rem;
+    height: 18rem;
+    margin-left: 0rem;
+    margin-top: 0rem;
+    display: flex;
+    flex-direction: column;
 
-        .texteicone1 {
-            margin-left: 7.5rem;
-            line-height: 3rem;
-            font-size: 1rem;
-
-        }
-
-        .icone1 {
-            margin-left: 6rem;
-            margin-top: -2.2rem;
-            font-size: 0.9rem;
-        }
-
-    }
-
-
-
-
-
-    // Partie Exploration mobile //
-
-    .exploration {
-
-        background: #f6f6f6;
-        width: 24rem;
-        height: 18rem;
-        margin-left: 0rem;
-        margin-top: 0rem;
-        display: flex;
-        flex-direction: column;
-
-        h3 {
-
-            font-size: 1.3rem;
-            margin-bottom: 5rem;
-            margin-left: 6rem;
-            margin-top: 2rem;
-
-
-
-
-
-        }
-
-        .p2 {
-            margin-top: -5rem;
-            margin-left: 8rem;
-        }
-
-
-        p {
-            font-size: 1rem;
-            text-align: center;
-            margin-top: -3rem;
-        }
-
-
-        button {
-            width: 15rem;
-            height: 3.5rem;
-            margin-left: 4.5rem;
-            margin-top: 2rem;
-            border-radius: 3rem;
-            padding: 20px 8px;
-            background: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
-            color: #ffff;
-            font-size: 1rem;
-            outline: none;
-            border: none;
-
-            &:hover {
-                box-shadow: 0 0 7px 6px #b35cdc;
-                filter: brightness(1.2);
-                
-            }
-
-        }
-    }
-
-    //Partie Fonctionnement mobile//
-
-    .titrefonction {
+    h3 {
         font-size: 1.3rem;
-        margin-top: 2.5rem;
-        margin-left: 2rem;
+        margin-bottom: 5rem;
+        margin-left: 6rem;
+        margin-top: 2rem;
     }
 
+    .p2 {
+        margin-top: -5rem;
+        margin-left: 8rem;
+    }
 
+    p {
+        font-size: 1rem;
+        text-align: center;
+        margin-top: -3rem;
+    }
 
-    .fonctionnement {
-        width: 90%;
+    button {
+        width: 15rem;
         height: 3.5rem;
-        background: #f6f6f6;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-left: 1rem;
-        margin-top: 3rem;
-        box-shadow: 0 0 5px;
-        border-radius: 1.2rem;
-        position: relative;
+        margin-left: 4.5rem;
+        margin-top: 2rem;
+        border-radius: 3rem;
+        padding: 20px 8px;
+        background: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+        color: #ffff;
+        font-size: 1rem;
+        outline: none;
+        border: none;
 
         &:hover {
-            background: #f5edff;
-           
+            box-shadow: 0 0 7px 6px #b35cdc;
+            filter: brightness(1.2);
         }
+    }
+}
 
-        .soustitre {
+//Partie Fonctionnement mobile//
 
-            font-size: 0.8rem;
-            font-weight: bold;
-            margin-left: 1rem;
-        }
+.titrefonction {
+    font-size: 1.3rem;
+    margin-top: 2.5rem;
+    margin-left: 2rem;
+}
 
+.fonctionnement {
+    width: 90%;
+    height: 3.5rem;
+    background: #f6f6f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1rem;
+    margin-top: 3rem;
+    box-shadow: 0 0 5px;
+    border-radius: 1.2rem;
+    position: relative;
 
-        i {
-            font-size: 1.2rem;
-            margin-left: -2rem;
-            margin-top: 0rem;
-
-            &:hover {
-                color: #9356dc;
-            }
-
-
-        }
-
-
-
-        .circle {
-            position: absolute;
-            margin-left: -21rem;
-            margin-top: -0.2rem;
-            width: 1.3rem;
-            height: 1.3rem;
-            background: #9356DC;
-            border-radius: 3rem;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: #ffff;
-            font-size: 0.6rem;
-        }
-
-
-
+    &:hover {
+        background: #f5edff;
     }
 
-
-    // Section Restaurants mobile//
-
-    //Container Global mobile //
-    .grandcontainer {
-        position: relative;
-        margin-top: 5rem;
-        width: 26rem;
-        height: 79rem;
-        background: #f6f6f6;
-
-
-
-
-        .titrerestaurant {
-            h3 {
-                position: absolute;
-                margin-top: 4.5rem;
-                font-size: 1.5rem;
-                margin-left: 1.2rem;
-            }
-        }
-
-        //Restaurant 1 mobile//
-
-        .bloc {
-
-            .page {
-                text-decoration: none;
-                color: black;
-
-            }
-        }
-
-
-
-        .bloc {
-            position: absolute;
-            display: flex;
-            flex-direction: column;
-            margin-top: 8rem;
-            margin-left: 1.5rem;
-            width: 20rem;
-            height: 15rem;
-            border-radius: 1.5rem;
-            background: #f6f6f6;
-            -webkit-box-shadow: 0px 7px 15px 3px #7A7A7A;
-            box-shadow: 0px 7px 15px 3px #7A7A7A;
-
-
-
-
-            .parent {
-
-
-
-                .texteimage1 {
-                    display: inline-flex;
-                    padding: 1rem 1rem;
-                    background: #99e2d0;
-                    color: #a1e7d6;
-                    align-items: center;
-                    justify-content: center;
-                    position: absolute;
-                    width: 4rem;
-                    height: 0.2rem;
-                    left: 12.8rem;
-                    top: 1rem;
-                    color: #109071;
-                    font-size: 1.2rem;
-
-                }
-            }
-
-
-            img {
-                position: relative;
-                width: 100%;
-                height: 10rem;
-                object-fit: cover;
-                border-top-right-radius: 1rem;
-                border-top-left-radius: 1rem;
-                margin-left: 0rem;
-                margin-bottom: 2rem;
-
-            }
-
-            .infodubloc {
-                flex-direction: column;
-                display: flex;
-                align-items: center;
-                justify-content: space-around;
-                margin-right: 12rem;
-                margin-top: 2rem;
-                font-size: 1.2rem;
-
-                h4 {
-                    white-space: nowrap;
-                    font-size: 1.2rem;
-                    margin-left: 3rem;
-                    margin-top: -3rem;
-
-                }
-
-                p {
-                    font-size: 1rem;
-                    margin-top: 0.2rem;
-                    margin-left: 3rem;
-                }
-            }
-
-            .coeur1 {
-
-                margin-top: -2.8rem;
-                margin-left: 17rem;
-
-
-                .emptyHeart {      
-                    font-size: 1.6rem;
-                    cursor: pointer;
-                    position: relative;
-                    transition: color 150ms 50ms ease;
-
-                    &:hover {
-                        color: transparent;
-                    }
-
-                    &:hover>.fullHeart {
-                        transform: scale(1);
-                    }
-                }
-
-                .fullHeart {
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    background: linear-gradient(170deg, #9356DC, #c776df);
-                    background-clip: border-box;
-                    -webkit-background-clip: text;
-                    -webkit-text-fill-color: transparent;
-                    transform: scale(0);
-                    transition: transform 150ms 50ms ease-in-out;
-                }
-
-            }
-
-
-
-        }
-
-
-
-
-
-
-        // Restaurant 2 mobile //
-
-        .bloc2 {
-            position: absolute;
-            margin-top: 25rem;
-            margin-left: 1.5rem;
-            display: flex;
-            flex-direction: column;
-            width: 20rem;
-            height: 15rem;
-            border-radius: 1.5rem;
-            background: #f6f6f6;
-            -webkit-box-shadow: 0px 7px 15px 3px #7A7A7A;
-            box-shadow: 0px 7px 15px 3px #7A7A7A;
-
-            .page {
-                text-decoration: none;
-                color: black;
-
-            }
-
-            .parent {
-
-
-
-                .texteimage2 {
-                    display: inline-flex;
-                    padding: 1rem 1rem;
-                    background: #99e2d0;
-                    color: #a1e7d6;
-                    align-items: center;
-                    justify-content: center;
-                    position: absolute;
-                    width: 4rem;
-                    height: 0.2rem;
-                    left: 12.8rem;
-                    top: 1rem;
-                    color: #109071;
-                    font-size: 1.3rem;
-
-                }
-            }
-
-
-            img {
-                position: relative;
-                width: 100%;
-                height: 10rem;
-                object-fit: cover;
-                border-top-right-radius: 1rem;
-                border-top-left-radius: 1rem;
-                margin-left: 0rem;
-                margin-bottom: 2rem;
-
-            }
-
-            .infodubloc {
-                flex-direction: column;
-                display: flex;
-                align-items: center;
-                justify-content: space-around;
-                margin-right: 12rem;
-                margin-top: 2rem;
-                font-size: 1.2rem;
-
-                h4 {
-                    white-space: nowrap;
-                    font-size: 1.2rem;
-                    margin-left: 3.2rem;
-                    margin-top: -3rem;
-
-                }
-
-                p {
-                    font-size: 1rem;
-                    margin-left: 3.2rem;
-                }
-
-
-
-            }
-
-            .coeur1 {
-
-                margin-top: -2.8rem;
-                margin-left: 17rem;
-
-
-                .emptyHeart {
-                    font-size: 1.6rem;
-                    cursor: pointer;
-                    position: relative;
-                    transition: color 150ms 50ms ease;
-
-                    &:hover {
-                        color: transparent;
-                    }
-
-                    &:hover>.fullHeart {
-                        transform: scale(1);
-                    }
-                }
-
-                .fullHeart {
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    background: linear-gradient(170deg, #9356DC, #c776df);
-                    background-clip: border-box;
-                    -webkit-background-clip: text;
-                    -webkit-text-fill-color: transparent;
-                    transform: scale(0);
-                    transition: transform 150ms 50ms ease-in-out;
-                }
-
-            }
-
-        }
-
-
-        // Restaurants 3 mobile  //
-
-
-        .bloc3 {
-            position: absolute;
-            display: flex;
-            flex-direction: column;
-            margin-top: 42rem;
-            margin-left: 1.5rem;
-            width: 20rem;
-            height: 15rem;
-            border-radius: 1.5rem;
-            background: #f6f6f6;
-            -webkit-box-shadow: 0px 7px 15px 3px #7A7A7A;
-            box-shadow: 0px 7px 15px 3px #7A7A7A;
-
-
-            .page {
-                text-decoration: none;
-                color: black;
-            }
-
-
-            img {
-
-                width: 100%;
-                height: 10rem;
-                object-fit: cover;
-                border-top-right-radius: 1rem;
-                border-top-left-radius: 1rem;
-                margin-left: 0rem;
-                margin-bottom: 2rem;
-
-            }
-
-            .infodubloc {
-                flex-direction: column;
-                display: flex;
-                align-items: center;
-                justify-content: space-around;
-                margin-right: 12rem;
-                margin-top: 2rem;
-                font-size: 1.2rem;
-
-                h4 {
-                    white-space: nowrap;
-                    font-size: 1.2rem;
-                    margin-left: 1rem;
-                    margin-top: -3rem;
-
-                }
-
-                p {
-                    font-size: 1rem;
-                    margin-left: 1rem;
-                }
-
-            }
-
-
-
-            .coeur1 {
-
-                margin-top: -2.8rem;
-                margin-left: 17rem;
-
-
-                .emptyHeart {
-                    font-size: 1.6rem;
-                    cursor: pointer;
-                    position: relative;
-                    transition: color 150ms 50ms ease;
-
-                    &:hover {
-                        color: transparent;
-                    }
-
-                    &:hover>.fullHeart {
-                        transform: scale(1);
-                    }
-                }
-
-                .fullHeart {
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    background: linear-gradient(170deg, #9356DC, #c776df);
-                    background-clip: border-box;
-                    -webkit-background-clip: text;
-                    -webkit-text-fill-color: transparent;
-                    transform: scale(0);
-                    transition: transform 150ms 50ms ease-in-out;
-                }
-
-            }
-
-
-
-
-
-
-
-
-
-        }
-
-
+    .soustitre {
+        font-size: 0.8rem;
+        font-weight: bold;
+        margin-left: 1rem;
     }
 
-    // Restaurants 4 mobile  // 
+    i {
+        font-size: 1.2rem;
+        margin-left: -2rem;
+        margin-top: 0rem;
 
-    .bloc4 {
+        &:hover {
+            color: #9356dc;
+        }
+    }
+
+    .circle {
+        position: absolute;
+        margin-left: -21rem;
+        margin-top: -0.2rem;
+        width: 1.3rem;
+        height: 1.3rem;
+        background: #9356dc;
+        border-radius: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #ffff;
+        font-size: 0.6rem;
+    }
+}
+
+// Section Restaurants mobile//
+
+//Container Global mobile //
+.grandcontainer {
+    position: relative;
+    margin-top: 5rem;
+    width: 26rem;
+    height: 79rem;
+    background: #f6f6f6;
+
+    .titrerestaurant {
+        h3 {
+            position: absolute;
+            margin-top: 4.5rem;
+            font-size: 1.5rem;
+            margin-left: 1.2rem;
+        }
+    }
+
+    //Restaurant 1 mobile//
+
+    .bloc {
+        .page {
+            text-decoration: none;
+            color: black;
+        }
+    }
+
+    .bloc {
         position: absolute;
         display: flex;
         flex-direction: column;
-        margin-top: 59rem;
+        margin-top: 8rem;
         margin-left: 1.5rem;
         width: 20rem;
         height: 15rem;
         border-radius: 1.5rem;
         background: #f6f6f6;
-        -webkit-box-shadow: 0px 7px 15px 3px #7A7A7A;
-        box-shadow: 0px 7px 15px 3px #7A7A7A;
+        -webkit-box-shadow: 0px 7px 15px 3px #7a7a7a;
+        box-shadow: 0px 7px 15px 3px #7a7a7a;
 
-
-
-        .page {
-            text-decoration: none;
-            color: black;
-        }
+  
+            .texteimage1 {
+                display: inline-flex;
+                padding: 1rem 1rem;
+                background: #99e2d0;
+                color: #a1e7d6;
+                align-items: center;
+                justify-content: center;
+                position: absolute;
+                width: 4rem;
+                height: 0.2rem;
+                left: 12.8rem;
+                top: 1rem;
+                color: #109071;
+                font-size: 1.2rem;
+            }
+        
 
         img {
-
+            position: relative;
             width: 100%;
             height: 10rem;
             object-fit: cover;
@@ -732,7 +332,6 @@
             border-top-left-radius: 1rem;
             margin-left: 0rem;
             margin-bottom: 2rem;
-
         }
 
         .infodubloc {
@@ -749,27 +348,18 @@
                 font-size: 1.2rem;
                 margin-left: 3rem;
                 margin-top: -3rem;
-
-
-
-
-
             }
 
             p {
                 font-size: 1rem;
+                margin-top: 0.2rem;
                 margin-left: 3rem;
-
             }
-
-
         }
 
         .coeur1 {
-
             margin-top: -2.8rem;
             margin-left: 17rem;
-
 
             .emptyHeart {
                 font-size: 1.6rem;
@@ -781,7 +371,7 @@
                     color: transparent;
                 }
 
-                &:hover>.fullHeart {
+                &:hover > .fullHeart {
                     transform: scale(1);
                 }
             }
@@ -790,208 +380,439 @@
                 position: absolute;
                 top: 0;
                 left: 0;
-                background: linear-gradient(170deg, #9356DC, #c776df);
+                background: linear-gradient(170deg, #9356dc, #c776df);
                 background-clip: border-box;
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
                 transform: scale(0);
                 transition: transform 150ms 50ms ease-in-out;
             }
-
         }
-
     }
 
+    // Restaurant 2 mobile //
 
-
-
-
-
-    // Section Footer mobile //
-
-    // Bouton Commande iphone //
-    button {
-        position: relative;
-        width: 12rem;
-        height: 3rem;
-        margin-left: 6.5rem;
-        margin-top: 2rem;
-        bottom: 0rem;
-        top: 0rem;
+    .bloc2 {
+        position: absolute;
+        margin-top: 25rem;
+        margin-left: 1.5rem;
         display: flex;
-        justify-content: center;
-        align-items: center;
-        line-height: 3rem;
-        border-radius: 3rem;
-        padding: 20px 8px;
-        background: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
-        color: #ffff;
-        font-size: 1rem;
-        outline: none;
-        border: none;
-    }
+        flex-direction: column;
+        width: 20rem;
+        height: 15rem;
+        border-radius: 1.5rem;
+        background: #f6f6f6;
+        -webkit-box-shadow: 0px 7px 15px 3px #7a7a7a;
+        box-shadow: 0px 7px 15px 3px #7a7a7a;
 
-
-
-
-    // Section Footer iphone //
-
-    .backgroundfooter {
-
-        background: #353535;
-        height: 16rem;
-        width: 26.5rem;
-        color: #f1f1f1;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 0rem;
-        margin-top: 0rem;
-
-
-
-
-
-
-        .titrefooter {
-            margin-top: -10rem;
-            margin-left: -8rem;
-            font-size: 1.5rem;
-            font-family: Shrikhand;
-
+        .page {
+            text-decoration: none;
+            color: black;
         }
 
-        .infofooter {
-
-
-
-
-            .info1 {
-
-                margin-left: -15rem;
-                font-family: Roboto;
-                font-size: 1rem;
-                white-space: nowrap;
-
-                .paraph1 {
-                    margin-top: 1.8rem;
-                    margin-left: 9rem;
-                }
-
-            }
-
-            .info2 {
-
-
-                .paraph2 {
-                    margin-left: -6rem;
-                    margin-top: -0.5rem;
-                    font-size: 1rem;
-                }
-            }
-
-            .info3 {
-                font-size: 1rem;
-
-
-                .paraph3 {
-
-                    margin-left: -8.5rem;
-                    margin-top: 1.2rem;
-                }
-            }
-
-            .info4 {
-                font-size: 1rem;
-
-
-
-                .paraph4 {
-
-                    margin-left: -8.5rem;
-                    margin-top: 0.8rem;
-                }
-
-                a {
-                    text-decoration: none;
-                    color: #f1f1f1;
-                }
-            }
-
-
-            .iconefooter {
-                position: relative;
-                left: -8.1rem;
-                top: 3rem;
-                font-size: 1.2rem;
-            }
-
-            .iconefooter2 {
-                position: relative;
+       
+            .texteimage2 {
+                display: inline-flex;
+                padding: 1rem 1rem;
+                background: #99e2d0;
+                color: #a1e7d6;
+                align-items: center;
+                justify-content: center;
+                position: absolute;
+                width: 4rem;
+                height: 0.2rem;
+                left: 12.8rem;
                 top: 1rem;
-                margin-left: -8.5rem;
+                color: #109071;
+                font-size: 1.3rem;
+            }
+        
+
+        img {
+            position: relative;
+            width: 100%;
+            height: 10rem;
+            object-fit: cover;
+            border-top-right-radius: 1rem;
+            border-top-left-radius: 1rem;
+            margin-left: 0rem;
+            margin-bottom: 2rem;
+        }
+
+        .infodubloc {
+            flex-direction: column;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            margin-right: 12rem;
+            margin-top: 2rem;
+            font-size: 1.2rem;
+
+            h4 {
+                white-space: nowrap;
                 font-size: 1.2rem;
+                margin-left: 3.2rem;
+                margin-top: -3rem;
+            }
 
-
+            p {
+                font-size: 1rem;
+                margin-left: 3.2rem;
             }
         }
 
+        .coeur1 {
+            margin-top: -2.8rem;
+            margin-left: 17rem;
 
+            .emptyHeart {
+                font-size: 1.6rem;
+                cursor: pointer;
+                position: relative;
+                transition: color 150ms 50ms ease;
+
+                &:hover {
+                    color: transparent;
+                }
+
+                &:hover > .fullHeart {
+                    transform: scale(1);
+                }
+            }
+
+            .fullHeart {
+                position: absolute;
+                top: 0;
+                left: 0;
+                background: linear-gradient(170deg, #9356dc, #c776df);
+                background-clip: border-box;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                transform: scale(0);
+                transition: transform 150ms 50ms ease-in-out;
+            }
+        }
     }
 
+    // Restaurants 3 mobile  //
+
+    .bloc3 {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        margin-top: 42rem;
+        margin-left: 1.5rem;
+        width: 20rem;
+        height: 15rem;
+        border-radius: 1.5rem;
+        background: #f6f6f6;
+        -webkit-box-shadow: 0px 7px 15px 3px #7a7a7a;
+        box-shadow: 0px 7px 15px 3px #7a7a7a;
+
+        .page {
+            text-decoration: none;
+            color: black;
+        }
+
+        img {
+            width: 100%;
+            height: 10rem;
+            object-fit: cover;
+            border-top-right-radius: 1rem;
+            border-top-left-radius: 1rem;
+            margin-left: 0rem;
+            margin-bottom: 2rem;
+        }
+
+        .infodubloc {
+            flex-direction: column;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            margin-right: 12rem;
+            margin-top: 2rem;
+            font-size: 1.2rem;
+
+            h4 {
+                white-space: nowrap;
+                font-size: 1.2rem;
+                margin-left: 1rem;
+                margin-top: -3rem;
+            }
+
+            p {
+                font-size: 1rem;
+                margin-left: 1rem;
+            }
+        }
+
+        .coeur1 {
+            margin-top: -2.8rem;
+            margin-left: 17rem;
+
+            .emptyHeart {
+                font-size: 1.6rem;
+                cursor: pointer;
+                position: relative;
+                transition: color 150ms 50ms ease;
+
+                &:hover {
+                    color: transparent;
+                }
+
+                &:hover > .fullHeart {
+                    transform: scale(1);
+                }
+            }
+
+            .fullHeart {
+                position: absolute;
+                top: 0;
+                left: 0;
+                background: linear-gradient(170deg, #9356dc, #c776df);
+                background-clip: border-box;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                transform: scale(0);
+                transition: transform 150ms 50ms ease-in-out;
+            }
+        }
+    }
+}
+
+// Restaurants 4 mobile  //
+
+.bloc4 {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    margin-top: 59rem;
+    margin-left: 1.5rem;
+    width: 20rem;
+    height: 15rem;
+    border-radius: 1.5rem;
+    background: #f6f6f6;
+    -webkit-box-shadow: 0px 7px 15px 3px #7a7a7a;
+    box-shadow: 0px 7px 15px 3px #7a7a7a;
+
+    .page {
+        text-decoration: none;
+        color: black;
+    }
+
+    img {
+        width: 100%;
+        height: 10rem;
+        object-fit: cover;
+        border-top-right-radius: 1rem;
+        border-top-left-radius: 1rem;
+        margin-left: 0rem;
+        margin-bottom: 2rem;
+    }
+
+    .infodubloc {
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-right: 12rem;
+        margin-top: 2rem;
+        font-size: 1.2rem;
+
+        h4 {
+            white-space: nowrap;
+            font-size: 1.2rem;
+            margin-left: 3rem;
+            margin-top: -3rem;
+        }
+
+        p {
+            font-size: 1rem;
+            margin-left: 3rem;
+        }
+    }
+
+    .coeur1 {
+        margin-top: -2.8rem;
+        margin-left: 17rem;
+
+        .emptyHeart {
+            font-size: 1.6rem;
+            cursor: pointer;
+            position: relative;
+            transition: color 150ms 50ms ease;
+
+            &:hover {
+                color: transparent;
+            }
+
+            &:hover > .fullHeart {
+                transform: scale(1);
+            }
+        }
+
+        .fullHeart {
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: linear-gradient(170deg, #9356dc, #c776df);
+            background-clip: border-box;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            transform: scale(0);
+            transition: transform 150ms 50ms ease-in-out;
+        }
+    }
+}
+
+// Section Footer mobile //
+
+// Bouton Commande iphone //
+button {
+    position: relative;
+    width: 12rem;
+    height: 3rem;
+    margin-left: 6.5rem;
+    margin-top: 2rem;
+    bottom: 0rem;
+    top: 0rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 3rem;
+    border-radius: 3rem;
+    padding: 20px 8px;
+    background: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+    color: #ffff;
+    font-size: 1rem;
+    outline: none;
+    border: none;
+}
+
+// Section Footer iphone //
+
+.backgroundfooter {
+    background: #353535;
+    height: 16rem;
+    width: 100%;
+    color: #f1f1f1;
+    margin-bottom: 0rem;
+    margin-top: 2rem;
+    position: relative;
+    
+    
+    .titrefooter {
+        font-size: 1.5rem;
+        font-family: Shrikhand;
+        position: absolute;
+       top: 2.5rem;
+       left: 2rem;
+    }
+    
+    .infofooter {
+        display: flex;
+        align-items: center;
+        padding: 0 2rem;
+        margin-top: -3.5rem;
+
+
+    .iconefooter{
+        margin-top: 0rem;
+        font-size: 1rem;
+    }
+
+        .info1{
+
+            .paraph1{
+                margin-top: 0rem;
+                margin-left: 1.3rem;
+                font-size: 1.2rem;
+            }
+
+
+        }
+
+        .iconefooter2{
+            position: absolute;
+            top: 7.5rem;
+            left: 1.8rem;
+            font-size: 1rem;
+        }
+
+        .info2{
+            
+            .paraph2{
+                margin-top: 7.5rem;
+                margin-left: -12.5rem;
+                font-size: 1.2rem;
+            }
+
+
+        }
+
+        
+        .info3{
+
+            .paraph3{
+               margin-left: -14.5rem;
+               margin-top: 0.5rem;
+                font-size: 1.2rem;
+            }
+
+
+        }
+
+        
+        .info4{
+
+            .paraph4{
+                margin-left: -14.5rem;
+                margin-top: 0.5rem;
+                font-size: 1.2rem;
+            }
+
+            a{
+                text-decoration: none;
+                color: white;
+            }
+
+
+        }
+
+       
 
 
 
 }
 
-@media screen and (min-width:387px) {
+}
 
-
+@media screen and (min-width: 387px) {
     .backgroundicone {
-
         width: 100%;
 
         .icone1 {
             margin-left: 6.3rem;
         }
-
-
     }
 
     .exploration {
         width: 100%;
     }
-
-
-
-
 }
 
-
-@media screen and (min-width:401px) {
-
-
+@media screen and (min-width: 401px) {
     .backgroundicone {
-
         width: 100%;
-
-
     }
 
     .exploration {
         width: 100%;
     }
-
-
-
-
 }
 
-@media screen and (min-width:407px) {
-
+@media screen and (min-width: 407px) {
     .backgroundicone {
-
-
         .icone1 {
             margin-left: 7rem;
         }
@@ -1000,8 +821,6 @@
             margin-left: 9rem;
         }
     }
-
-
 
     .grandcontainer {
         .bloc {
@@ -1020,19 +839,11 @@
             margin-left: 2rem;
         }
     }
-
-
-
-
 }
 
-
-@media screen and (min-width:421px) {
-
-
+@media screen and (min-width: 421px) {
     .backgroundicone {
         width: 100%;
-
 
         .icone1 {
             margin-left: 7.3rem;
@@ -1041,21 +852,16 @@
         .texteicone1 {
             margin-left: 9rem;
         }
-
     }
 
     .exploration {
-
         width: 100%;
     }
-
-
 }
 
-//Responsive 423px // 
+//Responsive 423px //
 
-@media screen and (min-width:423px) {
-
+@media screen and (min-width: 423px) {
     banniereheader {
         width: 100%;
     }
@@ -1080,36 +886,29 @@
         }
     }
 
-    //Fonctionnement 423px // 
+    //Fonctionnement 423px //
 
     .titrefonction {
-        margin-left: 7rem
+        margin-left: 7rem;
     }
 
     .fonctionnement {
-
-
         &:nth-child(2) {
-            margin-left: 5rem;
+            margin-left: 2rem;
         }
 
         &:nth-child(3) {
-
-            margin-left: 5rem;
-
+            margin-left: 2rem;
         }
 
         &:nth-child(4) {
-
-            margin-left: 5rem;
-
+            margin-left: 2rem;
         }
 
-
-
-
+        .circle {
+            margin-right: 3rem;
+        }
     }
-
 
     .grandcontainer {
         width: 100%;
@@ -1134,14 +933,85 @@
     .backgroundfooter {
         width: 100%;
     }
-
 }
 
+// Responsive 433px //
 
-//Responsive 436px // 
+@media screen and (min-width: 433px) {
+    // Icone & localistion 433px //
 
-@media screen and (min-width:436px) {
+    .backgroundicone {
+        .icone1 {
+            margin-left: 7.6rem;
+            margin-top: -2.3rem;
+            font-size: 1.2rem;
+        }
+    }
 
+    // Exploration 433px //
+    .exploration {
+        button {
+            width: 85%;
+            margin-left: 2rem;
+        }
+    }
+
+    // Fonctionnement 433px //
+
+    .fonctionnement {
+        &:nth-child(2) {
+            margin-left: 1.5rem;
+        }
+
+        &:nth-child(3) {
+            margin-left: 1.5rem;
+        }
+
+        &:nth-child(4) {
+            margin-left: 1.5rem;
+        }
+
+        .circle {
+            margin-right: 3.4rem;
+        }
+    }
+
+    // Bloc restaurant 433px //
+
+    .grandcontainer {
+        .titrerestaurant {
+            h3 {
+                font-size: 1.8rem;
+                margin-left: 8rem;
+                margin-top: 3rem;
+            }
+        }
+
+        .bloc {
+            width: 90%;
+            margin-left: 1.3rem;
+        }
+
+        .bloc2 {
+            width: 90%;
+            margin-left: 1.3rem;
+        }
+
+        .bloc3 {
+            width: 90%;
+            margin-left: 1.3rem;
+        }
+
+        .bloc4 {
+            width: 90%;
+            margin-left: 1.3rem;
+        }
+    }
+}
+
+//Responsive 436px //
+
+@media screen and (min-width: 436px) {
     .banniereheader {
         width: 100%;
     }
@@ -1161,17 +1031,10 @@
     .backgroundfooter {
         width: 100%;
     }
-
-
-
 }
 
-
-@media screen and (min-width:465px) {
-
+@media screen and (min-width: 465px) {
     .backgroundicone {
-
-
         .icone1 {
             margin-left: 8.7rem;
         }
@@ -1180,12 +1043,10 @@
             margin-left: 10.5rem;
         }
     }
-
 }
 
-@media screen and (min-width:471px) {
-
-    // Background & Icone 471px // 
+@media screen and (min-width: 471px) {
+    // Background & Icone 471px //
 
     .backgroundicone {
         .icone1 {
@@ -1193,12 +1054,9 @@
         }
     }
 
-
-    // Exploration 471 px // 
+    // Exploration 471 px //
 
     .exploration {
-
-
         h3 {
             margin-left: 9rem;
         }
@@ -1211,13 +1069,10 @@
             margin-left: 5rem;
         }
     }
-
-
 }
 
-@media screen and (min-width:471px) {
-
-    // Background & Icone 471px // 
+@media screen and (min-width: 471px) {
+    // Background & Icone 471px //
 
     .backgroundicone {
         .icone1 {
@@ -1225,12 +1080,9 @@
         }
     }
 
-
-    // Exploration 471 px // 
+    // Exploration 471 px //
 
     .exploration {
-
-
         h3 {
             margin-left: 9rem;
         }
@@ -1243,13 +1095,10 @@
             margin-left: 5rem;
         }
     }
-
-
 }
 
-@media screen and (min-width:473px) {
-
-    // Background & Icone 473px // 
+@media screen and (min-width: 473px) {
+    // Background & Icone 473px //
 
     .backgroundicone {
         .icone1 {
@@ -1257,12 +1106,9 @@
         }
     }
 
-
-    // Exploration 473 px // 
+    // Exploration 473 px //
 
     .exploration {
-
-
         h3 {
             margin-left: 9rem;
         }
@@ -1272,16 +1118,13 @@
         }
 
         button {
-            margin-left: 7rem;
+            margin-left: 2rem;
         }
     }
-
-
 }
 
-@media screen and (min-width:483px) {
-
-    // Background & Icone 483px // 
+@media screen and (min-width: 483px) {
+    // Background & Icone 483px //
 
     .backgroundicone {
         .icone1 {
@@ -1289,12 +1132,9 @@
         }
     }
 
-
-    // Exploration 483 px // 
+    // Exploration 483 px //
 
     .exploration {
-
-
         h3 {
             margin-left: 9rem;
         }
@@ -1307,16 +1147,10 @@
             margin-left: 8rem;
         }
     }
-
-
 }
 
-
-@media screen and (min-width:487px) {
-
+@media screen and (min-width: 487px) {
     .backgroundicone {
-
-
         .icone1 {
             margin-left: 9.5rem;
         }
@@ -1326,70 +1160,50 @@
         }
     }
 
-
-
-
-    //Exploration 491px // 
+    //Exploration 491px //
 
     .exploration {
+        button {
+            margin-left: 8rem;
+        }
+    }
+}
 
+@media screen and (min-width: 491px) {
+    //Exploration 491px //
+
+    .exploration {
         button {
             margin-left: 8rem;
         }
     }
 
+    .fonctionnement {
+        width: 85%;
+        position: relative;
+        left: -3rem;
 
-}
-
-@media screen and (min-width:491px) {
-
-
-    //Exploration 491px // 
-
-    .exploration {
-
-        button {
-            margin-left: 8rem;
+        .circle {
+            margin-left: -26rem;
         }
     }
-    
-    
-.fonctionnement{
-
-    width:85%;
-   position: relative;
-   left:-3rem;
-    
-    .circle{
-        margin-left: -26rem;
-    }
 }
 
-
-
-}
-
-//Responsive 500PX // 
+//Responsive 500PX //
 
 @media screen and (min-width: 500px) {
-
-
     .backgroundicone {
-
         .icone1 {
             margin-left: 9.8rem;
             font-size: 1rem;
         }
 
         .texteicone1 {
-
             margin-left: 12rem;
-
         }
     }
 
     .exploration {
-
         h3 {
             margin-left: 9.5rem;
         }
@@ -1401,19 +1215,130 @@
         button {
             margin-left: 8rem;
         }
+    }
+}
 
+@media screen and (min-width:501px){
+
+// Eploxration 501px // 
+
+.exploration{
+    button{
+        margin-left: 2rem;
+    }
+}
+
+// Fonctionnement 501px // 
+
+.fonctionnement{
+    &:nth-child(2){
+        margin-left: 5rem;
+        
     }
 
+    &:nth-child(3){
+        margin-left: 5rem;
+    }
+
+    &:nth-child(4){
+        margin-left: 5rem;
+    }
+
+    .circle{
+        margin-right: 1rem;
+        font-size: 1rem;
+        width: 1.8rem;
+        height: 1.8rem;
+    }
+}
 
 
 
 }
 
-@media screen and (min-width:547px) {
+@media screen and (min-width: 503px) {
+    // Exploration 503 px //
 
+    .exploration {
+        button {
+            margin-left: 2rem;
+        }
+    }
+
+    // Fonctionnement 503px //
+
+    .titrefonction {
+        margin-left: 9rem;
+    }
+
+    .fonctionnement {
+        .soustitre {
+            font-size: 1rem;
+        }
+        &:nth-child(2) {
+            margin-left: 5rem;
+        }
+
+        &:nth-child(3) {
+            margin-left: 5rem;
+        }
+
+        &:nth-child(4) {
+            margin-left: 5rem;
+        }
+
+        .circle {
+            width: 1.7rem;
+            height: 1.7rem;
+            margin-right: 0.5rem;
+        }
+    }
+
+    .grandcontainer {
+        .titrerestaurant {
+            margin-left: 1rem;
+        }
+    }
+}
+
+@media screen and (min-width:509px){
+
+
+.grandcontainer{
+    .bloc{
+        .coeur1{
+            margin-top: -3rem;
+            margin-left: 22rem;
+        }
+    }
+
+    .bloc2{
+        .coeur1{
+            margin-top: -3rem;
+            margin-left: 22rem;
+        }
+    }
+
+    .bloc3{
+        .coeur1{
+            margin-top: -3rem;
+            margin-left: 22rem;
+        }
+    }
+
+    .bloc4{
+        .coeur1{
+            margin-top: -3rem;
+            margin-left: 22rem;
+        }
+    }
+}
+
+
+}
+
+@media screen and (min-width: 547px) {
     .backgroundicone {
-
-
         .icone1 {
             margin-left: 11.2rem;
         }
@@ -1422,16 +1347,12 @@
             margin-left: 13rem;
         }
     }
-
 }
 
-@media screen and (min-width:565px) {
-
-
-    // Background & Icone 565px // 
+@media screen and (min-width: 565px) {
+    // Background & Icone 565px //
 
     .backgroundicone {
-
         .texteicone1 {
             margin-left: 14rem;
         }
@@ -1441,26 +1362,21 @@
         }
     }
 
-    // Exploration 565px // 
+    // Exploration 565px //
 
     .exploration {
-
         button {
             margin-left: 9.5rem;
         }
-
-
     }
 
-    // Fonctionnement 565px // 
+    // Fonctionnement 565px //
 
     .titrefonction {
         margin-left: 11rem;
     }
 
     .fonctionnement {
-
-
         &:nth-child(2) {
             margin-left: 8rem;
         }
@@ -1472,14 +1388,11 @@
         &:nth-child(4) {
             margin-left: 8rem;
         }
-
-
     }
 
-    // Restaurant Bloc 565px // 
+    // Restaurant Bloc 565px //
 
     .grandcontainer {
-
         .bloc {
             margin-left: 5rem;
         }
@@ -1496,20 +1409,171 @@
             margin-left: 5rem;
         }
     }
+}
+
+@media screen and (min-width: 601px) {
+
+    // Header & Icone 601px // 
+
+    .backgroundicone{
+        .icone1{
+            font-size: 1.5rem;
+            margin-left: 12.7rem;
+            margin-top: -2.5rem;
+        }
+
+        .texteicone1{
+            font-size: 1.3rem;
+            margin-left: 15rem;
+        }
+    }
+
+
+
+    // Exploration 601px //
+
+    .exploration {
+        button {
+            margin-left: 2rem;
+            
+        }
+    }
+
+    //Fonctionnement 601px//
+
+    .fonctionnement{
+
+        &:nth-child(2){
+            margin-left: 6rem;
+        }
+
+        &:nth-child(3){
+            margin-left: 6rem;
+        }
+
+        &:nth-child(4){
+            margin-left: 6rem;
+        }
+
+        .circle{
+            margin-right: 6rem;
+            font-size: 0.8rem;
+        }
+
+    }
+
+    // Blocs restaurants 601px // 
+
+    .grandcontainer{
+        .bloc{
+            margin-left: 2rem;
+            .coeur1{
+                margin-top: -3rem;
+                margin-left: 22rem;
+            }
+        }
+
+        .bloc2{
+            margin-left: 2rem;
+            .coeur1{
+                margin-top: -3rem;
+                margin-left: 22rem;
+            }
+        }
+
+        .bloc3{
+            margin-left: 2rem;
+            .coeur1{
+                margin-top: -3rem;
+                margin-left: 22rem;
+            }
+        }
+        .bloc4{
+            margin-left: 2rem;
+            .coeur1{
+                margin-top: -3rem;
+                margin-left: 22rem;
+            }
+        }
+    }
+
+
 
 
 }
 
-@media screen and (min-width:625px) {
+@media screen and (min-width: 609px) {
+    // Exploration 609 px //
 
+    .exploration {
+        button {
+            margin-left: 2rem;
+        }
+    }
 
+    .fonctionnement {
+        &:nth-child(2) {
+            margin-left: 6rem;
+        }
 
+        &:nth-child(3) {
+            margin-left: 6rem;
+        }
 
-    // Background & Icone 625px // 
+        &:nth-child(4) {
+            margin-left: 6rem;
+        }
+        .circle {
+            font-size: 0.9rem;
+            margin-right: 6rem;
+        }
+    }
+
+    .grandcontainer {
+        .titrerestaurant {
+            h3 {
+                font-size: 2.1rem;
+            }
+            margin-left: 5rem;
+        }
+        .bloc {
+            margin-left: 2rem;
+            .coeur1 {
+                margin-left: 20rem;
+                margin-top: -3rem;
+            }
+        }
+
+        .bloc2 {
+            margin-left: 2rem;
+            .coeur1 {
+                margin-left: 20rem;
+                margin-top: -3rem;
+            }
+        }
+
+        .bloc3 {
+            margin-left: 2rem;
+            .coeur1 {
+                margin-left: 20rem;
+                margin-top: -3rem;
+            }
+        }
+
+        .bloc4 {
+            margin-left: 2rem;
+            .coeur1 {
+                margin-left: 20rem;
+                margin-top: -3rem;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 625px) {
+    // Background & Icone 625px //
 
     .backgroundicone {
-
-
         .icone1 {
             margin-left: 13.7rem;
         }
@@ -1519,13 +1583,9 @@
         }
     }
 
-
-
-    // Exploration 625 px // 
-
+    // Exploration 625 px //
 
     .exploration {
-
         h3 {
             position: relative;
             left: 4rem;
@@ -1534,41 +1594,22 @@
         button {
             margin-left: 12rem;
         }
-
     }
 
-    
-.fonctionnement{
+    .fonctionnement {
+        width: 70%;
+        margin-left: -25rem;
 
-width:70%;
-margin-left: -25rem;
-
-    
-    .circle{
-        margin-left: -27rem;
-      
-        
+        .circle {
+            margin-left: -27rem;
+        }
     }
-
-
 }
 
-
-
-
-
-}
-
-@media screen and (min-width:637px) {
-
-
-
-
-    // Background & Icone 637px // 
+@media screen and (min-width: 637px) {
+    // Background & Icone 637px //
 
     .backgroundicone {
-
-
         .icone1 {
             margin-left: 14.1rem;
         }
@@ -1578,31 +1619,18 @@ margin-left: -25rem;
         }
     }
 
-
-
-
-    // Exploration 643 px // 
-
+    // Exploration 643 px //
 
     .exploration {
-
         h3 {
             position: relative;
             left: 4rem;
         }
-
-
     }
-
-
-
 }
 
-@media screen and (min-width:639px) {
-
+@media screen and (min-width: 639px) {
     .backgroundicone {
-
-
         .icone1 {
             margin-left: 11.2rem;
         }
@@ -1613,16 +1641,10 @@ margin-left: -25rem;
     }
 }
 
-@media screen and (min-width:643px) {
-
-
-
-
-    // Background & Icone 643px // 
+@media screen and (min-width: 643px) {
+    // Background & Icone 643px //
 
     .backgroundicone {
-
-
         .icone1 {
             margin-left: 14.3rem;
         }
@@ -1632,45 +1654,28 @@ margin-left: -25rem;
         }
     }
 
-
-
-
-    // Exploration 643 px // 
-
+    // Exploration 643 px //
 
     .exploration {
-
         h3 {
             position: relative;
             left: 4rem;
         }
-
-
     }
-
-
-
 }
 
-
-@media screen and (min-width:667px) {
-
+@media screen and (min-width: 667px) {
     .backgroundicone {
-
-
         .icone1 {
             margin-left: 19rem;
         }
 
         .texteicone1 {
             margin-left: 10rem;
-
-
         }
-
     }
 
-    //exploration 811 px // 
+    //exploration 811 px //
     .exploration {
         width: 100%;
 
@@ -1680,14 +1685,13 @@ margin-left: -25rem;
         }
     }
 
-    //fonctionnement 811px // 
+    //fonctionnement 811px //
 
     .titrefonction {
         margin-left: 15rem;
     }
 
     .fonctionnement {
-
         &:nth-child(2) {
             margin-left: 12rem;
         }
@@ -1699,14 +1703,9 @@ margin-left: -25rem;
         &:nth-child(4) {
             margin-left: 12rem;
         }
-
-
     }
 
     .grandcontainer {
-
-
-
         .bloc {
             margin-left: 9rem;
         }
@@ -1722,21 +1721,11 @@ margin-left: -25rem;
         .bloc4 {
             margin-left: 9rem;
         }
-
-
     }
-
-
 }
 
-
-
-
-@media screen and (min-width:681px) {
-
-
-
-    // Background Icone 687 px // 
+@media screen and (min-width: 681px) {
+    // Background Icone 687 px //
 
     .backgroundicone {
         .icone1 {
@@ -1749,13 +1738,10 @@ margin-left: -25rem;
         }
     }
 
-    // Exploration 687 px // 
+    // Exploration 687 px //
 
     .exploration {
-        h3 {
-            position: relative;
-            left: 0px;
-        }
+       
 
         .p2 {
             margin-left: 17rem;
@@ -1765,23 +1751,14 @@ margin-left: -25rem;
             margin-left: 13rem;
         }
     }
-
-
-
 }
 
-@media screen and (min-width:659px) {
+@media screen and (min-width: 659px) {
+    // Background & Icone 659px //
 
-    // Background & Icone 659px // 
-
-
-
-
-    // Exploration 659 px // 
+    // Exploration 659 px //
 
     .exploration {
-
-
         h3 {
             margin-left: 9rem;
         }
@@ -1794,22 +1771,14 @@ margin-left: -25rem;
             margin-left: 13rem;
         }
     }
-
-
 }
 
-@media screen and (min-width:629px) {
+@media screen and (min-width: 629px) {
+    // Background & Icone 629px //
 
-    // Background & Icone 629px // 
-
-
-
-
-    // Exploration 629 px // 
+    // Exploration 629 px //
 
     .exploration {
-
-
         h3 {
             margin-left: 9rem;
         }
@@ -1822,15 +1791,10 @@ margin-left: -25rem;
             margin-left: 12rem;
         }
     }
-
-
 }
 
-@media screen and (min-width:665px) {
-
-
-
-    // Background Icone 665 px // 
+@media screen and (min-width: 665px) {
+    // Background Icone 665 px //
 
     .backgroundicone {
         .icone1 {
@@ -1842,7 +1806,7 @@ margin-left: -25rem;
         }
     }
 
-    // Exploration 665 px // 
+    // Exploration 665 px //
 
     .exploration {
         h3 {
@@ -1858,28 +1822,31 @@ margin-left: -25rem;
         }
     }
 
+    // Fonctionnement 665px // 
+    .fonctionnement{
+        width: 90%;
+        
+        &:nth-child(2){
+            margin-left: 5rem;
+        }
+        
+    }
 
+    
 }
 
-
-@media screen and (min-width:673px) {
-
-    // Background & icone 673px // 
+@media screen and (min-width: 673px) {
+    // Background & icone 673px //
 
     .backgroundicone {
-
         .icone1 {
-
             margin-left: 15.2rem;
         }
     }
 
-
-
-    // Exploration 673px // 
+    // Exploration 673px //
 
     .exploration {
-
         h3 {
             margin-left: 11rem;
         }
@@ -1887,17 +1854,11 @@ margin-left: -25rem;
         .p2 {
             margin-left: 13rem;
         }
-
     }
-
-
-
 }
 
-
-@media screen and (min-width:687px) {
-
-    // Background Icone 687 px // 
+@media screen and (min-width: 687px) {
+    // Background Icone 687 px //
 
     .backgroundicone {
         .icone1 {
@@ -1909,7 +1870,7 @@ margin-left: -25rem;
         }
     }
 
-    // Exploration 687 px // 
+    // Exploration 687 px //
 
     .exploration {
         h3 {
@@ -1924,20 +1885,13 @@ margin-left: -25rem;
             margin-left: 13rem;
         }
     }
-
-
 }
 
-
-@media screen and (min-width:703px) {
-
-
+@media screen and (min-width: 703px) {
     .backgroundicone {
-
         .texteicone1 {
             margin-left: 18rem;
         }
-
     }
 
     .exploration {
@@ -1954,71 +1908,47 @@ margin-left: -25rem;
     }
 
     .fonctionnement {
-
-
         &:nth-child(2) {
-
             margin-left: 13rem;
         }
 
         &:nth-child(3) {
-
             margin-left: 13rem;
         }
 
         &:nth-child(4) {
-
             margin-left: 13rem;
         }
-
     }
 
     .grandcontainer {
-
         .titrerestaurant {
             @include titrepolice;
             margin-left: 14.5rem;
         }
 
         .bloc {
-
             margin-left: 10rem;
         }
 
         .bloc2 {
-
             margin-left: 10rem;
         }
 
         .bloc3 {
-
             margin-left: 10rem;
         }
 
         .bloc4 {
-
             margin-left: 10rem;
         }
-
     }
-
 }
 
-
-
-
-
-
-@media screen and (min-width:727px) {
-
-
-
-
-    // Background & Icone 643px // 
+@media screen and (min-width: 727px) {
+    // Background & Icone 643px //
 
     .backgroundicone {
-
-
         .icone1 {
             margin-left: 16.4rem;
         }
@@ -2028,36 +1958,19 @@ margin-left: -25rem;
         }
     }
 
-
-
-
-    // Exploration 643 px // 
-
+    // Exploration 643 px //
 
     .exploration {
-
-        h3 {
-            position: relative;
-            left: 0rem;
-        }
+        
 
         button {
             margin-left: 15rem;
         }
-
-
     }
-
-
-
 }
 
-
-@media screen and (min-width:741px) {
-
+@media screen and (min-width: 741px) {
     .backgroundicone {
-
-
         .icone1 {
             margin-left: 17.2rem;
         }
@@ -2080,19 +1993,12 @@ margin-left: -25rem;
             margin-left: 15rem;
         }
     }
-
 }
 
-@media screen and (min-width:745px) {
-
-
-
-
-    // Background & Icone 643px // 
+@media screen and (min-width: 745px) {
+    // Background & Icone 643px //
 
     .backgroundicone {
-
-
         .icone1 {
             margin-left: 17.5rem;
         }
@@ -2102,36 +2008,15 @@ margin-left: -25rem;
         }
     }
 
+    // Exploration 643 px //
 
-
-
-    // Exploration 643 px // 
-
-
-    .exploration {
-
-        h3 {
-            position: relative;
-            left: 0rem;
-        }
-
-
-    }
-
-
-
+    
 }
 
-@media screen and (min-width:747px) {
-
-
-
-
-    // Background & Icone 643px // 
+@media screen and (min-width: 747px) {
+    // Background & Icone 643px //
 
     .backgroundicone {
-
-
         .icone1 {
             margin-left: 17.5rem;
         }
@@ -2141,37 +2026,17 @@ margin-left: -25rem;
         }
     }
 
+    // Exploration 643 px //
 
-
-
-    // Exploration 643 px // 
-
-
-    .exploration {
-
-        h3 {
-            position: relative;
-            left: 0rem;
-        }
-
-
-    }
-
-
-
+    
 }
 
-
-
-
-// Responsive iPad // 
-
+// Responsive iPad //
 
 @media screen and (min-width: 768px) {
-
-    $couleur-txt-base: #9356DC;
-    $couleur-txt-base2: #FF79DA;
-    $couleur-txt-base3: #99E2D0;
+    $couleur-txt-base: #9356dc;
+    $couleur-txt-base2: #ff79da;
+    $couleur-txt-base3: #99e2d0;
     $couleur-txt-base4: white;
     $couleur-txt-base5: #c776df;
 
@@ -2183,11 +2048,9 @@ margin-left: -25rem;
         font-family: Roboto;
     }
 
-    @function add ($a, $b) {
-        @return $a+$b;
+    @function add($a, $b) {
+        @return $a + $b;
     }
-
-
 
     html,
     body {
@@ -2196,15 +2059,12 @@ margin-left: -25rem;
     }
 
     body {
-
         font-size: 10px;
         @include texte;
         margin: 0;
         padding: 0;
         height: 100vh;
-
     }
-
 
     // Logo Header ipad  //
 
@@ -2216,7 +2076,7 @@ margin-left: -25rem;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        margin-top: 0rem
+        margin-top: 0rem;
     }
 
     .logoheader {
@@ -2233,15 +2093,11 @@ margin-left: -25rem;
     }
 
     .backgroundicone {
-
-
-
         .texteicone1 {
             text-align: center;
             line-height: 5rem;
             margin-right: 19rem;
             font-size: 1.2rem;
-
         }
 
         .icone1 {
@@ -2249,14 +2105,11 @@ margin-left: -25rem;
             margin-top: -3.3rem;
             font-size: 1.2rem;
         }
-
     }
 
     // Partie Exploration ipad //
 
     .exploration {
-
-
         background: #f6f6f6;
         width: 48rem;
         height: 17rem;
@@ -2264,22 +2117,16 @@ margin-left: -25rem;
         margin-top: 0rem;
         display: flex;
         flex-direction: column;
-
-
-
     }
 
     .exploration {
         height: 20rem;
 
         h3 {
-
             font-size: 1.6rem;
             margin-bottom: 5rem;
             margin-top: 2rem;
             margin-left: 16rem;
-
-
         }
 
         .p2 {
@@ -2291,7 +2138,6 @@ margin-left: -25rem;
             text-align: center;
             margin-top: -3rem;
         }
-
 
         button {
             width: 18rem;
@@ -2306,13 +2152,8 @@ margin-left: -25rem;
             font-size: 1.2rem;
             outline: none;
             border: none;
-
-
         }
-
-
     }
-
 
     //Partie Fonctionnement ipad//
 
@@ -2323,7 +2164,6 @@ margin-left: -25rem;
     }
 
     .fonctionnement {
-
         width: 20rem;
         height: 4rem;
         background: #f6f6f6;
@@ -2335,13 +2175,11 @@ margin-left: -25rem;
 
         &:nth-child(2) {
             margin-left: 2rem;
-
         }
 
         &:nth-child(3) {
             margin-left: 26rem;
             margin-top: -6rem;
-
         }
 
         &:nth-child(4) {
@@ -2349,67 +2187,48 @@ margin-left: -25rem;
         }
 
         .soustitre {
-
             font-size: 0.8rem;
             font-weight: bold;
             font-size: 1.2rem;
         }
 
-
         i {
             font-size: 1.5rem;
             margin-left: 1.3rem;
-
         }
 
-
-
         .circle {
-            position: absolute;
+            
             width: 2rem;
             height: 2rem;
-            background: #9356DC;
+            background: #9356dc;
             border-radius: 3rem;
             color: #ffff;
             margin-left: -20rem;
             margin-top: 0rem;
             font-size: 1.3rem;
         }
-
-
-
-
     }
-
-
-
-
-
 
     // Section Restaurants Ipad //
 
     //Container Global ipad //
 
-
     .grandcontainer {
         margin-top: 5rem;
-        position: relative;
+        
         width: 50rem;
         height: 60rem;
         background: #f6f6f6;
 
-
-
-
         .titrerestaurant {
             h3 {
-                position: absolute;
+                
                 margin-top: 3rem;
                 font-size: 2.5rem;
                 margin-left: 2rem;
             }
         }
-
 
         .bloc1 {
             .page1 {
@@ -2417,7 +2236,6 @@ margin-left: -25rem;
                 color: black;
             }
         }
-
 
         .bloc {
             display: flex;
@@ -2428,15 +2246,13 @@ margin-left: -25rem;
             height: 19rem;
             border-radius: 1.5rem;
             background: #f6f6f6;
-            -webkit-box-shadow: 0px 7px 15px 3px #7A7A7A;
-            box-shadow: 0px 7px 15px 3px #7A7A7A;
-
+            -webkit-box-shadow: 0px 7px 15px 3px #7a7a7a;
+            box-shadow: 0px 7px 15px 3px #7a7a7a;
 
             .parent {
                 position: relative;
 
                 .texteimage1 {
-
                     display: inline-flex;
                     padding: 1rem 1rem;
                     background: #99e2d0;
@@ -2450,13 +2266,10 @@ margin-left: -25rem;
                     top: 1rem;
                     color: #109071;
                     font-size: 1.5rem;
-
                 }
             }
 
-
             img {
-
                 object-fit: cover;
                 width: 100%;
                 height: 14rem;
@@ -2464,7 +2277,6 @@ margin-left: -25rem;
                 border-top-left-radius: 1rem;
                 margin-left: 0rem;
                 margin-bottom: 2rem;
-
             }
 
             .infodubloc {
@@ -2481,22 +2293,17 @@ margin-left: -25rem;
                     font-size: 1.5rem;
                     margin-left: 6rem;
                     margin-top: -3.6rem;
-
                 }
 
                 p {
                     font-size: 1.1rem;
                     margin-left: 6rem;
                 }
-
-
             }
 
             .coeur1 {
-
                 margin-top: -3.3rem;
                 margin-left: 17rem;
-
 
                 .emptyHeart {
                     font-size: 1.6rem;
@@ -2508,7 +2315,7 @@ margin-left: -25rem;
                         color: transparent;
                     }
 
-                    &:hover>.fullHeart {
+                    &:hover > .fullHeart {
                         transform: scale(1);
                     }
                 }
@@ -2517,35 +2324,15 @@ margin-left: -25rem;
                     position: absolute;
                     top: 0;
                     left: 0;
-                    background: linear-gradient(170deg, #9356DC, #c776df);
+                    background: linear-gradient(170deg, #9356dc, #c776df);
                     background-clip: border-box;
                     -webkit-background-clip: text;
                     -webkit-text-fill-color: transparent;
                     transform: scale(0);
                     transition: transform 150ms 50ms ease-in-out;
                 }
-
             }
-
-
-
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
         // Bloc 2 ipad //
 
@@ -2556,7 +2343,6 @@ margin-left: -25rem;
             }
         }
 
-
         .bloc2 {
             display: flex;
             flex-direction: column;
@@ -2566,8 +2352,8 @@ margin-left: -25rem;
             height: 19rem;
             border-radius: 1.5rem;
             background: #f6f6f6;
-            -webkit-box-shadow: 0px 7px 15px 3px #7A7A7A;
-            box-shadow: 0px 7px 15px 3px #7A7A7A;
+            -webkit-box-shadow: 0px 7px 15px 3px #7a7a7a;
+            box-shadow: 0px 7px 15px 3px #7a7a7a;
 
             .parent {
                 img {
@@ -2579,8 +2365,6 @@ margin-left: -25rem;
                 margin-top: -3.3rem;
                 margin-left: 16rem;
 
-
-
                 .emptyHeart {
                     font-size: 1.6rem;
                     cursor: pointer;
@@ -2591,7 +2375,7 @@ margin-left: -25rem;
                         color: transparent;
                     }
 
-                    &:hover>.fullHeart {
+                    &:hover > .fullHeart {
                         transform: scale(1);
                     }
                 }
@@ -2600,32 +2384,19 @@ margin-left: -25rem;
                     position: absolute;
                     top: 0;
                     left: 0;
-                    background: linear-gradient(170deg, #9356DC, #c776df);
+                    background: linear-gradient(170deg, #9356dc, #c776df);
                     background-clip: border-box;
                     -webkit-background-clip: text;
                     -webkit-text-fill-color: transparent;
                     transform: scale(0);
                     transition: transform 150ms 50ms ease-in-out;
-
-
-
-
                 }
-
             }
-
-
-
-
-
-
-
 
             .parent {
                 position: relative;
 
                 .texteimage1 {
-
                     display: inline-flex;
                     padding: 1rem 1rem;
                     background: #99e2d0;
@@ -2639,13 +2410,10 @@ margin-left: -25rem;
                     top: 1rem;
                     color: #109071;
                     font-size: 1.5rem;
-
                 }
             }
 
-
             img {
-
                 object-fit: cover;
                 width: 42rem;
                 height: 14rem;
@@ -2653,7 +2421,6 @@ margin-left: -25rem;
                 border-top-left-radius: 1rem;
                 margin-left: 0rem;
                 margin-bottom: 2rem;
-
             }
 
             .infodubloc {
@@ -2670,27 +2437,16 @@ margin-left: -25rem;
                     font-size: 1.5rem;
                     margin-left: 7rem;
                     margin-top: -3.6rem;
-
                 }
 
                 p {
                     font-size: 1.2rem;
                     margin-left: 7rem;
                 }
-
-
-
-
-
-
             }
-
-
-
-
         }
 
-        // Restaurants 3 Ipad // 
+        // Restaurants 3 Ipad //
 
         .bloc3 {
             .page3 {
@@ -2699,9 +2455,7 @@ margin-left: -25rem;
             }
         }
 
-
         .bloc3 {
-
             display: flex;
             flex-direction: column;
             margin-left: 2rem;
@@ -2710,13 +2464,11 @@ margin-left: -25rem;
             height: 19rem;
             border-radius: 1.5rem;
             background: #f6f6f6;
-            -webkit-box-shadow: 0px 7px 15px 3px #7A7A7A;
-            box-shadow: 0px 7px 15px 3px #7A7A7A;
+            -webkit-box-shadow: 0px 7px 15px 3px #7a7a7a;
+            box-shadow: 0px 7px 15px 3px #7a7a7a;
 
             .coeur1 {
-
                 margin-top: -3.4rem;
-
 
                 .emptyHeart {
                     font-size: 1.6rem;
@@ -2728,7 +2480,7 @@ margin-left: -25rem;
                         color: transparent;
                     }
 
-                    &:hover>.fullHeart {
+                    &:hover > .fullHeart {
                         transform: scale(1);
                     }
                 }
@@ -2737,30 +2489,19 @@ margin-left: -25rem;
                     position: absolute;
                     top: 0;
                     left: 0;
-                    background: linear-gradient(170deg, #9356DC, #c776df);
+                    background: linear-gradient(170deg, #9356dc, #c776df);
                     background-clip: border-box;
                     -webkit-background-clip: text;
                     -webkit-text-fill-color: transparent;
                     transform: scale(0);
                     transition: transform 150ms 50ms ease-in-out;
-
-
-
-
                 }
-
             }
-
-
-
-
-
 
             .parent {
                 position: relative;
 
                 .texteimage1 {
-
                     display: inline-flex;
                     padding: 1rem 1rem;
                     background: #99e2d0;
@@ -2774,13 +2515,10 @@ margin-left: -25rem;
                     top: 1rem;
                     color: #109071;
                     font-size: 1rem;
-
                 }
             }
 
-
             img {
-
                 object-fit: cover;
                 width: 100%;
                 height: 14rem;
@@ -2788,7 +2526,6 @@ margin-left: -25rem;
                 border-top-left-radius: 1rem;
                 margin-left: 0rem;
                 margin-bottom: 2rem;
-
             }
 
             .infodubloc {
@@ -2805,26 +2542,16 @@ margin-left: -25rem;
                     font-size: 1.6rem;
                     margin-left: 3rem;
                     margin-top: -3.6rem;
-
                 }
 
                 p {
                     font-size: 1.2rem;
                     margin-left: 3rem;
                 }
-
-
-
             }
-
-
         }
 
-
-
-        // Restaurants 4 Ipad // 
-
-
+        // Restaurants 4 Ipad //
 
         .bloc4 {
             .page4 {
@@ -2833,9 +2560,7 @@ margin-left: -25rem;
             }
         }
 
-
         .bloc4 {
-            position: absolute;
             display: flex;
             flex-direction: column;
             margin-left: 25rem;
@@ -2844,17 +2569,13 @@ margin-left: -25rem;
             height: 19rem;
             border-radius: 1.5rem;
             background: #f6f6f6;
-            -webkit-box-shadow: 0px 7px 15px 3px #7A7A7A;
-            box-shadow: 0px 7px 15px 3px #7A7A7A;
-
-
-
+            -webkit-box-shadow: 0px 7px 15px 3px #7a7a7a;
+            box-shadow: 0px 7px 15px 3px #7a7a7a;
 
             .parent {
                 position: relative;
 
                 .texteimage1 {
-
                     display: inline-flex;
                     padding: 1rem 1rem;
                     background: #99e2d0;
@@ -2868,12 +2589,10 @@ margin-left: -25rem;
                     top: 1rem;
                     color: #109071;
                     font-size: 1rem;
-
                 }
             }
 
             img {
-
                 object-fit: cover;
                 width: 100%;
                 height: 14rem;
@@ -2881,7 +2600,6 @@ margin-left: -25rem;
                 border-top-left-radius: 1rem;
                 margin-left: 0rem;
                 margin-bottom: 2rem;
-
             }
 
             .infodubloc {
@@ -2898,22 +2616,17 @@ margin-left: -25rem;
                     font-size: 1.4rem;
                     margin-left: 6rem;
                     margin-top: -3.6rem;
-
                 }
 
                 p {
                     font-size: 1.1rem;
                     margin-left: 6rem;
                 }
-
             }
 
             .coeur1 {
-
                 margin-top: -3.4rem;
                 margin-left: 16rem;
-
-
 
                 .emptyHeart {
                     font-size: 1.6rem;
@@ -2925,7 +2638,7 @@ margin-left: -25rem;
                         color: transparent;
                     }
 
-                    &:hover>.fullHeart {
+                    &:hover > .fullHeart {
                         transform: scale(1);
                     }
                 }
@@ -2934,31 +2647,20 @@ margin-left: -25rem;
                     position: absolute;
                     top: 0;
                     left: 0;
-                    background: linear-gradient(170deg, #9356DC, #c776df);
+                    background: linear-gradient(170deg, #9356dc, #c776df);
                     background-clip: border-box;
                     -webkit-background-clip: text;
                     -webkit-text-fill-color: transparent;
                     transform: scale(0);
                     transition: transform 150ms 50ms ease-in-out;
                 }
-
             }
-
-
         }
-
-
-
-
-
-
     }
 
-
-    // Footer Ipad // 
+    // Footer Ipad //
 
     .backgroundfooter {
-
         background: #353535;
         height: 23rem;
         width: 100%;
@@ -2967,16 +2669,10 @@ margin-left: -25rem;
         margin-top: 0rem;
         justify-content: center;
         align-items: center;
-        position: relative;
-
-
-
-
-
-
+     
 
         .titrefooter {
-            position: relative;
+        
             font-size: 3rem;
             font-family: Shrikhand;
             margin-right: 15rem;
@@ -2984,10 +2680,9 @@ margin-left: -25rem;
         }
 
         .infofooter {
-            position: absolute;
+           
             margin-right: 10rem;
             margin-top: 2rem;
-
 
             .info1 {
                 margin-left: -17rem;
@@ -3005,7 +2700,6 @@ margin-left: -25rem;
                     font-size: 1.5rem;
                     margin-top: -1rem;
                     margin-left: -11rem;
-
                 }
             }
 
@@ -3025,65 +2719,42 @@ margin-left: -25rem;
                 }
             }
 
-
-
-
             .iconefooter {
-                position: relative;
-                top: 1.5rem;
-                left: -10.8rem;
+              
                 font-size: 1.6rem;
             }
 
             .iconefooter2 {
-                position: relative;
-                top: 1rem;
-                left: -5.8rem;
+               
                 font-size: 1.6rem;
             }
-
         }
     }
-
-
 }
 
-
-
-
-@media screen and (min-width:797px) {
-
+@media screen and (min-width: 797px) {
     .exploration {
         width: 100%;
     }
-
 }
 
-
-
-@media screen and (min-width:809px) {
-
+@media screen and (min-width: 809px) {
     .backgroundicone {
-
-
         .icone1 {
             margin-left: 18.5rem;
         }
 
         .texteicone1 {
             margin-left: 19rem;
-
-
         }
-
     }
 
-    //exploration 809 px // 
+    //exploration 809 px //
     .exploration {
         width: 100%;
     }
 
-    //fonctionnement 809px // 
+    //fonctionnement 809px //
 
     .titrefonction {
         margin-left: 16rem;
@@ -3094,83 +2765,58 @@ margin-left: -25rem;
             margin-left: 14rem;
         }
     }
-
-
-
 }
 
-@media screen and (min-width:811px) {
-
+@media screen and (min-width: 811px) {
     .backgroundicone {
-
-
         .icone1 {
             margin-left: 18.5rem;
         }
 
         .texteicone1 {
             margin-left: 20rem;
-
-
         }
-
     }
 
-    //exploration 811 px // 
+    //exploration 811 px //
     .exploration {
         width: 100%;
     }
 
-    //fonctionnement 811px // 
+    //fonctionnement 811px //
 
     .titrefonction {
         margin-left: 17rem;
     }
 }
 
-
-@media screen and (min-width:812px) {
-
+@media screen and (min-width: 812px) {
     .backgroundicone {
-
-
         .icone1 {
             margin-left: 18.6rem;
         }
 
         .texteicone1 {
             margin-left: 20rem;
-
-
         }
-
     }
 
-    //exploration 812 px // 
+    //exploration 812 px //
     .exploration {
         width: 100%;
     }
 
-    //fonctionnement 811px // 
+    //fonctionnement 811px //
 
     .titrefonction {
         margin-left: 16rem;
     }
-
-
-
-
 }
 
-
-
-@media screen and (min-width:813px) {
-
-
-    // background & icone 813px// 
+@media screen and (min-width: 813px) {
+    // background & icone 813px//
 
     .backgroundicone {
-
         .icone1 {
             margin-left: 18.5rem;
         }
@@ -3178,34 +2824,23 @@ margin-left: -25rem;
         .texteicone1 {
             margin-left: 18rem;
         }
-
-
-
     }
 
-    //Fonctionnement 813px // 
+    //Fonctionnement 813px //
 
     .titrefonction {
         margin-left: 16rem;
     }
 
-
     .grandcontainer {
         .titrerestaurant {
-
             margin-left: 15rem;
-
-
         }
     }
-
-
 }
 
-@media screen and (min-width:815px) {
-
-
-    //Header & Background 815px // 
+@media screen and (min-width: 815px) {
+    //Header & Background 815px //
 
     .banniereheader {
         width: 100%;
@@ -3219,14 +2854,10 @@ margin-left: -25rem;
         }
     }
 
-    //Exploration  815px // 
+    //Exploration  815px //
 
     .exploration {
         width: 100%;
-
-
-
-
     }
 
     .grandcontainer {
@@ -3237,21 +2868,17 @@ margin-left: -25rem;
         height: 20rem;
 
         .titrefooter {
-            margin-top: -12rem
+            margin-top: -12rem;
         }
 
         .infofooter {
-            margin-top: 3rem
+            margin-top: 3rem;
         }
     }
-
-
 }
 
-@media screen and (min-width:817px) {
-
-
-    //Header & Background 817px // 
+@media screen and (min-width: 817px) {
+    //Header & Background 817px //
 
     .banniereheader {
         width: 100%;
@@ -3269,17 +2896,13 @@ margin-left: -25rem;
         }
     }
 
-    //Exploration  817px // 
+    //Exploration  817px //
 
     .exploration {
         width: 100%;
-
-
-
-
     }
 
-    // Fonctionnement 817px // 
+    // Fonctionnement 817px //
 
     .titrefonction {
         margin-left: 18rem;
@@ -3299,21 +2922,16 @@ margin-left: -25rem;
         height: 20rem;
 
         .titrefooter {
-            margin-top: -12rem
+            margin-top: -12rem;
         }
 
         .infofooter {
-            margin-top: 3rem
+            margin-top: 3rem;
         }
     }
-
-
 }
 
-
-
 @media screen and(min-width:823px) {
-
     .banniereheader {
         width: 100%;
     }
@@ -3337,15 +2955,9 @@ margin-left: -25rem;
     .grandcontainer {
         width: 100%;
     }
-
 }
 
-
-
-
-@media screen and (min-width:845px) {
-
-
+@media screen and (min-width: 845px) {
     .banniereheader {
         width: 100%;
     }
@@ -3361,97 +2973,64 @@ margin-left: -25rem;
     .grandcontainer {
         width: 100%;
     }
-
-
-
-
 }
 
-
-
-
-
-@media screen and (min-width:854px) {
-
-
-    //Background & icone 854px// 
+@media screen and (min-width: 854px) {
+    //Background & icone 854px//
 
     .backgroundicone {
-
         .icone1 {
             margin-left: 20.3rem;
         }
     }
 
-    //Exploration 855px // 
+    //Exploration 855px //
 
     .exploration {
-
         button {
             margin-left: 17rem;
         }
     }
 
-
-    // Container Restaurnat 855px // 
+    // Container Restaurnat 855px //
 
     .grandcontainer {
         .titrerestaurant {
             margin-left: 15rem;
         }
     }
-
-
 }
 
-@media screen and (min-width:855px) {
-
-
-    //Background & icone 855PX// 
+@media screen and (min-width: 855px) {
+    //Background & icone 855PX//
 
     .backgroundicone {
-
         .icone1 {
             margin-left: 20.7rem;
         }
     }
 
-    //Exploration 855px // 
+    //Exploration 855px //
 
     .exploration {
-
         button {
             margin-left: 17rem;
         }
     }
-
-
-
 }
 
-
-
-
-@media screen and (min-width:881px) {
-
-
-    // Background & Icone 881px // 
+@media screen and (min-width: 881px) {
+    // Background & Icone 881px //
 
     .backgroundicone {
-
-
         .icone1 {
             margin-left: 21.5rem;
         }
-
-
-
     }
 
-    // Exploration 881 px // 
+    // Exploration 881 px //
 
     .exploration {
-
         h3 {
             margin-left: 21rem;
         }
@@ -3460,15 +3039,12 @@ margin-left: -25rem;
             margin-left: 23.5rem;
         }
 
-
         button {
             margin-left: 18rem;
         }
-
-
     }
 
-    // Fonctionnement 881px // 
+    // Fonctionnement 881px //
 
     .titrefonction {
         margin-left: 19rem;
@@ -3476,7 +3052,6 @@ margin-left: -25rem;
     }
 
     .fonctionnement {
-
         &:nth-child(2) {
             margin-left: 5rem;
         }
@@ -3490,10 +3065,9 @@ margin-left: -25rem;
         }
     }
 
-    // Container Bloc Restaurant 881px // 
+    // Container Bloc Restaurant 881px //
 
     .grandcontainer {
-
         .titrerestaurant {
             @include titrepolice;
             margin-left: 16rem;
@@ -3511,116 +3085,74 @@ margin-left: -25rem;
             margin-left: 3rem;
         }
 
-
         .bloc4 {
             margin-left: 30rem;
         }
     }
-
-
-
 }
 
-@media screen and (min-width:884px) {
-
+@media screen and (min-width: 884px) {
     .grandcontainer {
-
         .titrerestaurant {
             margin-left: 16rem;
         }
-
     }
-
-
 }
 
-
-@media screen and (min-width:890px) {
-
-
-    //Background & icone 890PX// 
+@media screen and (min-width: 890px) {
+    //Background & icone 890PX//
 
     .backgroundicone {
-
         .icone1 {
             margin-left: 21.4rem;
         }
     }
 
-    //Exploration 890px // 
+    //Exploration 890px //
 
     .exploration {
-
         button {
             margin-left: 19rem;
         }
     }
 
-    // Section Restaurant 890px // 
+    // Section Restaurant 890px //
 
     .grandcontainer {
         .titrerestaurant {
             margin-left: 16rem;
         }
     }
-
-
-
 }
 
-@media screen and (min-width:911px) {
-
-
+@media screen and (min-width: 911px) {
     .backgroundicone {
-
         .icone1 {
             margin-left: 22.5rem;
         }
-
-
     }
-
-
 }
 
-@media screen and (min-width:917px) {
-
-
+@media screen and (min-width: 917px) {
     .backgroundicone {
-
         .icone1 {
             margin-left: 22.8rem;
         }
-
-
     }
-
-
-
 }
 
-
-
-@media screen and (min-width:943px) {
-
-
-    // Background & Icone 943px // 
+@media screen and (min-width: 943px) {
+    // Background & Icone 943px //
 
     .backgroundicone {
-
-
         .icone1 {
             margin-left: 23.5rem;
         }
-
-
-
     }
 
-    // Exploration 943px // 
+    // Exploration 943px //
 
     .exploration {
-
         h3 {
             margin-left: 21rem;
         }
@@ -3629,15 +3161,12 @@ margin-left: -25rem;
             margin-left: 23.5rem;
         }
 
-
         button {
             margin-left: 20rem;
         }
-
-
     }
 
-    // Fonctionnement 943px // 
+    // Fonctionnement 943px //
 
     .titrefonction {
         margin-left: 19rem;
@@ -3645,7 +3174,6 @@ margin-left: -25rem;
     }
 
     .fonctionnement {
-
         &:nth-child(2) {
             margin-left: 5rem;
         }
@@ -3659,10 +3187,9 @@ margin-left: -25rem;
         }
     }
 
-    // Container Bloc Restaurant 943px // 
+    // Container Bloc Restaurant 943px //
 
     .grandcontainer {
-
         .titrerestaurant {
             @include titrepolice;
             margin-left: 19rem;
@@ -3680,91 +3207,62 @@ margin-left: -25rem;
             margin-left: 3rem;
         }
 
-
         .bloc4 {
             margin-left: 30rem;
         }
     }
-
-
-
 }
 
-@media screen and (min-width:944px) {
-
-
-
-    // Background 944px // 
+@media screen and (min-width: 944px) {
+    // Background 944px //
 
     .backgroundicone {
-
         .icone1 {
             margin-left: 23rem;
         }
     }
 
     .grandcontainer {
-
         .titrerestaurant {
             margin-left: 16rem;
-
         }
-
-
-
     }
-
-
-
-
 }
 
-
-
-@media screen and (min-width:946px) {
-
-
-    //Background & icone 855PX// 
+@media screen and (min-width: 946px) {
+    //Background & icone 855PX//
 
     .backgroundicone {
-
         .icone1 {
             margin-left: 23.1rem;
         }
     }
 
-    //Fonctionnement 855px // 
+    //Fonctionnement 855px //
 
     .titrefonction {
         margin-left: 20.5rem;
     }
 
-    //Exploration 855px // 
+    //Exploration 855px //
 
     .exploration {
-
         button {
             margin-left: 20rem;
         }
     }
 
-
-    // Bloc REstaurant 855px// 
+    // Bloc REstaurant 855px//
 
     .grandcontainer {
         .titrerestaurant {
             margin-left: 17rem;
         }
     }
-
-
 }
 
-
-@media screen and (min-width:961px) {
-
-
-    //Header & Background 961px // 
+@media screen and (min-width: 961px) {
+    //Header & Background 961px //
 
     .banniereheader {
         width: 100%;
@@ -3778,7 +3276,7 @@ margin-left: -25rem;
         }
     }
 
-    //Exploration  963px // 
+    //Exploration  963px //
 
     .exploration {
         width: 100%;
@@ -3794,16 +3292,13 @@ margin-left: -25rem;
         button {
             margin-left: 20rem;
         }
-
     }
 
-    //Fonctionnement  963px // 
+    //Fonctionnement  963px //
 
     .titrefonction {
         margin-left: 22rem;
     }
-
-
 
     .grandcontainer {
         height: 60rem;
@@ -3813,21 +3308,17 @@ margin-left: -25rem;
         height: 20rem;
 
         .titrefooter {
-            margin-top: -12rem
+            margin-top: -12rem;
         }
 
         .infofooter {
-            margin-top: 3rem
+            margin-top: 3rem;
         }
     }
-
-
 }
 
-@media screen and (min-width:963px) {
-
-
-    //Header & Background 963px // 
+@media screen and (min-width: 963px) {
+    //Header & Background 963px //
 
     .banniereheader {
         width: 100%;
@@ -3841,19 +3332,15 @@ margin-left: -25rem;
         }
     }
 
-    //Exploration  963px // 
+    //Exploration  963px //
 
     .exploration {
         width: 100%;
 
-
         button {
             margin-left: 20rem;
         }
-
     }
-
-
 
     .grandcontainer {
         height: 60rem;
@@ -3863,37 +3350,29 @@ margin-left: -25rem;
         height: 20rem;
 
         .titrefooter {
-            margin-top: -12rem
+            margin-top: -12rem;
         }
 
         .infofooter {
-            margin-top: 3rem
+            margin-top: 3rem;
         }
     }
-
-
 }
 
-@media screen and (min-width:979px) {
-
-
+@media screen and (min-width: 979px) {
     .backgroundicone {
-
         .icone1 {
             margin-left: 24.6rem;
         }
 
         .texteicone1 {
-
             margin-left: 19rem;
         }
-
     }
 
-    // Exploration 979 px // 
+    // Exploration 979 px //
 
     .exploration {
-
         h3 {
             margin-left: 23.5rem;
         }
@@ -3906,15 +3385,10 @@ margin-left: -25rem;
             margin-left: 22rem;
         }
     }
-
-
-
-
 }
 
-@media screen and (min-width:1022px) {
-
-    //Header & Background 1022px // 
+@media screen and (min-width: 1022px) {
+    //Header & Background 1022px //
 
     .banniereheader {
         width: 100%;
@@ -3928,7 +3402,7 @@ margin-left: -25rem;
         }
     }
 
-    //Exploration  1022px // 
+    //Exploration  1022px //
 
     .exploration {
         width: 100%;
@@ -3941,15 +3415,12 @@ margin-left: -25rem;
             margin-left: 28rem;
         }
 
-
         button {
             margin-left: 23rem;
         }
     }
 
-
-
-    //Fonctionnement 1022 px // 
+    //Fonctionnement 1022 px //
 
     .titrefonction {
         margin-left: 25rem;
@@ -3966,7 +3437,6 @@ margin-left: -25rem;
         margin-left: 1rem;
         width: 20rem;
         height: 3rem;
-
     }
 
     .fonctionnement:nth-child(3) {
@@ -3975,8 +3445,6 @@ margin-left: -25rem;
         width: 20rem;
         height: 3rem;
     }
-
-
 
     // Container 1022px //
 
@@ -3995,7 +3463,6 @@ margin-left: -25rem;
             margin-left: 36rem;
         }
 
-
         .bloc3 {
             margin-left: 8rem;
         }
@@ -4005,61 +3472,36 @@ margin-left: -25rem;
         }
     }
 
-
     .backgroundfooter {
         height: 20rem;
-
 
         .titrefooter {
             margin-top: -10rem;
         }
 
         .infofooter {
-            margin-top: 4rem
+            margin-top: 4rem;
         }
     }
-
-
-
-
-
-
 }
 
-@media screen and (min-width:1023px) {
-
-
-    // background & icone 1023px// 
+@media screen and (min-width: 1023px) {
+    // background & icone 1023px//
 
     .backgroundicone {
-
         .icone1 {
             margin-left: 25.5rem;
         }
-
-
     }
 
-    .grandcontainer{
-
-
-        .titrerestaurant{
-            margin-left:22rem;
+    .grandcontainer {
+        .titrerestaurant {
+            margin-left: 22rem;
         }
-
-
     }
-
-
-
-
-
-
 }
 
-@media screen and (min-width:1026px) {
-
-
+@media screen and (min-width: 1026px) {
     .backgroundicone {
         .icone1 {
             margin-left: 25.6rem;
@@ -4073,76 +3515,48 @@ margin-left: -25rem;
     }
 
     .grandcontainer {
-
         .titrerestaurant {
             margin-left: 22rem;
         }
     }
-
-
 }
 
-
-
-@media screen and (min-width:1068px) {
-
-    // Background 1068px // 
+@media screen and (min-width: 1068px) {
+    // Background 1068px //
 
     .backgroundicone {
         .icone1 {
             margin-left: 27.5rem;
         }
     }
-
-
-
 }
 
-
-@media screen and (min-width:1076px) {
-
-
-    //Background & icone 855PX// 
+@media screen and (min-width: 1076px) {
+    //Background & icone 855PX//
 
     .backgroundicone {
-
         .icone1 {
             margin-left: 27.2rem;
         }
     }
 
-    //Exploration 855px // 
+    //Exploration 855px //
 
     .exploration {
-
         button {
             margin-left: 24rem;
         }
     }
 
     .grandcontainer {
-
-
         .titrerestaurant {
             margin-left: 22rem;
-
         }
-
-
     }
-
-
-
-
-
 }
 
-@media screen and (min-width:1121px) {
-
-
-
+@media screen and (min-width: 1121px) {
     .backgroundicone {
-
         .icone1 {
             margin-left: 29.1rem;
         }
@@ -4152,8 +3566,7 @@ margin-left: -25rem;
         }
     }
 
-
-    // Exploration 1127 px // 
+    // Exploration 1127 px //
 
     .exploration {
         button {
@@ -4161,14 +3574,13 @@ margin-left: -25rem;
         }
     }
 
-    //Fonctionnement 1127px // 
+    //Fonctionnement 1127px //
 
     .titrefonction {
         margin-left: 28rem;
     }
 
     .fonctionnement {
-
         &:nth-child(2) {
             margin-left: 2rem;
         }
@@ -4181,14 +3593,9 @@ margin-left: -25rem;
             margin-left: 48rem;
         }
     }
-
 }
 
-
-
-@media screen and (min-width:1222px) {
-
-
+@media screen and (min-width: 1222px) {
     .backgroundicone {
         .icone1 {
             margin-left: 37.5rem;
@@ -4201,27 +3608,11 @@ margin-left: -25rem;
         }
     }
 
-    .grandcontainer {
-
-        .titrerestaurant {
-            position: relative;
-            left: 0rem;
-        }
-
-
-
-    }
-
-
-
+   
 }
 
-
-
-@media screen and (min-width:1224px) {
-
-
-    // Exploration 1248px // 
+@media screen and (min-width: 1224px) {
+    // Exploration 1248px //
 
     .exploration {
         button {
@@ -4230,28 +3621,12 @@ margin-left: -25rem;
     }
 
     .grandcontainer {
-
-        .titrerestaurant {
-            position: relative;
-            left: 0rem;
-        }
-
-
+       
     }
-
-
-
 }
 
-
-
-
-@media screen and (min-width:1127px) {
-
-
-
+@media screen and (min-width: 1127px) {
     .backgroundicone {
-
         .icone1 {
             margin-left: 29.3rem;
         }
@@ -4261,8 +3636,7 @@ margin-left: -25rem;
         }
     }
 
-
-    // Exploration 1127 px // 
+    // Exploration 1127 px //
 
     .exploration {
         button {
@@ -4270,14 +3644,13 @@ margin-left: -25rem;
         }
     }
 
-    //Fonctionnement 1127px // 
+    //Fonctionnement 1127px //
 
     .titrefonction {
         margin-left: 28rem;
     }
 
     .fonctionnement {
-
         &:nth-child(2) {
             margin-left: 2rem;
         }
@@ -4290,13 +3663,10 @@ margin-left: -25rem;
             margin-left: 48rem;
         }
     }
-
 }
 
-
-@media screen and (min-width:1159px) {
+@media screen and (min-width: 1159px) {
     .backgroundicone {
-
         .icone1 {
             margin-left: 30.2rem;
         }
@@ -4305,16 +3675,10 @@ margin-left: -25rem;
             margin-left: 20rem;
         }
     }
-
-
 }
 
-
-
-
-@media screen and (min-width:1167px) {
-
-    // Background & Icone 1167px // 
+@media screen and (min-width: 1167px) {
+    // Background & Icone 1167px //
 
     .backgroundicone {
         .icone1 {
@@ -4326,10 +3690,9 @@ margin-left: -25rem;
         }
     }
 
-    // Exploration 1167 px // 
+    // Exploration 1167 px //
 
     .exploration {
-
         h3 {
             margin-left: 30rem;
         }
@@ -4337,7 +3700,6 @@ margin-left: -25rem;
         .p2 {
             margin-left: 33rem;
         }
-
 
         button {
             margin-left: 28rem;
@@ -4351,7 +3713,6 @@ margin-left: -25rem;
     }
 
     .fonctionnement {
-
         &:nth-child(2) {
             margin-left: 3rem;
         }
@@ -4366,7 +3727,6 @@ margin-left: -25rem;
     }
 
     .grandcontainer {
-
         .titrerestaurant {
             margin-left: 25rem;
         }
@@ -4387,14 +3747,10 @@ margin-left: -25rem;
             margin-left: 45rem;
         }
     }
-
 }
 
-
-
-@media screen and (min-width:1168px) {
-
-    // Header & Icone 1168px // 
+@media screen and (min-width: 1168px) {
+    // Header & Icone 1168px //
 
     .backgroundicone {
         .icone1 {
@@ -4402,8 +3758,7 @@ margin-left: -25rem;
         }
     }
 
-
-    // Exploration 1168px // 
+    // Exploration 1168px //
 
     .exploration {
         button {
@@ -4412,21 +3767,14 @@ margin-left: -25rem;
     }
 
     .grandcontainer {
-
         .titrerestaurant {
             margin-left: 26rem;
         }
-
-
     }
-
-
-
 }
 
-@media screen and (min-width:1169px) {
+@media screen and (min-width: 1169px) {
     .backgroundicone {
-
         .icone1 {
             margin-left: 29.3rem;
         }
@@ -4437,73 +3785,50 @@ margin-left: -25rem;
     }
 }
 
-
-@media screen and (min-width:1173px) {
-
-
-    // background & icone 1173px// 
+@media screen and (min-width: 1173px) {
+    // background & icone 1173px//
 
     .backgroundicone {
-
         .icone1 {
             margin-left: 30.3rem;
         }
-
-
     }
-
-
-
 }
 
-
-@media screen and (min-width:1174px) {
-
-
-    //Background & icone 1774px// 
+@media screen and (min-width: 1174px) {
+    //Background & icone 1774px//
 
     .backgroundicone {
-
         .icone1 {
             margin-left: 30.2rem;
         }
     }
 
-    //Exploration 1774px // 
+    //Exploration 1774px //
 
     .exploration {
-
         button {
             margin-left: 27rem;
         }
     }
 
-    //Fonctionnement 1774px // 
+    //Fonctionnement 1774px //
 
     .titrefonction {
         margin-left: 27.5rem;
     }
 
-
-    // Grand container BLoc restaurant 1774px // 
-
+    // Grand container BLoc restaurant 1774px //
 
     .grandcontainer {
-
         .titrerestaurant {
             margin-left: 26rem;
         }
-
-
     }
-
-
 }
 
-@media screen and (min-width:1179px) {
-
+@media screen and (min-width: 1179px) {
     .backgroundicone {
-
         .icone1 {
             margin-left: 30.8rem;
         }
@@ -4514,45 +3839,29 @@ margin-left: -25rem;
     }
 }
 
-
-@media screen and (min-width:1217px) {
-
-
-    // Background & Icone 1217px // 
-
+@media screen and (min-width: 1217px) {
+    // Background & Icone 1217px //
 
     .backgroundicone {
-
         .icone1 {
             margin-left: 32rem;
         }
-
-
     }
 
-    // Section Fonctionnement 1217px // 
+    // Section Fonctionnement 1217px //
 
     .titrefonction {
         margin-left: 28rem;
     }
 
     .grandcontainer {
-
         .titrerestaurant {
             margin-left: 26rem;
         }
     }
-
-
-
-
-
-
 }
 
-@media screen and (min-width:1218px) {
-
-
+@media screen and (min-width: 1218px) {
     .backgroundicone {
         .icone1 {
             margin-left: 31.6rem;
@@ -4566,22 +3875,14 @@ margin-left: -25rem;
     }
 
     .grandcontainer {
-
         .titrerestaurant {
             margin-left: 27rem;
         }
     }
-
-
 }
 
-
-
-
-@media screen and (min-width:1230px) {
-
-
-    // Exploration 1248px // 
+@media screen and (min-width: 1230px) {
+    // Exploration 1248px //
 
     .exploration {
         button {
@@ -4590,29 +3891,20 @@ margin-left: -25rem;
     }
 
     .grandcontainer {
-
         .titrerestaurant {
             margin-left: 26rem;
         }
-
-
     }
-
-
-
 }
 
-
-@media screen and (min-width:1234px) {
-
+@media screen and (min-width: 1234px) {
     .backgroundicone {
         .icone1 {
             margin-left: 32rem;
         }
     }
 
-
-    // Exploration 1248px // 
+    // Exploration 1248px //
 
     .exploration {
         button {
@@ -4621,41 +3913,28 @@ margin-left: -25rem;
     }
 
     .grandcontainer {
-
         .titrerestaurant {
             margin-left: 25rem;
         }
-
-
     }
-
-
-
 }
 
-@media screen and (min-width:1235px) {
-
+@media screen and (min-width: 1235px) {
     .backgroundicone {
         .icone1 {
             margin-left: 32.8rem;
         }
-
-
     }
 }
 
-
-@media screen and (min-width:1238px) {
-
+@media screen and (min-width: 1238px) {
     .backgroundicone {
-
         .icone1 {
             margin-left: 32.2rem;
         }
     }
 
-
-    // Exploration 1248px // 
+    // Exploration 1248px //
 
     .exploration {
         button {
@@ -4664,23 +3943,14 @@ margin-left: -25rem;
     }
 
     .grandcontainer {
-
         .titrerestaurant {
             margin-left: 26rem;
         }
-
-
     }
-
-
-
 }
 
-
-
-@media screen and (min-width:1240px) {
-
-    // Header & Localisation 1240px // 
+@media screen and (min-width: 1240px) {
+    // Header & Localisation 1240px //
 
     .backgroundicone {
         .icone1 {
@@ -4688,33 +3958,7 @@ margin-left: -25rem;
         }
     }
 
-
-    // Exploration 1240px // 
-
-    .exploration {
-        button {
-            margin-left: 29rem;
-        }
-    }
-
-    .grandcontainer {
-
-        .titrerestaurant {
-            margin-left: 26rem;
-        }
-
-
-    }
-
-
-
-}
-
-
-@media screen and (min-width:1248px) {
-
-
-    // Exploration 1248px // 
+    // Exploration 1240px //
 
     .exploration {
         button {
@@ -4723,23 +3967,31 @@ margin-left: -25rem;
     }
 
     .grandcontainer {
-
         .titrerestaurant {
             margin-left: 26rem;
         }
-
-
     }
-
-
-
 }
 
-//13 inches Screen // 
+@media screen and (min-width: 1248px) {
+    // Exploration 1248px //
 
+    .exploration {
+        button {
+            margin-left: 29rem;
+        }
+    }
 
-@media screen and (min-width:1280px) {
+    .grandcontainer {
+        .titrerestaurant {
+            margin-left: 26rem;
+        }
+    }
+}
 
+//13 inches Screen //
+
+@media screen and (min-width: 1280px) {
     //Header Desktop 1280px//
 
     .banniereheader {
@@ -4752,19 +4004,14 @@ margin-left: -25rem;
         width: 100%;
 
         .icone1 {
-
             margin-left: 33.7rem;
-
         }
     }
 
-
-
-    //Exploration Desktop 1280px // 
+    //Exploration Desktop 1280px //
 
     .exploration {
         width: 100%;
-
 
         h3 {
             text-align: center;
@@ -4778,13 +4025,9 @@ margin-left: -25rem;
         button {
             margin-left: 30rem;
         }
-
-
-
     }
 
     .grandcontainer {
-
         .bloc {
             width: 70rem;
 
@@ -4793,7 +4036,6 @@ margin-left: -25rem;
             }
 
             .parent {
-
                 .texteimage1 {
                     width: 13rem;
                     height: 3rem;
@@ -4801,36 +4043,26 @@ margin-left: -25rem;
                     font-size: 2rem;
                 }
             }
-
-
         }
     }
 
-
-
-    // Fonctionnement Desktop 1280px // 
+    // Fonctionnement Desktop 1280px //
 
     .titrefonction {
         text-align: center;
         margin-right: 28rem;
     }
 
-
-    .fonctionnement {
-        position: relative;
-        left: 4rem;
-    }
+   
 
     // Container Restaurant 1280px //
 
     .grandcontainer {
         width: 100%;
 
-
         .titrerestaurant {
             margin-left: 30rem;
         }
-
 
         .bloc {
             margin-left: 5rem;
@@ -4870,7 +4102,6 @@ margin-left: -25rem;
             .coeur1 {
                 margin-left: 26rem;
             }
-
         }
 
         .backgroundfooter {
@@ -4885,14 +4116,12 @@ margin-left: -25rem;
             .infofooter {
                 margin-top: 5rem;
             }
-
         }
     }
 }
 
-@media screen and (min-width:1281px) {
-
-    // Background 1281px// 
+@media screen and (min-width: 1281px) {
+    // Background 1281px//
 
     .backgroundicone {
         .icone1 {
@@ -4900,10 +4129,9 @@ margin-left: -25rem;
         }
     }
 
-    // Exploration 1281px// 
+    // Exploration 1281px//
 
     .exploration {
-
         h3 {
             margin-left: 29rem;
         }
@@ -4911,35 +4139,26 @@ margin-left: -25rem;
         .p2 {
             margin-left: 28rem;
         }
-
     }
 
-    //Fonctionnement 1281px // 
+    //Fonctionnement 1281px //
 
     .titrefonction {
         margin-left: 25rem;
     }
 
     .fonctionnement {
-
-        
-
         &:nth-child(2) {
-
             margin-left: 0rem;
         }
 
         &:nth-child(3) {
-
             margin-left: 24rem;
         }
 
         &:nth-child(4) {
-
             margin-left: 48rem;
         }
-
-
     }
 
     .bloc {
@@ -4981,14 +4200,9 @@ margin-left: -25rem;
             margin-left: 26rem;
         }
     }
-
-
-
-
 }
 
-@media screen and (min-width:1282px) {
-
+@media screen and (min-width: 1282px) {
     .backgroundicone {
         .icone1 {
             margin-left: 19.2rem;
@@ -5009,7 +4223,7 @@ margin-left: -25rem;
         }
     }
 
-    //Fonctionnement 1282 px // 
+    //Fonctionnement 1282 px //
 
     .titrefonction {
         margin-left: 20rem;
@@ -5017,26 +4231,21 @@ margin-left: -25rem;
 
     .fonctionnement:nth-child(2) {
         margin-left: -8rem;
-
     }
 
     .fonctionnement:nth-child(3) {
         margin-left: 17rem;
-
     }
 
     .fonctionnement:nth-child(4) {
         margin-left: 42rem;
-
     }
 
-    // Container 1022 px // 
+    // Container 1022 px //
 
     .grandcontainer {
-
         .titrerestaurant {
             h3 {
-
                 font-size: 3rem;
             }
         }
@@ -5080,42 +4289,27 @@ margin-left: -25rem;
                 margin-left: 26rem;
             }
         }
-
-
     }
-
-
 }
 
-
-@media screen and (min-width:1283px) {
-
+@media screen and (min-width: 1283px) {
     .backgroundicone {
         .icone1 {
             margin-left: 34.2rem;
         }
     }
-
-
 }
 
-
-
-@media screen and (min-width:1284px) {
-
-    // Heade & Iconer 1284px // 
-
+@media screen and (min-width: 1284px) {
+    // Heade & Iconer 1284px //
 
     .backgroundicone {
-
         .icone1 {
             margin-left: 33.8rem;
         }
     }
 
-
-
-    // Exploration 1284px // 
+    // Exploration 1284px //
 
     .exploration {
         button {
@@ -5124,43 +4318,19 @@ margin-left: -25rem;
     }
 
     .grandcontainer {
-
         .titrerestaurant {
             margin-left: 26rem;
         }
-
-
     }
-
-
-
-}
-
-@media screen and (min-width:1285px){
-
-
-.fonctionnement{
-    position: relative;
-    left:12rem;
-}
-
-
 }
 
 
 
-
-@media screen and (min-width:1291px) {
-
-
-
+@media screen and (min-width: 1291px) {
     .grandcontainer {
-
         .titrerestaurant {
             margin-left: 28rem;
         }
-
-
     }
 
     .exploration {
@@ -5173,66 +4343,43 @@ margin-left: -25rem;
         }
     }
 
-
     .titrefonction {
         margin-left: 26rem;
     }
 
-    .fonctionnement {
-        position: relative;
-        left: 12rem;
-    }
-
-
-
-
-
-
+  
 }
 
-
-@media screen and (min-width:1331px) {
-
+@media screen and (min-width: 1331px) {
     .backgroundicone {
-
         .icone1 {
             margin-left: 35.2rem;
         }
-
-
     }
 
     .exploration {
-
         button {
             margin-left: 32rem;
         }
     }
 
-    // fonctionnement 1331px// 
+    // fonctionnement 1331px//
 
     .titrefonction {
         font-size: 2.1rem;
     }
 
-
-
-
-    // container bloc restaurant  1331px // 
+    // container bloc restaurant  1331px //
 
     .grandcontainer {
         .titrerestaurant {
             margin-left: 30rem;
         }
     }
-
 }
 
-
-@media screen and (min-width:1332px) {
-
-
-    // Exploration 1332px // 
+@media screen and (min-width: 1332px) {
+    // Exploration 1332px //
 
     .exploration {
         button {
@@ -5241,57 +4388,36 @@ margin-left: -25rem;
     }
 
     .grandcontainer {
-
         .titrerestaurant {
             margin-left: 28rem;
         }
-
-
     }
-
-
-
 }
 
-@media screen and (min-width:1337px) {
-
+@media screen and (min-width: 1337px) {
     .backgroundicone {
-
         .icone1 {
             margin-left: 35.8rem;
         }
-
-
-
-
     }
 
-    //Fonctionnement 1337px// 
+    //Fonctionnement 1337px//
 
     .titrefonction {
         font-size: 2rem;
     }
 
-    //BLoc Restaurant 1337px // 
+    //BLoc Restaurant 1337px //
 
     .grandcontainer {
-
         .titrerestaurant {
-
             margin-left: 27rem;
         }
-
-
     }
-
-
 }
 
-
-@media screen and (min-width:1338px) {
-
-
-    // Exploration 1248px // 
+@media screen and (min-width: 1338px) {
+    // Exploration 1248px //
 
     .exploration {
         button {
@@ -5300,22 +4426,14 @@ margin-left: -25rem;
     }
 
     .grandcontainer {
-
         .titrerestaurant {
             margin-left: 26rem;
         }
-
-
     }
-
-
-
 }
 
-@media screen and (min-width:1341px) {
-
-
-    // Exploration 1248px // 
+@media screen and (min-width: 1341px) {
+    // Exploration 1248px //
 
     .exploration {
         button {
@@ -5324,34 +4442,22 @@ margin-left: -25rem;
     }
 
     .grandcontainer {
-
         .titrerestaurant {
             margin-left: 29rem;
         }
-
-
     }
-
-
-
 }
 
-
-
-@media screen and (min-width:1344px) {
-
-    // Header & icone 1344px // 
+@media screen and (min-width: 1344px) {
+    // Header & icone 1344px //
 
     .backgroundicone {
-
         .icone1 {
             margin-left: 35.6rem;
         }
     }
 
-
-
-    // Exploration 1344px // 
+    // Exploration 1344px //
 
     .exploration {
         button {
@@ -5360,33 +4466,22 @@ margin-left: -25rem;
     }
 
     .grandcontainer {
-
         .titrerestaurant {
             margin-left: 29rem;
         }
-
-
     }
-
-
-
 }
 
-
-@media screen and (min-width:1345px) {
-
-    // Header & icone 1345px // 
+@media screen and (min-width: 1345px) {
+    // Header & icone 1345px //
 
     .backgroundicone {
-
         .icone1 {
             margin-left: 35.6rem;
         }
     }
 
-
-
-    // Exploration 1345px // 
+    // Exploration 1345px //
 
     .exploration {
         button {
@@ -5395,39 +4490,26 @@ margin-left: -25rem;
     }
 
     .grandcontainer {
-
         .titrerestaurant {
             margin-left: 29rem;
         }
-
-
     }
-
-
-
 }
 
-
-@media screen and (min-width:1347px) {
+@media screen and (min-width: 1347px) {
     .backgroundicone {
-
         .icone1 {
-
             margin-left: 36.3rem;
         }
     }
 }
 
-
-
 //14 inches screen//
 
-@media screen and (min-width:1366px) {
-
-    //Icone Desktop 1366px // 
+@media screen and (min-width: 1366px) {
+    //Icone Desktop 1366px //
 
     .backgroundicone {
-
         .icone1 {
             margin-left: 36.4rem;
         }
@@ -5437,14 +4519,9 @@ margin-left: -25rem;
         }
     }
 
-
-
-
-
-    //Exploration Desktop 1366px// 
+    //Exploration Desktop 1366px//
 
     .exploration {
-
         p {
             margin-left: 3rem;
         }
@@ -5470,7 +4547,6 @@ margin-left: -25rem;
     }
 
     .fonctionnement {
-
         &:nth-child(2) {
             margin-left: -4rem;
         }
@@ -5486,14 +4562,11 @@ margin-left: -25rem;
 
     // Restaurant Desktop 1366px//
 
-
     .grandcontainer {
-
         .titrerestaurant {
             margin-left: 32rem;
 
             h3 {
-
                 font-size: 2.5rem;
             }
         }
@@ -5508,7 +4581,6 @@ margin-left: -25rem;
                 }
             }
         }
-
 
         .bloc2 {
             width: 33rem;
@@ -5530,27 +4602,16 @@ margin-left: -25rem;
     }
 }
 
-
-@media screen and (min-width:1367px) {
-
-
+@media screen and (min-width: 1367px) {
     .backgroundicone {
-
         .texteicone1 {
-            margin-left: 20rem
+            margin-left: 20rem;
         }
     }
-
-
-
 }
 
-
-@media screen and (min-width:1369px) {
-
+@media screen and (min-width: 1369px) {
     .grandcontainer {
-
-
         .bloc {
             width: 35rem;
             height: 19rem;
@@ -5571,37 +4632,25 @@ margin-left: -25rem;
             width: 35rem;
             height: 19rem;
         }
-
     }
-
-
 }
 
-@media screen and (min-width:1370px) {
-
+@media screen and (min-width: 1370px) {
     .grandcontainer {
         .titrerestaurant {
             margin-left: 32rem;
         }
     }
-
-
 }
 
-
-@media screen and (min-width:1371px) {
-
+@media screen and (min-width: 1371px) {
     .backgroundicone {
         .icone1 {
             margin-left: 36.4rem;
         }
     }
 
-
-    
-
     .grandcontainer {
-
         .titrerestaurant {
             margin-left: 30rem;
         }
@@ -5626,19 +4675,13 @@ margin-left: -25rem;
             width: 35rem;
             height: 19rem;
         }
-
     }
 
-    
     .fonctionnement:nth-child(3) {
-        
         margin-left: 21rem;
-        
     }
     .fonctionnement:nth-child(4) {
-
         margin-left: 45rem;
-
     }
 
     .grandcontainer {
@@ -5648,44 +4691,26 @@ margin-left: -25rem;
             }
         }
     }
-
-
-
 }
 
-@media screen and (min-width:1373px) {
-
-
+@media screen and (min-width: 1373px) {
     .backgroundicone {
-
         .icone1 {
             margin-left: 36.5rem;
         }
     }
 
-
     .fonctionnement {
-
         &:nth-child(2) {
-
             margin-left: -3rem;
-
-
         }
-            &:nth-child(3) {
+        &:nth-child(3) {
+            margin-left: 21rem;
+        }
 
-                margin-left: 21rem;
-
-            }
-
-            &:nth-child(4) {
-
-                margin-left: 45rem;
-
-            }
-
-
-
+        &:nth-child(4) {
+            margin-left: 45rem;
+        }
     }
 
     .grandcontainer {
@@ -5693,21 +4718,16 @@ margin-left: -25rem;
             margin-left: 30rem;
         }
     }
-
-
 }
 
-
-@media screen and (min-width:1374px) {
-
+@media screen and (min-width: 1374px) {
     .backgroundicone {
         .icone1 {
             margin-left: 36.5rem;
         }
     }
 
-
-    // Exploration 1248px // 
+    // Exploration 1248px //
 
     .exploration {
         button {
@@ -5716,29 +4736,20 @@ margin-left: -25rem;
     }
 
     .grandcontainer {
-
         .titrerestaurant {
             margin-left: 30rem;
         }
-
-
     }
-
-
-
 }
 
-
-@media screen and (min-width:1375px) {
-
+@media screen and (min-width: 1375px) {
     .backgroundicone {
         .icone1 {
             margin-left: 36.5rem;
         }
     }
 
-
-    // Exploration 1248px // 
+    // Exploration 1248px //
 
     .exploration {
         button {
@@ -5746,49 +4757,27 @@ margin-left: -25rem;
         }
     }
 
-
     .fonctionnement {
-
         &:nth-child(2) {
-
             margin-left: -3rem;
-
-
         }
-            &:nth-child(3) {
+        &:nth-child(3) {
+            margin-left: 21rem;
+        }
 
-                margin-left: 21rem;
-
-            }
-
-            &:nth-child(4) {
-
-                margin-left: 45rem;
-
-            }
-
-
-
+        &:nth-child(4) {
+            margin-left: 45rem;
+        }
     }
 
-
-
     .grandcontainer {
-
         .titrerestaurant {
             margin-left: 30rem;
         }
-
-
     }
-
-
-
 }
 
-@media screen and (min-width:1380px) {
-
-
+@media screen and (min-width: 1380px) {
     .backgroundicone {
         .icone1 {
             margin-left: 36.7rem;
@@ -5802,20 +4791,13 @@ margin-left: -25rem;
     }
 
     .grandcontainer {
-
         .titrerestaurant {
             margin-left: 31rem;
         }
     }
-
-
 }
 
-
-
-@media screen and (min-width:1406px) {
-
-
+@media screen and (min-width: 1406px) {
     .backgroundicone {
         .icone1 {
             margin-left: 37.5rem;
@@ -5829,47 +4811,28 @@ margin-left: -25rem;
     }
 
     .grandcontainer {
-
         .titrerestaurant {
             margin-left: 31rem;
         }
     }
-
-
 }
 
-
 @media screen and (min-width: 1413px) {
+    // Background & Icone : 1413px //
 
+   
 
-    // Background & Icone : 1413px // 
-
-    .backgroundicone {
-
-        .icone1 {
-            position: relative;
-            left: 1.2rem;
-
-        }
-
-
-    }
-
-    // Bouton Section Exploration 1413px // 
+    // Bouton Section Exploration 1413px //
 
     .exploration {
         button {
             margin-left: 36rem;
         }
     }
-
 }
 
-@media screen and (min-width:1421px) {
-
+@media screen and (min-width: 1421px) {
     .backgroundicone {
-
-
         .texteicone1 {
             margin-left: 20rem;
         }
@@ -5878,11 +4841,9 @@ margin-left: -25rem;
             position: relative;
             left: 1.5rem;
         }
-
-
     }
 
-    // Exploration 1421px // 
+    // Exploration 1421px //
 
     .exploration {
         button {
@@ -5890,16 +4851,14 @@ margin-left: -25rem;
         }
     }
 
-    // Fonctionnement 1421px // 
+    // Fonctionnement 1421px //
 
     .titrefonction {
         font-size: 2.2rem;
     }
-
 }
 
-@media screen and (min-width:1423px) {
-
+@media screen and (min-width: 1423px) {
     .titrefonction {
         @include titrepolice;
         font-size: 2.1rem;
@@ -5913,19 +4872,14 @@ margin-left: -25rem;
 
     .grandcontainer {
         .titrerestaurant {
-
             margin-left: 30rem;
             @include titrepolice;
         }
     }
-
-
 }
 
-@media screen and (min-width:1425px) {
-
+@media screen and (min-width: 1425px) {
     .backgroundicone {
-
         .icone1 {
             margin-left: 37rem;
         }
@@ -5934,24 +4888,16 @@ margin-left: -25rem;
             margin-left: 19rem;
         }
     }
-
-
-
 }
 
-
-
 @media screen and (min-width: 1427px) {
-
     .backgroundicone {
         .icone1 {
             margin-left: 37.2rem;
         }
     }
 
-
     .exploration {
-
         h3 {
             margin-left: 20.5rem;
         }
@@ -5989,29 +4935,18 @@ margin-left: -25rem;
             font-size: 2rem;
         }
     }
-
-
 }
 
-@media screen and (min-width:1428px) {
-
-
+@media screen and (min-width: 1428px) {
     .grandcontainer {
         .titrerestaurant {
             margin-left: 32rem;
         }
     }
-
-
 }
 
-
-
-
-@media screen and (min-width:1429px) {
-
+@media screen and (min-width: 1429px) {
     .backgroundicone {
-
         .icone1 {
             margin-left: 37.2rem;
         }
@@ -6020,76 +4955,48 @@ margin-left: -25rem;
             margin-left: 19rem;
         }
     }
-
-
-
-
 }
 
-
-
-@media screen and (min-width:1432px) {
-
+@media screen and (min-width: 1432px) {
     .backgroundicone {
-
         .icone1 {
             margin-left: 38.8rem;
         }
     }
-
-
-
 }
 
-@media screen and (min-width:1433px) {
-
+@media screen and (min-width: 1433px) {
     .backgroundicone {
-
         .icone1 {
             margin-left: 37.3rem;
         }
     }
-
-
-
 }
 
-
-
-
-@media screen and (min-width:1435px) {
-
+@media screen and (min-width: 1435px) {
     .backgroundicone {
         .icone1 {
             margin-left: 39rem;
         }
     }
-
-
 }
 
-@media screen and (min-width:1437px) {
-
+@media screen and (min-width: 1437px) {
     .backgroundicone {
         .icone1 {
             margin-left: 37.4rem;
         }
     }
-
-
 }
 
-
-@media screen and (min-width:1438px) {
-
+@media screen and (min-width: 1438px) {
     .backgroundicone {
         .icone1 {
             margin-left: 37.5rem;
         }
     }
 
-
-    // Exploration 1438px // 
+    // Exploration 1438px //
 
     .exploration {
         button {
@@ -6098,20 +5005,13 @@ margin-left: -25rem;
     }
 
     .grandcontainer {
-
         .titrerestaurant {
             margin-left: 32rem;
         }
-
-
     }
-
-
-
 }
 
-@media screen and (min-width:1439px) {
-
+@media screen and (min-width: 1439px) {
     .backgroundicone {
         .icone1 {
             margin-left: 37.5rem;
@@ -6120,25 +5020,17 @@ margin-left: -25rem;
                 margin-left: 19rem;
             }
         }
-
-
-
     }
-
 }
 
-
 @media screen and (min-width: 1440px) {
-
-
-
-    //Header & Bannière Desktop // 
+    //Header & Bannière Desktop //
 
     .banniereheader {
         width: 100%;
     }
 
-    // Localisation Desktop // 
+    // Localisation Desktop //
 
     .backgroundicone {
         width: 100%;
@@ -6155,8 +5047,7 @@ margin-left: -25rem;
         }
     }
 
-
-    // Exploration Desktop // 
+    // Exploration Desktop //
 
     .exploration {
         width: 100%;
@@ -6172,16 +5063,14 @@ margin-left: -25rem;
             font-size: 1.6rem;
             margin-top: -4.5rem;
         }
-
     }
 
     button {
         position: relative;
         left: 0rem;
-
     }
 
-    //  Fonctionnement Desktop // 
+    //  Fonctionnement Desktop //
 
     .titrefonction {
         text-align: center;
@@ -6213,14 +5102,12 @@ margin-left: -25rem;
         width: 100%;
         height: 70rem;
 
-
         .titrerestaurant {
             font-size: 3rem;
             margin-left: 32rem;
         }
 
-        // Restaurant 1 1440PX // 
-
+        // Restaurant 1 1440PX //
 
         .bloc {
             margin-top: 12rem;
@@ -6236,10 +5123,7 @@ margin-left: -25rem;
                 }
             }
 
-
-
             .infodubloc {
-
                 h4 {
                     margin-top: -2.5rem;
                     font-size: 2rem;
@@ -6250,19 +5134,14 @@ margin-left: -25rem;
                 }
             }
 
-
             .parent {
-
                 .texteimage1 {
                     margin-left: 40rem;
-
                 }
-
             }
-
         }
 
-        // Restaurant 2 1440PX // 
+        // Restaurant 2 1440PX //
 
         .bloc2 {
             width: 35rem;
@@ -6271,7 +5150,6 @@ margin-left: -25rem;
             margin-left: 45rem;
 
             .infodubloc {
-
                 h4 {
                     margin-top: -2.5rem;
                     font-size: 2rem;
@@ -6290,10 +5168,9 @@ margin-left: -25rem;
                     font-size: 2.2rem;
                 }
             }
-
         }
 
-        // Restaurant 3 1440PX // 
+        // Restaurant 3 1440PX //
 
         .bloc3 {
             width: 38rem;
@@ -6302,7 +5179,6 @@ margin-left: -25rem;
             margin-top: 35rem;
 
             .infodubloc {
-
                 h4 {
                     margin-top: -2.5rem;
                     font-size: 2rem;
@@ -6322,7 +5198,7 @@ margin-left: -25rem;
             }
         }
 
-        // Restaurant 4 1440PX // 
+        // Restaurant 4 1440PX //
         .bloc4 {
             height: 21rem;
             margin-left: 45rem;
@@ -6330,7 +5206,6 @@ margin-left: -25rem;
             width: 35rem;
 
             .infodubloc {
-
                 h4 {
                     margin-top: -2.5rem;
                     font-size: 2rem;
@@ -6350,22 +5225,15 @@ margin-left: -25rem;
                 }
             }
         }
-
     }
 
     .backgroundfooter {
         padding-top: 10px;
     }
-
-
-
-
 }
 
 @media screen and (min-width: 1441px) {
-
-
-    // Background & Icone : 1441px // 
+    // Background & Icone : 1441px //
 
     .backgroundicone {
         .icone1 {
@@ -6377,39 +5245,32 @@ margin-left: -25rem;
         }
     }
 
-    //Bouton Exploration 1441px // 
+    //Bouton Exploration 1441px //
 
     .exploration {
-
         button {
             margin-left: 35rem;
         }
     }
 
-    // Section fonctionnement 1441px // 
+    // Section fonctionnement 1441px //
 
     .titrefonction {
         @include titrepolice;
     }
 
-    // Bloc Restaurant  1441px // 
+    // Bloc Restaurant  1441px //
 
     .grandcontainer {
-
-
         .titrerestaurant {
             @include titrepolice;
             margin-left: 35rem;
         }
     }
-
 }
 
-
-@media screen and (min-width:1443px) {
-
+@media screen and (min-width: 1443px) {
     .backgroundicone {
-
         .icone1 {
             margin-left: 37.4rem;
         }
@@ -6417,20 +5278,16 @@ margin-left: -25rem;
         .texteicone1 {
             margin-left: 25rem;
         }
-
-
     }
 
-    .titrefonction{
-        margin-left:25rem;
+    .titrefonction {
+        margin-left: 25rem;
     }
 
     .fonctionnement {
-
         &:nth-child(2) {
             margin-left: -8rem;
         }
-
 
         &:nth-child(3) {
             margin-left: 20rem;
@@ -6439,20 +5296,13 @@ margin-left: -25rem;
         &:nth-child(4) {
             margin-left: 48rem;
         }
-
-
     }
-
-
 }
 
-
-@media screen and (min-width:1445px) {
-
-    //Background & Icone 1465 px // 
+@media screen and (min-width: 1445px) {
+    //Background & Icone 1465 px //
 
     .backgroundicone {
-
         .icone1 {
             margin-left: 37.5rem;
         }
@@ -6461,54 +5311,41 @@ margin-left: -25rem;
             margin-left: 25rem;
         }
     }
-    .exploration{
-        button{
-            margin-left:38rem;
+    .exploration {
+        button {
+            margin-left: 38rem;
         }
     }
 
-    .titrefonction{
-        margin-left:30rem;
+    .titrefonction {
+        margin-left: 30rem;
     }
 
     .fonctionnement {
-
         &:nth-child(2) {
-
             margin-left: -5rem;
-
-
         }
-            &:nth-child(3) {
-
-                margin-left: 23rem;
-
-            }
-
-            &:nth-child(4) {
-
-                margin-left: 51rem;
-
-            }
-
-
-
-    }
-
-    .grandcontainer{
-        .bloc2{
-            margin-left: 48rem;
+        &:nth-child(3) {
+            margin-left: 23rem;
         }
 
-        .bloc4{
-            margin-left: 48rem;
+        &:nth-child(4) {
+            margin-left: 51rem;
         }
     }
 
+    .grandcontainer {
+        .bloc2 {
+            margin-left: 48rem;
+        }
+
+        .bloc4 {
+            margin-left: 48rem;
+        }
+    }
 }
 
-@media screen and (min-width:1447px) {
-
+@media screen and (min-width: 1447px) {
     .grandcontainer {
         .titrerestaurant {
             margin-left: 35rem;
@@ -6516,18 +5353,14 @@ margin-left: -25rem;
     }
 }
 
-@media screen and (min-width:1448px) {
-
-
+@media screen and (min-width: 1448px) {
     .backgroundicone {
-
         .icone1 {
             margin-left: 19.2rem;
         }
     }
 
-
-    // Exploration 1448 px // 
+    // Exploration 1448 px //
 
     .exploration {
         button {
@@ -6535,47 +5368,34 @@ margin-left: -25rem;
         }
     }
 
-
-    // Fonctionnement 1448px // 
+    // Fonctionnement 1448px //
 
     .titrefonction {
         @include titrepolice;
         margin-left: 23rem;
     }
 
-
     .fonctionnement {
-
         &:nth-child(3) {
             margin-left: 20rem;
-
-
         }
 
         &:nth-child(4) {
             margin-left: 48rem;
-
-
         }
-
     }
 
-    // Grand Container 1448px // 
+    // Grand Container 1448px //
     .grandcontainer {
         .titrerestaurant {
             margin-left: 34rem;
             @include titrepolice;
         }
     }
-
-
 }
 
-
 @media screen and (min-width: 1449px) {
-
-
-    // Background & Icone : 1441px // 
+    // Background & Icone : 1441px //
 
     .backgroundicone {
         .icone1 {
@@ -6586,39 +5406,28 @@ margin-left: -25rem;
             margin-left: 25rem;
         }
     }
-
-
-
 }
 
-
-@media screen and (min-width:1451px) {
-
+@media screen and (min-width: 1451px) {
     .backgroundicone {
         .icone1 {
             margin-left: 37.6rem;
         }
     }
 
-
-
-
     .fonctionnement:nth-child(3) {
         margin-top: -6rem;
     }
 
     .fonctionnement:nth-child(4) {
-
         margin-top: -6rem;
     }
 
     .grandcontainer {
-
         height: 70rem;
 
         .titrerestaurant {
             h3 {
-
                 font-size: 3rem;
             }
 
@@ -6632,21 +5441,18 @@ margin-left: -25rem;
         }
 
         .bloc2 {
-
             width: 40rem;
             height: 20rem;
             margin-top: 13rem;
         }
 
         .bloc3 {
-
             width: 40rem;
             height: 20rem;
             margin-top: 40rem;
         }
 
         .bloc4 {
-
             width: 40rem;
             height: 20rem;
             margin-top: 40rem;
@@ -6654,100 +5460,65 @@ margin-left: -25rem;
     }
 
     .backgroundfooter {
-        height: 20rem
+        height: 20rem;
     }
-
-
-
 }
 
-@media screen and (min-width:1453px) {
-
+@media screen and (min-width: 1453px) {
     .grandcontainer {
-
         .titrerestaurant {
             margin-left: 34rem;
         }
     }
 
-    .exploration{
-        button{
-            margin-left:38rem;
+    .exploration {
+        button {
+            margin-left: 38rem;
         }
     }
 
-    .titrefonction{
-        margin-left:30rem;
+    .titrefonction {
+        margin-left: 30rem;
     }
 
     .fonctionnement {
-
         &:nth-child(2) {
-
             margin-left: -5rem;
-
-
         }
-            &:nth-child(3) {
+        &:nth-child(3) {
+            margin-left: 23rem;
+        }
 
-                margin-left: 23rem;
-
-            }
-
-            &:nth-child(4) {
-
-                margin-left: 51rem;
-
-            }
-
-
-
+        &:nth-child(4) {
+            margin-left: 51rem;
+        }
     }
-
-
 }
 
-
-
-@media screen and (min-width:1454px) {
-
+@media screen and (min-width: 1454px) {
     .backgroundicone {
         .icone1 {
             margin-left: 37.7rem;
         }
     }
 
-
-
-
     .grandcontainer {
-
         .titrerestaurant {
             margin-left: 34rem;
         }
-
-
     }
 
-.fonctionnement{
-    
-    .circle{
-        margin-left: -23rem;
+    .fonctionnement {
+        .circle {
+            margin-left: -23rem;
+        }
     }
 }
 
-
-
-}
-
-
-
-@media screen and (min-width:1457px) {
-
-    //Background & Icone 1465 px // 
+@media screen and (min-width: 1457px) {
+    //Background & Icone 1465 px //
 
     .backgroundicone {
-
         .icone1 {
             margin-left: 37.7rem;
         }
@@ -6758,53 +5529,37 @@ margin-left: -25rem;
     }
 
     .exploration {
-
-        button{
-            margin-left:38rem;
+        button {
+            margin-left: 38rem;
         }
     }
 
-    .titrefonction{
-        margin-left:29rem;
+    .titrefonction {
+        margin-left: 29rem;
     }
 
     .fonctionnement {
-
         &:nth-child(2) {
-
             margin-left: -6rem;
-
-
         }
-            &:nth-child(3) {
+        &:nth-child(3) {
+            margin-left: 21rem;
+        }
 
-                margin-left: 21rem;
+        &:nth-child(4) {
+            margin-left: 48rem;
+        }
 
-            }
-
-            &:nth-child(4) {
-
-                margin-left: 48rem;
-
-            }
-
-
-    
-                .circle{
-                    margin-left: -23rem;
-                }
-            
-
+        .circle {
+            margin-left: -23rem;
+        }
     }
-
 }
 
-@media screen and (min-width:1461px) {
-
-    //Background & Icone 1465 px // 
+@media screen and (min-width: 1461px) {
+    //Background & Icone 1465 px //
 
     .backgroundicone {
-
         .icone1 {
             margin-left: 38.2rem;
         }
@@ -6813,16 +5568,12 @@ margin-left: -25rem;
             margin-left: 25rem;
         }
     }
-
 }
 
-
-@media screen and (min-width:1465px) {
-
-    //Background & Icone 1465 px // 
+@media screen and (min-width: 1465px) {
+    //Background & Icone 1465 px //
 
     .backgroundicone {
-
         .icone1 {
             margin-left: 38.2rem;
         }
@@ -6831,15 +5582,12 @@ margin-left: -25rem;
             margin-left: 25rem;
         }
     }
-
 }
 
-@media screen and (min-width:1471px) {
-
-    //Background & Icone 1471 px // 
+@media screen and (min-width: 1471px) {
+    //Background & Icone 1471 px //
 
     .backgroundicone {
-
         .icone1 {
             margin-left: 38.2rem;
         }
@@ -6857,29 +5605,25 @@ margin-left: -25rem;
         }
     }
 
-    .titrefonction{
-        margin-left:26rem;
+    .titrefonction {
+        margin-left: 26rem;
     }
 
-    .grandcontainer{
-        .bloc2{
+    .grandcontainer {
+        .bloc2 {
             margin-left: 48rem;
         }
 
-        .bloc4{
+        .bloc4 {
             margin-left: 48rem;
         }
     }
-
 }
 
-
-@media screen and (min-width:1479px) {
-
-    //Background & Icone 1491 px // 
+@media screen and (min-width: 1479px) {
+    //Background & Icone 1491 px //
 
     .backgroundicone {
-
         .icone1 {
             margin-left: 38.8rem;
         }
@@ -6896,15 +5640,12 @@ margin-left: -25rem;
             margin-left: 36rem;
         }
     }
-
 }
 
-@media screen and (min-width:1485px) {
-
-    //Background & Icone 1491 px // 
+@media screen and (min-width: 1485px) {
+    //Background & Icone 1491 px //
 
     .backgroundicone {
-
         .icone1 {
             margin-left: 38.8rem;
         }
@@ -6921,17 +5662,12 @@ margin-left: -25rem;
             margin-left: 37rem;
         }
     }
-
 }
 
-
-
-@media screen and (min-width:1491px) {
-
-    //Background & Icone 1491 px // 
+@media screen and (min-width: 1491px) {
+    //Background & Icone 1491 px //
 
     .backgroundicone {
-
         .icone1 {
             margin-left: 38.8rem;
         }
@@ -6948,14 +5684,10 @@ margin-left: -25rem;
             margin-left: 37rem;
         }
     }
-
 }
 
-@media screen and (min-width:1507px) {
-
-
+@media screen and (min-width: 1507px) {
     .backgroundicone {
-
         .icone1 {
             margin-left: 39.3rem;
         }
@@ -6965,21 +5697,16 @@ margin-left: -25rem;
         }
     }
 
-    // Exploration 1507 px // 
+    // Exploration 1507 px //
 
     .exploration {
-
         button {
             margin-left: 36rem;
         }
     }
-
 }
 
-@media screen and (min-width:1509px) {
-
-
-
+@media screen and (min-width: 1509px) {
     .backgroundicone {
         .icone1 {
             margin-left: 39.4rem;
@@ -6992,29 +5719,22 @@ margin-left: -25rem;
         }
     }
 
-    // Fonction 1509 PX // 
+    // Fonction 1509 PX //
 
     .titrefonction {
-
         margin-left: 20rem;
     }
-
-
 }
 
-@media screen and (min-width:1511px){
-
-    .exploration{
-        button{
-            margin-left:39rem;
+@media screen and (min-width: 1511px) {
+    .exploration {
+        button {
+            margin-left: 39rem;
         }
     }
-
-
 }
 
-@media screen and (min-width:1513px) {
-
+@media screen and (min-width: 1513px) {
     .backgroundicone {
         .icone1 {
             margin-left: 39.6rem;
@@ -7025,22 +5745,20 @@ margin-left: -25rem;
         }
     }
 
-    .exploration{
-        button{
-            margin-left:39rem;
+    .exploration {
+        button {
+            margin-left: 39rem;
         }
     }
 
-    .titrefonction{
-        margin-left:30rem;
+    .titrefonction {
+        margin-left: 30rem;
     }
 
     .fonctionnement {
-
         &:nth-child(2) {
             margin-left: -4rem;
         }
-
 
         &:nth-child(3) {
             margin-left: 24rem;
@@ -7049,29 +5767,19 @@ margin-left: -25rem;
         &:nth-child(4) {
             margin-left: 52rem;
         }
-
-
     }
-    
-
 }
 
-@media screen and (min-width:1515px) {
-
+@media screen and (min-width: 1515px) {
     .backgroundicone {
         .icone1 {
             margin-left: 39.6rem;
         }
     }
-
-
 }
 
-@media screen and (min-width:1521px) {
-
-
+@media screen and (min-width: 1521px) {
     .backgroundicone {
-
         .icone1 {
             margin-left: 39.8rem;
         }
@@ -7080,28 +5788,18 @@ margin-left: -25rem;
             margin-left: 25rem;
         }
     }
-
-
-
 }
 
-@media screen and (min-width:1523px) {
-
-
+@media screen and (min-width: 1523px) {
     .backgroundicone {
-
         .icone1 {
             margin-left: 40rem;
         }
     }
-
 }
 
-
-@media screen and (min-width:1525px) {
-
+@media screen and (min-width: 1525px) {
     .backgroundicone {
-
         .icone1 {
             margin-left: 40rem;
         }
@@ -7111,7 +5809,7 @@ margin-left: -25rem;
         }
     }
 
-    // Exploration 1525px // 
+    // Exploration 1525px //
 
     .exploration {
         h3 {
@@ -7127,7 +5825,7 @@ margin-left: -25rem;
         }
     }
 
-    // Fonctionnement 1525px // 
+    // Fonctionnement 1525px //
 
     .titrefonction {
         @include titrepolice;
@@ -7135,7 +5833,6 @@ margin-left: -25rem;
     }
 
     .fonctionnement {
-
         &:nth-child(2) {
             margin-left: -6rem;
         }
@@ -7143,7 +5840,6 @@ margin-left: -25rem;
         &:nth-child(3) {
             margin-left: 22rem;
         }
-
     }
 
     .grandcontainer {
@@ -7151,7 +5847,6 @@ margin-left: -25rem;
             @include titrepolice;
             margin-left: 35rem;
         }
-
 
         .bloc2 {
             margin-left: 50rem;
@@ -7161,84 +5856,50 @@ margin-left: -25rem;
             margin-left: 50rem;
         }
     }
-
-
-
 }
 
-
 @media screen and (min-width: 1529px) {
-
-
-    // Background & Icone : 1529px // 
+    // Background & Icone : 1529px //
 
     .backgroundicone {
         .icone1 {
             margin-left: 40rem;
         }
     }
-
 }
 
-
-@media screen and (min-width:1530px) {
-
-
-
-
-
+@media screen and (min-width: 1530px) {
     .grandcontainer {
-
         .titrerestaurant {
             margin-left: 36rem;
         }
-
-
     }
-
-
-
 }
 
-@media screen and (min-width:1531px) {
-
+@media screen and (min-width: 1531px) {
     .backgroundicone {
-
-
         .texteicone1 {
             margin-left: 25rem;
         }
     }
-
 }
 
 @media screen and (min-width: 1536px) {
-
-
-    // Background & Icone : 1536px // 
+    // Background & Icone : 1536px //
 
     .backgroundicone {
-
-
         .icone1 {
             margin-left: 40.2rem;
         }
 
         .texteicone1 {
-
             margin-left: 25rem;
         }
     }
-
-
 }
 
-
-@media screen and (min-width:1550px) {
-
-
+@media screen and (min-width: 1550px) {
     .backgroundicone {
-
         .icone1 {
             margin-left: 40.7rem;
         }
@@ -7246,7 +5907,6 @@ margin-left: -25rem;
         .texteicone1 {
             margin-left: 25rem;
         }
-
     }
 
     .exploration {
@@ -7254,13 +5914,9 @@ margin-left: -25rem;
             margin-left: 38rem;
         }
     }
-
 }
 
-
-@media screen and (min-width:1553px) {
-
-
+@media screen and (min-width: 1553px) {
     .backgroundicone {
         .icone1 {
             margin-left: 40.8rem;
@@ -7272,25 +5928,18 @@ margin-left: -25rem;
             margin-left: 38rem;
         }
     }
-
-
 }
 
-@media screen and (min-width:1554px) {
-
+@media screen and (min-width: 1554px) {
     .backgroundicone {
         .texteicone1 {
             margin-left: 25rem;
         }
     }
-
 }
 
-
 @media screen and (min-width: 1555px) {
-
-
-    // Background & Icone : 1555px // 
+    // Background & Icone : 1555px //
 
     .backgroundicone {
         .icone1 {
@@ -7300,26 +5949,19 @@ margin-left: -25rem;
 }
 
 @media screen and (min-width: 1557px) {
-
-
-    // Background & Icone 1557px // 
+    // Background & Icone 1557px //
 
     .backgroundicone {
-
         .icone1 {
             margin-left: 40.8rem;
         }
-
-
     }
 
-    // Exploration 1557 px // 
+    // Exploration 1557 px //
 
     .exploration {
-
-
         .p2 {
-            margin-left: 17rem
+            margin-left: 17rem;
         }
 
         button {
@@ -7327,17 +5969,14 @@ margin-left: -25rem;
         }
     }
 
-    // Fonctionnement 1557px // 
+    // Fonctionnement 1557px //
 
     .titrefonction {
         margin-left: 23rem;
         @include titrepolice;
     }
 
-
     .fonctionnement {
-
-
         &:nth-child(2) {
             margin-left: -6rem;
         }
@@ -7351,11 +5990,9 @@ margin-left: -25rem;
         }
     }
 
-
     // Container Restaurant 1557px //
 
     .grandcontainer {
-
         .titrerestaurant {
             @include titrepolice;
             font-size: 2rem;
@@ -7377,115 +6014,71 @@ margin-left: -25rem;
         .bloc4 {
             margin-left: 53rem;
         }
-
     }
-
 }
 
-@media screen and (min-width:1558px) {
-
+@media screen and (min-width: 1558px) {
     .grandcontainer {
-
         .titrerestaurant {
             margin-left: 37rem;
         }
-
     }
-
-
-
-
 }
 
-
-@media screen and (min-width:1559px) {
-
+@media screen and (min-width: 1559px) {
     .backgroundicone {
         .icone1 {
             margin-left: 41rem;
         }
     }
 
-
-
-
     .grandcontainer {
-
         .titrerestaurant {
             margin-left: 38rem;
         }
-
-
     }
-
-
-
 }
-
 
 @media screen and (min-width: 1561px) {
-
-
-    // Background & Icone : 1561px // 
+    // Background & Icone : 1561px //
 
     .backgroundicone {
         .icone1 {
             margin-left: 41rem;
         }
     }
-
 }
 
-
-@media screen and (min-width:1570px) {
-
-
-
-    // Exploration 1248px // 
-
-
+@media screen and (min-width: 1570px) {
+    // Exploration 1248px //
 
     .grandcontainer {
-
         .titrerestaurant {
             margin-left: 38rem;
         }
-
-
     }
-
-
-
 }
 
-@media screen and (min-width:1571px) {
-
+@media screen and (min-width: 1571px) {
     .backgroundicone {
         .icone1 {
             margin-left: 41.3rem;
         }
     }
 
-    .exploration{
-        button{
-            margin-left:42rem;
+    .exploration {
+        button {
+            margin-left: 42rem;
         }
     }
-
-
 }
 
-
-
-@media screen and (min-width:1589px) {
-
+@media screen and (min-width: 1589px) {
     .backgroundicone {
-
         .icone1 {
             margin-left: 42rem;
         }
     }
-
 
     .titrefonction {
         margin-left: 33rem;
@@ -7498,30 +6091,18 @@ margin-left: -25rem;
     }
 
     .grandcontainer {
-
         .titrerestaurant {
             margin-left: 40rem;
         }
-
-
     }
-
-
-
-
-
 }
 
-
-@media screen and (min-width:1591px) {
-
+@media screen and (min-width: 1591px) {
     .backgroundicone {
-
         .icone1 {
             margin-left: 42rem;
         }
     }
-
 
     .titrefonction {
         margin-left: 31rem;
@@ -7539,39 +6120,22 @@ margin-left: -25rem;
     }
 
     .grandcontainer {
-
         .titrerestaurant {
             margin-left: 40rem;
         }
-
-
     }
-
-
-
-
-
 }
 
-@media screen and (min-width:1595px) {
-
-
+@media screen and (min-width: 1595px) {
     .backgroundicone {
-
         .icone1 {
             margin-left: 42.2rem;
         }
-
-
-
-
     }
 
-
-    // Exploration 1595 px  // 
+    // Exploration 1595 px  //
 
     .exploration {
-
         h3 {
             margin-left: 23.4rem;
         }
@@ -7580,7 +6144,6 @@ margin-left: -25rem;
             margin-left: 23rem;
         }
 
-
         p {
             margin-left: 7rem;
         }
@@ -7588,11 +6151,9 @@ margin-left: -25rem;
         button {
             margin-left: 41rem;
         }
-
-
     }
 
-    //Fonctionnement 1595 px // 
+    //Fonctionnement 1595 px //
 
     .titrefonction {
         @include titrepolice;
@@ -7600,11 +6161,9 @@ margin-left: -25rem;
     }
 
     .fonctionnement {
-
         &:nth-child(2) {
             margin-left: -4rem;
         }
-
 
         &:nth-child(3) {
             margin-left: 24rem;
@@ -7613,14 +6172,11 @@ margin-left: -25rem;
         &:nth-child(4) {
             margin-left: 52rem;
         }
-
-
     }
 
-    //Container 1595 px // 
+    //Container 1595 px //
 
     .grandcontainer {
-
         .titrerestaurant {
             @include titrepolice;
             margin-left: 38rem;
@@ -7629,7 +6185,6 @@ margin-left: -25rem;
         .bloc {
             margin-left: 8rem;
         }
-
 
         .bloc2 {
             margin-left: 55rem;
@@ -7642,18 +6197,10 @@ margin-left: -25rem;
         .bloc4 {
             margin-left: 55rem;
         }
-
-
     }
-
-
-
-
 }
 
-
-@media screen and (min-width:1597px) {
-
+@media screen and (min-width: 1597px) {
     .backgroundicone {
         .icone1 {
             margin-left: 42.2rem;
@@ -7661,49 +6208,31 @@ margin-left: -25rem;
     }
 
     .grandcontainer {
-
         .titrerestaurant {
             margin-left: 38rem;
         }
     }
-
-
 }
 
-
-
-@media screen and (min-width:1599px) {
-
-
+@media screen and (min-width: 1599px) {
     .grandcontainer {
-
         .titrerestaurant {
             margin-left: 38rem;
         }
-
-
     }
-
-
-
 }
 
-
-@media screen and (min-width:1600px) {
-
-
+@media screen and (min-width: 1600px) {
     //Icone Desktop 1600px//
 
     .backgroundicone {
-
         .icone1 {
             position: relative;
             left: 1.5rem;
         }
-
     }
 
-    //Exploration Desktop 1600px // 
+    //Exploration Desktop 1600px //
 
     .exploration {
         button {
@@ -7722,12 +6251,9 @@ margin-left: -25rem;
         left: 19rem;
     }
 
-
-
     //Bloc Restaurant Desktop 1600px//
 
     .grandcontainer {
-
         .titrerestaurant {
             margin-left: 40rem;
         }
@@ -7746,10 +6272,7 @@ margin-left: -25rem;
                 }
             }
 
-
-
             .infodubloc {
-
                 h4 {
                     margin-top: -2.5rem;
                     font-size: 2rem;
@@ -7760,16 +6283,11 @@ margin-left: -25rem;
                 }
             }
 
-
             .parent {
-
                 .texteimage1 {
                     margin-left: 40rem;
-
                 }
-
             }
-
         }
 
         .bloc2 {
@@ -7779,7 +6297,6 @@ margin-left: -25rem;
             margin-left: 55rem;
 
             .infodubloc {
-
                 h4 {
                     margin-top: -2.5rem;
                     font-size: 2rem;
@@ -7798,7 +6315,6 @@ margin-left: -25rem;
                     font-size: 2.2rem;
                 }
             }
-
         }
 
         .bloc3 {
@@ -7807,7 +6323,6 @@ margin-left: -25rem;
             margin-left: 8rem;
 
             .infodubloc {
-
                 h4 {
                     margin-top: -2.5rem;
                     font-size: 2rem;
@@ -7833,7 +6348,6 @@ margin-left: -25rem;
             width: 40rem;
 
             .infodubloc {
-
                 h4 {
                     margin-top: -2.5rem;
                     font-size: 2rem;
@@ -7853,29 +6367,17 @@ margin-left: -25rem;
                 }
             }
         }
-
-
-
     }
 
-
-
-    //Footer Desktop 1600px// 
+    //Footer Desktop 1600px//
 
     .backgroundfooter {
         padding-top: 3px;
     }
-
-
-
-
 }
 
-@media screen and (min-width:1601px) {
-
-
-    //Icone & Background 1601 px // 
-
+@media screen and (min-width: 1601px) {
+    //Icone & Background 1601 px //
 
     .backgroundicone {
         .icone1 {
@@ -7883,11 +6385,9 @@ margin-left: -25rem;
         }
     }
 
-
-    //Exploration 1601px // 
+    //Exploration 1601px //
 
     .exploration {
-
         h3 {
             margin-left: 23.8rem;
         }
@@ -7895,42 +6395,29 @@ margin-left: -25rem;
         button {
             margin-left: 44rem;
         }
-
-
-
     }
 
-    //fonctionnement 1601px // 
+    //fonctionnement 1601px //
 
     .titrefonction {
         margin-left: 34rem;
     }
 
     .fonctionnement {
-
         &:nth-child(2) {
-
             margin-left: -6rem;
-
         }
 
         &:nth-child(3) {
-
             margin-left: 22rem;
-
         }
 
         &:nth-child(4) {
-
             margin-left: 50rem;
-
         }
-
-
     }
 
-
-    // Container 1601 px // 
+    // Container 1601 px //
 
     .grandcontainer {
         .titrerestaurant {
@@ -7941,24 +6428,14 @@ margin-left: -25rem;
             margin-left: 7.7rem;
         }
     }
-
-
-
-
-
 }
 
-
-
-@media screen and (min-width:1603px) {
-
+@media screen and (min-width: 1603px) {
     .backgroundicone {
-
         .icone1 {
             margin-left: 42.6rem;
         }
     }
-
 
     .titrefonction {
         margin-left: 33rem;
@@ -7971,42 +6448,26 @@ margin-left: -25rem;
     }
 
     .grandcontainer {
-
         .titrerestaurant {
             margin-left: 40rem;
         }
-
     }
 }
 
-@media screen and (min-width:1605px) {
-
-
-
+@media screen and (min-width: 1605px) {
     .grandcontainer {
-
         .titrerestaurant {
             margin-left: 40rem;
         }
-
-
     }
-
-
-
 }
 
-
-
-@media screen and (min-width:1609px) {
-
+@media screen and (min-width: 1609px) {
     .backgroundicone {
-
         .icone1 {
             margin-left: 42.6rem;
         }
     }
-
 
     .titrefonction {
         margin-left: 33rem;
@@ -8019,7 +6480,6 @@ margin-left: -25rem;
     }
 
     .grandcontainer {
-
         .titrerestaurant {
             margin-left: 40rem;
         }
@@ -8030,10 +6490,9 @@ margin-left: -25rem;
             margin-left: 4rem;
 
             .coeur1 {
-                margin-left: 30rem
+                margin-left: 30rem;
             }
         }
-
 
         .bloc2 {
             width: 45rem;
@@ -8041,7 +6500,7 @@ margin-left: -25rem;
             margin-left: 53rem;
 
             .coeur1 {
-                margin-left: 30rem
+                margin-left: 30rem;
             }
         }
 
@@ -8051,7 +6510,7 @@ margin-left: -25rem;
             margin-left: 4rem;
 
             .coeur1 {
-                margin-left: 30rem
+                margin-left: 30rem;
             }
         }
 
@@ -8061,26 +6520,18 @@ margin-left: -25rem;
             margin-left: 53rem;
 
             .coeur1 {
-                margin-left: 30rem
+                margin-left: 30rem;
             }
         }
     }
-
-
-
-
 }
 
-
-
-@media screen and (min-width:1621px) {
-
+@media screen and (min-width: 1621px) {
     .backgroundicone {
         .icone1 {
             margin-left: 43rem;
         }
     }
-
 
     .titrefonction {
         margin-left: 32rem;
@@ -8093,7 +6544,6 @@ margin-left: -25rem;
     }
 
     .grandcontainer {
-
         .titrerestaurant {
             margin-left: 40rem;
         }
@@ -8103,10 +6553,9 @@ margin-left: -25rem;
             height: 20rem;
 
             .coeur1 {
-                margin-left: 30rem
+                margin-left: 30rem;
             }
         }
-
 
         .bloc2 {
             width: 45rem;
@@ -8114,7 +6563,7 @@ margin-left: -25rem;
             margin-left: 53rem;
 
             .coeur1 {
-                margin-left: 30rem
+                margin-left: 30rem;
             }
         }
 
@@ -8123,7 +6572,7 @@ margin-left: -25rem;
             height: 20rem;
 
             .coeur1 {
-                margin-left: 30rem
+                margin-left: 30rem;
             }
         }
 
@@ -8133,52 +6582,32 @@ margin-left: -25rem;
             margin-left: 53rem;
 
             .coeur1 {
-                margin-left: 30rem
+                margin-left: 30rem;
             }
         }
     }
-
-
-
-
 }
 
-
-@media screen and (min-width:1626px) {
-
+@media screen and (min-width: 1626px) {
     .backgroundicone {
         .icone1 {
             margin-left: 19.8rem;
         }
     }
 
-
-
-
     .grandcontainer {
-
         .titrerestaurant {
             margin-left: 40rem;
         }
-
-
     }
-
-
-
 }
 
-
-
-@media screen and (min-width:1627px) {
-
+@media screen and (min-width: 1627px) {
     .backgroundicone {
-
         .icone1 {
             margin-left: 43.2rem;
         }
     }
-
 
     .titrefonction {
         margin-left: 33rem;
@@ -8191,21 +6620,14 @@ margin-left: -25rem;
     }
 
     .grandcontainer {
-
         .titrerestaurant {
             margin-left: 40rem;
         }
-
     }
-
 }
 
-@media screen and (min-width:1629px) {
-
-
-
+@media screen and (min-width: 1629px) {
     .backgroundicone {
-
         .icone1 {
             margin-left: 43.2rem;
         }
@@ -8213,10 +6635,7 @@ margin-left: -25rem;
         .texteicone1 {
             margin-left: 25rem;
         }
-
-
     }
-
 
     // Fonctionnement margin- px //
 
@@ -8226,22 +6645,16 @@ margin-left: -25rem;
     }
 
     .fonctionnement {
-
-
         &:nth-child(2) {
             margin-left: -5rem;
         }
 
         &:nth-child(3) {
-
             margin-left: 22.5rem;
         }
-
     }
 
     // Exploration 1629px //
-
-
 
     .exploration {
         h3 {
@@ -8259,59 +6672,41 @@ margin-left: -25rem;
         button {
             margin-left: 45rem;
         }
-
-
     }
 
-    //Container Restaurant 1629px// 
+    //Container Restaurant 1629px//
 
     .grandcontainer {
-
-
         .titrerestaurant {
-
             @include titrepolice;
             margin-left: 40rem;
         }
-
 
         .bloc {
             margin-left: 3rem;
         }
 
-        .bloc2{
-            margin-left:53rem;
+        .bloc2 {
+            margin-left: 53rem;
         }
 
         .bloc3 {
             margin-left: 3rem;
         }
 
-        .bloc4{
-            margin-left:53rem;
+        .bloc4 {
+            margin-left: 53rem;
         }
-
     }
-
-
-
-
-
-
-
 }
 
-
 @media screen and(min-width:1680px) {
-
     .backgroundicone {
-
         .icone1 {
             position: relative;
             left: 3.1rem;
         }
     }
-
 
     .titrefonction {
         @include titrepolice;
@@ -8322,8 +6717,6 @@ margin-left: -25rem;
     .fonctionnement {
         position: relative;
         left: 21rem;
-
-
     }
 
     .exploration {
@@ -8332,16 +6725,11 @@ margin-left: -25rem;
         }
     }
 
-
-
     .grandcontainer {
-
-
         height: 68rem;
 
         .titrerestaurant {
             h3 {
-
                 font-size: 4rem;
                 margin-left: 2rem;
             }
@@ -8355,8 +6743,6 @@ margin-left: -25rem;
                 margin-top: -3.8rem;
                 margin-left: 29rem;
 
-
-
                 .emptyHeart {
                     font-size: 2rem;
                     cursor: pointer;
@@ -8367,7 +6753,7 @@ margin-left: -25rem;
                         color: transparent;
                     }
 
-                    &:hover>.fullHeart {
+                    &:hover > .fullHeart {
                         transform: scale(1);
                     }
                 }
@@ -8376,23 +6762,20 @@ margin-left: -25rem;
                     position: absolute;
                     top: 0;
                     left: 0;
-                    background: linear-gradient(170deg, #9356DC, #c776df);
+                    background: linear-gradient(170deg, #9356dc, #c776df);
                     background-clip: border-box;
                     -webkit-background-clip: text;
                     -webkit-text-fill-color: transparent;
                     transform: scale(0);
                     transition: transform 150ms 50ms ease-in-out;
                 }
-
             }
         }
-
 
         .bloc2 {
             margin-top: 15rem;
 
             .infodubloc {
-
                 h4 {
                     font-size: 1.8rem;
                     margin-top: -2.8rem;
@@ -8407,8 +6790,6 @@ margin-left: -25rem;
                 margin-top: -4rem;
                 margin-left: 29rem;
 
-
-
                 .emptyHeart {
                     font-size: 2.5rem;
                     cursor: pointer;
@@ -8419,7 +6800,7 @@ margin-left: -25rem;
                         color: transparent;
                     }
 
-                    &:hover>.fullHeart {
+                    &:hover > .fullHeart {
                         transform: scale(1);
                     }
                 }
@@ -8428,27 +6809,21 @@ margin-left: -25rem;
                     position: absolute;
                     top: 0;
                     left: 0;
-                    background: linear-gradient(170deg, #9356DC, #c776df);
+                    background: linear-gradient(170deg, #9356dc, #c776df);
                     background-clip: border-box;
                     -webkit-background-clip: text;
                     -webkit-text-fill-color: transparent;
                     transform: scale(0);
                     transition: transform 150ms 50ms ease-in-out;
                 }
-
             }
         }
-
-
-
-
 
         .bloc3 {
             height: 20rem;
             margin-left: 6rem;
 
             .infodubloc {
-
                 h4 {
                     margin-top: -3rem;
                 }
@@ -8459,10 +6834,6 @@ margin-left: -25rem;
             }
 
             .coeur1 {
-
-
-
-
                 .emptyHeart {
                     font-size: 2.5rem;
                     cursor: pointer;
@@ -8473,7 +6844,7 @@ margin-left: -25rem;
                         color: transparent;
                     }
 
-                    &:hover>.fullHeart {
+                    &:hover > .fullHeart {
                         transform: scale(1);
                     }
                 }
@@ -8482,36 +6853,21 @@ margin-left: -25rem;
                     position: absolute;
                     top: 0;
                     left: 0;
-                    background: linear-gradient(170deg, #9356DC, #c776df);
+                    background: linear-gradient(170deg, #9356dc, #c776df);
                     background-clip: border-box;
                     -webkit-background-clip: text;
                     -webkit-text-fill-color: transparent;
                     transform: scale(0);
                     transition: transform 150ms 50ms ease-in-out;
                 }
-
             }
-
-
-
-
-
-
-
         }
-
-
 
         .bloc4 {
             height: 20rem;
             margin-left: 53rem;
 
-
             .coeur1 {
-
-
-
-
                 .emptyHeart {
                     font-size: 2.5rem;
                     cursor: pointer;
@@ -8522,7 +6878,7 @@ margin-left: -25rem;
                         color: transparent;
                     }
 
-                    &:hover>.fullHeart {
+                    &:hover > .fullHeart {
                         transform: scale(1);
                     }
                 }
@@ -8531,7 +6887,7 @@ margin-left: -25rem;
                     position: absolute;
                     top: 0;
                     left: 0;
-                    background: linear-gradient(170deg, #9356DC, #c776df);
+                    background: linear-gradient(170deg, #9356dc, #c776df);
                     background-clip: border-box;
                     -webkit-background-clip: text;
                     -webkit-text-fill-color: transparent;
@@ -8541,7 +6897,6 @@ margin-left: -25rem;
             }
 
             .infodubloc {
-
                 h4 {
                     font-size: 1.8rem;
                     margin-top: -2.8rem;
@@ -8551,42 +6906,30 @@ margin-left: -25rem;
                     font-size: 1.4rem;
                 }
             }
-
-
-
-
         }
-
-
     }
 
     .backgroundfooter {
         padding-top: 5px;
     }
-
-
-
 }
 
-
-@media screen and (min-width:1870px) {
-
+@media screen and (min-width: 1870px) {
     .backgroundicone {
         .icone1 {
             margin-left: 25rem;
         }
     }
 
-    // Exploration 1870px // 
+    // Exploration 1870px //
 
     .exploration {
-
         button {
             margin-left: 46rem;
         }
     }
 
-    // Fonctionnement // 
+    // Fonctionnement //
 
     .titrefonction {
         margin-left: 18rem;
@@ -8600,8 +6943,7 @@ margin-left: -25rem;
         margin-left: 55rem;
     }
 
-    // Container et Restaurant // 
-
+    // Container et Restaurant //
 
     .grandcontainer {
         height: 70rem;
@@ -8623,12 +6965,9 @@ margin-left: -25rem;
                 .emptyHeart {
                     font-size: 2.2rem;
                 }
-
-
             }
 
             .infodubloc {
-
                 h4 {
                     margin-top: -2.5rem;
                     font-size: 2rem;
@@ -8638,7 +6977,6 @@ margin-left: -25rem;
                     font-size: 1.4rem;
                 }
             }
-
         }
 
         .bloc2 {
@@ -8648,7 +6986,6 @@ margin-left: -25rem;
             margin-left: 60rem;
 
             .infodubloc {
-
                 h4 {
                     margin-top: -2.5rem;
                     font-size: 2rem;
@@ -8666,7 +7003,6 @@ margin-left: -25rem;
                     font-size: 2.2rem;
                 }
             }
-
         }
 
         .bloc3 {
@@ -8675,7 +7011,6 @@ margin-left: -25rem;
             margin-left: 6rem;
 
             .infodubloc {
-
                 h4 {
                     margin-top: -2.5rem;
                     font-size: 2rem;
@@ -8700,7 +7035,6 @@ margin-left: -25rem;
             margin-left: 60rem;
 
             .infodubloc {
-
                 h4 {
                     margin-top: -2.5rem;
                     font-size: 2rem;
@@ -8719,27 +7053,13 @@ margin-left: -25rem;
                 }
             }
         }
-
-
     }
-
-
-
-
 }
 
-
-
-
-@media screen and (min-width:1920px) {
-
-
-
-    // Icone localisation 1920px Desktop // 
+@media screen and (min-width: 1920px) {
+    // Icone localisation 1920px Desktop //
 
     .backgroundicone {
-
-
         .icone {
             position: relative;
             left: 28.2rem;
@@ -8748,25 +7068,21 @@ margin-left: -25rem;
         .texteicone1 {
             margin-left: 25rem;
         }
-
     }
 
-    // Exploration 1920px Desktop // 
+    // Exploration 1920px Desktop //
 
     .exploration {
-
         .p2 {
             margin-left: 22rem;
         }
 
         button {
             margin-left: 53.5rem;
-
         }
-
     }
 
-    // Fonctionnement 1920px Desktop // 
+    // Fonctionnement 1920px Desktop //
 
     .titrefonction {
         @include titrepolice;
@@ -8774,9 +7090,7 @@ margin-left: -25rem;
         margin-left: 29rem;
     }
 
-
     .fonctionnement {
-
         &:nth-child(2) {
             margin-left: 0rem;
         }
@@ -8785,19 +7099,10 @@ margin-left: -25rem;
             margin-left: 27rem;
         }
 
-
-
-        .circle{
+        .circle {
             margin-left: -23rem;
         }
-
-
     }
-
-
-
-
-
 
     //Bloc Restaurant 1 //
 
@@ -8817,7 +7122,6 @@ margin-left: -25rem;
                 font-size: 3.5rem;
                 margin-top: 1rem;
                 margin-left: 12rem;
-
             }
         }
 
@@ -8827,9 +7131,7 @@ margin-left: -25rem;
             width: 50rem;
 
             .infodubloc {
-
                 .texte1 {
-
                     h4 {
                         font-size: 2rem;
                     }
@@ -8846,23 +7148,18 @@ margin-left: -25rem;
 
                 .emptyHeart {
                     font-size: 2.2rem;
-
                 }
             }
 
             .parent {
-
                 .texteimage1 {
                     margin-left: 6rem;
-
                 }
             }
 
             .coeur {
                 margin-top: -5rem;
                 margin-left: 35rem;
-
-
 
                 .emptyHeart {
                     font-size: 2.8rem;
@@ -8874,44 +7171,24 @@ margin-left: -25rem;
                         color: transparent;
                     }
 
-                    &:hover>.fullHeart {
+                    &:hover > .fullHeart {
                         transform: scale(1);
                     }
                 }
-
-
-
-
-
-
-
-
             }
-
-
-
-
-
-
 
             .fullHeart {
                 position: absolute;
                 top: 0;
                 left: 0;
-                background: linear-gradient(170deg, #9356DC, #c776df);
+                background: linear-gradient(170deg, #9356dc, #c776df);
                 background-clip: border-box;
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
                 transform: scale(0);
                 transition: transform 150ms 50ms ease-in-out;
-
-
-
-
             }
-
         }
-
 
         .bloc2 {
             width: 50rem;
@@ -8924,13 +7201,11 @@ margin-left: -25rem;
 
                 .emptyHeart {
                     font-size: 2.2rem;
-
                 }
             }
 
             .infodubloc {
                 .texte2 {
-
                     h4 {
                         font-size: 2rem;
                         margin-top: -2.8rem;
@@ -8946,11 +7221,6 @@ margin-left: -25rem;
                 margin-left: 50rem;
             }
         }
-
-
-
-
-
 
         .bloc3 {
             width: 50rem;
@@ -8964,16 +7234,11 @@ margin-left: -25rem;
 
                 .emptyHeart {
                     font-size: 2.2rem;
-
                 }
             }
 
-
-
-
             .infodubloc {
                 .texte3 {
-
                     h4 {
                         font-size: 2rem;
                         margin-top: -2.8rem;
@@ -8990,13 +7255,11 @@ margin-left: -25rem;
             }
         }
 
-
         .bloc4 {
             width: 50rem;
             height: 21rem;
             margin-top: 40rem;
             margin-left: 60rem;
-
 
             .coeur1 {
                 margin-top: -4.3rem;
@@ -9004,13 +7267,11 @@ margin-left: -25rem;
 
                 .emptyHeart {
                     font-size: 2.2rem;
-
                 }
             }
 
             .infodubloc {
                 .texte4 {
-
                     h4 {
                         font-size: 2rem;
                         margin-top: -2.8rem;
@@ -9028,15 +7289,9 @@ margin-left: -25rem;
                 margin-left: 50rem;
             }
         }
-
     }
 
-
-
-
-
     .backgroundfooter {
-
         background: #353535;
         height: 25rem;
         width: 100%;
@@ -9046,28 +7301,15 @@ margin-left: -25rem;
         justify-content: center;
         align-items: center;
 
-
-
-
-
-
-
-
         .titrefooter {
-
             font-size: 5rem;
             font-family: Shrikhand;
             margin-top: -15rem;
-
-
         }
 
         .infofooter {
-
             margin-top: -5rem;
             margin-left: -10rem;
-
-
 
             .info1 {
                 margin-top: 9rem;
@@ -9081,14 +7323,11 @@ margin-left: -25rem;
             }
 
             .info2 {
-
-
                 .paraph2 {
                     font-size: 2.2rem;
                     margin-left: 1rem;
                     margin-top: -2rem;
                 }
-
             }
 
             .info3 {
@@ -9098,8 +7337,6 @@ margin-left: -25rem;
                     margin-left: 1.5rem;
                     margin-top: 1rem;
                 }
-
-
             }
 
             .info4 {
@@ -9109,16 +7346,11 @@ margin-left: -25rem;
                     margin-left: 1.5rem;
                 }
 
-
-
                 a {
                     text-decoration: none;
                     color: #f1f1f1;
                 }
             }
-
-
-
 
             .iconefooter {
                 position: relative;
@@ -9134,10 +7366,6 @@ margin-left: -25rem;
                 font-size: 3rem;
                 margin-right: 15rem;
             }
-
         }
-
     }
-
-
 }

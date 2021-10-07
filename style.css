@@ -27,627 +27,567 @@
     height: 0;
   }
 }
-.loading {
-  position: fixed;
-  z-index: 999;
-  height: 2em;
-  width: 2em;
-  overflow: visible;
-  margin: auto;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  animation: hide 1000ms linear 3000ms forwards;
-}
-
-/* Transparent Overlay */
-.loading:before {
-  content: "";
-  display: block;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: radial-gradient(#9356DC, #FF79DA);
-  animation: hide2 1000ms linear 3300ms forwards;
-}
-
-.loading:not(:required) {
-  /* hide "loading..." text */
-  font: 0/0 a;
-  color: transparent;
-  text-shadow: none;
-  background-color: transparent;
-  border: 0;
-}
-
-.loading:not(:required):after {
-  content: "";
-  display: block;
-  font-size: 30px;
-  width: 1em;
-  height: 1em;
-  margin-top: -0.5em;
-  -webkit-animation: spinner 150ms linear;
-  -moz-animation: spinner 150ms linear;
-  -ms-animation: spinner 150ms linear;
-  -o-animation: spinner 150ms linear;
-  animation: spinner 3000ms linear;
-  border-radius: 0.5em;
-  -webkit-box-shadow: rgba(255, 255, 255, 0.75) 1.5em 0 0 0, rgba(255, 255, 255, 0.75) 1.1em 1.1em 0 0, rgba(255, 255, 255, 0.75) 0 1.5em 0 0, rgba(255, 255, 255, 0.75) -1.1em 1.1em 0 0, rgba(255, 255, 255, 0.75) -1.5em 0 0 0, rgba(255, 255, 255, 0.75) -1.1em -1.1em 0 0, rgba(255, 255, 255, 0.75) 0 -1.5em 0 0, rgba(255, 255, 255, 0.75) 1.1em -1.1em 0 0;
-  box-shadow: rgba(255, 255, 255, 0.75) 1.5em 0 0 0, rgba(255, 255, 255, 0.75) 1.1em 1.1em 0 0, rgba(255, 255, 255, 0.75) 0 1.5em 0 0, rgba(255, 255, 255, 0.75) -1.1em 1.1em 0 0, rgba(255, 255, 255, 0.75) -1.5em 0 0 0, rgba(255, 255, 255, 0.75) -1.1em -1.1em 0 0, rgba(255, 255, 255, 0.75) 0 -1.5em 0 0, rgba(255, 255, 255, 0.75) 1.1em -1.1em 0 0;
-}
-
-@media screen and (min-width: 375px) {
-  html,
+html,
 body {
-    height: 100%;
-    overflow-x: hidden;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-  }
-
-  body {
-    height: 100vh;
-    font-size: 10px;
-    font-family: Roboto;
-  }
-  body p {
-    margin: 0;
-  }
-  body h3 {
-    margin: 0;
-  }
-  body h4 {
-    margin: 0;
-  }
-
-  .banniereheader {
-    width: 100%;
-    height: 4.3rem;
-    background: #f6f6f6;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 0rem;
-  }
-
-  .logoheader {
-    font-family: Shrikhand;
-  }
-
-  .backgroundicone {
-    width: 23.3rem;
-    height: 3rem;
-    background: #eaeaea;
-    margin-top: -1rem;
-  }
-  .backgroundicone .texteicone1 {
-    margin-left: 7.5rem;
-    line-height: 3rem;
-    font-size: 1rem;
-  }
-  .backgroundicone .icone1 {
-    margin-left: 6rem;
-    margin-top: -2.2rem;
-    font-size: 0.9rem;
-  }
-
-  .exploration {
-    background: #f6f6f6;
-    width: 24rem;
-    height: 18rem;
-    margin-left: 0rem;
-    margin-top: 0rem;
-    display: flex;
-    flex-direction: column;
-  }
-  .exploration h3 {
-    font-size: 1.3rem;
-    margin-bottom: 5rem;
-    margin-left: 6rem;
-    margin-top: 2rem;
-  }
-  .exploration .p2 {
-    margin-top: -5rem;
-    margin-left: 8rem;
-  }
-  .exploration p {
-    font-size: 1rem;
-    text-align: center;
-    margin-top: -3rem;
-  }
-  .exploration button {
-    width: 15rem;
-    height: 3.5rem;
-    margin-left: 4.5rem;
-    margin-top: 2rem;
-    border-radius: 3rem;
-    padding: 20px 8px;
-    background: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
-    color: #ffff;
-    font-size: 1rem;
-    outline: none;
-    border: none;
-  }
-  .exploration button:hover {
-    box-shadow: 0 0 7px 6px #b35cdc;
-    filter: brightness(1.2);
-  }
-
-  .titrefonction {
-    font-size: 1.3rem;
-    margin-top: 2.5rem;
-    margin-left: 2rem;
-  }
-
-  .fonctionnement {
-    width: 90%;
-    height: 3.5rem;
-    background: #f6f6f6;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 1rem;
-    margin-top: 3rem;
-    box-shadow: 0 0 5px;
-    border-radius: 1.2rem;
-    position: relative;
-  }
-  .fonctionnement:hover {
-    background: #f5edff;
-  }
-  .fonctionnement .soustitre {
-    font-size: 0.8rem;
-    font-weight: bold;
-    margin-left: 1rem;
-  }
-  .fonctionnement i {
-    font-size: 1.2rem;
-    margin-left: -2rem;
-    margin-top: 0rem;
-  }
-  .fonctionnement i:hover {
-    color: #9356dc;
-  }
-  .fonctionnement .circle {
-    position: absolute;
-    margin-left: -21rem;
-    margin-top: -0.2rem;
-    width: 1.3rem;
-    height: 1.3rem;
-    background: #9356DC;
-    border-radius: 3rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #ffff;
-    font-size: 0.6rem;
-  }
-
-  .grandcontainer {
-    position: relative;
-    margin-top: 5rem;
-    width: 26rem;
-    height: 79rem;
-    background: #f6f6f6;
-  }
-  .grandcontainer .titrerestaurant h3 {
-    position: absolute;
-    margin-top: 4.5rem;
-    font-size: 1.5rem;
-    margin-left: 1.2rem;
-  }
-  .grandcontainer .bloc .page {
-    text-decoration: none;
-    color: black;
-  }
-  .grandcontainer .bloc {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    margin-top: 8rem;
-    margin-left: 1.5rem;
-    width: 20rem;
-    height: 15rem;
-    border-radius: 1.5rem;
-    background: #f6f6f6;
-    -webkit-box-shadow: 0px 7px 15px 3px #7A7A7A;
-    box-shadow: 0px 7px 15px 3px #7A7A7A;
-  }
-  .grandcontainer .bloc .parent .texteimage1 {
-    display: inline-flex;
-    padding: 1rem 1rem;
-    background: #99e2d0;
-    color: #a1e7d6;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    width: 4rem;
-    height: 0.2rem;
-    left: 12.8rem;
-    top: 1rem;
-    color: #109071;
-    font-size: 1.2rem;
-  }
-  .grandcontainer .bloc img {
-    position: relative;
-    width: 100%;
-    height: 10rem;
-    object-fit: cover;
-    border-top-right-radius: 1rem;
-    border-top-left-radius: 1rem;
-    margin-left: 0rem;
-    margin-bottom: 2rem;
-  }
-  .grandcontainer .bloc .infodubloc {
-    flex-direction: column;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    margin-right: 12rem;
-    margin-top: 2rem;
-    font-size: 1.2rem;
-  }
-  .grandcontainer .bloc .infodubloc h4 {
-    white-space: nowrap;
-    font-size: 1.2rem;
-    margin-left: 3rem;
-    margin-top: -3rem;
-  }
-  .grandcontainer .bloc .infodubloc p {
-    font-size: 1rem;
-    margin-top: 0.2rem;
-    margin-left: 3rem;
-  }
-  .grandcontainer .bloc .coeur1 {
-    margin-top: -2.8rem;
-    margin-left: 17rem;
-  }
-  .grandcontainer .bloc .coeur1 .emptyHeart {
-    font-size: 1.6rem;
-    cursor: pointer;
-    position: relative;
-    transition: color 150ms 50ms ease;
-  }
-  .grandcontainer .bloc .coeur1 .emptyHeart:hover {
-    color: transparent;
-  }
-  .grandcontainer .bloc .coeur1 .emptyHeart:hover > .fullHeart {
-    transform: scale(1);
-  }
-  .grandcontainer .bloc .coeur1 .fullHeart {
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: linear-gradient(170deg, #9356DC, #c776df);
-    background-clip: border-box;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    transform: scale(0);
-    transition: transform 150ms 50ms ease-in-out;
-  }
-  .grandcontainer .bloc2 {
-    position: absolute;
-    margin-top: 25rem;
-    margin-left: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    width: 20rem;
-    height: 15rem;
-    border-radius: 1.5rem;
-    background: #f6f6f6;
-    -webkit-box-shadow: 0px 7px 15px 3px #7A7A7A;
-    box-shadow: 0px 7px 15px 3px #7A7A7A;
-  }
-  .grandcontainer .bloc2 .page {
-    text-decoration: none;
-    color: black;
-  }
-  .grandcontainer .bloc2 .parent .texteimage2 {
-    display: inline-flex;
-    padding: 1rem 1rem;
-    background: #99e2d0;
-    color: #a1e7d6;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    width: 4rem;
-    height: 0.2rem;
-    left: 12.8rem;
-    top: 1rem;
-    color: #109071;
-    font-size: 1.3rem;
-  }
-  .grandcontainer .bloc2 img {
-    position: relative;
-    width: 100%;
-    height: 10rem;
-    object-fit: cover;
-    border-top-right-radius: 1rem;
-    border-top-left-radius: 1rem;
-    margin-left: 0rem;
-    margin-bottom: 2rem;
-  }
-  .grandcontainer .bloc2 .infodubloc {
-    flex-direction: column;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    margin-right: 12rem;
-    margin-top: 2rem;
-    font-size: 1.2rem;
-  }
-  .grandcontainer .bloc2 .infodubloc h4 {
-    white-space: nowrap;
-    font-size: 1.2rem;
-    margin-left: 3.2rem;
-    margin-top: -3rem;
-  }
-  .grandcontainer .bloc2 .infodubloc p {
-    font-size: 1rem;
-    margin-left: 3.2rem;
-  }
-  .grandcontainer .bloc2 .coeur1 {
-    margin-top: -2.8rem;
-    margin-left: 17rem;
-  }
-  .grandcontainer .bloc2 .coeur1 .emptyHeart {
-    font-size: 1.6rem;
-    cursor: pointer;
-    position: relative;
-    transition: color 150ms 50ms ease;
-  }
-  .grandcontainer .bloc2 .coeur1 .emptyHeart:hover {
-    color: transparent;
-  }
-  .grandcontainer .bloc2 .coeur1 .emptyHeart:hover > .fullHeart {
-    transform: scale(1);
-  }
-  .grandcontainer .bloc2 .coeur1 .fullHeart {
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: linear-gradient(170deg, #9356DC, #c776df);
-    background-clip: border-box;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    transform: scale(0);
-    transition: transform 150ms 50ms ease-in-out;
-  }
-  .grandcontainer .bloc3 {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    margin-top: 42rem;
-    margin-left: 1.5rem;
-    width: 20rem;
-    height: 15rem;
-    border-radius: 1.5rem;
-    background: #f6f6f6;
-    -webkit-box-shadow: 0px 7px 15px 3px #7A7A7A;
-    box-shadow: 0px 7px 15px 3px #7A7A7A;
-  }
-  .grandcontainer .bloc3 .page {
-    text-decoration: none;
-    color: black;
-  }
-  .grandcontainer .bloc3 img {
-    width: 100%;
-    height: 10rem;
-    object-fit: cover;
-    border-top-right-radius: 1rem;
-    border-top-left-radius: 1rem;
-    margin-left: 0rem;
-    margin-bottom: 2rem;
-  }
-  .grandcontainer .bloc3 .infodubloc {
-    flex-direction: column;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    margin-right: 12rem;
-    margin-top: 2rem;
-    font-size: 1.2rem;
-  }
-  .grandcontainer .bloc3 .infodubloc h4 {
-    white-space: nowrap;
-    font-size: 1.2rem;
-    margin-left: 1rem;
-    margin-top: -3rem;
-  }
-  .grandcontainer .bloc3 .infodubloc p {
-    font-size: 1rem;
-    margin-left: 1rem;
-  }
-  .grandcontainer .bloc3 .coeur1 {
-    margin-top: -2.8rem;
-    margin-left: 17rem;
-  }
-  .grandcontainer .bloc3 .coeur1 .emptyHeart {
-    font-size: 1.6rem;
-    cursor: pointer;
-    position: relative;
-    transition: color 150ms 50ms ease;
-  }
-  .grandcontainer .bloc3 .coeur1 .emptyHeart:hover {
-    color: transparent;
-  }
-  .grandcontainer .bloc3 .coeur1 .emptyHeart:hover > .fullHeart {
-    transform: scale(1);
-  }
-  .grandcontainer .bloc3 .coeur1 .fullHeart {
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: linear-gradient(170deg, #9356DC, #c776df);
-    background-clip: border-box;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    transform: scale(0);
-    transition: transform 150ms 50ms ease-in-out;
-  }
-
-  .bloc4 {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    margin-top: 59rem;
-    margin-left: 1.5rem;
-    width: 20rem;
-    height: 15rem;
-    border-radius: 1.5rem;
-    background: #f6f6f6;
-    -webkit-box-shadow: 0px 7px 15px 3px #7A7A7A;
-    box-shadow: 0px 7px 15px 3px #7A7A7A;
-  }
-  .bloc4 .page {
-    text-decoration: none;
-    color: black;
-  }
-  .bloc4 img {
-    width: 100%;
-    height: 10rem;
-    object-fit: cover;
-    border-top-right-radius: 1rem;
-    border-top-left-radius: 1rem;
-    margin-left: 0rem;
-    margin-bottom: 2rem;
-  }
-  .bloc4 .infodubloc {
-    flex-direction: column;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    margin-right: 12rem;
-    margin-top: 2rem;
-    font-size: 1.2rem;
-  }
-  .bloc4 .infodubloc h4 {
-    white-space: nowrap;
-    font-size: 1.2rem;
-    margin-left: 3rem;
-    margin-top: -3rem;
-  }
-  .bloc4 .infodubloc p {
-    font-size: 1rem;
-    margin-left: 3rem;
-  }
-  .bloc4 .coeur1 {
-    margin-top: -2.8rem;
-    margin-left: 17rem;
-  }
-  .bloc4 .coeur1 .emptyHeart {
-    font-size: 1.6rem;
-    cursor: pointer;
-    position: relative;
-    transition: color 150ms 50ms ease;
-  }
-  .bloc4 .coeur1 .emptyHeart:hover {
-    color: transparent;
-  }
-  .bloc4 .coeur1 .emptyHeart:hover > .fullHeart {
-    transform: scale(1);
-  }
-  .bloc4 .coeur1 .fullHeart {
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: linear-gradient(170deg, #9356DC, #c776df);
-    background-clip: border-box;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    transform: scale(0);
-    transition: transform 150ms 50ms ease-in-out;
-  }
-
-  button {
-    position: relative;
-    width: 12rem;
-    height: 3rem;
-    margin-left: 6.5rem;
-    margin-top: 2rem;
-    bottom: 0rem;
-    top: 0rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    line-height: 3rem;
-    border-radius: 3rem;
-    padding: 20px 8px;
-    background: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
-    color: #ffff;
-    font-size: 1rem;
-    outline: none;
-    border: none;
-  }
-
-  .backgroundfooter {
-    background: #353535;
-    height: 16rem;
-    width: 26.5rem;
-    color: #f1f1f1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 0rem;
-    margin-top: 0rem;
-  }
-  .backgroundfooter .titrefooter {
-    margin-top: -10rem;
-    margin-left: -8rem;
-    font-size: 1.5rem;
-    font-family: Shrikhand;
-  }
-  .backgroundfooter .infofooter .info1 {
-    margin-left: -15rem;
-    font-family: Roboto;
-    font-size: 1rem;
-    white-space: nowrap;
-  }
-  .backgroundfooter .infofooter .info1 .paraph1 {
-    margin-top: 1.8rem;
-    margin-left: 9rem;
-  }
-  .backgroundfooter .infofooter .info2 .paraph2 {
-    margin-left: -6rem;
-    margin-top: -0.5rem;
-    font-size: 1rem;
-  }
-  .backgroundfooter .infofooter .info3 {
-    font-size: 1rem;
-  }
-  .backgroundfooter .infofooter .info3 .paraph3 {
-    margin-left: -8.5rem;
-    margin-top: 1.2rem;
-  }
-  .backgroundfooter .infofooter .info4 {
-    font-size: 1rem;
-  }
-  .backgroundfooter .infofooter .info4 .paraph4 {
-    margin-left: -8.5rem;
-    margin-top: 0.8rem;
-  }
-  .backgroundfooter .infofooter .info4 a {
-    text-decoration: none;
-    color: #f1f1f1;
-  }
-  .backgroundfooter .infofooter .iconefooter {
-    position: relative;
-    left: -8.1rem;
-    top: 3rem;
-    font-size: 1.2rem;
-  }
-  .backgroundfooter .infofooter .iconefooter2 {
-    position: relative;
-    top: 1rem;
-    margin-left: -8.5rem;
-    font-size: 1.2rem;
-  }
+  height: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  width: 100%;
 }
+
+body {
+  height: 100vh;
+  font-size: 10px;
+  font-family: Roboto;
+}
+body p {
+  margin: 0;
+}
+body h3 {
+  margin: 0;
+}
+body h4 {
+  margin: 0;
+}
+
+.banniereheader {
+  width: 100%;
+  height: 4.3rem;
+  background: #f6f6f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0rem;
+}
+
+.logoheader {
+  font-family: Shrikhand;
+}
+
+.backgroundicone {
+  width: 23.3rem;
+  height: 3rem;
+  background: #eaeaea;
+  margin-top: -1rem;
+}
+.backgroundicone .texteicone1 {
+  margin-left: 7.5rem;
+  line-height: 3rem;
+  font-size: 1rem;
+}
+.backgroundicone .icone1 {
+  margin-left: 6rem;
+  margin-top: -2.2rem;
+  font-size: 0.9rem;
+}
+
+.exploration {
+  background: #f6f6f6;
+  width: 24rem;
+  height: 18rem;
+  margin-left: 0rem;
+  margin-top: 0rem;
+  display: flex;
+  flex-direction: column;
+}
+.exploration h3 {
+  font-size: 1.3rem;
+  margin-bottom: 5rem;
+  margin-left: 6rem;
+  margin-top: 2rem;
+}
+.exploration .p2 {
+  margin-top: -5rem;
+  margin-left: 8rem;
+}
+.exploration p {
+  font-size: 1rem;
+  text-align: center;
+  margin-top: -3rem;
+}
+.exploration button {
+  width: 15rem;
+  height: 3.5rem;
+  margin-left: 4.5rem;
+  margin-top: 2rem;
+  border-radius: 3rem;
+  padding: 20px 8px;
+  background: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+  color: #ffff;
+  font-size: 1rem;
+  outline: none;
+  border: none;
+}
+.exploration button:hover {
+  box-shadow: 0 0 7px 6px #b35cdc;
+  filter: brightness(1.2);
+}
+
+.titrefonction {
+  font-size: 1.3rem;
+  margin-top: 2.5rem;
+  margin-left: 2rem;
+}
+
+.fonctionnement {
+  width: 90%;
+  height: 3.5rem;
+  background: #f6f6f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 1rem;
+  margin-top: 3rem;
+  box-shadow: 0 0 5px;
+  border-radius: 1.2rem;
+  position: relative;
+}
+.fonctionnement:hover {
+  background: #f5edff;
+}
+.fonctionnement .soustitre {
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin-left: 1rem;
+}
+.fonctionnement i {
+  font-size: 1.2rem;
+  margin-left: -2rem;
+  margin-top: 0rem;
+}
+.fonctionnement i:hover {
+  color: #9356dc;
+}
+.fonctionnement .circle {
+  position: absolute;
+  margin-left: -21rem;
+  margin-top: -0.2rem;
+  width: 1.3rem;
+  height: 1.3rem;
+  background: #9356dc;
+  border-radius: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffff;
+  font-size: 0.6rem;
+}
+
+.grandcontainer {
+  position: relative;
+  margin-top: 5rem;
+  width: 26rem;
+  height: 79rem;
+  background: #f6f6f6;
+}
+.grandcontainer .titrerestaurant h3 {
+  position: absolute;
+  margin-top: 4.5rem;
+  font-size: 1.5rem;
+  margin-left: 1.2rem;
+}
+.grandcontainer .bloc .page {
+  text-decoration: none;
+  color: black;
+}
+.grandcontainer .bloc {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  margin-top: 8rem;
+  margin-left: 1.5rem;
+  width: 20rem;
+  height: 15rem;
+  border-radius: 1.5rem;
+  background: #f6f6f6;
+  -webkit-box-shadow: 0px 7px 15px 3px #7a7a7a;
+  box-shadow: 0px 7px 15px 3px #7a7a7a;
+}
+.grandcontainer .bloc .texteimage1 {
+  display: inline-flex;
+  padding: 1rem 1rem;
+  background: #99e2d0;
+  color: #a1e7d6;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 4rem;
+  height: 0.2rem;
+  left: 12.8rem;
+  top: 1rem;
+  color: #109071;
+  font-size: 1.2rem;
+}
+.grandcontainer .bloc img {
+  position: relative;
+  width: 100%;
+  height: 10rem;
+  object-fit: cover;
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+  margin-left: 0rem;
+  margin-bottom: 2rem;
+}
+.grandcontainer .bloc .infodubloc {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-right: 12rem;
+  margin-top: 2rem;
+  font-size: 1.2rem;
+}
+.grandcontainer .bloc .infodubloc h4 {
+  white-space: nowrap;
+  font-size: 1.2rem;
+  margin-left: 3rem;
+  margin-top: -3rem;
+}
+.grandcontainer .bloc .infodubloc p {
+  font-size: 1rem;
+  margin-top: 0.2rem;
+  margin-left: 3rem;
+}
+.grandcontainer .bloc .coeur1 {
+  margin-top: -2.8rem;
+  margin-left: 17rem;
+}
+.grandcontainer .bloc .coeur1 .emptyHeart {
+  font-size: 1.6rem;
+  cursor: pointer;
+  position: relative;
+  transition: color 150ms 50ms ease;
+}
+.grandcontainer .bloc .coeur1 .emptyHeart:hover {
+  color: transparent;
+}
+.grandcontainer .bloc .coeur1 .emptyHeart:hover > .fullHeart {
+  transform: scale(1);
+}
+.grandcontainer .bloc .coeur1 .fullHeart {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(170deg, #9356dc, #c776df);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transform: scale(0);
+  transition: transform 150ms 50ms ease-in-out;
+}
+.grandcontainer .bloc2 {
+  position: absolute;
+  margin-top: 25rem;
+  margin-left: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  width: 20rem;
+  height: 15rem;
+  border-radius: 1.5rem;
+  background: #f6f6f6;
+  -webkit-box-shadow: 0px 7px 15px 3px #7a7a7a;
+  box-shadow: 0px 7px 15px 3px #7a7a7a;
+}
+.grandcontainer .bloc2 .page {
+  text-decoration: none;
+  color: black;
+}
+.grandcontainer .bloc2 .texteimage2 {
+  display: inline-flex;
+  padding: 1rem 1rem;
+  background: #99e2d0;
+  color: #a1e7d6;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 4rem;
+  height: 0.2rem;
+  left: 12.8rem;
+  top: 1rem;
+  color: #109071;
+  font-size: 1.3rem;
+}
+.grandcontainer .bloc2 img {
+  position: relative;
+  width: 100%;
+  height: 10rem;
+  object-fit: cover;
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+  margin-left: 0rem;
+  margin-bottom: 2rem;
+}
+.grandcontainer .bloc2 .infodubloc {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-right: 12rem;
+  margin-top: 2rem;
+  font-size: 1.2rem;
+}
+.grandcontainer .bloc2 .infodubloc h4 {
+  white-space: nowrap;
+  font-size: 1.2rem;
+  margin-left: 3.2rem;
+  margin-top: -3rem;
+}
+.grandcontainer .bloc2 .infodubloc p {
+  font-size: 1rem;
+  margin-left: 3.2rem;
+}
+.grandcontainer .bloc2 .coeur1 {
+  margin-top: -2.8rem;
+  margin-left: 17rem;
+}
+.grandcontainer .bloc2 .coeur1 .emptyHeart {
+  font-size: 1.6rem;
+  cursor: pointer;
+  position: relative;
+  transition: color 150ms 50ms ease;
+}
+.grandcontainer .bloc2 .coeur1 .emptyHeart:hover {
+  color: transparent;
+}
+.grandcontainer .bloc2 .coeur1 .emptyHeart:hover > .fullHeart {
+  transform: scale(1);
+}
+.grandcontainer .bloc2 .coeur1 .fullHeart {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(170deg, #9356dc, #c776df);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transform: scale(0);
+  transition: transform 150ms 50ms ease-in-out;
+}
+.grandcontainer .bloc3 {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  margin-top: 42rem;
+  margin-left: 1.5rem;
+  width: 20rem;
+  height: 15rem;
+  border-radius: 1.5rem;
+  background: #f6f6f6;
+  -webkit-box-shadow: 0px 7px 15px 3px #7a7a7a;
+  box-shadow: 0px 7px 15px 3px #7a7a7a;
+}
+.grandcontainer .bloc3 .page {
+  text-decoration: none;
+  color: black;
+}
+.grandcontainer .bloc3 img {
+  width: 100%;
+  height: 10rem;
+  object-fit: cover;
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+  margin-left: 0rem;
+  margin-bottom: 2rem;
+}
+.grandcontainer .bloc3 .infodubloc {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-right: 12rem;
+  margin-top: 2rem;
+  font-size: 1.2rem;
+}
+.grandcontainer .bloc3 .infodubloc h4 {
+  white-space: nowrap;
+  font-size: 1.2rem;
+  margin-left: 1rem;
+  margin-top: -3rem;
+}
+.grandcontainer .bloc3 .infodubloc p {
+  font-size: 1rem;
+  margin-left: 1rem;
+}
+.grandcontainer .bloc3 .coeur1 {
+  margin-top: -2.8rem;
+  margin-left: 17rem;
+}
+.grandcontainer .bloc3 .coeur1 .emptyHeart {
+  font-size: 1.6rem;
+  cursor: pointer;
+  position: relative;
+  transition: color 150ms 50ms ease;
+}
+.grandcontainer .bloc3 .coeur1 .emptyHeart:hover {
+  color: transparent;
+}
+.grandcontainer .bloc3 .coeur1 .emptyHeart:hover > .fullHeart {
+  transform: scale(1);
+}
+.grandcontainer .bloc3 .coeur1 .fullHeart {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(170deg, #9356dc, #c776df);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transform: scale(0);
+  transition: transform 150ms 50ms ease-in-out;
+}
+
+.bloc4 {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  margin-top: 59rem;
+  margin-left: 1.5rem;
+  width: 20rem;
+  height: 15rem;
+  border-radius: 1.5rem;
+  background: #f6f6f6;
+  -webkit-box-shadow: 0px 7px 15px 3px #7a7a7a;
+  box-shadow: 0px 7px 15px 3px #7a7a7a;
+}
+.bloc4 .page {
+  text-decoration: none;
+  color: black;
+}
+.bloc4 img {
+  width: 100%;
+  height: 10rem;
+  object-fit: cover;
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+  margin-left: 0rem;
+  margin-bottom: 2rem;
+}
+.bloc4 .infodubloc {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-right: 12rem;
+  margin-top: 2rem;
+  font-size: 1.2rem;
+}
+.bloc4 .infodubloc h4 {
+  white-space: nowrap;
+  font-size: 1.2rem;
+  margin-left: 3rem;
+  margin-top: -3rem;
+}
+.bloc4 .infodubloc p {
+  font-size: 1rem;
+  margin-left: 3rem;
+}
+.bloc4 .coeur1 {
+  margin-top: -2.8rem;
+  margin-left: 17rem;
+}
+.bloc4 .coeur1 .emptyHeart {
+  font-size: 1.6rem;
+  cursor: pointer;
+  position: relative;
+  transition: color 150ms 50ms ease;
+}
+.bloc4 .coeur1 .emptyHeart:hover {
+  color: transparent;
+}
+.bloc4 .coeur1 .emptyHeart:hover > .fullHeart {
+  transform: scale(1);
+}
+.bloc4 .coeur1 .fullHeart {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(170deg, #9356dc, #c776df);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transform: scale(0);
+  transition: transform 150ms 50ms ease-in-out;
+}
+
+button {
+  position: relative;
+  width: 12rem;
+  height: 3rem;
+  margin-left: 6.5rem;
+  margin-top: 2rem;
+  bottom: 0rem;
+  top: 0rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 3rem;
+  border-radius: 3rem;
+  padding: 20px 8px;
+  background: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+  color: #ffff;
+  font-size: 1rem;
+  outline: none;
+  border: none;
+}
+
+.backgroundfooter {
+  background: #353535;
+  height: 16rem;
+  width: 100%;
+  color: #f1f1f1;
+  margin-bottom: 0rem;
+  margin-top: 2rem;
+  position: relative;
+}
+.backgroundfooter .titrefooter {
+  font-size: 1.5rem;
+  font-family: Shrikhand;
+  position: absolute;
+  top: 2.5rem;
+  left: 2rem;
+}
+.backgroundfooter .infofooter {
+  display: flex;
+  align-items: center;
+  padding: 0 2rem;
+  margin-top: -3.5rem;
+}
+.backgroundfooter .infofooter .iconefooter {
+  margin-top: 0rem;
+  font-size: 1rem;
+}
+.backgroundfooter .infofooter .info1 .paraph1 {
+  margin-top: 0rem;
+  margin-left: 1.3rem;
+  font-size: 1.2rem;
+}
+.backgroundfooter .infofooter .iconefooter2 {
+  position: absolute;
+  top: 7.5rem;
+  left: 1.8rem;
+  font-size: 1rem;
+}
+.backgroundfooter .infofooter .info2 .paraph2 {
+  margin-top: 7.5rem;
+  margin-left: -12.5rem;
+  font-size: 1.2rem;
+}
+.backgroundfooter .infofooter .info3 .paraph3 {
+  margin-left: -14.5rem;
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+}
+.backgroundfooter .infofooter .info4 .paraph4 {
+  margin-left: -14.5rem;
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+}
+.backgroundfooter .infofooter .info4 a {
+  text-decoration: none;
+  color: white;
+}
+
 @media screen and (min-width: 387px) {
   .backgroundicone {
     width: 100%;
@@ -732,13 +672,16 @@ body {
   }
 
   .fonctionnement:nth-child(2) {
-    margin-left: 5rem;
+    margin-left: 2rem;
   }
   .fonctionnement:nth-child(3) {
-    margin-left: 5rem;
+    margin-left: 2rem;
   }
   .fonctionnement:nth-child(4) {
-    margin-left: 5rem;
+    margin-left: 2rem;
+  }
+  .fonctionnement .circle {
+    margin-right: 3rem;
   }
 
   .grandcontainer {
@@ -759,6 +702,53 @@ body {
 
   .backgroundfooter {
     width: 100%;
+  }
+}
+@media screen and (min-width: 433px) {
+  .backgroundicone .icone1 {
+    margin-left: 7.6rem;
+    margin-top: -2.3rem;
+    font-size: 1.2rem;
+  }
+
+  .exploration button {
+    width: 85%;
+    margin-left: 2rem;
+  }
+
+  .fonctionnement:nth-child(2) {
+    margin-left: 1.5rem;
+  }
+  .fonctionnement:nth-child(3) {
+    margin-left: 1.5rem;
+  }
+  .fonctionnement:nth-child(4) {
+    margin-left: 1.5rem;
+  }
+  .fonctionnement .circle {
+    margin-right: 3.4rem;
+  }
+
+  .grandcontainer .titrerestaurant h3 {
+    font-size: 1.8rem;
+    margin-left: 8rem;
+    margin-top: 3rem;
+  }
+  .grandcontainer .bloc {
+    width: 90%;
+    margin-left: 1.3rem;
+  }
+  .grandcontainer .bloc2 {
+    width: 90%;
+    margin-left: 1.3rem;
+  }
+  .grandcontainer .bloc3 {
+    width: 90%;
+    margin-left: 1.3rem;
+  }
+  .grandcontainer .bloc4 {
+    width: 90%;
+    margin-left: 1.3rem;
   }
 }
 @media screen and (min-width: 436px) {
@@ -832,7 +822,7 @@ body {
     margin-left: 11rem;
   }
   .exploration button {
-    margin-left: 7rem;
+    margin-left: 2rem;
   }
 }
 @media screen and (min-width: 483px) {
@@ -895,6 +885,76 @@ body {
     margin-left: 8rem;
   }
 }
+@media screen and (min-width: 501px) {
+  .exploration button {
+    margin-left: 2rem;
+  }
+
+  .fonctionnement:nth-child(2) {
+    margin-left: 5rem;
+  }
+  .fonctionnement:nth-child(3) {
+    margin-left: 5rem;
+  }
+  .fonctionnement:nth-child(4) {
+    margin-left: 5rem;
+  }
+  .fonctionnement .circle {
+    margin-right: 1rem;
+    font-size: 1rem;
+    width: 1.8rem;
+    height: 1.8rem;
+  }
+}
+@media screen and (min-width: 503px) {
+  .exploration button {
+    margin-left: 2rem;
+  }
+
+  .titrefonction {
+    margin-left: 9rem;
+  }
+
+  .fonctionnement .soustitre {
+    font-size: 1rem;
+  }
+  .fonctionnement:nth-child(2) {
+    margin-left: 5rem;
+  }
+  .fonctionnement:nth-child(3) {
+    margin-left: 5rem;
+  }
+  .fonctionnement:nth-child(4) {
+    margin-left: 5rem;
+  }
+  .fonctionnement .circle {
+    width: 1.7rem;
+    height: 1.7rem;
+    margin-right: 0.5rem;
+  }
+
+  .grandcontainer .titrerestaurant {
+    margin-left: 1rem;
+  }
+}
+@media screen and (min-width: 509px) {
+  .grandcontainer .bloc .coeur1 {
+    margin-top: -3rem;
+    margin-left: 22rem;
+  }
+  .grandcontainer .bloc2 .coeur1 {
+    margin-top: -3rem;
+    margin-left: 22rem;
+  }
+  .grandcontainer .bloc3 .coeur1 {
+    margin-top: -3rem;
+    margin-left: 22rem;
+  }
+  .grandcontainer .bloc4 .coeur1 {
+    margin-top: -3rem;
+    margin-left: 22rem;
+  }
+}
 @media screen and (min-width: 547px) {
   .backgroundicone .icone1 {
     margin-left: 11.2rem;
@@ -940,6 +1000,118 @@ body {
   }
   .grandcontainer .bloc4 {
     margin-left: 5rem;
+  }
+}
+@media screen and (min-width: 601px) {
+  .backgroundicone .icone1 {
+    font-size: 1.5rem;
+    margin-left: 12.7rem;
+    margin-top: -2.5rem;
+  }
+  .backgroundicone .texteicone1 {
+    font-size: 1.3rem;
+    margin-left: 15rem;
+  }
+
+  .exploration button {
+    margin-left: 2rem;
+  }
+
+  .fonctionnement:nth-child(2) {
+    margin-left: 6rem;
+  }
+  .fonctionnement:nth-child(3) {
+    margin-left: 6rem;
+  }
+  .fonctionnement:nth-child(4) {
+    margin-left: 6rem;
+  }
+  .fonctionnement .circle {
+    margin-right: 6rem;
+    font-size: 0.8rem;
+  }
+
+  .grandcontainer .bloc {
+    margin-left: 2rem;
+  }
+  .grandcontainer .bloc .coeur1 {
+    margin-top: -3rem;
+    margin-left: 22rem;
+  }
+  .grandcontainer .bloc2 {
+    margin-left: 2rem;
+  }
+  .grandcontainer .bloc2 .coeur1 {
+    margin-top: -3rem;
+    margin-left: 22rem;
+  }
+  .grandcontainer .bloc3 {
+    margin-left: 2rem;
+  }
+  .grandcontainer .bloc3 .coeur1 {
+    margin-top: -3rem;
+    margin-left: 22rem;
+  }
+  .grandcontainer .bloc4 {
+    margin-left: 2rem;
+  }
+  .grandcontainer .bloc4 .coeur1 {
+    margin-top: -3rem;
+    margin-left: 22rem;
+  }
+}
+@media screen and (min-width: 609px) {
+  .exploration button {
+    margin-left: 2rem;
+  }
+
+  .fonctionnement:nth-child(2) {
+    margin-left: 6rem;
+  }
+  .fonctionnement:nth-child(3) {
+    margin-left: 6rem;
+  }
+  .fonctionnement:nth-child(4) {
+    margin-left: 6rem;
+  }
+  .fonctionnement .circle {
+    font-size: 0.9rem;
+    margin-right: 6rem;
+  }
+
+  .grandcontainer .titrerestaurant {
+    margin-left: 5rem;
+  }
+  .grandcontainer .titrerestaurant h3 {
+    font-size: 2.1rem;
+  }
+  .grandcontainer .bloc {
+    margin-left: 2rem;
+  }
+  .grandcontainer .bloc .coeur1 {
+    margin-left: 20rem;
+    margin-top: -3rem;
+  }
+  .grandcontainer .bloc2 {
+    margin-left: 2rem;
+  }
+  .grandcontainer .bloc2 .coeur1 {
+    margin-left: 20rem;
+    margin-top: -3rem;
+  }
+  .grandcontainer .bloc3 {
+    margin-left: 2rem;
+  }
+  .grandcontainer .bloc3 .coeur1 {
+    margin-left: 20rem;
+    margin-top: -3rem;
+  }
+  .grandcontainer .bloc4 {
+    margin-left: 2rem;
+  }
+  .grandcontainer .bloc4 .coeur1 {
+    margin-left: 20rem;
+    margin-top: -3rem;
   }
 }
 @media screen and (min-width: 625px) {
@@ -1052,10 +1224,6 @@ body {
     margin-left: 17rem;
   }
 
-  .exploration h3 {
-    position: relative;
-    left: 0px;
-  }
   .exploration .p2 {
     margin-left: 17rem;
   }
@@ -1101,6 +1269,13 @@ body {
   }
   .exploration button {
     margin-left: 13rem;
+  }
+
+  .fonctionnement {
+    width: 90%;
+  }
+  .fonctionnement:nth-child(2) {
+    margin-left: 5rem;
   }
 }
 @media screen and (min-width: 673px) {
@@ -1182,10 +1357,6 @@ body {
     margin-left: 20rem;
   }
 
-  .exploration h3 {
-    position: relative;
-    left: 0rem;
-  }
   .exploration button {
     margin-left: 15rem;
   }
@@ -1215,11 +1386,6 @@ body {
   .backgroundicone .texteicone1 {
     margin-left: 20rem;
   }
-
-  .exploration h3 {
-    position: relative;
-    left: 0rem;
-  }
 }
 @media screen and (min-width: 747px) {
   .backgroundicone .icone1 {
@@ -1227,11 +1393,6 @@ body {
   }
   .backgroundicone .texteicone1 {
     margin-left: 20rem;
-  }
-
-  .exploration h3 {
-    position: relative;
-    left: 0rem;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1361,10 +1522,9 @@ body {
     margin-left: 1.3rem;
   }
   .fonctionnement .circle {
-    position: absolute;
     width: 2rem;
     height: 2rem;
-    background: #9356DC;
+    background: #9356dc;
     border-radius: 3rem;
     color: #ffff;
     margin-left: -20rem;
@@ -1374,13 +1534,11 @@ body {
 
   .grandcontainer {
     margin-top: 5rem;
-    position: relative;
     width: 50rem;
     height: 60rem;
     background: #f6f6f6;
   }
   .grandcontainer .titrerestaurant h3 {
-    position: absolute;
     margin-top: 3rem;
     font-size: 2.5rem;
     margin-left: 2rem;
@@ -1398,8 +1556,8 @@ body {
     height: 19rem;
     border-radius: 1.5rem;
     background: #f6f6f6;
-    -webkit-box-shadow: 0px 7px 15px 3px #7A7A7A;
-    box-shadow: 0px 7px 15px 3px #7A7A7A;
+    -webkit-box-shadow: 0px 7px 15px 3px #7a7a7a;
+    box-shadow: 0px 7px 15px 3px #7a7a7a;
   }
   .grandcontainer .bloc .parent {
     position: relative;
@@ -1467,7 +1625,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    background: linear-gradient(170deg, #9356DC, #c776df);
+    background: linear-gradient(170deg, #9356dc, #c776df);
     background-clip: border-box;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -1487,8 +1645,8 @@ body {
     height: 19rem;
     border-radius: 1.5rem;
     background: #f6f6f6;
-    -webkit-box-shadow: 0px 7px 15px 3px #7A7A7A;
-    box-shadow: 0px 7px 15px 3px #7A7A7A;
+    -webkit-box-shadow: 0px 7px 15px 3px #7a7a7a;
+    box-shadow: 0px 7px 15px 3px #7a7a7a;
   }
   .grandcontainer .bloc2 .parent img {
     width: 100%;
@@ -1513,7 +1671,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    background: linear-gradient(170deg, #9356DC, #c776df);
+    background: linear-gradient(170deg, #9356dc, #c776df);
     background-clip: border-box;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -1579,8 +1737,8 @@ body {
     height: 19rem;
     border-radius: 1.5rem;
     background: #f6f6f6;
-    -webkit-box-shadow: 0px 7px 15px 3px #7A7A7A;
-    box-shadow: 0px 7px 15px 3px #7A7A7A;
+    -webkit-box-shadow: 0px 7px 15px 3px #7a7a7a;
+    box-shadow: 0px 7px 15px 3px #7a7a7a;
   }
   .grandcontainer .bloc3 .coeur1 {
     margin-top: -3.4rem;
@@ -1601,7 +1759,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    background: linear-gradient(170deg, #9356DC, #c776df);
+    background: linear-gradient(170deg, #9356dc, #c776df);
     background-clip: border-box;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -1659,7 +1817,6 @@ body {
     color: black;
   }
   .grandcontainer .bloc4 {
-    position: absolute;
     display: flex;
     flex-direction: column;
     margin-left: 25rem;
@@ -1668,8 +1825,8 @@ body {
     height: 19rem;
     border-radius: 1.5rem;
     background: #f6f6f6;
-    -webkit-box-shadow: 0px 7px 15px 3px #7A7A7A;
-    box-shadow: 0px 7px 15px 3px #7A7A7A;
+    -webkit-box-shadow: 0px 7px 15px 3px #7a7a7a;
+    box-shadow: 0px 7px 15px 3px #7a7a7a;
   }
   .grandcontainer .bloc4 .parent {
     position: relative;
@@ -1737,7 +1894,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    background: linear-gradient(170deg, #9356DC, #c776df);
+    background: linear-gradient(170deg, #9356dc, #c776df);
     background-clip: border-box;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -1754,17 +1911,14 @@ body {
     margin-top: 0rem;
     justify-content: center;
     align-items: center;
-    position: relative;
   }
   .backgroundfooter .titrefooter {
-    position: relative;
     font-size: 3rem;
     font-family: Shrikhand;
     margin-right: 15rem;
     margin-top: -15rem;
   }
   .backgroundfooter .infofooter {
-    position: absolute;
     margin-right: 10rem;
     margin-top: 2rem;
   }
@@ -1798,15 +1952,9 @@ body {
     color: #f1f1f1;
   }
   .backgroundfooter .infofooter .iconefooter {
-    position: relative;
-    top: 1.5rem;
-    left: -10.8rem;
     font-size: 1.6rem;
   }
   .backgroundfooter .infofooter .iconefooter2 {
-    position: relative;
-    top: 1rem;
-    left: -5.8rem;
     font-size: 1.6rem;
   }
 }
@@ -2410,20 +2558,10 @@ body {
   .exploration button {
     margin-left: 35rem;
   }
-
-  .grandcontainer .titrerestaurant {
-    position: relative;
-    left: 0rem;
-  }
 }
 @media screen and (min-width: 1224px) {
   .exploration button {
     margin-left: 29rem;
-  }
-
-  .grandcontainer .titrerestaurant {
-    position: relative;
-    left: 0rem;
   }
 }
 @media screen and (min-width: 1127px) {
@@ -2691,11 +2829,6 @@ body {
     margin-right: 28rem;
   }
 
-  .fonctionnement {
-    position: relative;
-    left: 4rem;
-  }
-
   .grandcontainer {
     width: 100%;
   }
@@ -2893,12 +3026,6 @@ body {
     margin-left: 26rem;
   }
 }
-@media screen and (min-width: 1285px) {
-  .fonctionnement {
-    position: relative;
-    left: 12rem;
-  }
-}
 @media screen and (min-width: 1291px) {
   .grandcontainer .titrerestaurant {
     margin-left: 28rem;
@@ -2913,11 +3040,6 @@ body {
 
   .titrefonction {
     margin-left: 26rem;
-  }
-
-  .fonctionnement {
-    position: relative;
-    left: 12rem;
   }
 }
 @media screen and (min-width: 1331px) {
@@ -3222,11 +3344,6 @@ body {
   }
 }
 @media screen and (min-width: 1413px) {
-  .backgroundicone .icone1 {
-    position: relative;
-    left: 1.2rem;
-  }
-
   .exploration button {
     margin-left: 36rem;
   }
@@ -4550,7 +4667,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    background: linear-gradient(170deg, #9356DC, #c776df);
+    background: linear-gradient(170deg, #9356dc, #c776df);
     background-clip: border-box;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -4587,7 +4704,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    background: linear-gradient(170deg, #9356DC, #c776df);
+    background: linear-gradient(170deg, #9356dc, #c776df);
     background-clip: border-box;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -4620,7 +4737,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    background: linear-gradient(170deg, #9356DC, #c776df);
+    background: linear-gradient(170deg, #9356dc, #c776df);
     background-clip: border-box;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -4647,7 +4764,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    background: linear-gradient(170deg, #9356DC, #c776df);
+    background: linear-gradient(170deg, #9356dc, #c776df);
     background-clip: border-box;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -4767,7 +4884,7 @@ body {
   }
 }
 @media screen and (min-width: 1920px) {
-  .backgroundicone .icone1 {
+  .backgroundicone .icone {
     position: relative;
     left: 28.2rem;
   }
@@ -4855,7 +4972,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    background: linear-gradient(170deg, #9356DC, #c776df);
+    background: linear-gradient(170deg, #9356dc, #c776df);
     background-clip: border-box;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
