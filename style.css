@@ -700,6 +700,10 @@ button {
   .exploration {
     width: 100%;
   }
+
+  .fonctionnement .circle {
+    margin-right: 3rem;
+  }
 }
 @media screen and (min-width: 423px) {
   banniereheader {
@@ -3880,13 +3884,13 @@ body {
   }
 
   .fonctionnement:nth-child(2) {
-    margin-left: 4rem;
+    margin-left: 7rem;
   }
   .fonctionnement:nth-child(3) {
-    margin-left: 28.5rem;
+    margin-left: 32rem;
   }
   .fonctionnement:nth-child(4) {
-    margin-left: 53rem;
+    margin-left: 58rem;
   }
 
   .grandcontainer .bloc .texteimage1 {

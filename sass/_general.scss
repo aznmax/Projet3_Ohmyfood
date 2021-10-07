@@ -830,6 +830,12 @@ button {
     .exploration {
         width: 100%;
     }
+
+    .fonctionnement{
+        .circle{
+            margin-right: 3rem;
+        }
+    }
 }
 
 //Responsive 423px //
@@ -5531,15 +5537,15 @@ button {
 .fonctionnement{
 
     &:nth-child(2){
-        margin-left: 4rem;
+        margin-left: 7rem;
     }
 
     &:nth-child(3){
-        margin-left: 28.5rem;
+        margin-left: 32rem;
     }
 
     &:nth-child(4){
-        margin-left: 53rem;
+        margin-left: 58rem;
     }
 }
 
